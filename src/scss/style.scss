@@ -1,3 +1,8 @@
+@import './variable';
+@import './header_prototype';
+@import './main/main_page';
+
+
 *,
 *::before,
 *::after{
@@ -15,10 +20,36 @@ a{
 
 
 body{
-    font-family: 'Dosis', sans-serif;
+font-family: 'Fira Sans', 'Oranienbaum', serif;
+color: $primary;
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 140%;
+background-color: $bg;
+
 }
 
 .container{
-    max-width: 1200px;
+    max-width: 1320px;
     margin: 0 auto;
+}
+
+h1{
+font-family: Oranienbaum;
+font-size: 64px;
+font-weight: 400;
+line-height: 74px;
+letter-spacing: 0.1em;
+text-align: left;
+
+}
+h2{
+    font-size: 58px;
+    line-height: 66px;
+    font-weight: 400;
+    
+}
+.title__span{
+    color: $secondaryRed;
 }
