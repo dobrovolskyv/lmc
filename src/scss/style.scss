@@ -53,3 +53,34 @@ h2{
 .title__span{
     color: $secondaryRed;
 }
+
+.title__container{
+    width: 720px;
+}
+.undertitle{
+    font-family: 'Fira Sans';
+font-size: 14px;
+line-height: 140%;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: $gold;
+}
+
+.subtitle{
+    font-family: 'Fira Sans';
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.specialist__sliders__swiper{
+    width: 1320px;
+    height: 507px;
+    overflow: hidden;
+    position: relative;
+}
+
+.title__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
