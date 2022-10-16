@@ -84,3 +84,20 @@ color: $gold;
     justify-content: space-between;
     align-items: center;
 }
+
+.btn{
+    margin: 50px 44% 0px;
+    padding: 0px 30px;
+    width: 180px;
+    height: 40px;
+    background: $secondaryRed;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Fira Sans';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $bg;
+}
