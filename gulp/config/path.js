@@ -14,7 +14,7 @@ export const path = {
     files: `${buildFolder}/files`,
   },
   src: {
-    images: `${srcFolder}/img/**/*.{jpg, jpeg, png, gif, webp}`,
+    images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`,
     svg: `${srcFolder}/img/**/*.svg`,
     svgicons: `${srcFolder}/svgicons/*.svg`,
     js: `${srcFolder}/js/app.js`,
@@ -23,7 +23,7 @@ export const path = {
     files: `${srcFolder}/files/**/*.*`,
   },
   watch: {
-    images: `${srcFolder}/img/**/*.{jpg, jpeg, png, svg, gif, ico, webp}`,
+    images: `${srcFolder}/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}`,
     js: `${srcFolder}/js/**/*.js`,
     scss: `${srcFolder}/scss/**/*.scss`,
     html: `${srcFolder}/**/*.html`,

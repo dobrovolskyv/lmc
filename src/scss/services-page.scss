@@ -1,0 +1,94 @@
+.page-services{
+    background-color: $bg;
+}
+    
+.subtitle-page2{
+   max-width: 758px;
+}
+.header__bot-contentbox-page2{
+    margin-top: 122px;
+    margin-right: 28px;
+}
+.header{
+    &__procedures{
+        margin-top: 200px;
+        &__contentbox{
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 80px;
+            justify-content: space-between;
+            border: 1px solid $gold;
+            border-radius: 4px;
+            padding: 30px 46px;
+            div{
+                display: flex;
+                align-items: center;
+            }
+            }
+            &__price{
+                margin-right: 68px;
+                
+            }
+    }
+}
+
+.btn__header-page2{
+    padding: 0px 30px;
+    width: 220px;
+    height: 40px;
+    background: $secondaryRed;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Fira Sans';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $bg;
+}
+
+//
+//
+//QUESTIONS
+//
+//
+.questions{
+    margin-top: 93px;
+    font-family: 'Fira Sans';
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left{
+        max-width: 871px;
+        margin-right: 20px;
+    }
+    &__subtitle{
+        margin-top: 20px;
+        font-size: $fs20;
+    }
+    &__right{
+        width: 421px;
+        height: 821px;
+        background: #000;
+    }
+    &__contentbox:not(:first-child){
+        margin-top: 60px;
+    }
+    &__contentbox{
+        &__list{
+        margin-top: 15px;
+        }
+        &__item:first-child{
+        font-weight: 600;
+        font-size: $fs20;
+        }
+        &__item{
+            font-weight: 300;
+            
+        }
+    }
+}

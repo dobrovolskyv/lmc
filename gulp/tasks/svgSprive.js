@@ -5,7 +5,7 @@ export const svgSprive = () => {
     app.plugins
       .plumber(
         app.plugins.notify.onError({
-          title: "HTML",
+          title: "SVG",
           message: "Error: <%= error.message %>",
         })
       )
