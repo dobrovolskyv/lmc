@@ -1,0 +1,47 @@
+.header__stock-page{
+    &__contentbox{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left{
+        max-width: 843px;
+    }
+    &__right{
+        width: 309px;
+        height: 280px;
+        border: 1px solid $gold;
+        border-radius: 4px;
+        text-align: center;
+        padding: 70px 30px;
+        &-sale{
+            text-align: right;
+            color: $gold;
+        }
+        &-text{
+            font-family: 'Oranienbaum';
+            font-weight: 400;
+            font-size: 64px;
+            line-height: 74px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            color: $secondaryRed;
+            margin-bottom: 40px;
+        }
+    }
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 180px 190px 0px 180px;
+        
+    }
+    &__link{
+        border: 1px solid $secondaryRed;
+        border-radius: 25px;
+        padding: 10px 20px;
+        color: $secondaryRed;
+    }
+    &__bot{
+        margin-top: 0px;
+    }
+}

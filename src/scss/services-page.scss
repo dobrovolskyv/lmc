@@ -1,4 +1,4 @@
-.page-services{
+.body{
     background-color: $bg;
 }
     
@@ -71,9 +71,8 @@
         font-size: $fs20;
     }
     &__right{
-        width: 421px;
+        max-width: 421px;
         height: 821px;
-        background: #000;
     }
     &__contentbox:not(:first-child){
         margin-top: 60px;
@@ -91,4 +90,112 @@
             
         }
     }
+    &__brochure{
+        text-align: center;
+        margin-top: 60px;
+        background-color: $primary;
+        color: $bg;
+        padding: 40px 20px;
+        &-title{
+            font-size: 36px;
+            line-height: 40px;
+            font-weight: 600;
+        }
+        &-title-span{
+            color: #ECBD86;
+        }
+        
+        &-steps{
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            margin-top: 10px;
+        }
+        &-step{
+            max-width: 250px;
+            border: 1px solid $bg;
+            padding: 10px 0;
+        }
+        &-text{
+            font-weight: 500;
+            font-size: $fs20;
+        }
+        &-subtext{
+        font-size: $fs14;
+        }
+        &-btn{
+            padding: 0px 30px;
+            width: 180px;
+            height: 40px;
+            background: $secondaryRed;
+            border: none;
+            border-radius: 4px;
+            font-family: 'Fira Sans';
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: $bg;
+        }
+    }
+    &__right{
+        &-list{
+        padding: 40px 30px;
+        background-color: $primary;
+        color: $bg;
+    }
+    &-item{
+        margin-top: 10px;
+        font-size: $fs16;
+        text-decoration: underline;
+        &-first{
+            margin-bottom: 20px;
+            font-weight: 600;
+            font-size: $fs20;
+            line-height: 140%;
+            text-decoration: none;
+        }
+    }
+    &-contentbox{
+        margin-top: 16px;
+        padding: 20px 34px;
+        border: 1px solid $gold;
+        border-radius:4px;   
+        text-align: center;
+ }
+    &-text{  
+        font-size: $fs16;
+        color: $secondaryRed;
+        margin-bottom: 28px;
+    }
+}
+    
+}
+
+//
+//
+//SIMILAR
+//
+//
+
+
+.similar{
+    &__procedures{
+        &__subtext{
+            font-size: $fs16;
+        line-height: 120%;
+        }
+      &__contentbox{
+        height: 257px;
+        div{
+           flex-direction: column; 
+           justify-content: space-between;
+           margin-left: 40px;
+           margin-right: 100px;
+        }
+        
+    }  
+    }
+    
 }

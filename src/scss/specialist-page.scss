@@ -1,0 +1,76 @@
+.body {
+    background-color: $bg;
+}
+
+.header{
+    &__skills{
+        margin-top: 140px;
+        margin-left: 10%;
+        &__list{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            
+        }
+        &__item{
+            display: flex;
+            margin-top: 16px;
+            font-size: $fs20;
+            max-width: 550px;
+            &::before{
+                content: '-';
+                color: $secondaryRed;
+                margin-right: 10px;
+            }
+        }
+    }
+    &__specialist-page {
+    &__title {
+        font-family: 'Oranienbaum';
+        font-weight: 400;
+        font-size: 58px;
+        line-height: 67px;
+    }
+
+    &__contentbox {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__raiting{
+        display: flex;
+        margin-top: 12px;
+    }
+    &__reviews{
+        font-size: $fs20;
+        text-decoration: underline;
+        margin-left: 22px;
+    }
+    &__list{
+        margin-top: 116px;
+    }
+    &__item{
+        font-size: $fs20;
+        margin-top: 6px;
+        &-span{
+
+        font-weight: 600;
+        }
+    }
+    &__call{
+        margin-top: 180px;
+    }
+}
+}
+
+
+.similar__specialist-page3{
+    margin-top: 140px;
+    &__subtitle{
+        font-size: $fs20;
+    }
+}
+.specialist-page__questions__brochure{
+    text-align: center;
+    &-steps{
+    justify-content:space-around;
+}
+}

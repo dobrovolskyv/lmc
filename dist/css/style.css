@@ -838,7 +838,7 @@
   z-index: 0;
 }
 
-.page-services {
+.body {
   background-color: #FFF9EF;
 }
 
@@ -906,9 +906,8 @@
   font-size: 20px;
 }
 .questions__right {
-  width: 421px;
+  max-width: 421px;
   height: 821px;
-  background: #000;
 }
 .questions__contentbox:not(:first-child) {
   margin-top: 60px;
@@ -922,6 +921,212 @@
 }
 .questions__contentbox__item {
   font-weight: 300;
+}
+.questions__brochure {
+  text-align: center;
+  margin-top: 60px;
+  background-color: #093A67;
+  color: #FFF9EF;
+  padding: 40px 20px;
+}
+.questions__brochure-title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 600;
+}
+.questions__brochure-title-span {
+  color: #ECBD86;
+}
+.questions__brochure-steps {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 10px;
+}
+.questions__brochure-step {
+  max-width: 250px;
+  border: 1px solid #FFF9EF;
+  padding: 10px 0;
+}
+.questions__brochure-text {
+  font-weight: 500;
+  font-size: 20px;
+}
+.questions__brochure-subtext {
+  font-size: 14px;
+}
+.questions__brochure-btn {
+  padding: 0px 30px;
+  width: 180px;
+  height: 40px;
+  background: #972A29;
+  border: none;
+  border-radius: 4px;
+  font-family: "Fira Sans";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFF9EF;
+}
+.questions__right-list {
+  padding: 40px 30px;
+  background-color: #093A67;
+  color: #FFF9EF;
+}
+.questions__right-item {
+  margin-top: 10px;
+  font-size: 16px;
+  text-decoration: underline;
+}
+.questions__right-item-first {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  text-decoration: none;
+}
+.questions__right-contentbox {
+  margin-top: 16px;
+  padding: 20px 34px;
+  border: 1px solid #AE8452;
+  border-radius: 4px;
+  text-align: center;
+}
+.questions__right-text {
+  font-size: 16px;
+  color: #972A29;
+  margin-bottom: 28px;
+}
+
+.similar__procedures__subtext {
+  font-size: 16px;
+  line-height: 120%;
+}
+.similar__procedures__contentbox {
+  height: 257px;
+}
+.similar__procedures__contentbox div {
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 100px;
+}
+
+.body {
+  background-color: #FFF9EF;
+}
+
+.header__skills {
+  margin-top: 140px;
+  margin-left: 10%;
+}
+.header__skills__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.header__skills__item {
+  display: flex;
+  margin-top: 16px;
+  font-size: 20px;
+  max-width: 550px;
+}
+.header__skills__item::before {
+  content: "-";
+  color: #972A29;
+  margin-right: 10px;
+}
+.header__specialist-page__title {
+  font-family: "Oranienbaum";
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 67px;
+}
+.header__specialist-page__contentbox {
+  display: flex;
+  justify-content: space-between;
+}
+.header__specialist-page__raiting {
+  display: flex;
+  margin-top: 12px;
+}
+.header__specialist-page__reviews {
+  font-size: 20px;
+  text-decoration: underline;
+  margin-left: 22px;
+}
+.header__specialist-page__list {
+  margin-top: 116px;
+}
+.header__specialist-page__item {
+  font-size: 20px;
+  margin-top: 6px;
+}
+.header__specialist-page__item-span {
+  font-weight: 600;
+}
+.header__specialist-page__call {
+  margin-top: 180px;
+}
+
+.similar__specialist-page3 {
+  margin-top: 140px;
+}
+.similar__specialist-page3__subtitle {
+  font-size: 20px;
+}
+
+.specialist-page__questions__brochure {
+  text-align: center;
+}
+.specialist-page__questions__brochure-steps {
+  justify-content: space-around;
+}
+
+.header__stock-page__contentbox {
+  display: flex;
+  justify-content: space-between;
+}
+.header__stock-page__left {
+  max-width: 843px;
+}
+.header__stock-page__right {
+  width: 309px;
+  height: 280px;
+  border: 1px solid #AE8452;
+  border-radius: 4px;
+  text-align: center;
+  padding: 70px 30px;
+}
+.header__stock-page__right-sale {
+  text-align: right;
+  color: #AE8452;
+}
+.header__stock-page__right-text {
+  font-family: "Oranienbaum";
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 74px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #972A29;
+  margin-bottom: 40px;
+}
+.header__stock-page__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 180px 190px 0px 180px;
+}
+.header__stock-page__link {
+  border: 1px solid #972A29;
+  border-radius: 25px;
+  padding: 10px 20px;
+  color: #972A29;
+}
+.header__stock-page__bot {
+  margin-top: 0px;
 }
 
 *,
@@ -939,6 +1144,11 @@ ul, li {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
 }
 
 body {

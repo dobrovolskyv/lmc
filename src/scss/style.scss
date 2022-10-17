@@ -2,6 +2,8 @@
 @import './header_prototype';
 @import './main_page';
 @import './services-page.scss';
+@import './specialist-page';
+@import './stock-page';
 
 
 *,
@@ -17,6 +19,10 @@ ul,li{
 a{
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
 }
 
 
