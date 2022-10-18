@@ -198,7 +198,7 @@
 .services__content-card {
   border: 1px solid #AE8452;
   border-radius: 4px;
-  width: 628px;
+  max-width: 628px;
   margin-right: 25px;
   margin-top: 23px;
 }
@@ -1129,6 +1129,33 @@
   margin-top: 0px;
 }
 
+.skills__page4__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.skills__page4__right {
+  padding: 50px 40px;
+  text-align: center;
+  width: 421px;
+  height: 336px;
+  border: 1px solid #AE8452;
+}
+.skills__page4__right-title {
+  font-size: 50px;
+  line-height: 80%;
+}
+.skills__page4__right-item {
+  margin-top: 10px;
+}
+.skills__page4__right-text {
+  font-size: 16px;
+  line-height: 120%;
+}
+
+.our-services-page7__wrapper {
+  display: flex;
+}
+
 *,
 *::before,
 *::after {
@@ -1232,4 +1259,10 @@ h2 {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #FFF9EF;
+}
+
+.menu__services {
+  width: 300px;
+  height: 600px;
+  background-color: #093A67;
 }

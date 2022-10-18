@@ -4,6 +4,8 @@
 @import './services-page.scss';
 @import './specialist-page';
 @import './stock-page';
+@import './contacts-page.scss';
+@import './our_services.scss';
 
 
 *,
@@ -107,4 +109,11 @@ color: $gold;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: $bg;
+}
+
+.menu__services{
+    width: 300px;
+    height: 600px;
+    background-color: $primary;
+
 }
