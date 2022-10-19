@@ -1,5 +1,19 @@
 .our-services-page7{
+    &__subtitle{
+        max-width: 761px;
+    }
     &__wrapper{
         display: flex;
+        margin-top: 46px;
+    }
+    &__contentbox{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    &__content-card:nth-child(1){
+        grid-column: span 2;
+        max-width: 1000px;
+        margin-top: 0;
     }
 }
