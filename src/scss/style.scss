@@ -34,7 +34,7 @@ font-family: 'Fira Sans', 'Oranienbaum', serif;
 color: $primary;
 font-style: normal;
 font-weight: 300;
-font-size: 20px;
+font-size: $fs20;
 line-height: 140%;
 background-color: $bg;
 
@@ -43,6 +43,7 @@ background-color: $bg;
 .container{
     max-width: 1320px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 h1{
@@ -125,9 +126,7 @@ color: $gold;
     padding: 14px;
     color: $bg;
     background-color: $primary;
-    &__list{
     
-    }
     &__item{
         display: flex;
         justify-content: space-between;

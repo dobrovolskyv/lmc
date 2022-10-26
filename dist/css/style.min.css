@@ -170,7 +170,7 @@
 }
 
 .services {
-  margin-top: 100px;
+  padding-top: 200px;
 }
 .services__top {
   display: flex;
@@ -179,18 +179,13 @@
 .services__subtitle {
   max-width: 861px;
   font-family: "Fira Sans";
-  font-style: normal;
-  font-weight: 300;
   font-size: 20px;
   line-height: 140%;
 }
 .services__content-watch a {
   margin-right: 15px;
   font-family: "Fira Sans";
-  font-style: normal;
-  font-weight: 300;
   font-size: 20px;
-  line-height: 140%;
   text-align: right;
   text-decoration-line: underline;
   color: #972A29;
@@ -198,9 +193,11 @@
 .services__content-card {
   border: 1px solid #AE8452;
   border-radius: 4px;
-  max-width: 628px;
+  width: 628px;
   margin-right: 25px;
   margin-top: 23px;
+  display: flex;
+  flex-direction: column;
 }
 .services__contentbox-top {
   display: flex;
@@ -212,6 +209,7 @@
 }
 
 .content-card__title {
+  padding: 20px 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -236,6 +234,8 @@
 }
 .content-card__description {
   display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
 }
 .content-card__description ul {
   margin-top: 26px;
@@ -270,12 +270,11 @@
   align-items: center;
   justify-content: end;
   margin-bottom: 22px;
+  margin-right: 40px;
 }
 .content-card__more p {
   color: #972A29;
-  font-family: Fira Sans;
   font-size: 20px;
-  font-weight: 300;
   line-height: 28px;
   letter-spacing: 0em;
   margin-right: 14px;
@@ -352,6 +351,7 @@
 
 .specialist {
   margin-top: 154px;
+  position: relative;
 }
 .specialist__subtitle {
   margin-top: 12px;
@@ -413,9 +413,15 @@
   margin-top: 140px;
 }
 .offer__bot {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 57px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 56px;
+}
+.offer__bot-hidden {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 22px;
+  display: none;
 }
 .offer__card {
   width: 309px;
@@ -545,7 +551,7 @@
   margin-top: 140px;
   font-family: "Fira Sans";
 }
-.articles__bot {
+.articles__bot-visiable {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -836,6 +842,17 @@
   position: absolute;
   bottom: 20%;
   z-index: 0;
+}
+
+.arrow__prev {
+  transform: rotate(-180deg);
+}
+
+.specialist__arrow {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  z-index: 100;
 }
 
 .body {
@@ -1169,6 +1186,12 @@
   margin-top: 0;
 }
 
+.articles__bot-hidden {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  display: none;
+}
+
 *,
 *::before,
 *::after {
@@ -1204,6 +1227,7 @@ body {
 .container {
   max-width: 1320px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 h1 {

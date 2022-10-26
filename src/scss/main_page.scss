@@ -39,6 +39,7 @@
         border-radius: 30px;
         padding: 0 30px;
     }
+   
 
     &__input {
         border-radius: 30px;
@@ -69,7 +70,6 @@
 
             &-descr {
                 margin-left: 16px;
-
                 h4 {
                     font-family: 'Fira Sans';
                     font-style: normal;
@@ -200,7 +200,7 @@
 //
 
 .services {
-    margin-top: 100px;
+    padding-top: 200px;
 
     &__top {
         display: flex;
@@ -210,9 +210,7 @@
     &__subtitle {
         max-width: 861px;
         font-family: 'Fira Sans';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 20px;
+        font-size: $fs20;
         line-height: 140%;
     }
 
@@ -220,10 +218,7 @@
         a {
             margin-right: 15px;
             font-family: 'Fira Sans';
-            font-style: normal;
-            font-weight: 300;
-            font-size: 20px;
-            line-height: 140%;
+            font-size: $fs20;
             text-align: right;
             text-decoration-line: underline;
             color: $secondaryRed;
@@ -234,9 +229,13 @@
     &__content-card {
         border: 1px solid #AE8452;
         border-radius: 4px;
-        max-width: 628px;
+        width: 628px;
         margin-right: 25px;
         margin-top: 23px;
+        display: flex;
+        flex-direction: column;
+        
+
     }
     &__contentbox-top{
         display: flex;
@@ -250,12 +249,11 @@
 
 .content-card {
     &__title {
+        padding: 20px 40px;
         display: flex;
         align-items: center;
         justify-content: center;
         margin-top: 26px;
-       
-
         p {
             font-family: 'Oranienbaum';
             font-style: normal;
@@ -280,6 +278,8 @@
 
     &__description {
         display: flex;
+        justify-content: space-around;
+        flex-grow: 1;
         ul {
             margin-top: 26px;
             display: grid;
@@ -315,17 +315,14 @@
         display: flex;
         align-items: center;
         justify-content: end;
-        
         margin-bottom: 22px;
+        margin-right: 40px;
         p{
         color: $secondaryRed;
-        font-family: Fira Sans;
-        font-size: 20px;
-        font-weight: 300;
+        font-size: $fs20;
         line-height: 28px;
         letter-spacing: 0em;
         margin-right: 14px;
-        
         }
     }
 }
@@ -422,6 +419,7 @@
 
 .specialist{
     margin-top: 154px;
+    position: relative;
     &__subtitle{
         margin-top: 12px;
     }
@@ -495,10 +493,15 @@
 .offer{
     margin-top: $marginTop;
     &__bot{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 57px;
-        
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 56px;
+        &-hidden{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin-top: 22px;
+            display: none;
+        }
     }
     &__card{
         width: 309px;
@@ -651,7 +654,7 @@
 .articles{
     margin-top: $marginTop;
     font-family: 'Fira Sans';
-    &__bot{
+    &__bot-visiable{
         display: grid;
         grid-template-columns: repeat(4,1fr);
     }
@@ -986,3 +989,13 @@
     }
 }
 
+.arrow__prev{
+    transform: rotate(-180deg);
+   
+}
+.specialist__arrow{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    z-index: 100;
+}
