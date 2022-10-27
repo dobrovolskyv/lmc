@@ -41,6 +41,9 @@ line-height: 140%;
 background-color: $bg;
 margin: 0 10px;
 }
+header{
+    padding-top: 20px;
+}
 
 .container{
     max-width: 1320px;
@@ -113,6 +116,10 @@ color: $gold;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: $bg;
+}
+.btn:hover{
+    background-color: $btnHover;
+    transition: all 0.4s ease-in;
 }
 
 //

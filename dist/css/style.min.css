@@ -3,10 +3,10 @@
 }
 
 .header {
-  background-image: url("../../img/bg_header.jpg");
-  width: 100vw;
-  height: 100vh;
-  background-position: cetner center;
+  width: 1300px;
+  position: absolute;
+  top: 20px;
+  left: 50px;
 }
 .header__prototype {
   padding-top: 34px;
@@ -42,6 +42,9 @@
   height: 40px;
   background-color: #fff;
   padding: 10px 15px;
+  background: transparent;
+  font-weight: 600;
+  color: #093A67;
 }
 .header__input:focus {
   background: #EBD1B2;
@@ -118,6 +121,14 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 140%;
+}
+
+.main-page__header {
+  background-image: url("../../img/bg_header.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-position: cetner center;
+  padding-top: 200px;
 }
 
 .title__offer {
@@ -1729,6 +1740,10 @@ body {
   margin: 0 10px;
 }
 
+header {
+  padding-top: 20px;
+}
+
 .container {
   max-width: 1320px;
   margin: 0 auto;
@@ -1801,6 +1816,11 @@ h2 {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #FFF9EF;
+}
+
+.btn:hover {
+  background-color: #5B1919;
+  transition: all 0.4s ease-in;
 }
 
 .menu__services {

@@ -1,13 +1,14 @@
 .header {
+    width: 1300px;
+    position: absolute;
+    top: 20px;
+    left: 50px;
     &__prototype {
         padding-top: 34px;
 
     }
 
-    background-image: url('../../img/bg_header.jpg');
-    width: 100vw;
-    height: 100vh;
-    background-position: cetner center;
+   
 
     &__top {
         display: flex;
@@ -47,7 +48,9 @@
         height: 40px;
         background-color: $white;
         padding: 10px 15px;
-
+        background: transparent;
+        font-weight: 600;
+        color: $primary;
         &:focus {
             background: $secondary;
         }
@@ -135,6 +138,14 @@
         font-size: 16px;
         line-height: 140%;
     }
+}
+
+.main-page__header{
+    background-image: url('../../img/bg_header.jpg');
+    width: 100vw;
+    height: 100vh;
+    background-position: cetner center;
+    padding-top: 200px;
 }
 
 .title__offer {
