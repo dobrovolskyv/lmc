@@ -4,6 +4,7 @@
 @import './services-page.scss';
 @import './specialist-page';
 @import './stock-page';
+@import './about-page';
 @import './contacts-page.scss';
 @import './our_services.scss';
 @import './articles-page.scss';
@@ -37,7 +38,7 @@ font-weight: 300;
 font-size: $fs20;
 line-height: 140%;
 background-color: $bg;
-
+margin: 0 10px;
 }
 
 .container{
@@ -99,7 +100,7 @@ color: $gold;
 .btn{
     margin: 50px 44% 0px;
     padding: 0px 30px;
-    width: 180px;
+    width: 220px;
     height: 40px;
     background: $secondaryRed;
     border: none;

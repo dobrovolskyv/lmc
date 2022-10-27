@@ -112,9 +112,15 @@
             margin-top: 10px;
         }
         &-step{
+            position: relative;
             max-width: 250px;
             border: 1px solid $bg;
             padding: 10px 0;
+            &__number{
+                text-align-last: left;
+                margin-left: 10px;
+                font-size: $fs24;
+            }
         }
         &-text{
             font-weight: 500;
@@ -181,21 +187,92 @@
 
 
 .similar{
+    margin-top: 140px;
+    padding: 0 10px;
     &__procedures{
+        margin-top: 49px;
+        &__text{
+            font-family: 'Oranienbaum';
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 140%;
+        }
         &__subtext{
             font-size: $fs16;
-        line-height: 120%;
+            line-height: 120%;
         }
       &__contentbox{
-        height: 257px;
-        div{
-           flex-direction: column; 
-           justify-content: space-between;
-           margin-left: 40px;
-           margin-right: 100px;
+        margin-top: 16px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        border: 1px solid #AE8452;
+        border-radius: 4px;
+        padding: 30px 46px;
+        max-height: 257px;
+        &-middle{
+            flex-direction: column;
+            max-width: 640px;
+            text-align: left;
+            margin-left: 36px;
+        }
+        &-right{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
         
     }  
+    &__btn{
+        border: none;
+        color: #FFF9EF;
+  font-size: $fs14;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: #972A29;
+  width: 212px;
+  height: 44px;
+  border-radius: 4px;
+  padding: 13px 20px;
+  margin-top: 27px;
+    }
+    &__sale{
+        background: transparent;
+  color: #093A67;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  width: 212px;
+  height: 44px;
+  border-radius: 4px;
+  padding: 13px 30px;
+  border: 1px solid #093A67;
+  margin-top: 16px;
+    }
+    &__price{
+        font-family: 'Oranienbaum';
+font-weight: 400;
+font-size: $fs24;
+color: #972A29;
+
+    }
     }
     
+}
+
+//
+//
+//OFFER
+//
+//
+.offer{
+    &-services__bot-hidden{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        margin-top: 22px;
+    }
 }

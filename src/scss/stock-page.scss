@@ -1,4 +1,12 @@
 .header__stock-page{
+    &__title{
+        font-size: $fs42;
+    }
+    &__subtitle{
+        max-width: 758px;
+        font-size: $fs20;
+        margin-top: 10px;
+    }
     &__contentbox{
         display: flex;
         justify-content: space-between;
@@ -48,14 +56,52 @@
 
 //
 //
+//Что входит в акцию
+//
+//
+.similar__procedures__price-sale{
+    font-family: 'Oranienbaum';
+font-weight: 400;
+font-size: $fs16;
+text-decoration-line: line-through;
+color: #AE8452;
+}
+
+//
+//
 //SKILLS
 //
 //
 
 .skills__page4{
+    padding: 0 10px;
+    &__content-top{
+        margin-top: 165px;
+        padding-top: 10px;
+        &__title{
+            font-size: $fs42;
+        }
+        &__list{
+            margin-top: 16px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 10px;
+            
+        }
+        &__item{
+            display: flex;
+            max-width: 600px;
+            &::before{
+                content: '-';
+                color: $secondaryRed;
+                margin-right: 10px;
+            }
+        }
+    }
     &__wrapper{
-display: flex;
-justify-content: space-between;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 165px;
     }
     &__right{
         padding: 50px 40px;
@@ -64,16 +110,36 @@ justify-content: space-between;
             line-height: 80%;
         }
         text-align: center;
-        width: 421px;
-        height: 336px;
+        max-width: 421px;
         border:1px solid $gold;
-        
+        &-list{
+            margin-top: 40px;
+            max-width: 280px;
+
+        }
         &-item{
             margin-top: 10px;
         }
         &-text{
+
             font-size: $fs16;
             line-height: 120%;
         }
     }
+    .header__skills__item:last-child{
+        padding-bottom: 10px;
+    }
+}
+.header__skills__stock{
+    margin: 0 28px 0 0;
+    border: 1px solid $gold;
+    padding: 32px 34px;
+    .header__skills__item{
+        margin-right: 10px;
+        max-width: 360px;
+    }
+   
+}
+.questions__brochure__stock-page{
+    justify-content: space-around;
 }

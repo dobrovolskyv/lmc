@@ -74,3 +74,49 @@
     justify-content:space-around;
 }
 }
+
+//
+//
+//ABOUT DOCTOR
+//
+//
+.about-doctor{
+    margin-top: 165px;
+    padding: 0 10px;
+    &__contentbox{
+        padding: 18px 40px;
+        width: 100%;
+        border: 1px solid #AE8452;
+        border-radius: 4px;
+        margin-top: 36px;
+    }
+    &__question{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    &__title{
+        font-family: 'Oranienbaum';
+        font-weight: 400;
+        font-size: $fs42;
+        line-height: 100%;
+    }
+    &__answer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        max-height: 0;
+        overflow: hidden;
+       &-text{
+        margin-right: 40px;
+        margin-top: 16px;
+        &::before{
+            content: '- ';
+            color: $secondaryRed;
+        }
+       }
+    }
+}
+.about-doctor__contentbox.active .about-doctor__answer{
+    min-height: 100px;
+}
