@@ -1,5 +1,4 @@
 @import './variable';
-@import './header_prototype';
 @import './main_page';
 @import './services-page.scss';
 @import './specialist-page';
@@ -7,6 +6,8 @@
 @import './about-page';
 @import './contacts-page.scss';
 @import './our_services.scss';
+@import './services_chapter.scss';
+@import './specialist_chapter.scss';
 @import './articles-page.scss';
 
 
@@ -101,7 +102,7 @@ color: $gold;
     margin: 50px 44% 0px;
     padding: 0px 30px;
     width: 220px;
-    height: 40px;
+    height: 44px;
     background: $secondaryRed;
     border: none;
     border-radius: 4px;

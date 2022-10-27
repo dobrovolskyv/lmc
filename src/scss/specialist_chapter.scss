@@ -1,0 +1,97 @@
+.specialist-chapter{
+    margin: 0 10px;
+    &__wrapper{
+        margin-top: 40px;
+        display: flex;
+        
+    }
+    &__contentbox{
+        &-title{
+            font-family: 'Oranienbaum';
+            font-weight: 400;
+            font-size: $fs42;
+            line-height: 100%;
+        }
+        &-top{
+            margin-top: 20px;
+            margin-bottom: 95px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 28px;
+        }
+        &-bot{
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 28px;
+        }
+    }
+    &__content{
+        width: 308px;
+        height: 395px;
+        background-image: url('../img/doctor.jpg');
+        background-size: contain;
+        overflow: hidden;
+        display: flex;
+        align-items: flex-end;
+       border: 1px solid $gold;
+       border-radius: 4px;
+        &-text{
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(255, 249, 239, 0.6);
+            width: 100%;
+            padding: 14px 20px;
+            transform: translateY(130px);
+           
+        }
+        &-undertitle{
+            font-size: $fs10;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        &-title{
+            font-size: $fs16;
+            font-weight: 600;
+        }
+        &-btn{
+            &-record{
+                margin: 15px 0;
+                padding: 0px 30px;
+                max-width: 268px;
+                height: 44px;
+                background: $secondaryRed;
+                border: none;
+                border-radius: 4px;
+                font-family: 'Fira Sans';
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                color: $bg;
+            }
+            &-more{
+                padding: 0px 30px;
+    max-width: 268px;
+    height: 44px;
+    background: transparent;
+    border: none;
+    border: 1px solid $primary;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $primary;
+            }
+        }
+    }
+
+}
+
+.specialist-chapter__content:hover .specialist-chapter__content-text{
+    transform: translateY(0px);
+    transition: all 0.8s ease-in;
+}
