@@ -54,7 +54,7 @@ header{
 }
 
 h1{
-font-family: Oranienbaum;
+font-family: 'Oranienbaum';
 font-size: 64px;
 font-weight: 400;
 line-height: 74px;
@@ -145,4 +145,10 @@ color: $gold;
         margin-top: 14px;
     }
     
+}
+
+.title-arrow__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

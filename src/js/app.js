@@ -4,32 +4,32 @@ flsFunctions.isWebp();
 
 // import Swiper, { Navigation, Pagination } from "swiper";
 document.addEventListener('DOMContentLoaded', (e)=>{
-  let isMobile = {
-    Android: function() {return navigator.userAgent.match(/Android/i);},
-    BlackBerry: function() {return navigator.userAgent.match(/BlackBerry/i);},
-    iOS: function() {return navigator.userAgent.match(/iPhone|iPad|iPod/i);},
-    Opera: function() {return navigator.userAgent.match(/Opera Mini/i);},
-    Windows: function() {return navigator.userAgent.match(/IEMobile/i);},
-    any: function() {return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());}
-  };
-      let body=document.querySelector('body');
-  if(isMobile.any()){
-      body.classList.add('touch');
-      let arrow=document.querySelectorAll('.arrow');
-        for(i=0; i<arrow.length; i++){
-        let thisLink=arrow[i].previousElementSibling;
-        let subMenu=arrow[i].nextElementSibling;
-        let thisArrow=arrow[i];
+  // let isMobile = {
+  //   Android: function() {return navigator.userAgent.match(/Android/i);},
+  //   BlackBerry: function() {return navigator.userAgent.match(/BlackBerry/i);},
+  //   iOS: function() {return navigator.userAgent.match(/iPhone|iPad|iPod/i);},
+  //   Opera: function() {return navigator.userAgent.match(/Opera Mini/i);},
+  //   Windows: function() {return navigator.userAgent.match(/IEMobile/i);},
+  //   any: function() {return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());}
+  // };
+  //     let body=document.querySelector('body');
+  //     if(isMobile.any()){
+  //     body.classList.add('touch');
+  //     let arrow=document.querySelectorAll('.arrow');
+  //       for(i=0; i<arrow.length; i++){
+  //       let thisLink=arrow[i].previousElementSibling;
+  //       let subMenu=arrow[i].nextElementSibling;
+  //       let thisArrow=arrow[i];
   
-        thisLink.classList.add('parent');
-      arrow[i].addEventListener('click', function(){
-        subMenu.classList.toggle('open');
-        thisArrow.classList.toggle('active');
-      });
-    }
-  }else{
-    body.classList.add('mouse');
-  }
+  //       thisLink.classList.add('parent');
+  //     arrow[i].addEventListener('click', function(){
+  //       subMenu.classList.toggle('open');
+  //       thisArrow.classList.toggle('active');
+  //     });
+  //   }
+  // }else{
+  //   body.classList.add('mouse');
+  // }
 const headerSlides = new Swiper('.header__slides__swiper', {
   // Optional parameters
   direction: 'horizontal',
@@ -66,6 +66,20 @@ const swiper = new Swiper('.specialist__sliders__swiper', {
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+  
+   
+    // when window width is >= 640px
+    600: {
+      slidesPerView: 2.8,
+      spaceBetween: 20,
+    }
   },
 
   // Navigation arrows
@@ -122,6 +136,20 @@ const reviewsSwiper = new Swiper('.reviews__sliders__swiper', {
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+  
+   
+    // when window width is >= 640px
+    600: {
+      slidesPerView: 1,
+      spaceBetween: 40,
+    }
   },
 
   // Navigation arrows

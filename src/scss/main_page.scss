@@ -4,13 +4,6 @@
     top: 20px;
     left: 50px;
 
-    &__prototype {
-        padding-top: 34px;
-
-    }
-
-
-
     &__top {
         display: flex;
         justify-content: space-between;
@@ -52,11 +45,21 @@
         background: transparent;
         font-weight: 600;
         color: $primary;
-
+        position: relative;
         &:focus {
             background: $secondary;
         }
+        &:focus::placeholder{
+            color: $bg;
+        }
+        &-search{
+            position: absolute;
+            top: 48px;
+            right: 45px;
+            fill: $bg;
+        }
     }
+
 
     &__bot {
         display: flex;
@@ -150,6 +153,12 @@
     background-position: cetner center;
     padding-top: 200px;
 }
+.header-main-page__bot{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .title__offer {
     max-width: 928px;
@@ -167,7 +176,7 @@
     padding-top: 200px;
 
     &__top {
-        display: flex;
+        
         justify-content: space-between;
     }
 
@@ -179,6 +188,8 @@
     }
 
     &__content-watch {
+        display: flex;
+        align-items: center;
         a {
             margin-right: 15px;
             font-family: 'Fira Sans';
@@ -1121,16 +1132,14 @@
     &__menu {
         &__list {
             display: flex;
+            justify-content: space-between;
             padding-top: 20px;
-
             li {
-                margin: 0 30px 0 0;
+                margin-left: 30px;
                 position: relative;
-
-            }
+             }
 
             a {
-
                 display: inline-block;
                 padding: 10px 10px;
 
@@ -1215,15 +1224,15 @@
     }
 }
 
-body.mouse .header__menu__list>li:hover .header__submenu__list {
+.header__menu__list>li:hover .header__submenu__list {
     display: block;
 }
 
-body.mouse .header__submenu__list>li:hover .header__sub-submenu__list {
+.header__submenu__list>li:hover .header__sub-submenu__list {
     display: block;
 }
 
-body.mouse .header__sub-submenu__list>li:hover .header__sub-sub-submenu__list {
+ .header__sub-submenu__list>li:hover .header__sub-sub-submenu__list {
     display: block;
 }
 
@@ -1242,6 +1251,9 @@ body.mouse .header__sub-submenu__list>li:hover .header__sub-sub-submenu__list {
 
 .arrow__right {
     transform: rotate(-90deg);
+}
+.header__slides__swiper{
+    overflow: hidden;
 }
 
 // .arrow:active{
@@ -1263,3 +1275,294 @@ body.mouse .header__sub-submenu__list>li:hover .header__sub-sub-submenu__list {
 // body.touch .header__sub-sub-submenu__list.open{
 //     display: block;
 // }
+
+//
+//
+//адаптив под планшет
+//
+//
+@media (max-width: 640px) {
+    //
+    //
+    //main page
+    //
+    //
+    .title{
+        font-size: $fs36;
+    }
+    .subtitle{
+        font-size: $fs14;
+        width: 100%;
+    }
+    body{
+        font-size: $fs16;
+        line-height: 100%;
+    }
+    .services__content-watch{
+        a{
+            font-size: $fs14;
+        }
+    }
+    .link_for_me{
+        display: none;
+    }
+    .container{
+        width: 592px
+    }
+    .header{
+        width: 592px;
+        top: 28px;
+        left: 20px;
+        padding: 0 5px;
+        
+        &__img__logo{
+            width: 49px;
+            height: 19px;
+            margin-right: 19px;
+            &-text{
+                width: 91px;
+                height: 21px;
+            }
+        }
+        &__top{
+            align-items: center;
+            &__list{
+                display: none;
+            }
+            &__tel{
+                font-size: $fs18;
+                font-size: 14px;
+                line-height: 17px;
+            }
+            &-tablet{
+                &__list{
+                    display: flex;
+                    align-items: center;
+                }
+                &__item{
+                    display: flex;
+                    align-items: center;
+                    margin-right: 12px;
+                    img{
+                        width: 19px;
+                        height: 19px;
+                        margin-right: 8px;
+                    }
+                    a{
+                        font-size: $fs14;
+                        color: $secondaryRed;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        &__input{
+            display: none;
+            &-search{
+                fill: $primary;
+            }
+        }
+        &__top__input{
+            display: none;
+        }
+        &__menu{
+            &__list{
+                padding-top: 0;
+            }
+            &__item{
+                width: 36px;
+            }
+            a{
+                font-size: $fs16;
+                width: 56px;
+            }
+        }
+        
+        &__bot{
+            max-width: 600px;
+            margin-top: 20px;
+            &-call{
+                display: none;
+            }
+        }
+    }
+    .title__offer{
+        font-size: $fs32;
+        line-height: 37px;
+        letter-spacing: 0.1em;
+    }
+    .header__offer-subtitle{
+        width: 525px;
+    }
+    .header__call-link,
+    .header__call-btn{
+        width: 178px;
+        height: 38px;
+        padding: 4px 18px;
+    }
+    .header-main-page__bot{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        
+    }
+    .header__bot-contentbox{
+        max-width: 286px;
+        max-height: 76px;
+        padding: 15px 28px;
+        border-radius:4px;
+    }
+    //
+    //
+    //Наши услуги
+    //
+    //
+    //
+    //
+
+    .services{
+        &__subtitle{
+            width: 100%
+        }
+    }
+    //О клинике
+    //
+    //
+    //
+    //
+    .about{
+        &__citate__text{
+            font-size: $fs18;
+        }
+        &__right__img {
+            width: 210px;
+            height: 252px;
+        }
+    }
+    //Наши специалисты
+    //
+    //
+    //
+    //
+    .spacialist{
+        .container{
+            overflow: hidden;
+        }
+    }
+    .specialist__sliders-box .swiper-slide{
+        width: 150px;
+        height: 107px;
+    }
+   
+    //ВЫГОДНЫЕ ПРЕДЛОЖЕНИЯ
+    //
+    //
+    .offer{
+        &__bot{
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+            &-hidden{
+                grid-template-columns: repeat(2,1fr);
+                gap: 20px;
+            }
+        }
+        &__card{
+            max-width: 286px;
+            max-height: 371px;
+            border-radius: 4px;
+            &__text{
+                margin-top: 12.8em;
+            }
+        }
+    }
+     //
+    //
+    //Взгляните на клинику
+    //
+    //
+    .clinic{
+        &__wrapper{
+            display: block;
+            .specialist__subtitle {
+                width: 80%;
+            }
+        }
+        &__advantage{
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+        &__right-swiper{
+            margin-top: 20px;
+            .swiper-slide{
+                
+                
+                img{
+                    width: 580px;
+                    height: 365px;
+                    border: 1px solid $gold;
+                    border-radius: 4px;
+                    
+                }
+            }
+        }
+    }
+    //
+    //
+    //Отзывы пациентов
+    //
+    //
+    .reviews{
+        .reviews__sliders_swiper .swiper{
+            margin-top: 40px;
+        }
+    }
+     //
+    //
+    //Статьи
+    //
+    //
+    .articles{
+        &__bot-visiable{
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+        }
+        &__bot-hidden{
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+        }
+    }
+     //
+    //
+    //Контакты
+    //
+    //
+    .contacts{
+        
+        &__bot{
+            display: block;
+            border: 2px solid black;
+            &__info{
+                width: 100%;
+            }
+            &__img{
+                width: 592px;
+                height: 266px;
+            }
+        }
+    }
+      //
+    //
+    //footer
+    //
+    //
+    .record{
+        &__bot{
+            display: block;
+        }
+        &__form{
+            .form__input{
+                width: 592px;
+            }
+        }
+    }
+}
