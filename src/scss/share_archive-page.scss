@@ -1,0 +1,69 @@
+.share-archive{
+    margin-top: 103px;
+    margin: 0 10px;
+    &__offer__bot{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 56px;
+        gap: 28px;
+    }
+    &__offer__card{
+        width: 309px;
+        height: 395px;
+        background-image: url('../../img/offer/offer3.jpg');
+        background-size: cover;
+        background-position: center center;
+        
+       
+        &__stock{
+            font-family: 'Fira Sans';
+            display: inline-block;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 120%;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            background: $secondaryRed;
+            color: #FFF9EF;
+            padding: 4px 16px;
+            margin-left: 20px;
+            margin-top: 20px;
+            border-radius: 2px;
+        }
+        &__title{
+            font-family: 'Fira Sans';
+            font-weight: 700;
+            font-size: $fs14;
+            line-height: 17px;
+
+        }
+        &__subtitle{
+            font-family: 'Fira Sans';
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 120%;
+        }
+        &__text{
+            margin-left: $fs20;
+            margin-top: 14.3em;
+        }
+    }
+        &__btn {
+            
+                margin: 50px 44% 0px;
+                padding: 0px 30px;
+                width: 180px;
+                height: 40px;
+                background: $secondaryRed;
+                border: none;
+                border-radius: 4px;
+                font-family: 'Fira Sans';
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                color: $bg;
+            
+        }
+        }
