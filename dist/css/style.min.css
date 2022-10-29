@@ -62,9 +62,9 @@
 .header__bot {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   max-width: 1320px;
   height: 115px;
-  margin-top: 56px;
 }
 .header__bot-contentbox {
   padding: 28px 27px;
@@ -92,6 +92,9 @@
   font-weight: 300;
   font-size: 12px;
   line-height: 120%;
+}
+.header__call {
+  display: flex;
 }
 .header__call-offer {
   margin-top: 32px;
@@ -900,8 +903,10 @@
   padding-top: 20px;
 }
 .header__menu__list li {
-  margin-left: 30px;
   position: relative;
+}
+.header__menu__list li:not(:first-child) {
+  margin-left: 30px;
 }
 .header__menu__list a {
   display: inline-block;
@@ -1006,7 +1011,7 @@
   body {
     font-size: 16px;
     line-height: 100%;
-    margin: 0 10px;
+    padding: 0 10px;
   }
 
   .services__content-watch a {
@@ -1222,11 +1227,32 @@
     width: 592px;
   }
 
+  .footer {
+    padding: 0 5px;
+  }
+  .footer::before {
+    bottom: 31%;
+    width: 99%;
+  }
   .footer__main-top {
-    margin-top: 30px;
+    margin-top: 50px;
+  }
+  .footer__main-item {
+    font-size: 14px;
+    max-width: 210px;
+  }
+  .footer__main-item img {
+    width: 40px;
+    height: 40px;
   }
   .footer__top {
     display: block;
+  }
+  .footer__item__text {
+    font-size: 16px;
+  }
+  .footer__link {
+    font-size: 14px;
   }
 }
 .body {
@@ -1341,7 +1367,7 @@
   padding: 10px 0;
 }
 .questions__brochure-step__number {
-  text-align-last: left;
+  text-align: left;
   margin-left: 10px;
   font-size: 24px;
 }
@@ -1609,6 +1635,10 @@
   background-color: #FFF9EF;
 }
 
+.specialist-page__header {
+  margin-top: 300px;
+}
+
 .header__skills {
   margin-top: 140px;
   margin-left: 10%;
@@ -1616,6 +1646,8 @@
 .header__skills__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center;
 }
 .header__skills__item {
   display: flex;
@@ -1716,6 +1748,47 @@
   min-height: 100px;
 }
 
+@media (max-width: 640px) {
+  .specialist-page__header {
+    margin-top: 150px;
+  }
+
+  .header__specialist-page__title {
+    font-size: 36px;
+  }
+  .header__skills__item {
+    font-size: 18px;
+    line-height: 120%;
+  }
+
+  .about-doctor__title {
+    font-size: 32px;
+  }
+  .about-doctor__contentbox {
+    padding: 6px 40px;
+    margin-top: 20px;
+  }
+  .about-doctor__question img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .reviews__sliders__swiper {
+    margin-top: 20px;
+  }
+
+  .specialist-page__questions__brochure {
+    padding: 20px 10px;
+  }
+  .specialist-page__questions__brochure .questions__brochure-img {
+    width: 60px;
+    height: 60px;
+  }
+  .specialist-page__questions__brochure .questions__brochure-btn {
+    margin-top: 20px;
+    width: 172px;
+  }
+}
 .header__stock-page__title {
   font-size: 42px;
 }
@@ -1846,6 +1919,29 @@
   justify-content: space-around;
 }
 
+@media (max-width: 640px) {
+  .similar {
+    margin-top: 200px;
+  }
+
+  .skills__page4__wrapper {
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .skills__page4__wrapper .header__skills__stock {
+    margin-right: 0;
+    max-width: 100%;
+  }
+  .skills__page4__wrapper .skills__page4__right {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  .skills__page4__wrapper .skills__page4__right-list {
+    max-width: 100%;
+  }
+}
 .header__about-page__wrapper {
   display: flex;
   justify-content: space-between;

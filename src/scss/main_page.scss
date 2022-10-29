@@ -67,9 +67,9 @@
     &__bot {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         max-width: 1320px;
         height: 115px;
-        margin-top: 56px;
 
         &-contentbox {
             padding: 28px 27px;
@@ -104,6 +104,8 @@
     }
 
     &__call {
+        display: flex;
+
         &-offer {
             margin-top: 32px;
         }
@@ -1142,8 +1144,11 @@
             justify-content: space-between;
             padding-top: 20px;
             li {
-                margin-left: 30px;
+                
                 position: relative;
+                &:not(:first-child){
+                    margin-left: 30px;
+                }
              }
 
             a {
@@ -1304,7 +1309,7 @@
     body{
         font-size: $fs16;
         line-height: 100%;
-        margin: 0 10px;
+        padding: 0 10px;
     }
     .services__content-watch{
         a{
@@ -1582,14 +1587,39 @@
             }
         }
     }
-    .footer{
-        
-        &__main-top{
-            margin-top: 30px;
+        .footer {
+            &::before{
+                bottom: 31%;
+                width: 99%;
+            }
+            padding: 0 5px;
+            &__main {
+                &-top {
+                    margin-top: 50px;
+    
+                }
+    
+                &-item {
+                    font-size: $fs14;
+                    max-width: 210px;
+                    img{
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+    
+            &__top {
+                display: block;
+            }
+    
+            &__item__text {
+                font-size: $fs16;
+            }
+    
+            &__link {
+                font-size: $fs14;
+            }
+    
         }
-        &__top{
-            display: block;
-        }
-        
-    }
 }

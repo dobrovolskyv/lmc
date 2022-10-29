@@ -143,3 +143,47 @@ color: #AE8452;
 .questions__brochure__stock-page{
     justify-content: space-around;
 }
+
+@media (max-width: 640px) {
+    .similar{
+        margin-top: 200px;
+    }
+    //
+    //
+    //skills page4
+    //
+    //
+.skills__page4{
+    &__wrapper{
+        margin-top: 100px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .header__skills__stock{
+            margin-right: 0;
+            max-width: 100%;
+        }
+        .skills__page4__right{
+            max-width: 100%;
+            margin-top: 20px;
+            &-list{
+                max-width: 100%;
+            }
+        }
+      
+
+        
+    }
+}
+    //
+    //
+    //
+    //
+    //
+
+    //
+    //
+    //
+    //
+    //
+}

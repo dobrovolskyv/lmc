@@ -1,7 +1,9 @@
 .body {
     background-color: $bg;
 }
-
+.specialist-page__header{
+    margin-top: 300px;
+}
 .header{
     &__skills{
         margin-top: 140px;
@@ -9,6 +11,8 @@
         &__list{
             display: grid;
             grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+            align-items: center;
             
         }
         &__item{
@@ -119,4 +123,82 @@
 }
 .about-doctor__contentbox.active .about-doctor__answer{
     min-height: 100px;
+}
+
+@media (max-width: 640px) {
+    .specialist-page__header{
+        margin-top: 150px;
+    }
+    .header{
+        &__specialist-page__title{
+            font-size: $fs36;
+        }
+        &__skills__item{
+            font-size: $fs18;
+            line-height: 120%;
+        }
+    }
+    //
+    //
+    //ABOUT DOCTOR
+    //
+    //
+    .about-doctor{
+        &__title{
+            font-size: $fs32;
+            
+        }
+        &__contentbox{
+            padding: 6px 40px;
+            margin-top: 20px;
+        }
+        &__question{
+            img{
+                width: 35px;
+                height: 35px;
+            }
+        }
+    }
+    //
+    //
+    //REVIEWS
+    //
+    //
+        .reviews__sliders__swiper{
+            margin-top: 20px;  
+        }
+    //
+    //
+    //BROCHURE
+    //
+    //
+    //
+    .specialist-page__questions__brochure{
+        padding: 20px 10px;
+        .questions__brochure{
+          &-img{
+            width: 60px;
+            height: 60px;
+            
+        }  
+        &-text{
+
+        }
+        &-btn{
+            margin-top: 20px;
+            width: 172px;
+        }
+        }
+    }
+    //
+    //
+    //
+    //
+
+    //
+    //
+    //
+    //
+    //
+    
 }
