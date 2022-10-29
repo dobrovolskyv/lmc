@@ -86,3 +86,10 @@
     border-bottom: 1px solid #FFF9EF;
     margin-top: 14px;
   }
+
+
+@media (max-width: 640px) {
+    .our-services-page7{
+        margin-top: $tabletMargin;
+    }
+}

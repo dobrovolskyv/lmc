@@ -1309,7 +1309,6 @@
     body{
         font-size: $fs16;
         line-height: 100%;
-        padding: 0 10px;
     }
     .services__content-watch{
         a{
@@ -1320,7 +1319,8 @@
         display: none;
     }
     .container{
-        max-width: 592px
+        max-width: 592px;
+        margin: 0 auto;
     }
    
     .header{
@@ -1582,9 +1582,11 @@
             margin-top: 10px;
         }
         &__form{
+            padding: 0px 5px;
             .form__input{
-                width: 592px;
+                width: 550px;
             }
+            
         }
     }
         .footer {

@@ -1,4 +1,5 @@
 .header__about-page{
+    margin-top: 300px;
     &__wrapper{
         display: flex;
         justify-content: space-between;
@@ -110,4 +111,113 @@
     color: $bg;
     margin-right: 28px;
     }
+}
+
+@media (max-width: 640px) {
+    
+    //
+    //
+    //HEADER
+    //
+    //
+    .header__about-page{
+        margin-top: 200px;
+        &__wrapper{
+            max-width: 580px;
+            flex-direction: column;
+            .about__left{
+                width: 100%;
+            }
+            .about__right{
+                order: -1;
+                &__img{
+                    
+                }
+            }
+            .about{
+                &__table{
+                    &__span{
+                        font-size: 70px;
+                    }
+                    &__td-secondary{
+                        font-size: 26px;
+                    }
+                    &__td{
+                        font-size: 16px;
+                        line-height: 130%;
+                    }
+                }
+            }
+            
+        }
+    }
+     //
+    //
+    //DIREECTION
+    //
+    //
+    .direction{
+        margin-top: 120px;
+        &__contentbox{
+            grid-template-columns: repeat(2,1fr);
+            &__img{
+                width: 70px;
+                height: 70px;
+            }
+            &__title{
+                margin-top: 14px;
+                font-weight: 600;
+                font-size: $fs20;
+            }
+            
+        }
+        &__content{
+            padding: 14px 20px 15px;
+        }
+    }
+     //
+    //
+    //CLINIC
+    //
+    //
+    .clinic{
+        .specialist__subtitle{
+            width: 100%;
+        }
+        &-history{
+            &__date{
+                font-size: 30px;
+            }
+            &__text{
+                font-size: $fs16;
+            }
+            .clinic-history__content:not(:first-child) {
+                margin-top: 32px;
+                }
+        }
+    }
+
+     //
+    //
+    //CONTACT
+    //
+    //
+    .contacts__license{
+        flex-direction: column;
+        &__container{
+            margin-top: 20xp;
+        }
+    }
+     //
+    //
+    //
+    //
+    //
+
+     //
+    //
+    //
+    //
+    //
+    
 }

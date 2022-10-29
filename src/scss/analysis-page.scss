@@ -1,0 +1,46 @@
+.analysis-page__header{
+    margin-top: 300px;
+}
+
+@media (max-width: 640px){
+    .analysis-page__header{
+        margin-top: $tabletMargin;
+        &__bot{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 10px;
+            .header__bot-contentbox-page2{
+                margin: 0;
+                max-height: 116px;
+                &:nth(3){
+                grid-column: span 2;
+                width: 400px;
+
+            }
+            }
+        }
+    }
+    .header__procedures{
+        &__contentbox{
+          padding: 20px 20px;  
+          .btn__header-page2{
+            width: 182px;
+                    height: 38px;
+                    padding: 4px 18px;
+                    font-size: $fs10;
+                    &:hover{
+                        background-color: $btnHover;
+                        transition: all .4s ease-in;
+                    }
+          }
+        }
+        &__text{
+            font-size: $fs18;
+        }
+        &__price{
+            font-size: $fs18;
+            margin-right: 46px;
+        }
+        
+    }
+}

@@ -1,4 +1,7 @@
 .services-chapter {
+    &__physics{
+        margin-top: 300px;
+    }
     &__physics-wrapper{
         display: flex;
         justify-content: space-between;
@@ -59,4 +62,46 @@
 .services-chapter__content:hover .services-chapter__contentbox-btn__hidden{
   visibility: visible;
   transition: all 0.8s linear;
+}
+
+@media (max-width: 640px) {
+    .services-chapter {
+        &__physics {
+            margin-top: $tabletMargin;
+
+            &-wrapper {
+                flex-direction: column;
+            }
+        }
+        &__contentbox{
+            margin-top: 20px;
+            grid-template-columns: repeat(2,1fr);
+            &-img{
+                width: 90px;
+                height: 90px;
+            }
+            &-text{
+                font-size: $fs20;
+                margin: 10px 0;
+            }
+            &-date{
+                font-size: $fs24;
+            }
+            &-btn__hidden{
+                width: 178px;
+                height: 38px;
+                padding: 4px 12px;
+                font-size: $fs12;
+                margin: 10px 0;
+                &:hover{
+                    background-color: $btnHover;
+                    transition: all .4s ease-in;
+                }
+            }
+        }
+        &__content{
+            width: 290px;
+            height: 340px;
+        }
+    }
 }

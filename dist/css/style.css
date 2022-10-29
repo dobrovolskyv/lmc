@@ -1011,7 +1011,6 @@
   body {
     font-size: 16px;
     line-height: 100%;
-    padding: 0 10px;
   }
 
   .services__content-watch a {
@@ -1024,6 +1023,7 @@
 
   .container {
     max-width: 592px;
+    margin: 0 auto;
   }
 
   .header {
@@ -1223,8 +1223,11 @@
     display: block;
     margin-top: 10px;
   }
+  .record__form {
+    padding: 0px 5px;
+  }
   .record__form .form__input {
-    width: 592px;
+    width: 550px;
   }
 
   .footer {
@@ -1942,6 +1945,9 @@
     max-width: 100%;
   }
 }
+.header__about-page {
+  margin-top: 300px;
+}
 .header__about-page__wrapper {
   display: flex;
   justify-content: space-between;
@@ -2055,6 +2061,70 @@
   margin-right: 28px;
 }
 
+@media (max-width: 640px) {
+  .header__about-page {
+    margin-top: 200px;
+  }
+  .header__about-page__wrapper {
+    max-width: 580px;
+    flex-direction: column;
+  }
+  .header__about-page__wrapper .about__left {
+    width: 100%;
+  }
+  .header__about-page__wrapper .about__right {
+    order: -1;
+  }
+  .header__about-page__wrapper .about__table__span {
+    font-size: 70px;
+  }
+  .header__about-page__wrapper .about__table__td-secondary {
+    font-size: 26px;
+  }
+  .header__about-page__wrapper .about__table__td {
+    font-size: 16px;
+    line-height: 130%;
+  }
+
+  .direction {
+    margin-top: 120px;
+  }
+  .direction__contentbox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .direction__contentbox__img {
+    width: 70px;
+    height: 70px;
+  }
+  .direction__contentbox__title {
+    margin-top: 14px;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .direction__content {
+    padding: 14px 20px 15px;
+  }
+
+  .clinic .specialist__subtitle {
+    width: 100%;
+  }
+  .clinic-history__date {
+    font-size: 30px;
+  }
+  .clinic-history__text {
+    font-size: 16px;
+  }
+  .clinic-history .clinic-history__content:not(:first-child) {
+    margin-top: 32px;
+  }
+
+  .contacts__license {
+    flex-direction: column;
+  }
+  .contacts__license__container {
+    margin-top: 20xp;
+  }
+}
 .our-services-page7__subtitle {
   max-width: 761px;
 }
@@ -2139,6 +2209,14 @@
   margin-top: 14px;
 }
 
+@media (max-width: 640px) {
+  .our-services-page7 {
+    margin-top: 200px;
+  }
+}
+.services-chapter__physics {
+  margin-top: 300px;
+}
 .services-chapter__physics-wrapper {
   display: flex;
   justify-content: space-between;
@@ -2193,6 +2271,87 @@
   transition: all 0.8s linear;
 }
 
+@media (max-width: 640px) {
+  .services-chapter__physics {
+    margin-top: 200px;
+  }
+  .services-chapter__physics-wrapper {
+    flex-direction: column;
+  }
+  .services-chapter__contentbox {
+    margin-top: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .services-chapter__contentbox-img {
+    width: 90px;
+    height: 90px;
+  }
+  .services-chapter__contentbox-text {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  .services-chapter__contentbox-date {
+    font-size: 24px;
+  }
+  .services-chapter__contentbox-btn__hidden {
+    width: 178px;
+    height: 38px;
+    padding: 4px 12px;
+    font-size: 12px;
+    margin: 10px 0;
+  }
+  .services-chapter__contentbox-btn__hidden:hover {
+    background-color: #5B1919;
+    transition: all 0.4s ease-in;
+  }
+  .services-chapter__content {
+    width: 290px;
+    height: 340px;
+  }
+}
+.analysis-page__header {
+  margin-top: 300px;
+}
+
+@media (max-width: 640px) {
+  .analysis-page__header {
+    margin-top: 200px;
+  }
+  .analysis-page__header__bot {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .analysis-page__header__bot .header__bot-contentbox-page2 {
+    margin: 0;
+    max-height: 116px;
+  }
+  .analysis-page__header__bot .header__bot-contentbox-page2:nth(3) {
+    grid-column: span 2;
+    width: 400px;
+  }
+
+  .header__procedures__contentbox {
+    padding: 20px 20px;
+  }
+  .header__procedures__contentbox .btn__header-page2 {
+    width: 182px;
+    height: 38px;
+    padding: 4px 18px;
+    font-size: 10px;
+  }
+  .header__procedures__contentbox .btn__header-page2:hover {
+    background-color: #5B1919;
+    transition: all 0.4s ease-in;
+  }
+  .header__procedures__text {
+    font-size: 18px;
+  }
+  .header__procedures__price {
+    font-size: 18px;
+    margin-right: 46px;
+  }
+}
 .specialist-chapter {
   margin: 0 10px;
 }
@@ -2469,7 +2628,7 @@ h2 {
 }
 
 .title__container {
-  width: 720px;
+  width: 100%;
 }
 
 .undertitle {
@@ -2485,6 +2644,7 @@ h2 {
   font-family: "Fira Sans";
   font-size: 16px;
   line-height: 140%;
+  max-width: 720px;
 }
 
 .specialist__sliders__swiper {

@@ -7,6 +7,7 @@
 @import './contacts-page.scss';
 @import './our_services.scss';
 @import './services_chapter.scss';
+@import './analysis-page.scss';
 @import './specialist_chapter.scss';
 @import './articles-page.scss';
 @import './share_archive-page.scss';
@@ -73,7 +74,7 @@ h2{
 }
 
 .title__container{
-    width: 720px;
+    width: 100%;
 }
 .undertitle{
     font-family: 'Fira Sans';
@@ -88,6 +89,7 @@ color: $gold;
     font-family: 'Fira Sans';
     font-size: 16px;
     line-height: 140%;
+    max-width: 720px;
 }
 
 .specialist__sliders__swiper{
