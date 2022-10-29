@@ -17,6 +17,9 @@
   color: #093A67;
   font-size: 32px;
 }
+.header__top-tablet__list {
+  display: none;
+}
 .header__top__items {
   font-size: 14px;
   display: flex;
@@ -537,6 +540,11 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+.articles____bot-hidden {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
 .articles__card {
   margin-top: 61px;
   position: relative;
@@ -998,6 +1006,7 @@
   body {
     font-size: 16px;
     line-height: 100%;
+    margin: 0 10px;
   }
 
   .services__content-watch a {
@@ -1009,7 +1018,7 @@
   }
 
   .container {
-    width: 592px;
+    max-width: 592px;
   }
 
   .header {
@@ -1041,6 +1050,7 @@
   .header__top-tablet__list {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
   }
   .header__top-tablet__item {
     display: flex;
@@ -1094,11 +1104,17 @@
     width: 525px;
   }
 
+  .header__call-offer {
+    display: flex;
+    align-items: center;
+  }
+
   .header__call-link,
 .header__call-btn {
     width: 178px;
     height: 38px;
     padding: 4px 18px;
+    font-size: 14px;
   }
 
   .header-main-page__bot {
@@ -1181,6 +1197,7 @@
     gap: 20px;
   }
   .articles__bot-hidden {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
@@ -1199,9 +1216,17 @@
 
   .record__bot {
     display: block;
+    margin-top: 10px;
   }
   .record__form .form__input {
     width: 592px;
+  }
+
+  .footer__main-top {
+    margin-top: 30px;
+  }
+  .footer__top {
+    display: block;
   }
 }
 .body {
@@ -1426,6 +1451,9 @@
   padding: 13px 20px;
   margin-top: 27px;
 }
+.similar__procedures__btn:hover {
+  background-color: #5B1919;
+}
 .similar__procedures__sale {
   background: transparent;
   color: #093A67;
@@ -1440,6 +1468,11 @@
   border: 1px solid #093A67;
   margin-top: 16px;
 }
+.similar__procedures__sale:hover {
+  background: #093A67;
+  color: #FFF9EF;
+  transition: all 0.4s ease-in;
+}
 .similar__procedures__price {
   font-family: "Oranienbaum";
   font-weight: 400;
@@ -1453,6 +1486,125 @@
   margin-top: 22px;
 }
 
+@media (max-width: 640px) {
+  .services-page__header {
+    margin-top: 150px;
+  }
+  .services-page__header .header {
+    margin: 0 5px;
+  }
+  .services-page__header .header__bot-page2 {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .services-page__header .header__bot-contentbox {
+    max-height: 150px;
+    max-width: 43%;
+  }
+  .services-page__header .header__bot-contentbox-descr {
+    width: 100%;
+  }
+  .services-page__header .header__bot-contentbox-descr h4 {
+    font-weight: 700;
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  .services-page__header .header__bot-contentbox-descr p {
+    font-size: 16px;
+  }
+  .services-page__header .header__bot-contentbox-page2 {
+    margin-top: 0px;
+  }
+  .services-page__header .header__procedures {
+    margin-top: 320px;
+    font-size: 16px;
+  }
+  .services-page__header .header__procedures__contentbox {
+    padding: 0px 18px;
+  }
+  .services-page__header .header__procedures__price {
+    margin-right: 50px;
+  }
+  .services-page__header .header__procedures .btn__header-page2 {
+    width: 182px;
+    height: 38px;
+    padding: 4px 18px;
+    font-size: 10px;
+  }
+
+  .specialist__sliders__swiper .specialist__slider .swiper-slide {
+    width: 150px;
+    height: 200px;
+  }
+
+  .reviews__sliders-box {
+    padding: 8px 40px;
+  }
+
+  .similar__procedures__contentbox {
+    max-height: 400px;
+    flex-direction: column;
+    padding: 5px 10px;
+  }
+  .similar__procedures__contentbox img {
+    width: 150px;
+    height: 150px;
+  }
+  .similar__procedures__contentbox-middle {
+    text-align: center;
+    width: 90%;
+    margin-top: 20px;
+  }
+  .similar__procedures__contentbox-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .similar__procedures__contentbox-right .similar__procedures__price {
+    grid-column: span 3;
+    grid-row: span 1;
+    gap: 20px;
+  }
+  .similar__procedures__text {
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .similar__procedures_subtitle {
+    font-size: 14px;
+  }
+  .similar__procedures__price {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  .similar__procedures__btn, .similar__procedures__sale {
+    width: 178px;
+    height: 38px;
+    padding: 4px 18px;
+    font-size: 10px;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+
+  .offer__card {
+    max-width: 290px;
+  }
+  .offer-services__bot-hidden {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .offer .btn {
+    margin: 50px 30% 0px;
+    width: 178px;
+    height: 38px;
+    padding: 4px 18px;
+    font-size: 10px;
+  }
+
+  .footer__top {
+    display: block;
+  }
+}
 .body {
   background-color: #FFF9EF;
 }
@@ -2271,6 +2423,12 @@ h2 {
 
 .btn:hover {
   background-color: #5B1919;
+  transition: all 0.4s ease-in;
+}
+
+.btn2:hover {
+  background: #093A67;
+  color: #FFF9EF;
   transition: all 0.4s ease-in;
 }
 

@@ -16,67 +16,156 @@
 </head>
 
 <body class="page-services">
-    <header>
-        <section class="header__prototype">
-            <div class="container">
-
-                <div class="header__top">
-                    <img class="header__img__logo" src="../img/LMC.svg" alt="logo">
-                    <img src="../img/LMC_text.svg" alt="logo_text">
-                    <ul class="header__top__list">
-                        <li class="header__top__items">
-                            <img class="header__top__items-img" src="../img/location.svg" alt="">
-                            <p class="header__top__items-text">Санкт-Петербург, ул. Бол. Зеленина, 8</p>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <img class="header__img__logo" src="../img/LMC.svg" alt="logo">
+                <img class="header__img__logo-text" src="../img/LMC_text.svg" alt="logo_text">
+                <ul class="header__top__list">
+                    <li class="header__top__items">
+                        <img class="header__top__items-img" src="../img/location.svg" alt="">
+                        <p class="header__top__items-text">Санкт-Петербург, ул. Бол. Зеленина, 8</p>
+                    </li>
+                    <li class="header__top__items">
+                        <img class="header__top__items-img" src="../img/watch.svg" alt="">
+                        <p class="header__top__items-text">10:00-20:00, без выходных</p>
+                    </li>
+                </ul>
+                <a class="header__top__tel" href="##tel:+78124459912">+7 812 445 99 12</a>
+                <div class="header__top__input">
+                    <input class="header__input" type="search" placeholder="Поиск по сайту">
+                    
+                </div>
+                <svg class="header__input-search" width="18" height="18" viewBox="0 0 18 18"  xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4122 7.43085C13.4122 10.5088 10.917 13.004 7.83906 13.004C4.7611 13.004 2.26592 10.5088 2.26592 7.43085C2.26592 4.35289 4.7611 1.85771 7.83906 1.85771C10.917 1.85771 13.4122 4.35289 13.4122 7.43085ZM11.519 13.888C10.4341 14.5076 9.17792 14.8617 7.83906 14.8617C3.73511 14.8617 0.408203 11.5348 0.408203 7.43085C0.408203 3.32691 3.73511 0 7.83906 0C11.943 0 15.2699 3.32691 15.2699 7.43085C15.2699 9.18879 14.6595 10.8042 13.639 12.0765L17.184 15.6215C17.7281 16.1656 17.7281 17.0478 17.184 17.5919C16.6399 18.136 15.7577 18.136 15.2136 17.5919L11.6108 13.9892C11.5783 13.9566 11.5477 13.9228 11.519 13.888Z" />
+                    </svg>
+                <ul class="header__top-tablet__list">
+                    <li class="header__top-tablet__item">
+                        <img src="./img/chat_our_service_page.png" alt=""><a href="">Записаться</a>
+                    </li>
+                    <li class="header__top-tablet__item">
+                        <img src="./img/tel_contacts.png" alt=""><a href="">Заказать звонок</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__bot">
+                <nav class="header__menu">
+                    <ul class="header__menu__list">
+                        <li class="header__menu__item">
+                            <a href="" class="header__menu__link">Услуги</a>
+                            <span class="arrow"></span>
+                            <ul class="header__submenu__list">
+                                <li>
+                                    <a href="" class="header__submenu__link">Консультации врачей</a>
+                                    <span class="arrow arrow__right"></span>
+                                    <ul class="header__sub-submenu__list">
+                                        <li>
+                                            <a href="" class="header__sub-submenu__link">Терапевт</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="header__sub-submenu__link">Кардиолог</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="header__sub-submenu__link">Невролог</a>
+                                            <span class="arrow arrow__right"></span>
+                                            <ul class="header__sub-sub-submenu__list">
+                                                <li><a href="" class="header__sub-sub-submenu__link">4lvl</a></li>
+                                                <li><a href="" class="header__sub-sub-submenu__link">4 lvl</a></li>
+                                                <li><a href="" class="header__sub-sub-submenu__link">4 lvl</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="" class="header__sub-submenu__link">Эндокринолог</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="header__sub-submenu__link">Гастроэнтеролог</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="header__sub-submenu__link">Травматолог</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="header__sub-submenu__link">Флеболог</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="" class="header__submenu__link">Ультразвуковые исследования</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__submenu__link">Стоматология</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__submenu__link">Врачебные манипуляции</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__submenu__link">Косметология</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="header__top__items">
-                            <img class="header__top__items-img" src="../img/watch.svg" alt="">
-                            <p class="header__top__items-text">10:00-20:00, без выходных</p>
+                        <li class="header__menu__item">
+                            <a href="" class="header__menu__link">Специалисты</a>
+                            <span class="arrow "></span>
+                            <ul class="header__submenu__list">
+                                <li>
+                                    <a href="" class="header__submenu__link">Консультации врачей</a>
+                                    <ul class="header__sub-submenu__list">
+                                        <li>
+                                            <a href="" class="header__sub-submenu__link">Терапевт</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="header__sub-submenu__link">Кардиолог</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="header__sub-submenu__link">Эндокринолог</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="header__sub-submenu__link">Гастроэнтеролог</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="header__sub-submenu__link">Травматолог</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="header__sub-submenu__link">Флеболог</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="" class="header__submenu__link">Ультразвуковые исследования</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__submenu__link">Стоматология</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__submenu__link">Врачебные манипуляции</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__submenu__link">Косметология</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__menu__item">
+                            <a href="" class="header__menu__link">Акции</a>
+                        </li>
+                        <li class="header__menu__item">
+                            <a href="" class="header__menu__link">О нас</a>
+                        </li>
+                        <li class="header__menu__item">
+                            <a href="" class="header__menu__link">Пациенту</a>
+                        </li>
+                        <li class="header__menu__item">
+                            <a href="" class="header__menu__link">Статьи</a>
+                        </li>
+                        <li class="header__menu__item">
+                            <a href="" class="header__menu__link">Контакты</a>
                         </li>
                     </ul>
-                    <a class="header__top__tel" href="##tel:+78124459912">+7 812 445 99 12</a>
-                    <div class="header__top__input">
-                        <input class="header__input" type="search" placeholder="Поиск по сайту">
-                    </div>
+                </nav>
+                <div class="header__call">
+                    <a class="header__call-link header__bot-call" href="#">записаться онлайн</a>
+                    <button class="header__call-btn header__bot-call">заказать звонок</button>
                 </div>
-                <div class="header__bot">
-                    <nav class="menu">
-                        <ul class="menu__list">
-                            <li class="menu__item"><a href="#">Услуги</a>
-                                <ul class="submenu__list">
-                                    <li class="submenu__item"><a href="">уровень 2</a>
-                                    <li class="submenu__item"><a href="">уровень 2</a>
-                                    </li>
-                                </ul>
-
-                            </li>
-                            <li class="menu__item"><a href="">Специалисты</a>
-                                <ul class="submenu__list">
-                                    <li class="submenu__item"><a href="">уровень 2</a>
-                                    <li class="submenu__item"><a href="">уровень 2</a>
-                                        <ul class="sub-submenu__list">
-                                            <li class="sub-submenu__item"><a href="">уровень 3</a>
-                                            <li class="sub-submenu__item"><a href="">уровень 3</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="menu__item">Акции</li>
-                            <li class="menu__item">О нас</li>
-                            <li class="menu__item">Отзывы</li>
-                            <li class="menu__item">Статьи</li>
-                            <li class="menu__item">Контакты</li>
-                        </ul>
-                    </nav>
-                    <div class="header__call">
-                        <a class="header__call-link" href="#">записаться онлайн</a>
-                        <button class="header__call-btn">заказать звонок</button>
-                    </div>
-                </div>
-               
-
+            </div>
         </div>
-        </section>
     </header>
     <main>
         <section class="services-page__header">
@@ -90,7 +179,7 @@
                     <a class="header__call-link" href="#">записаться онлайн</a>
                     <button class="header__call-btn">Смотреть акции</button>
                 </div>
-                <div class="header__bot">
+                <div class="header__bot header__bot-page2">
                     <div class="header__bot-contentbox header__bot-contentbox-page2">
                         <img src="./img/time_page2_header.svg" alt="">
                         <div class="header__bot-contentbox-descr">
@@ -359,18 +448,17 @@
                 <div class="title__wrapper">
                     <div class="title__container">
                         <p class="undertitle">Люди, которые всегда помогут</p>
-                        <h2 class="title">Специалисты</h2>
+                        <div class="title-arrow__wrapper">
+                          <h2 class="title">Специалисты</h2>  
+                          <div class="services__content-watch">
+                            <a href="#">Смотреть всех специалистов</a>
+                            <img src="./img/arrow_title.png" alt="">
+                        </div>
+                        </div>
                         <p class="specialist__subtitle subtitle">Попасть в команду «ЛигайМед» могут только лучшие специалисты с многолетней практикой и доказанным опытом.
                             Наши врачи не только лечат. Они помогают сохранить ваше здоровье и позаботиться о вас.</p>
                     </div>
-                    <div class="services__content-watch">
-                        <a href="#">Смотреть всех специалистов</a>
-                        <svg width="45" height="16" viewBox="0 0 45 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M36.0883 0.999999L36.0883 1.12826e-06L38.0686 1.30138e-06L38.0686 0.999999C38.0686 3.17488 38.6937 5.5646 40.0493 6.50049C41.43 7.45367 42.7733 7.48315 45 7.50049L45 8.50049C42.7214 8.50049 41.4559 8.52943 40.0493 9.50049C38.6937 10.4364 38.0686 12.8256 38.0686 15.0005L38.0686 16.0005L36.0883 16.0005L36.0883 15.0005C36.0883 12.315 37.8128 9.82011 39.5542 8.50049L6.12002e-07 9L7.86805e-07 7.00049L39.5542 7.50049C37.8131 6.18086 36.0883 3.68519 36.0883 0.999999Z"
-                                fill="#972A29" />
-                        </svg>
-                    </div>
+                    
                 </div>
                 <div class="specialist__sliders__swiper swiper">
                     <div class="specialist__sliders swiper-wrapper">
@@ -399,7 +487,7 @@
                             fill="#AE8452" />
                         <rect class="arrow" x="0.5" y="0.5" width="39" height="39" rx="3.5" stroke="#AE8452" />
                     </svg>
-                    <svg class="swiper-button-prev arrow" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                    <svg class="swiper-button-prev arrow-prev" width="40" height="40" viewBox="0 0 40 40" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <rect x="0.5" y="0.5" width="39" height="39" rx="3.5" fill="#FFF9EF" />
                         <path
@@ -416,19 +504,18 @@
                 <div class="title__wrapper">
                     <div class="title__container">
                         <p class="undertitle">нам нечего скрывать</p>
-                        <h2 class="title"><span class="title__span">Отзывы</span> пациентов о КТ</h2>
+                        <div class="title-arrow__wrapper">
+                     <h2 class="title"><span class="title__span">Отзывы</span> пациентов о КТ</h2> 
+                     <div class="services__content-watch">
+                        <a href="#">Смотреть все отзывы</a>
+                        <img src="./img/arrow_title.png" alt="">
+                    </div> 
+                        </div>
                         <p class="specialist__subtitle subtitle">Попасть в команду Тысячи довольных пациентов за 14 лет
                             работы и тысячи отзывов
                             с благодарностями — убедитесь в этом сами.</p>
                     </div>
-                    <div class="services__content-watch">
-                        <a href="#">Смотреть все отзывы</a>
-                        <svg width="45" height="16" viewBox="0 0 45 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M36.0883 0.999999L36.0883 1.12826e-06L38.0686 1.30138e-06L38.0686 0.999999C38.0686 3.17488 38.6937 5.5646 40.0493 6.50049C41.43 7.45367 42.7733 7.48315 45 7.50049L45 8.50049C42.7214 8.50049 41.4559 8.52943 40.0493 9.50049C38.6937 10.4364 38.0686 12.8256 38.0686 15.0005L38.0686 16.0005L36.0883 16.0005L36.0883 15.0005C36.0883 12.315 37.8128 9.82011 39.5542 8.50049L6.12002e-07 9L7.86805e-07 7.00049L39.5542 7.50049C37.8131 6.18086 36.0883 3.68519 36.0883 0.999999Z"
-                                fill="#972A29" />
-                        </svg>
-                    </div>
+                 
                 </div>
                 <div class="reviews__sliders__swiper swiper">
                     <div class="reviews__sliders swiper-wrapper">
@@ -465,7 +552,7 @@
                             fill="#AE8452" />
                         <rect class="arrow" x="0.5" y="0.5" width="39" height="39" rx="3.5" stroke="#AE8452" />
                     </svg>
-                    <svg class="swiper-button-prev arrow" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                    <svg class="swiper-button-prev" width="40" height="40" viewBox="0 0 40 40" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <rect x="0.5" y="0.5" width="39" height="39" rx="3.5" fill="#FFF9EF" />
                         <path
@@ -482,17 +569,16 @@
                 <div class="title__wrapper">
                     <div class="title__container">
                         <p class="undertitle">это может вас заинтересовать</p>
-                        <h2 class="title">Похожие услуги</h2>
+                        <div class="title-arrow__wrapper">
+                         <h2 class="title">Похожие услуги</h2>   
+                         <div class="services__content-watch">
+                        <a href="#">Смотреть все услуги</a>
+                        <img src="./img/arrow_title.png" alt="">
+                    </div>
+                        </div>
                         <p class="specialist__subtitle subtitle">Мы подобрали услуги, которые часто делают вместе с этой или выбирают, как альтернативу ей.</p>
                     </div>
-                    <div class="services__content-watch">
-                        <a href="#">Смотреть все услуги</a>
-                        <svg width="45" height="16" viewBox="0 0 45 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M36.0883 0.999999L36.0883 1.12826e-06L38.0686 1.30138e-06L38.0686 0.999999C38.0686 3.17488 38.6937 5.5646 40.0493 6.50049C41.43 7.45367 42.7733 7.48315 45 7.50049L45 8.50049C42.7214 8.50049 41.4559 8.52943 40.0493 9.50049C38.6937 10.4364 38.0686 12.8256 38.0686 15.0005L38.0686 16.0005L36.0883 16.0005L36.0883 15.0005C36.0883 12.315 37.8128 9.82011 39.5542 8.50049L6.12002e-07 9L7.86805e-07 7.00049L39.5542 7.50049C37.8131 6.18086 36.0883 3.68519 36.0883 0.999999Z"
-                                fill="#972A29" />
-                        </svg>
-                    </div>
+                    
                 </div>
             <div class="similar__procedures">
                 <div class="similar__procedures__contentbox">
@@ -551,19 +637,19 @@
                 <div class="title__wrapper">
                     <div class="title__container">
                         <p class="undertitle">Забота о здоровье с пользой для кошелька</p>
-                        <h2 class="title"><span class="title__span">Выгодные</span> предложения</h2>
+                        <div class="title-arrow__wrapper">
+                            <h2 class="title"><span class="title__span">Выгодные</span> предложения</h2>
+                            <div class="services__content-watch">
+                                <a href="#">Смотреть все акции</a>
+                                <img src="./img/arrow_long.svg" alt="">
+                            </div>
+                        </div>
+                        
                         <p class="specialist__subtitle subtitle">Здоровье должно быть доступным, поэтому «ЛигайМед»
                             регулярно радует выгодными предложениями, как новых, так и своих постоянных клиентов. Мы
                             следим за ценами на рынке и всегда готовы Вас радовать.</p>
                     </div>
-                    <div class="services__content-watch">
-                        <a href="#">Смотреть все акции</a>
-                        <svg width="45" height="16" viewBox="0 0 45 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M36.0883 0.999999L36.0883 1.12826e-06L38.0686 1.30138e-06L38.0686 0.999999C38.0686 3.17488 38.6937 5.5646 40.0493 6.50049C41.43 7.45367 42.7733 7.48315 45 7.50049L45 8.50049C42.7214 8.50049 41.4559 8.52943 40.0493 9.50049C38.6937 10.4364 38.0686 12.8256 38.0686 15.0005L38.0686 16.0005L36.0883 16.0005L36.0883 15.0005C36.0883 12.315 37.8128 9.82011 39.5542 8.50049L6.12002e-07 9L7.86805e-07 7.00049L39.5542 7.50049C37.8131 6.18086 36.0883 3.68519 36.0883 0.999999Z"
-                                fill="#972A29" />
-                        </svg>
-                    </div>
+                   
                 </div>
                 <div class="offer__bot">
                     <div class="offer__card">

@@ -238,10 +238,14 @@
   border-radius: 4px;
   padding: 13px 20px;
   margin-top: 27px;
+  &:hover{
+    background-color: $btnHover;
+  }
     }
+
     &__sale{
         background: transparent;
-  color: #093A67;
+  color: $primary;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.05em;
@@ -250,8 +254,13 @@
   height: 44px;
   border-radius: 4px;
   padding: 13px 30px;
-  border: 1px solid #093A67;
+  border: 1px solid $primary;
   margin-top: 16px;
+  &:hover{
+    background: $primary;
+    color: $bg;
+    transition: all 0.4s ease-in;
+  }
     }
     &__price{
         font-family: 'Oranienbaum';
@@ -270,9 +279,209 @@ color: #972A29;
 //
 //
 .offer{
+    
     &-services__bot-hidden{
         display: grid;
         grid-template-columns: repeat(4,1fr);
         margin-top: 22px;
     }
+}
+
+//
+//
+//ADAPTIVE FOR TABLET
+//
+//
+@media (max-width: 640px) {
+    .container{
+        
+    }
+    .services-page__header {
+        margin-top: 150px;
+
+        .header {
+            
+            margin: 0 5px;
+            &__bot {
+                &-page2 {
+                    margin-top: 50px;
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    gap: 20px;
+                }
+
+                &-contentbox {
+                    max-height: 150px;
+                    max-width: 43%;
+                    &-descr{
+                        width: 100%;
+                      h4{
+                        font-weight: 700;
+                        font-size: $fs18; 
+                        margin: 10px 0;
+                      }
+                           p{
+                            
+                            font-size: $fs16; 
+                           } 
+                        
+                    }
+                   
+                    &-page2 {
+                        margin-top: 0px;
+                    }
+
+                }
+
+            }
+            &__procedures{
+                margin-top: 320px;
+                font-size: $fs16;
+                &__contentbox{
+                    padding: 0px 18px;
+                }
+                &__price{
+                    margin-right: 50px;
+                }
+                .btn__header-page2{
+                    width: 182px;
+                    height: 38px;
+                    padding: 4px 18px;
+                    font-size: $fs10;
+                }
+                
+            }
+            
+        }
+    }
+//
+//
+//
+//
+//
+
+//
+//
+//
+//
+//
+
+//
+//
+//СПЕЦИАЛИСТЫ
+//
+//
+.specialist{
+    &__sliders__swiper {
+        .specialist__slider{
+            .swiper-slide{
+                width: 150px;
+                height: 200px;
+            }
+        }
+    }
+}
+//
+//
+//REVIEWS
+//
+//
+.reviews{
+    &__sliders-box{
+        padding: 8px 40px;
+    }
+}
+
+//
+//
+//SIMILAR SERVICES
+//
+//
+.similar{
+    &__procedures{
+        &__contentbox{
+            max-height: 400px;
+            flex-direction: column;
+            padding: 5px 10px;
+            img{
+                width: 150px;
+                height: 150px;
+            }
+            &-middle{
+               text-align: center;
+                width: 90%;
+                margin-top: 20px;
+            }
+            &-right{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                .similar__procedures__price{
+                    grid-column: span 3;
+                    grid-row: span 1;
+                    gap: 20px;
+                }
+            
+            }
+            
+        }
+        &__text{
+            font-weight: 700;
+            font-size: $fs16;
+        }
+        &_subtitle{
+            font-size: $fs14;
+        }
+        &__price{
+            font-size: $fs18;
+            margin: 10px 0;
+        }
+        &__btn,
+        &__sale{
+            width: 178px;
+            height: 38px;
+            padding: 4px 18px;
+            font-size: $fs10;
+            margin-top: 5px;
+            margin-right: 5px;
+        }
+        
+    }
+}
+
+//
+//
+//OFFER
+//
+//
+.offer {
+    &__card {
+        max-width: 290px;
+    }
+
+    &-services__bot-hidden {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .btn{
+        margin: 50px 30% 0px;
+            width: 178px;
+            height: 38px;
+            padding: 4px 18px;
+            font-size: $fs10;
+        
+    }
+}
+
+//
+//
+//FOOTER
+//
+//
+.footer{
+    &__top{
+        display: block;
+    }
+}
+
+
 }
