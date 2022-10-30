@@ -1310,6 +1310,9 @@
         font-size: $fs16;
         line-height: 100%;
     }
+    h2{
+        line-height: 42px;
+    }
     .services__content-watch{
         a{
             font-size: $fs14;
@@ -1487,8 +1490,8 @@
             }
         }
         &__card{
-            max-width: 286px;
-            max-height: 371px;
+            max-width: 282px;
+            max-height: 368px;
             border-radius: 4px;
             &__text{
                 margin-top: 12.8em;
@@ -1609,10 +1612,20 @@
                         height: 40px;
                     }
                 }
+                &-bot__item{
+                    font-size: $fs14;
+                    a{
+                        font-size: $fs14;
+                    }
+                }
             }
     
             &__top {
                 display: block;
+                &-text{
+                    font-size: $fs16;
+
+                }
             }
     
             &__item__text {
@@ -1621,6 +1634,9 @@
     
             &__link {
                 font-size: $fs14;
+            }
+            &__form{
+                margin: 20px 0;
             }
     
         }

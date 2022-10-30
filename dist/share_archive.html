@@ -15,66 +15,164 @@
     <title>share archive</title>
 </head>
 <body class="body">
-    <header class="header__specialist-page2">
-            <div class="container">
-                <div class="header__top">
-                    <img class="header__img__logo" src="../img/LMC.svg" alt="logo">
-                    <img src="../img/LMC_text.svg" alt="logo_text">
-                    <ul class="header__top__list">
-                        <li class="header__top__items">
-                            <img class="header__top__items-img" src="../img/location.svg" alt="">
-                            <p class="header__top__items-text">Санкт-Петербург, ул. Бол. Зеленина, 8</p>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <img class="header__img__logo" src="../img/LMC.svg" alt="logo">
+                <img class="header__img__logo-text" src="../img/LMC_text.svg" alt="logo_text">
+                <ul class="header__top__list">
+                    <li class="header__top__items">
+                        <img class="header__top__items-img" src="../img/location.svg" alt="">
+                        <p class="header__top__items-text">Санкт-Петербург, ул. Бол. Зеленина, 8</p>
+                    </li>
+                    <li class="header__top__items">
+                        <img class="header__top__items-img" src="../img/watch.svg" alt="">
+                        <p class="header__top__items-text">10:00-20:00, без выходных</p>
+                    </li>
+                </ul>
+                <a class="header__top__tel" href="##tel:+78124459912">+7 812 445 99 12</a>
+                <div class="header__top__input">
+                    <input class="header__input" type="search" placeholder="Поиск по сайту">
+                    
+                </div>
+                <svg class="header__input-search" width="18" height="18" viewBox="0 0 18 18"  xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4122 7.43085C13.4122 10.5088 10.917 13.004 7.83906 13.004C4.7611 13.004 2.26592 10.5088 2.26592 7.43085C2.26592 4.35289 4.7611 1.85771 7.83906 1.85771C10.917 1.85771 13.4122 4.35289 13.4122 7.43085ZM11.519 13.888C10.4341 14.5076 9.17792 14.8617 7.83906 14.8617C3.73511 14.8617 0.408203 11.5348 0.408203 7.43085C0.408203 3.32691 3.73511 0 7.83906 0C11.943 0 15.2699 3.32691 15.2699 7.43085C15.2699 9.18879 14.6595 10.8042 13.639 12.0765L17.184 15.6215C17.7281 16.1656 17.7281 17.0478 17.184 17.5919C16.6399 18.136 15.7577 18.136 15.2136 17.5919L11.6108 13.9892C11.5783 13.9566 11.5477 13.9228 11.519 13.888Z" />
+                    </svg>
+                <ul class="header__top-tablet__list">
+                    <li class="header__top-tablet__item">
+                        <img src="./img/chat_our_service_page.png" alt=""><a href="">Записаться</a>
+                    </li>
+                    <li class="header__top-tablet__item">
+                        <img src="./img/tel_contacts.png" alt=""><a href="">Заказать звонок</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__bot">
+                <nav class="header__menu">
+                    <ul class="header__menu__list">
+                        <li class="header__menu__item">
+                            <a href="" class="header__menu__link">Услуги</a>
+                            <span class="arrow"></span>
+                            <ul class="header__submenu__list">
+                                <li>
+                                    <a href="" class="header__submenu__link">Консультации врачей</a>
+                                    <span class="arrow arrow__right"></span>
+                                    <ul class="header__sub-submenu__list">
+                                        <li>
+                                            <a href="" class="header__sub-submenu__link">Терапевт</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="header__sub-submenu__link">Кардиолог</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="header__sub-submenu__link">Невролог</a>
+                                            <span class="arrow arrow__right"></span>
+                                            <ul class="header__sub-sub-submenu__list">
+                                                <li><a href="" class="header__sub-sub-submenu__link">4lvl</a></li>
+                                                <li><a href="" class="header__sub-sub-submenu__link">4 lvl</a></li>
+                                                <li><a href="" class="header__sub-sub-submenu__link">4 lvl</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="" class="header__sub-submenu__link">Эндокринолог</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="header__sub-submenu__link">Гастроэнтеролог</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="header__sub-submenu__link">Травматолог</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="header__sub-submenu__link">Флеболог</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="" class="header__submenu__link">Ультразвуковые исследования</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__submenu__link">Стоматология</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__submenu__link">Врачебные манипуляции</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__submenu__link">Косметология</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="header__top__items">
-                            <img class="header__top__items-img" src="../img/watch.svg" alt="">
-                            <p class="header__top__items-text">10:00-20:00, без выходных</p>
+                        <li class="header__menu__item">
+                            <a href="" class="header__menu__link">Специалисты</a>
+                            <span class="arrow "></span>
+                            <ul class="header__submenu__list">
+                                <li>
+                                    <a href="" class="header__submenu__link">Консультации врачей</a>
+                                    <ul class="header__sub-submenu__list">
+                                        <li>
+                                            <a href="" class="header__sub-submenu__link">Терапевт</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="header__sub-submenu__link">Кардиолог</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="header__sub-submenu__link">Эндокринолог</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="header__sub-submenu__link">Гастроэнтеролог</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="header__sub-submenu__link">Травматолог</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="header__sub-submenu__link">Флеболог</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="" class="header__submenu__link">Ультразвуковые исследования</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__submenu__link">Стоматология</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__submenu__link">Врачебные манипуляции</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__submenu__link">Косметология</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__menu__item">
+                            <a href="" class="header__menu__link">Акции</a>
+                        </li>
+                        <li class="header__menu__item">
+                            <a href="" class="header__menu__link">О нас</a>
+                        </li>
+                        <li class="header__menu__item">
+                            <a href="" class="header__menu__link">Пациенту</a>
+                        </li>
+                        <li class="header__menu__item">
+                            <a href="" class="header__menu__link">Статьи</a>
+                        </li>
+                        <li class="header__menu__item">
+                            <a href="" class="header__menu__link">Контакты</a>
                         </li>
                     </ul>
-                    <a class="header__top__tel" href="##tel:+78124459912">+7 812 445 99 12</a>
-                    <div class="header__top__input">
-                        <input class="header__input" type="search" placeholder="Поиск по сайту">
-                    </div>
+                </nav>
+                <div class="header__call">
+                    <a class="header__call-link header__bot-call" href="#">записаться онлайн</a>
+                    <button class="header__call-btn header__bot-call">заказать звонок</button>
                 </div>
-                <div class="header__bot">
-                    <nav class="menu">
-                        <ul class="menu__list">
-                            <li class="menu__item"><a href="#">Услуги</a>
-                                <ul class="submenu__list">
-                                    <li class="submenu__item"><a href="">уровень 2</a>
-                                    <li class="submenu__item"><a href="">уровень 2</a>
-                                    </li>
-                                </ul>
-
-                            </li>
-                            <li class="menu__item"><a href="">Специалисты</a>
-                                <ul class="submenu__list">
-                                    <li class="submenu__item"><a href="">уровень 2</a>
-                                    <li class="submenu__item"><a href="">уровень 2</a>
-                                        <ul class="sub-submenu__list">
-                                            <li class="sub-submenu__item"><a href="">уровень 3</a>
-                                            <li class="sub-submenu__item"><a href="">уровень 3</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="menu__item">Акции</li>
-                            <li class="menu__item">О нас</li>
-                            <li class="menu__item">Отзывы</li>
-                            <li class="menu__item">Статьи</li>
-                            <li class="menu__item">Контакты</li>
-                        </ul>
-                    </nav>
-                    <div class="header__call">
-                        <a class="header__call-link" href="#">записаться онлайн</a>
-                        <button class="header__call-btn">заказать звонок</button>
-                    </div>
-                </div>
+            </div>
         </div>
     </header>
 <main>
    <section class="share-archive__offer">
     <div class="container">
+        <ul class="header__menu-navpage__list">
+            <li class="header__menu-navpage__item"><a href="">Главная ></a></li>
+            <li class="header__menu-navpage__item"><a href="">Акции</a></li>
+        </ul>
         <div class="title__container">
             <p class="undertitle">Забота о здоровье с пользой для кошелька</p>
             <h2 class="title"><span class="title__span">Выгодные</span> предложения</h2>

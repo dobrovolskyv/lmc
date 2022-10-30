@@ -1,5 +1,5 @@
 .specialist-chapter{
-    margin: 0 10px;
+    margin-top: 300px;
     &__wrapper{
         margin-top: 40px;
         display: flex;
@@ -70,21 +70,30 @@
                 letter-spacing: 0.05em;
                 text-transform: uppercase;
                 color: $bg;
+                &:hover{
+                    background-color: $btnHover;
+                    transition: all .4s ease-in;
+                }
             }
             &-more{
                 padding: 0px 30px;
-    max-width: 268px;
-    height: 44px;
-    background: transparent;
-    border: none;
-    border: 1px solid $primary;
-    border-radius: 4px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: $primary;
+                max-width: 268px;
+                height: 44px;
+                background: transparent;
+                border: none;
+                border: 1px solid $primary;
+                border-radius: 4px;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                color: $primary;
+                &:hover{
+                    background: $primary;
+                    color: $bg;
+                    transition: all 0.4s ease-in;
+                }
             }
         }
     }
@@ -94,4 +103,27 @@
 .specialist-chapter__content:hover .specialist-chapter__content-text{
     transform: translateY(0px);
     transition: all 0.8s ease-in;
+}
+
+@media (max-width: 640px) {
+    .specialist-chapter {
+        margin-top: $tabletMargin;
+
+        &__wrapper {
+            flex-direction: column;
+            .our-services-page7__menu__services{
+                width: 100%;
+            }
+        }
+        &__contentbox{
+            margin-top: 95px;
+            &-bot{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+        &__content{
+            max-width: 272px;
+            max-height: 356px;
+        }
+    }
 }

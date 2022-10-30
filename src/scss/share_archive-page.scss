@@ -1,6 +1,8 @@
 .share-archive{
-    margin-top: 103px;
-    margin: 0 10px;
+   
+    &__offer{
+        margin-top: 300px;
+    }
     &__offer__bot{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -67,3 +69,23 @@
             
         }
         }
+
+
+@media (max-width: 640px) {
+    .share-archive{
+        &__offer{
+            margin-top: $tabletMargin;
+            &__bot{
+                grid-template-columns: repeat(2, 1fr);
+            }
+            &__card{
+                width: 280px;
+                height: 358px;
+                &__text{
+                    margin-top: 12.3em;
+                }
+            }
+        }
+        
+    }
+}

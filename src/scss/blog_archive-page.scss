@@ -1,5 +1,8 @@
 .blog-archive{
-   
+    &__articles{
+ margin-top: 300px;
+    }
+  
     &__articles__bot{
         margin-top: 72px;
         display: grid;
@@ -56,6 +59,30 @@
             font-size: $fs14;
             line-height: 120%;
             margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .blog-archive{
+        &__articles{
+            margin-top: $marginTop;
+            &__bot{
+                
+                grid-template-columns: repeat(2,1fr);
+            }
+            &__card{
+                &:nth-child(1),
+                &:nth-child(7),
+                &:nth-child(8){
+                   grid-column: span 2;
+                   
+                }
+                &:nth-child(2){
+                   display: flex;
+                   
+                }
+            }
         }
     }
 }

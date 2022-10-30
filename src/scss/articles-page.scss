@@ -1,8 +1,29 @@
+.our-services-page7{
+    margin-top: 300px;
+}
 .articles{
-    &__bot-hidden{
+    &__bot{
         display: grid;
         grid-template-columns: repeat(4,1fr);
-        display: none;
+    }
+}
+
+@media (max-width: 640px){
+    .questions{
+        font-size: $fs16;
+        &__right{
+            display: none;
+        }
+    }
+    .articles{
+        .btn{
+            margin: 15px 28% 0px;
+        }
+    }
+    .articles__bot{
+        
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
     }
 }
 

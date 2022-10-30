@@ -42,7 +42,6 @@ font-weight: 300;
 font-size: $fs20;
 line-height: 140%;
 background-color: $bg;
-margin: 0 10px;
 }
 header{
     padding-top: 20px;
@@ -158,4 +157,19 @@ color: $gold;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.header__menu-navpage{
+    margin-bottom: 40px;
+    &__list{
+        display: flex;
+    }
+    &__item{
+        &:not(:first-child){
+            margin-left: 15px;
+        }
+        font-size: $fs16;
+        &:last-child{
+            color: #A9BACA;
+        }
+    }
 }

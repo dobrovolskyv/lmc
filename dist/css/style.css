@@ -1013,6 +1013,10 @@
     line-height: 100%;
   }
 
+  h2 {
+    line-height: 42px;
+  }
+
   .services__content-watch a {
     font-size: 14px;
   }
@@ -1165,8 +1169,8 @@
     gap: 20px;
   }
   .offer__card {
-    max-width: 286px;
-    max-height: 371px;
+    max-width: 282px;
+    max-height: 368px;
     border-radius: 4px;
   }
   .offer__card__text {
@@ -1248,14 +1252,26 @@
     width: 40px;
     height: 40px;
   }
+  .footer__main-bot__item {
+    font-size: 14px;
+  }
+  .footer__main-bot__item a {
+    font-size: 14px;
+  }
   .footer__top {
     display: block;
+  }
+  .footer__top-text {
+    font-size: 16px;
   }
   .footer__item__text {
     font-size: 16px;
   }
   .footer__link {
     font-size: 14px;
+  }
+  .footer__form {
+    margin: 20px 0;
   }
 }
 .body {
@@ -2353,7 +2369,7 @@
   }
 }
 .specialist-chapter {
-  margin: 0 10px;
+  margin-top: 300px;
 }
 .specialist-chapter__wrapper {
   margin-top: 40px;
@@ -2422,6 +2438,10 @@
   text-transform: uppercase;
   color: #FFF9EF;
 }
+.specialist-chapter__content-btn-record:hover {
+  background-color: #5B1919;
+  transition: all 0.4s ease-in;
+}
 .specialist-chapter__content-btn-more {
   padding: 0px 30px;
   max-width: 268px;
@@ -2437,21 +2457,66 @@
   text-transform: uppercase;
   color: #093A67;
 }
+.specialist-chapter__content-btn-more:hover {
+  background: #093A67;
+  color: #FFF9EF;
+  transition: all 0.4s ease-in;
+}
 
 .specialist-chapter__content:hover .specialist-chapter__content-text {
   transform: translateY(0px);
   transition: all 0.8s ease-in;
 }
 
-.articles__bot-hidden {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  display: none;
+@media (max-width: 640px) {
+  .specialist-chapter {
+    margin-top: 200px;
+  }
+  .specialist-chapter__wrapper {
+    flex-direction: column;
+  }
+  .specialist-chapter__wrapper .our-services-page7__menu__services {
+    width: 100%;
+  }
+  .specialist-chapter__contentbox {
+    margin-top: 95px;
+  }
+  .specialist-chapter__contentbox-bot {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .specialist-chapter__content {
+    max-width: 272px;
+    max-height: 356px;
+  }
+}
+.our-services-page7 {
+  margin-top: 300px;
 }
 
-.share-archive {
-  margin-top: 103px;
-  margin: 0 10px;
+.articles__bot {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 640px) {
+  .questions {
+    font-size: 16px;
+  }
+  .questions__right {
+    display: none;
+  }
+
+  .articles .btn {
+    margin: 15px 28% 0px;
+  }
+
+  .articles__bot {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+.share-archive__offer {
+  margin-top: 300px;
 }
 .share-archive__offer__bot {
   display: grid;
@@ -2514,6 +2579,24 @@
   color: #FFF9EF;
 }
 
+@media (max-width: 640px) {
+  .share-archive__offer {
+    margin-top: 200px;
+  }
+  .share-archive__offer__bot {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .share-archive__offer__card {
+    width: 280px;
+    height: 358px;
+  }
+  .share-archive__offer__card__text {
+    margin-top: 12.3em;
+  }
+}
+.blog-archive__articles {
+  margin-top: 300px;
+}
 .blog-archive__articles__bot {
   margin-top: 72px;
   display: grid;
@@ -2565,6 +2648,20 @@
   margin-top: 20px;
 }
 
+@media (max-width: 640px) {
+  .blog-archive__articles {
+    margin-top: 140px;
+  }
+  .blog-archive__articles__bot {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .blog-archive__articles__card:nth-child(1), .blog-archive__articles__card:nth-child(7), .blog-archive__articles__card:nth-child(8) {
+    grid-column: span 2;
+  }
+  .blog-archive__articles__card:nth-child(2) {
+    display: flex;
+  }
+}
 *,
 *::before,
 *::after {
@@ -2595,7 +2692,6 @@ body {
   font-size: 20px;
   line-height: 140%;
   background-color: #FFF9EF;
-  margin: 0 10px;
 }
 
 header {
@@ -2708,4 +2804,20 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header__menu-navpage {
+  margin-bottom: 40px;
+}
+.header__menu-navpage__list {
+  display: flex;
+}
+.header__menu-navpage__item {
+  font-size: 16px;
+}
+.header__menu-navpage__item:not(:first-child) {
+  margin-left: 15px;
+}
+.header__menu-navpage__item:last-child {
+  color: #A9BACA;
 }
