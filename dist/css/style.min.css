@@ -2062,6 +2062,12 @@
 .header__specialist-page__raiting {
   display: flex;
   margin-top: 12px;
+  align-items: center;
+}
+.header__specialist-page__raiting img {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
 }
 .header__specialist-page__reviews {
   font-size: 20px;
@@ -2143,7 +2149,9 @@
   }
 
   .header__specialist-page__title {
+    margin-top: 20px;
     font-size: 36px;
+    line-height: 140%;
   }
   .header__skills__item {
     font-size: 18px;
@@ -2176,6 +2184,55 @@
   .specialist-page__questions__brochure .questions__brochure-btn {
     margin-top: 20px;
     width: 172px;
+  }
+}
+@media (max-width: 320px) {
+  .specialist-page__header {
+    margin-top: 100px;
+  }
+  .specialist-page__header .header__specialist-page__contentbox {
+    flex-direction: column;
+  }
+  .specialist-page__header .header__specialist-page__call {
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .specialist-page__header .about__right__img {
+    order: -1;
+  }
+  .specialist-page__header .header__call-link {
+    width: 100%;
+    padding: 10px 18px;
+  }
+  .specialist-page__header .header__call-link:hover {
+    background-color: #5B1919;
+    transition: all 0.4s ease-in;
+  }
+  .specialist-page__header .header__call-btn {
+    margin-top: 10px;
+    margin-left: 0;
+    width: 100%;
+  }
+  .specialist-page__header .header__call-btn:hover {
+    background: #093A67;
+    color: #FFF9EF;
+    transition: all 0.4s ease-in;
+  }
+  .specialist-page__header .header__skills {
+    margin-top: 100px;
+    margin-left: 0;
+    width: 288px;
+  }
+  .specialist-page__header .header__skills__item {
+    font-size: 16px;
+  }
+
+  .about-doctor {
+    margin-top: 100px;
+  }
+  .about-doctor__title {
+    font-size: 22px;
   }
 }
 .header__stock-page__title {
@@ -2229,6 +2286,10 @@
 }
 .header__stock-page__bot {
   margin-top: 0px;
+}
+
+.similar {
+  margin-top: 300px;
 }
 
 .similar__procedures__price-sale {
