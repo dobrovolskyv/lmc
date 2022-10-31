@@ -1662,6 +1662,7 @@
 
     .title {
         font-size: $fs30;
+        line-height: 140%;
     }
     h2{
         font-size: $fs24;
@@ -1857,6 +1858,20 @@
         &__subtitle{
             font-size: $fs14;
         }
+        &__sliders-box::after{
+            height: 80px;
+        }
+        .sliders-box{
+            
+            &__prof{
+                bottom: 22%;
+                right: 18%;
+            }
+            &__doctor{
+                right: 18%;
+            }
+            
+        }
     }
      //
     //
@@ -1918,9 +1933,10 @@
                 min-height: 400px;
             }
             &__swiper{
-            min-height: 600px;
+            min-height: 425px;
         }
         }
+        
     }
       //
     //
@@ -1985,7 +2001,6 @@
             }
         }
         .footer__main{
-            display: none;
         }
         &__alert{
             font-size: $fs20;

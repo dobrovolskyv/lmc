@@ -1,7 +1,9 @@
 .body{
     background-color: $bg;
 }
-    
+.services-page__header{
+    margin-top: 300px;
+}
 .subtitle-page2{
    max-width: 758px;
 }
@@ -482,4 +484,124 @@ color: #972A29;
 }
 
 
+}
+
+@media (max-width: 320px) {
+    .services-page__header{
+        margin-top: 100px;
+        .title{
+            font-size: 28px;
+        }
+        .subtitle{
+            font-size: $fs14;
+        }
+        .header__call{
+            margin-top: 30px;
+        }
+        .header__bot-contentbox{
+            max-width: 288px;
+            min-height: 150px;
+            img{
+                margin-top: 30px;
+                width: 70px;
+                height: 70px;
+            }
+            &-descr{
+                h4{
+                    font-size: $fs14;
+                }
+                p{
+                    font-size: $fs14;
+                }
+            }
+        }
+        .header__procedures{
+            margin-top: 430px;
+            &__contentbox{
+                // padding: 0px 38px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 160px;
+                div{
+                    flex-direction: column;
+                }
+                
+            }
+            &__price{
+                margin: 10px 0;
+            }
+            &__text{
+                padding: 0 20px;
+            }
+        }
+
+    }
+    //
+    //
+    //questions
+    //
+    //
+        .questions {
+            .subtitle {
+                max-width: 288px;
+            }
+    
+            &__contentbox {
+                max-width: 288px;
+                margin-top: 20px;
+            }
+    
+            &__brochure {
+                &-steps {
+                    display: flex;
+                    flex-direction: column;
+                }
+    
+                &-step {
+                    display: gird;
+                    grid-template-columns: repeat(2,1fr);
+                }
+                &-img{
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+        }
+    //
+    //
+    //offer
+    //
+    //
+    .offer{
+        &-services__bot-hidden{
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+     //
+    //
+    //offer
+    //
+    //
+    .similar{
+        margin-top: 100px;
+        .undertitle{
+            font-size: $fs10;
+        }
+        &__procedures__contentbox{
+                min-height: 525px;
+            &-middle{
+                margin-left: 0;
+            }
+            &-right{
+            grid-template-columns: repeat(1,1fr);
+            .similar__procedures__price{
+                grid-column: span 1;
+                grid-row: span 1;
+                gap: 20px;
+            }
+        }
+        }
+    }
+    
 }

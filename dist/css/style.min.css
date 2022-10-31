@@ -551,7 +551,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
-.articles____bot-hidden {
+.articles__bot-hidden {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -1294,6 +1294,7 @@
 
   .title {
     font-size: 30px;
+    line-height: 140%;
   }
 
   h2 {
@@ -1459,6 +1460,16 @@
   .specialist__subtitle {
     font-size: 14px;
   }
+  .specialist__sliders-box::after {
+    height: 80px;
+  }
+  .specialist .sliders-box__prof {
+    bottom: 22%;
+    right: 18%;
+  }
+  .specialist .sliders-box__doctor {
+    right: 18%;
+  }
 
   .offer__bot, .offer__bot-hidden {
     grid-template-columns: repeat(1, 1fr);
@@ -1494,7 +1505,7 @@
     min-height: 400px;
   }
   .reviews__sliders__swiper {
-    min-height: 600px;
+    min-height: 425px;
   }
 
   .articles__bot-visiable, .articles__bot-hidden {
@@ -1533,15 +1544,16 @@
   .footer__form__input {
     width: 100%;
   }
-  .footer .footer__main {
-    display: none;
-  }
   .footer__alert {
     font-size: 20px;
   }
 }
 .body {
   background-color: #FFF9EF;
+}
+
+.services-page__header {
+  margin-top: 300px;
 }
 
 .subtitle-page2 {
@@ -1914,6 +1926,98 @@
 
   .footer__top {
     display: block;
+  }
+}
+@media (max-width: 320px) {
+  .services-page__header {
+    margin-top: 100px;
+  }
+  .services-page__header .title {
+    font-size: 28px;
+  }
+  .services-page__header .subtitle {
+    font-size: 14px;
+  }
+  .services-page__header .header__call {
+    margin-top: 30px;
+  }
+  .services-page__header .header__bot-contentbox {
+    max-width: 288px;
+    min-height: 150px;
+  }
+  .services-page__header .header__bot-contentbox img {
+    margin-top: 30px;
+    width: 70px;
+    height: 70px;
+  }
+  .services-page__header .header__bot-contentbox-descr h4 {
+    font-size: 14px;
+  }
+  .services-page__header .header__bot-contentbox-descr p {
+    font-size: 14px;
+  }
+  .services-page__header .header__procedures {
+    margin-top: 430px;
+  }
+  .services-page__header .header__procedures__contentbox {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+  }
+  .services-page__header .header__procedures__contentbox div {
+    flex-direction: column;
+  }
+  .services-page__header .header__procedures__price {
+    margin: 10px 0;
+  }
+  .services-page__header .header__procedures__text {
+    padding: 0 20px;
+  }
+
+  .questions .subtitle {
+    max-width: 288px;
+  }
+  .questions__contentbox {
+    max-width: 288px;
+    margin-top: 20px;
+  }
+  .questions__brochure-steps {
+    display: flex;
+    flex-direction: column;
+  }
+  .questions__brochure-step {
+    display: gird;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .questions__brochure-img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .offer-services__bot-hidden {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .similar {
+    margin-top: 100px;
+  }
+  .similar .undertitle {
+    font-size: 10px;
+  }
+  .similar__procedures__contentbox {
+    min-height: 525px;
+  }
+  .similar__procedures__contentbox-middle {
+    margin-left: 0;
+  }
+  .similar__procedures__contentbox-right {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .similar__procedures__contentbox-right .similar__procedures__price {
+    grid-column: span 1;
+    grid-row: span 1;
+    gap: 20px;
   }
 }
 .body {
