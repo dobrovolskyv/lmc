@@ -70,7 +70,7 @@ const swiper = new Swiper('.specialist__sliders__swiper', {
   breakpoints: {
     // when window width is >= 320px
     320: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 20
     },
   
@@ -140,14 +140,14 @@ const reviewsSwiper = new Swiper('.reviews__sliders__swiper', {
   breakpoints: {
     // when window width is >= 320px
     320: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 20
     },
   
    
     // when window width is >= 640px
     600: {
-      slidesPerView: 1,
+      slidesPerView: 1.2,
       spaceBetween: 40,
     }
   },
