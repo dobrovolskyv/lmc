@@ -89,3 +89,12 @@
         
     }
 }
+@media (max-width: 320px) {
+    .share-archive__offer{
+            margin-top: $phoneMargin;
+            .undertitle{
+                font-size: $fs10;
+            }
+        }
+    
+}

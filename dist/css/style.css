@@ -758,6 +758,9 @@
   height: 40px;
   border: 1px solid #FFF9EF;
   border-radius: 4px;
+  background-color: transparent;
+  font-size: 14px;
+  color: #FFF9EF;
 }
 .footer__btn {
   width: 157px;
@@ -1160,13 +1163,13 @@
     height: 252px;
   }
 
-  .spacialist .container {
-    overflow: hidden;
+  .spacialist .specialist__sliders__swiper {
+    width: 170px;
+    height: 270px;
   }
-
-  .specialist__sliders-box .swiper-slide {
-    width: 150px;
-    height: 107px;
+  .spacialist__sliders-box .swiper-slide {
+    width: 170px;
+    height: 270px;
   }
 
   .offer__bot {
@@ -1541,6 +1544,23 @@
     font-size: 14px;
   }
 
+  .footer::before {
+    width: 100%;
+    bottom: 6%;
+    left: 0;
+    height: 500px;
+  }
+  .footer__top {
+    padding: 10px;
+  }
+  .footer__btn {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .footer__btn:hover {
+    background-color: #5B1919;
+    transition: all 0.4s ease-in;
+  }
   .footer__form {
     flex-direction: column;
     max-width: 288px;
@@ -1548,8 +1568,77 @@
   .footer__form__input {
     width: 100%;
   }
+  .footer .footer__main {
+    display: none;
+  }
   .footer__alert {
     font-size: 20px;
+  }
+  .footer__main-phone {
+    color: #FFF9EF;
+  }
+  .footer__main-phone__top-contentbox {
+    border: 1px solid #FFF9EF;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-top: 8px;
+  }
+  .footer__main-phone__top-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__main-phone__top-text img {
+    width: 20px;
+    height: 20px;
+  }
+  .footer__main-phone__top-subtext {
+    font-size: 14px;
+    display: none;
+  }
+  .footer__main-phone__list {
+    width: 100%;
+    margin-top: 62px;
+    margin-left: 5%;
+  }
+  .footer__main-phone__list-second {
+    text-align: center;
+    margin-top: 62px;
+  }
+  .footer__main-phone__item {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+  }
+  .footer__main-phone__item img {
+    z-index: 5;
+  }
+  .footer__main-phone__item-second {
+    margin-top: 0;
+    text-align: center;
+    font-size: 14px;
+  }
+  .footer__main-phone__item-second a {
+    text-decoration: underline;
+    z-index: 5;
+  }
+  .footer__main-phone__item-container {
+    font-size: 14px;
+    margin-left: 10px;
+    font-weight: 100;
+    z-index: 5;
+  }
+  .footer__main-phone__item a {
+    text-decoration: underline;
+    font-size: 14px;
+  }
+  .footer__main-phone__item-span {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .footer__alert {
+    font-size: 10px;
+    text-align: center;
   }
 }
 .body {
@@ -2695,6 +2784,26 @@
     margin-right: 0;
   }
 }
+.contacts {
+  margin-top: 300px;
+}
+
+@media (max-width: 320px) {
+  .contacts {
+    margin-top: 100px;
+  }
+
+  .about-doctor__contentbox {
+    padding: 6px 14px;
+  }
+  .about-doctor__title {
+    font-size: 18px;
+  }
+  .about-doctor__title img {
+    width: 30px;
+    height: 30px;
+  }
+}
 .our-services-page7__subtitle {
   max-width: 761px;
 }
@@ -2779,9 +2888,18 @@
   margin-top: 14px;
 }
 
-@media (max-width: 640px) {
-  .our-services-page7 {
-    margin-top: 200px;
+@media (max-width: 320px) {
+  .our-services-page7__wrapper {
+    flex-direction: column;
+  }
+  .our-services-page7__contentbox {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .our-services-page7__bot {
+    display: none;
+  }
+  .our-services-page7__menu__services {
+    width: 100%;
   }
 }
 .services-chapter__physics {
@@ -2879,6 +2997,18 @@
     height: 340px;
   }
 }
+@media (max-width: 320px) {
+  .services-chapter__contentbox {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .services-chapter__content {
+    padding: 10px;
+    height: 292px;
+  }
+  .services-chapter__physics {
+    margin-top: 100px;
+  }
+}
 .analysis-page__header {
   margin-top: 300px;
 }
@@ -2920,6 +3050,32 @@
   .header__procedures__price {
     font-size: 18px;
     margin-right: 46px;
+  }
+}
+@media (max-width: 320px) {
+  .analysis-page__header {
+    margin-top: 100px;
+  }
+  .analysis-page__header__bot {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .header__procedures {
+    margin-top: 300px;
+  }
+  .header__procedures__contentbox {
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+  }
+  .header__procedures__contentbox div {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .header__procedures__price {
+    margin-right: 4px;
   }
 }
 .specialist-chapter {
@@ -3043,6 +3199,16 @@
     max-height: 356px;
   }
 }
+@media (max-width: 320px) {
+  .title {
+    font-size: 30px;
+    line-height: 140%;
+  }
+
+  .specialist-chapter {
+    margin-top: 100px;
+  }
+}
 .our-services-page7 {
   margin-top: 300px;
 }
@@ -3053,6 +3219,10 @@
 }
 
 @media (max-width: 640px) {
+  .our-services-page7 {
+    margin-top: 200px;
+  }
+
   .questions {
     font-size: 16px;
   }
@@ -3067,6 +3237,11 @@
   .articles__bot {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+  }
+}
+@media (max-width: 320px) {
+  .our-services-page7 {
+    margin-top: 100px;
   }
 }
 .share-archive__offer {
@@ -3146,6 +3321,14 @@
   }
   .share-archive__offer__card__text {
     margin-top: 12.3em;
+  }
+}
+@media (max-width: 320px) {
+  .share-archive__offer {
+    margin-top: 100px;
+  }
+  .share-archive__offer .undertitle {
+    font-size: 10px;
   }
 }
 .blog-archive__articles {

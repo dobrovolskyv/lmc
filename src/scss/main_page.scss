@@ -433,7 +433,6 @@
     &__sliders {
         margin-top: 64px;
         display: flex;
-
         &-box {
             position: relative;
             display: flex;
@@ -950,6 +949,9 @@
             height: 40px;
             border: 1px solid #FFF9EF;
             border-radius: 4px;
+            background-color: transparent;
+            font-size: $fs14;
+            color: $bg;
         }
     }
 
@@ -1474,14 +1476,21 @@
     //
     //
     .spacialist{
-        .container{
-            overflow: hidden;
+       
+        .specialist__sliders__swiper{
+            width: 170px;
+            height: 270px;
+        }
+        &__sliders{
+            &-box{
+               .swiper-slide{
+                width: 170px;
+            height: 270px;
+               } 
+            }
         }
     }
-    .specialist__sliders-box .swiper-slide{
-        width: 150px;
-        height: 107px;
-    }
+    
    
     //ВЫГОДНЫЕ ПРЕДЛОЖЕНИЯ
     //
@@ -1999,6 +2008,24 @@
     //
     //
     .footer{
+        
+        &::before{
+            width: 100%;
+            bottom: 6%;
+            left: 0;
+            height: 500px;
+        }
+        &__top{
+            padding: 10px;
+        }
+        &__btn{
+            width: 100%;
+            margin: 10px 0;
+            &:hover{
+                background-color: $btnHover;
+                transition: all 0.4s ease-in;
+            }
+        }
         &__form{
             flex-direction: column;
             max-width: 288px;
@@ -2007,9 +2034,81 @@
             }
         }
         .footer__main{
+            display: none;
+            
         }
         &__alert{
             font-size: $fs20;
+        }
+        &__main-phone{
+            
+            color: $bg;
+            &__top-contentbox{
+                border: 1px solid $bg;
+                border-radius: 4px;
+                padding: 5px 10px;
+                margin-top: 8px;
+            }
+            &__top-text{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+
+            }
+            &__top-subtext{
+                font-size: $fs14;
+                display: none;
+            }
+            &__list{
+                width: 100%;
+                margin-top: 62px;
+                margin-left: 5%;
+                &-second{
+                text-align: center;
+                margin-top: 62px;
+                }
+            }
+            &__item{
+                display: flex;
+                align-items: center;
+                margin-top: 24px;
+               img{
+                z-index: 5;
+               }
+                &-second{
+                    margin-top: 0;
+                    text-align: center;
+                    font-size: $fs14;
+                    
+                    a{
+                        text-decoration: underline;
+                        z-index: 5;
+                    }
+                }
+                &-container{
+                font-size: $fs14;
+                margin-left: 10px;
+                font-weight: 100;
+                z-index: 5;
+                }
+                a{
+                    text-decoration: underline;
+                    font-size: $fs14;
+                }
+                &-span{
+                    font-size: $fs16;
+                    font-weight: 600;
+                    
+                }
+            }
+        }
+        &__alert{
+            font-size: $fs10;
+            text-align: center;
         }
     }
 

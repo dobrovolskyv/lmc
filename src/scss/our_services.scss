@@ -89,7 +89,25 @@
 
 
 @media (max-width: 640px) {
-    .our-services-page7{
-        margin-top: $tabletMargin;
+   
+}
+
+@media (max-width: 320px) {
+    .our-services-page7 {
+      
+
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__contentbox{
+            grid-template-columns: repeat(1,1fr);
+        }
+        &__bot{
+            display: none;
+        }
+        &__menu__services{
+            width: 100%;
+        }
+    
     }
 }

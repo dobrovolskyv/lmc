@@ -1,3 +1,23 @@
+.contacts{
+    margin-top: 300px;
+}
 @media (max-width: 640px) {
     
+}
+@media (max-width: 320px) {
+    .contacts{
+        margin-top: 100px;
+    }
+    .about-doctor{
+        &__contentbox{
+            padding: 6px 14px;
+        }
+        &__title{
+            font-size: $fs18;
+            img{
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
 }

@@ -45,3 +45,31 @@
     }
     
 }
+
+@media (max-width: 320px) {
+    .analysis-page__header{
+        margin-top: $phoneMargin;
+        &__bot{
+            grid-template-columns: repeat(1,1fr);
+        }
+        
+    }
+    .header__procedures{
+        margin-top: 300px;
+        &__contentbox{
+            height: 100%;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            text-align: center;
+            div{
+                flex-direction: column;
+                justify-content: space-between;
+            }
+        }
+        &__price{
+            margin-right: 4px;
+        }
+        
+    }
+}
