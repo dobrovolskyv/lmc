@@ -1666,6 +1666,7 @@
     }
     h2{
         font-size: $fs24;
+        line-height: 140%;
     }
     .undertitle{
         font-size: $fs10;
@@ -1974,6 +1975,11 @@
     //
     //
     .record{
+
+        .undertitle{
+            font-size: $fs10;
+        }
+    
         .form{
             max-width: 288px;
             &__checkbox{

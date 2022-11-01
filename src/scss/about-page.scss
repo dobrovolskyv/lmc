@@ -214,10 +214,83 @@
     //
     //
 
+    
+    
+}
+
+@media (max-width: 320px) {
+    .header__about-page{
+        margin-top: 100px;
+    }
+    //
+    //
+    //direction
+    //
+    //
+    .direction{
+        margin-top: 100px;
+        &__content{
+            max-width: 146px;
+            padding: 8px 10px 15px;
+        }
+        &__contentbox{
+            gap: 8px;
+            &__title{
+                margin: 10px 0;
+            }
+         &__subtitle{
+            font-size: $fs14;
+            line-height: 140%;
+         }
+        }
+    }
+    //
+    //
+    //clinic
+    //
+    //
+    .clinic{
+        margin-top: 100px;
+        .undertitle{
+            margin-top: 20px;
+            font-size: $fs10;
+        }
+        &-history{
+            margin-top: 100px;
+            &__text{
+                line-height: 140%;
+            }
+            &__line{
+                height: 305px;
+            }
+        }
+    }
      //
     //
+    //contacts
     //
     //
-    //
-    
+    .contacts{
+        margin-top: 100px;
+        &__license{
+            &__container{
+                flex-direction: column;
+                align-items: center;
+                padding: 5px 5px;
+                max-height: 140px;
+                margin-top: 10px;
+            }
+            &__img{
+                margin-left: 0;
+                width: 50px;
+                height: 50px;
+            }
+            &__text{
+                font-size: $fs24;
+            }
+            &__btn{
+                margin-right: 0;
+            }
+        }
+    }
 }

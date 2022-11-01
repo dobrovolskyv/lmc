@@ -190,3 +190,72 @@ color: #AE8452;
     //
     //
 }
+@media (max-width: 320px) {
+    .similar{
+        margin-top: 100px;
+    }
+    .skills__page4{
+        &__content-top{
+            margin-top: 100px;
+            &__title{
+                font-size: $fs30;
+            }
+            &__item{
+                font-size: $fs16;
+                line-height: 140%;
+            }
+        }
+        .header__skills{
+            &__list{
+                gap: 0;
+            }
+            &__stock{
+                padding: 10px;
+            }
+            &__item{
+                font-size: $fs16;
+            }
+        }
+        .header__stock-page__title {
+            font-size: $fs32;
+        }
+        .skills__page4__right {
+            padding: 10px;
+            &-title{
+                font-size: $fs32;
+            }
+        }
+    }
+    //
+    //
+    //specialist
+    //
+    //
+    .specialist{
+        margin-top: 100px;
+        .undertitle{
+            font-size: $fs10;
+        }
+    }
+     //
+    //
+    //offer
+    //
+    //
+    .offer{
+        margin-top: 100px;
+        .undertitle{
+            font-size: $fs10;
+        }
+        &__card{
+            height: 313px;
+            &__subtitle{
+                font-size: $fs14;
+            }
+            &__text{
+                margin-top: 8.8em;
+            }
+        }
+        
+    }
+}

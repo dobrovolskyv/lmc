@@ -1299,6 +1299,7 @@
 
   h2 {
     font-size: 24px;
+    line-height: 140%;
   }
 
   .undertitle {
@@ -1524,6 +1525,9 @@
     height: 100%;
   }
 
+  .record .undertitle {
+    font-size: 10px;
+  }
   .record .form {
     max-width: 288px;
   }
@@ -2392,6 +2396,63 @@
     max-width: 100%;
   }
 }
+@media (max-width: 320px) {
+  .similar {
+    margin-top: 100px;
+  }
+
+  .skills__page4__content-top {
+    margin-top: 100px;
+  }
+  .skills__page4__content-top__title {
+    font-size: 30px;
+  }
+  .skills__page4__content-top__item {
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .skills__page4 .header__skills__list {
+    gap: 0;
+  }
+  .skills__page4 .header__skills__stock {
+    padding: 10px;
+  }
+  .skills__page4 .header__skills__item {
+    font-size: 16px;
+  }
+  .skills__page4 .header__stock-page__title {
+    font-size: 32px;
+  }
+  .skills__page4 .skills__page4__right {
+    padding: 10px;
+  }
+  .skills__page4 .skills__page4__right-title {
+    font-size: 32px;
+  }
+
+  .specialist {
+    margin-top: 100px;
+  }
+  .specialist .undertitle {
+    font-size: 10px;
+  }
+
+  .offer {
+    margin-top: 100px;
+  }
+  .offer .undertitle {
+    font-size: 10px;
+  }
+  .offer__card {
+    height: 313px;
+  }
+  .offer__card__subtitle {
+    font-size: 14px;
+  }
+  .offer__card__text {
+    margin-top: 8.8em;
+  }
+}
 .header__about-page {
   margin-top: 300px;
 }
@@ -2570,6 +2631,68 @@
   }
   .contacts__license__container {
     margin-top: 20xp;
+  }
+}
+@media (max-width: 320px) {
+  .header__about-page {
+    margin-top: 100px;
+  }
+
+  .direction {
+    margin-top: 100px;
+  }
+  .direction__content {
+    max-width: 146px;
+    padding: 8px 10px 15px;
+  }
+  .direction__contentbox {
+    gap: 8px;
+  }
+  .direction__contentbox__title {
+    margin: 10px 0;
+  }
+  .direction__contentbox__subtitle {
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .clinic {
+    margin-top: 100px;
+  }
+  .clinic .undertitle {
+    margin-top: 20px;
+    font-size: 10px;
+  }
+  .clinic-history {
+    margin-top: 100px;
+  }
+  .clinic-history__text {
+    line-height: 140%;
+  }
+  .clinic-history__line {
+    height: 305px;
+  }
+
+  .contacts {
+    margin-top: 100px;
+  }
+  .contacts__license__container {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 5px;
+    max-height: 140px;
+    margin-top: 10px;
+  }
+  .contacts__license__img {
+    margin-left: 0;
+    width: 50px;
+    height: 50px;
+  }
+  .contacts__license__text {
+    font-size: 24px;
+  }
+  .contacts__license__btn {
+    margin-right: 0;
   }
 }
 .our-services-page7__subtitle {
