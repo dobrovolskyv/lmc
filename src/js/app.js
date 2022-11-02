@@ -130,6 +130,30 @@ const clinicSwiper = new Swiper('.clinic__right-swiper', {
     delay: 2200,
   },
 });
+const colSwiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 20,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  
+  autoplay: {
+    delay: 2200,
+  },
+});
 
 
 const reviewsSwiper = new Swiper('.reviews__sliders__swiper', {
@@ -178,39 +202,39 @@ const reviewsSwiper = new Swiper('.reviews__sliders__swiper', {
 
 });
 
-
+  
 const articlesCard = document.querySelector('.articles__bot-hidden');
 const articlesBtn = document.querySelector('.articles__btn');
 
-articlesBtn.addEventListener('click', (e)=>{
+if (articlesBtn && articlesCard ){articlesBtn.addEventListener('click', (e)=>{
   if (articlesCard.style.display === "none") {
     articlesCard.style.display = "grid";
   } else {
     articlesCard.style.display = "none";
   }
-})
+})}
 
 
 const offerCard = document.querySelector('.offer__bot-hidden');
-const offerBtn = document.querySelectorAll('.offer__btn');
+const offerBtn = document.querySelector('.offer__btn');
 
-offerBtn.forEach((el)=>{
-  el.addEventListener('click',()=>{
-    console.log(offerCard)
-    if (offerCard.style.display === "none") {
-      offerCard.style.display = "grid";
-    } else {
-      offerCard.style.display = "none";
-    }
-  })
-})
-// offerBtn.addEventListener('click', (e)=>{
-//   if (offerCard.style.display === "none") {
-//     offerCard.style.display = "grid";
-//   } else {
-//     offerCard.style.display = "none";
-//   }
+// offerBtn.forEach((el)=>{
+//   el.addEventListener('click',()=>{
+//     console.log(offerCard)
+//     if (offerCard.style.display === "none") {
+//       offerCard.style.display = "grid";
+//     } else {
+//       offerCard.style.display = "none";
+//     }
+//   })
 // })
+if (offerBtn && offerCard){offerBtn.addEventListener('click', (e)=>{
+  if (offerCard.style.display === "none") {
+    offerCard.style.display = "grid";
+  } else {
+    offerCard.style.display = "none";
+  }
+})}
 // const offerServicesCard = document.querySelectorAll('.offer-services__bot-hidden');
 // const offerServicesBtn = document.querySelector('.offer-services__btn');
 
