@@ -1,0 +1,13 @@
+.error{
+    margin-top: $marginTitle;
+    &__title{
+        font-size: 72px;
+    }
+    &__subtitle{
+        font-size: $fs42;
+    }
+    .error__link{
+        color: $secondaryRed;
+        text-decoration: underline;
+    }
+}

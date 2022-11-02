@@ -3146,7 +3146,11 @@
   }
 }
 .analysis-page__header {
-  margin-top: 300px;
+  margin-top: 250px;
+}
+
+.analysis-page__questions__brochure-steps {
+  justify-content: space-around;
 }
 
 @media (max-width: 640px) {
@@ -3215,7 +3219,7 @@
   }
 }
 .specialist-chapter {
-  margin-top: 300px;
+  margin-top: 250px;
 }
 .specialist-chapter__wrapper {
   margin-top: 40px;
@@ -3381,7 +3385,7 @@
   }
 }
 .share-archive__offer {
-  margin-top: 300px;
+  margin-top: 250px;
 }
 .share-archive__offer__bot {
   display: grid;
@@ -3468,7 +3472,7 @@
   }
 }
 .blog-archive__articles {
-  margin-top: 300px;
+  margin-top: 250px;
 }
 .blog-archive__articles__bot {
   margin-top: 72px;
@@ -3540,6 +3544,20 @@
     max-width: 288px;
   }
 }
+.error {
+  margin-top: 250px;
+}
+.error__title {
+  font-size: 72px;
+}
+.error__subtitle {
+  font-size: 42px;
+}
+.error .error__link {
+  color: #972A29;
+  text-decoration: underline;
+}
+
 *,
 *::before,
 *::after {

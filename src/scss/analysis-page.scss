@@ -1,5 +1,9 @@
 .analysis-page__header{
-    margin-top: 300px;
+    margin-top: $marginTitle;
+    
+}
+.analysis-page__questions__brochure-steps{
+    justify-content: space-around;
 }
 
 @media (max-width: 640px){
