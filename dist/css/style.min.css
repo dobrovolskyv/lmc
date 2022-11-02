@@ -583,6 +583,9 @@
   display: flex;
   align-items: center;
 }
+.reviews__sliders__swiper {
+  margin-top: 40px;
+}
 .reviews__sliders-text {
   font-family: "Fira Sans";
   font-size: 16px;
@@ -608,13 +611,13 @@
 }
 .reviews .swiper-button-next {
   right: 3%;
-  top: 30%;
+  top: 25%;
   width: 40px;
   height: 40px;
 }
 .reviews .swiper-button-prev {
   left: 90%;
-  top: 30%;
+  top: 25%;
   width: 40px;
   height: 40px;
 }
@@ -1912,6 +1915,7 @@
 }
 .similar__procedures__btn:hover {
   background-color: #5B1919;
+  transition: all 0.4s ease-in;
 }
 .similar__procedures__sale {
   background: transparent;
@@ -1943,6 +1947,9 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin-top: 22px;
+  display: none;
+}
+.offer__specialist-page-hidden {
   display: none;
 }
 
@@ -2162,7 +2169,7 @@
 }
 
 .specialist-page__header {
-  margin-top: 300px;
+  margin-top: 250px;
 }
 
 .header__skills {
@@ -2195,6 +2202,9 @@
 .header__specialist-page__contentbox {
   display: flex;
   justify-content: space-between;
+}
+.header__specialist-page__contentbox .undertitle {
+  margin-top: 20px;
 }
 .header__specialist-page__raiting {
   display: flex;
@@ -2372,8 +2382,11 @@
     font-size: 22px;
   }
 }
+.header__stock-page {
+  margin-top: 250px;
+}
 .header__stock-page__title {
-  font-size: 42px;
+  font-size: 64px;
 }
 .header__stock-page__subtitle {
   max-width: 758px;
@@ -2397,6 +2410,7 @@
 }
 .header__stock-page__right-sale {
   text-align: right;
+  text-decoration: line-through;
   color: #AE8452;
 }
 .header__stock-page__right-text {
@@ -2408,6 +2422,25 @@
   letter-spacing: 0.1em;
   color: #972A29;
   margin-bottom: 40px;
+}
+.header__stock-page__right-btn {
+  padding: 0px 30px;
+  width: 220px;
+  height: 44px;
+  background: #972A29;
+  border: none;
+  border-radius: 4px;
+  font-family: "Fira Sans";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFF9EF;
+}
+.header__stock-page__right-btn:hover {
+  background-color: #5B1919;
+  transition: all 0.4s ease-in;
 }
 .header__stock-page__list {
   display: flex;
@@ -2422,7 +2455,32 @@
   color: #972A29;
 }
 .header__stock-page__bot {
-  margin-top: 0px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__stock-page__content {
+  display: flex;
+  align-items: center;
+  background-color: #093A67;
+  max-width: 309px;
+  max-height: 116px;
+  color: #FFF9EF;
+  border-radius: 4px;
+  padding: 20px 40px;
+}
+.header__stock-page__content img {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+.header__stock-page__content p {
+  font-size: 16px;
+  line-height: 140%;
+}
+.header__stock-page__procedures {
+  margin-top: 40px;
 }
 
 .similar__procedures__price-sale {
@@ -2435,6 +2493,9 @@
 
 .skills__page4 {
   padding: 0 10px;
+}
+.skills__page4__title {
+  font-size: 42px;
 }
 .skills__page4__content-top {
   margin-top: 165px;
@@ -2583,7 +2644,7 @@
   }
 }
 .header__about-page {
-  margin-top: 300px;
+  margin-top: 250px;
 }
 .header__about-page__wrapper {
   display: flex;
@@ -2825,7 +2886,11 @@
   }
 }
 .contacts {
-  margin-top: 300px;
+  margin-top: 250px;
+}
+
+.about-doctor__answer {
+  display: none;
 }
 
 @media (max-width: 320px) {
@@ -2861,6 +2926,9 @@
   border: 1px solid #AE8452;
   border-radius: 4px;
   padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 .our-services-page7__content-card__title {
   text-align: center;
@@ -2883,6 +2951,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+  flex-grow: 1;
 }
 .our-services-page7__content-card__description-bot ul {
   display: flex;
@@ -2895,15 +2964,17 @@
   text-decoration: underline;
 }
 .our-services-page7__content-card__more {
+  margin-top: 20px;
   display: flex;
   align-items: center;
   flex-grow: 1;
+  justify-content: flex-end;
 }
 .our-services-page7__content-card__more p {
   font-size: 20px;
   color: #972A29;
 }
-.our-services-page7__content-card__more svg {
+.our-services-page7__content-card__more img {
   margin-left: 15px;
 }
 .our-services-page7__content-card:nth-child(1) {
@@ -2943,9 +3014,10 @@
   }
 }
 .services-chapter__physics {
-  margin-top: 300px;
+  margin-top: 250px;
 }
 .services-chapter__physics-wrapper {
+  margin-top: 40px;
   display: flex;
   justify-content: space-between;
 }
@@ -2992,6 +3064,30 @@
   text-transform: uppercase;
   color: #FFF9EF;
   visibility: hidden;
+}
+.services-chapter__list-page {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.services-chapter__item-page {
+  padding: 2px 10px;
+  font-size: 14px;
+  margin-right: 20px;
+}
+.services-chapter__item-page a {
+  display: flex;
+  align-items: center;
+}
+.services-chapter__item-page p {
+  margin-right: 15px;
+}
+.services-chapter__item-page:hover {
+  background-color: #093A67;
+  color: #FFF9EF;
+  border-radius: 4px;
 }
 
 .services-chapter__content:hover .services-chapter__contentbox-btn__hidden {
@@ -3250,7 +3346,7 @@
   }
 }
 .our-services-page7 {
-  margin-top: 300px;
+  margin-top: 250px;
 }
 
 .articles__bot {
@@ -3588,11 +3684,10 @@ h2 {
   align-items: center;
 }
 
-.header__menu-navpage {
-  margin-bottom: 40px;
-}
 .header__menu-navpage__list {
   display: flex;
+  align-items: center;
+  margin-bottom: 50px;
 }
 .header__menu-navpage__item {
   font-size: 16px;

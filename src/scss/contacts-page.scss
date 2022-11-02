@@ -1,5 +1,8 @@
 .contacts{
-    margin-top: 300px;
+    margin-top: $marginTitle;
+}
+.about-doctor__answer{
+    display: none;
 }
 @media (max-width: 640px) {
     
@@ -12,6 +15,7 @@
         &__contentbox{
             padding: 6px 14px;
         }
+        
         &__title{
             font-size: $fs18;
             img{

@@ -16,6 +16,9 @@
         border: 1px solid $gold;    
         border-radius:4px;
         padding: 20px 30px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
         &__title{
             
             text-align: center;
@@ -40,6 +43,8 @@
                 display: flex;
                 flex-direction: column;
                 margin-top: 20px;
+                flex-grow: 1;
+               
                 ul{
                     display: flex;
                     flex-direction: column;
@@ -54,14 +59,16 @@
             
         }
         &__more{
+            margin-top: 20px;
             display: flex;
             align-items: center;
             flex-grow: 1;
+            justify-content: flex-end;
             p{
                 font-size: $fs20;
                 color: $secondaryRed;
             }
-            svg{
+            img{
                 margin-left: 15px;
             }
         }

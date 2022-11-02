@@ -721,6 +721,9 @@
     }
 
     &__sliders {
+        &__swiper{
+            margin-top: 40px;
+        }
         display: flex;
         align-items: center;
 
@@ -754,7 +757,7 @@
     
     .swiper-button-next{
         right: 3%;
-        top: 30%;
+        top: 25%;
         width: 40px;
         height: 40px;
 
@@ -762,7 +765,7 @@
 
     .swiper-button-prev{
         left: 90%;
-        top: 30%;
+        top: 25%;
         width: 40px;
         height: 40px;
 

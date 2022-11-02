@@ -1,8 +1,9 @@
 .services-chapter {
     &__physics{
-        margin-top: 300px;
+        margin-top: $marginTitle;
     }
     &__physics-wrapper{
+        margin-top: 40px;
         display: flex;
         justify-content: space-between;
     }
@@ -55,6 +56,31 @@
         
 
 
+    }
+    &__list-page{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    &__item-page{
+        padding: 2px 10px;
+        font-size: $fs14;
+        margin-right: 20px;
+        a{
+        display: flex;
+        align-items: center;
+        }
+        p{
+        
+        margin-right: 15px;
+        }
+        &:hover{
+            background-color: $primary;
+            color: $bg;
+            border-radius: 4px;
+        }
     }
 
 }

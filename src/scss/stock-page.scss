@@ -1,6 +1,7 @@
 .header__stock-page{
+    margin-top: $marginTitle;
     &__title{
-        font-size: $fs42;
+        font-size: 64px;
     }
     &__subtitle{
         max-width: 758px;
@@ -23,6 +24,7 @@
         padding: 70px 30px;
         &-sale{
             text-align: right;
+            text-decoration:line-through;
             color: $gold;
         }
         &-text{
@@ -34,6 +36,25 @@
             letter-spacing: 0.1em;
             color: $secondaryRed;
             margin-bottom: 40px;
+        }
+        &-btn{
+            padding: 0px 30px;
+            width: 220px;
+            height: 44px;
+            background: $secondaryRed;
+            border: none;
+            border-radius: 4px;
+            font-family: 'Fira Sans';
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: $bg;
+    &:hover{
+        background-color: $btnHover;
+        transition: all 0.4s ease-in;
+    }
         }
     }
     &__list{
@@ -50,15 +71,42 @@
         color: $secondaryRed;
     }
     &__bot{
-        margin-top: 0px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__content{
+        display: flex;
+        align-items: center;
+        background-color: $primary;
+        max-width: 309px;
+        max-height: 116px;
+        color: $bg;
+        border-radius: 4px;
+        padding: 20px 40px;
+        img{
+            width: 60px;
+            height: 60px;
+            margin-right: 20px;
+        }
+        p{
+            font-size: $fs16;
+            line-height: 140%;
+        }
+    }
+    &__procedures{
+        margin-top: 40px;
     }
 }
+
 
 //
 //
 //Что входит в акцию
 //
 //
+
 .similar__procedures__price-sale{
     font-family: 'Oranienbaum';
 font-weight: 400;
@@ -74,6 +122,9 @@ color: #AE8452;
 //
 
 .skills__page4{
+    &__title{
+        font-size: $fs42;
+    }
     padding: 0 10px;
     &__content-top{
         margin-top: 165px;

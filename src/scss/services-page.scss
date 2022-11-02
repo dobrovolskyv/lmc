@@ -250,7 +250,8 @@
   margin-top: 27px;
   &:hover{
     background-color: $btnHover;
-  }
+    transition: all 0.4s ease-in;
+}
     }
 
     &__sale{
@@ -294,6 +295,9 @@ color: #972A29;
         display: grid;
         grid-template-columns: repeat(4,1fr);
         margin-top: 22px;
+        display: none;
+    }
+    &__specialist-page-hidden{
         display: none;
     }
 }

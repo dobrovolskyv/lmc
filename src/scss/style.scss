@@ -160,9 +160,11 @@ color: $gold;
     align-items: center;
 }
 .header__menu-navpage{
-    margin-bottom: 40px;
+    
     &__list{
         display: flex;
+        align-items: center;
+        margin-bottom: 50px;
     }
     &__item{
         &:not(:first-child){

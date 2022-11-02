@@ -158,7 +158,7 @@ const reviewsSwiper = new Swiper('.reviews__sliders__swiper', {
    
     // when window width is >= 640px
     700: {
-      slidesPerView: 2.2,
+      slidesPerView: 2,
       spaceBetween: 40,
     }
   },

@@ -2,7 +2,7 @@
     background-color: $bg;
 }
 .specialist-page__header{
-    margin-top: 300px;
+    margin-top: $marginTitle;
 }
 .header{
     &__skills{
@@ -34,10 +34,14 @@
         font-size: 58px;
         line-height: 67px;
     }
+    
 
     &__contentbox {
         display: flex;
         justify-content: space-between;
+        .undertitle{
+            margin-top: 20px;
+        }
     }
     &__raiting{
         display: flex;
@@ -84,6 +88,7 @@
     justify-content:space-around;
 }
 }
+
 
 //
 //
