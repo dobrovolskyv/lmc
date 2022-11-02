@@ -105,6 +105,7 @@ color: $gold;
 }
 
 .btn{
+    
     margin: 50px 44% 0px;
     padding: 0px 30px;
     width: 220px;
@@ -174,5 +175,21 @@ color: $gold;
     }
 }
 .services__content-watch-tablet{
+    display: none;
+}
+.visiable{
+    visibility: hidden;
+}
+
+.content{
+    transition: all 0.4s linear;
+    display: none;
+}
+
+.accrodion{
+    border: 2px solid red;
+}
+
+.services__content-watch__phone{
     display: none;
 }

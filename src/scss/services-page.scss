@@ -50,6 +50,10 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: $bg;
+    &:hover{
+        background-color: $btnHover;
+        transition: all 0.4s ease-in;
+    }
 }
 
 //
@@ -68,7 +72,7 @@
         max-width: 871px;
         margin-right: 20px;
     }
-    &__subtitle{
+    .questions__subtitle{
         margin-top: 20px;
         font-size: $fs20;
     }
@@ -133,8 +137,8 @@
         }
         &-btn{
             padding: 0px 30px;
-            width: 180px;
-            height: 40px;
+            width: 220px;
+            height: 44px;
             background: $secondaryRed;
             border: none;
             border-radius: 4px;
@@ -145,6 +149,10 @@
             letter-spacing: 0.05em;
             text-transform: uppercase;
             color: $bg;
+            &:hover{
+                background-color: $btnHover;
+                transition: all 0.4s ease-in;
+            }
         }
     }
     &__right{
@@ -155,7 +163,7 @@
     }
     &-item{
         margin-top: 10px;
-        font-size: $fs16;
+        font-size: $fs20;
         text-decoration: underline;
         &-first{
             margin-bottom: 20px;
@@ -173,7 +181,7 @@
         text-align: center;
  }
     &-text{  
-        font-size: $fs16;
+        font-size: $fs20;
         color: $secondaryRed;
         margin-bottom: 28px;
     }
@@ -189,7 +197,7 @@
 
 
 .similar{
-    margin-top: 140px;
+    margin-top: $marginTop;
     padding: 0 10px;
     &__procedures{
         margin-top: 49px;
@@ -286,6 +294,7 @@ color: #972A29;
         display: grid;
         grid-template-columns: repeat(4,1fr);
         margin-top: 22px;
+        display: none;
     }
 }
 

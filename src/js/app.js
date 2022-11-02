@@ -1,35 +1,39 @@
+
 import * as flsFunctions from "./modules/functions.js";
+import * as accordionFunction from "./modules/trip.js"
 
 flsFunctions.isWebp();
 
+
+
 // import Swiper, { Navigation, Pagination } from "swiper";
 document.addEventListener('DOMContentLoaded', (e)=>{
-  // let isMobile = {
-  //   Android: function() {return navigator.userAgent.match(/Android/i);},
-  //   BlackBerry: function() {return navigator.userAgent.match(/BlackBerry/i);},
-  //   iOS: function() {return navigator.userAgent.match(/iPhone|iPad|iPod/i);},
-  //   Opera: function() {return navigator.userAgent.match(/Opera Mini/i);},
-  //   Windows: function() {return navigator.userAgent.match(/IEMobile/i);},
-  //   any: function() {return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());}
-  // };
-  //     let body=document.querySelector('body');
-  //     if(isMobile.any()){
-  //     body.classList.add('touch');
-  //     let arrow=document.querySelectorAll('.arrow');
-  //       for(i=0; i<arrow.length; i++){
-  //       let thisLink=arrow[i].previousElementSibling;
-  //       let subMenu=arrow[i].nextElementSibling;
-  //       let thisArrow=arrow[i];
+  let isMobile = {
+    Android: function() {return navigator.userAgent.match(/Android/i);},
+    BlackBerry: function() {return navigator.userAgent.match(/BlackBerry/i);},
+    iOS: function() {return navigator.userAgent.match(/iPhone|iPad|iPod/i);},
+    Opera: function() {return navigator.userAgent.match(/Opera Mini/i);},
+    Windows: function() {return navigator.userAgent.match(/IEMobile/i);},
+    any: function() {return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());}
+  };
+      let body=document.querySelector('body');
+      if(isMobile.any()){
+      body.classList.add('touch');
+      let arrow=document.querySelectorAll('.arrow');
+        for(i=0; i<arrow.length; i++){
+        let thisLink=arrow[i].previousElementSibling;
+        let subMenu=arrow[i].nextElementSibling;
+        let thisArrow=arrow[i];
   
-  //       thisLink.classList.add('parent');
-  //     arrow[i].addEventListener('click', function(){
-  //       subMenu.classList.toggle('open');
-  //       thisArrow.classList.toggle('active');
-  //     });
-  //   }
-  // }else{
-  //   body.classList.add('mouse');
-  // }
+        thisLink.classList.add('parent');
+      arrow[i].addEventListener('click', function(){
+        subMenu.classList.toggle('open');
+        thisArrow.classList.toggle('active');
+      });
+    }
+  }else{
+    body.classList.add('mouse');
+  }
 const headerSlides = new Swiper('.header__slides__swiper', {
   // Optional parameters
   direction: 'horizontal',
@@ -60,7 +64,6 @@ const swiper = new Swiper('.specialist__sliders__swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
-  slidesPerView: 3.2,
   spaceBetween: 40,
 
   // If we need pagination
@@ -69,15 +72,20 @@ const swiper = new Swiper('.specialist__sliders__swiper', {
   },
   breakpoints: {
     // when window width is >= 320px
-    320: {
+    200: {
       slidesPerView: 1,
+      spaceBetween: 20
+    },
+  
+    640: {
+      slidesPerView: 2.2,
       spaceBetween: 20
     },
   
    
     // when window width is >= 640px
-    640: {
-      slidesPerView: 2.2,
+    1220: {
+      slidesPerView: 3.2,
       spaceBetween: 20,
     }
   },
@@ -108,7 +116,6 @@ const clinicSwiper = new Swiper('.clinic__right-swiper', {
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
-    type: 'bullets',
   },
 
   // Navigation arrows
@@ -129,7 +136,7 @@ const reviewsSwiper = new Swiper('.reviews__sliders__swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
-  slidesPerView: 2,
+  slidesPerView: 2.2,
   spaceBetween: 20,
 
   // If we need pagination
@@ -139,15 +146,19 @@ const reviewsSwiper = new Swiper('.reviews__sliders__swiper', {
   },
   breakpoints: {
     // when window width is >= 320px
-    320: {
+    250: {
       slidesPerView: 1,
+      spaceBetween: 20
+    },
+    600: {
+      slidesPerView: 1.2,
       spaceBetween: 20
     },
   
    
     // when window width is >= 640px
-    600: {
-      slidesPerView: 1.2,
+    700: {
+      slidesPerView: 2.2,
       spaceBetween: 40,
     }
   },
@@ -163,6 +174,8 @@ const reviewsSwiper = new Swiper('.reviews__sliders__swiper', {
   autoplay: {
     delay: 2500,
   },
+
+
 });
 
 
@@ -179,37 +192,50 @@ articlesBtn.addEventListener('click', (e)=>{
 
 
 const offerCard = document.querySelector('.offer__bot-hidden');
-const offerBtn = document.querySelector('.offer__btn');
+const offerBtn = document.querySelectorAll('.offer__btn');
 
-
-offerBtn.addEventListener('click', (e)=>{
-  if (offerCard.style.display === "none") {
-    offerCard.style.display = "grid";
-  } else {
-    offerCard.style.display = "none";
-  }
-})
-const offerServicesCard = document.querySelector('.offer-services__bot-hidden');
-const offerServicesBtn = document.querySelector('.offer-services__btn');
-
-offerServicesBtn.addEventListener('click', (e)=>{
-  if (offerServicesCard.style.display === "none") {
-    offerServicesCard.style.display = "grid";
-  } else {
-    offerServicesCard.style.display = "none";
-  }
-})
-
-
-const questions = document.querySelectorAll('.about-doctor__contentbox');
-const answer = document.querySelectorAll('.about-doctor__answer')
-
-questions.forEach((question)=>{
-  question.addEventListener('click', ()=>{
-    question.classList.toggle('active')
+offerBtn.forEach((el)=>{
+  el.addEventListener('click',()=>{
+    console.log(offerCard)
+    if (offerCard.style.display === "none") {
+      offerCard.style.display = "grid";
+    } else {
+      offerCard.style.display = "none";
+    }
   })
 })
+// offerBtn.addEventListener('click', (e)=>{
+//   if (offerCard.style.display === "none") {
+//     offerCard.style.display = "grid";
+//   } else {
+//     offerCard.style.display = "none";
+//   }
+// })
+// const offerServicesCard = document.querySelectorAll('.offer-services__bot-hidden');
+// const offerServicesBtn = document.querySelector('.offer-services__btn');
+
+// offerServicesBtn.addEventListener('click', (e)=>{
+//   if (offerServicesCard.style.display === "none") {
+//     offerServicesCard.style.display = "grid";
+//   } else {
+//     offerServicesCard.style.display = "none";
+//   }
+// })
 
 
+// document.querySelectorAll('.accrodion').forEach((el)=>{
+//   el.addEventListener('click',()=>{
+//     let cont = el.nextElementSibling;
+//     console.log(cont);
+//     if(cont.style.display){
+//       document.querySelectorAll('.content').forEach((el)=>el.style.display = null)
+//     } else {
+//       document.querySelectorAll('.content').forEach((el)=>el.style.display = null)
+//       cont.style.display = "block";
+//     }
+//   })
+//   })
+accordionFunction.accordion()
 
 })
+

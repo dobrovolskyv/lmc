@@ -101,6 +101,7 @@
         margin-top: 36px;
     }
     &__question{
+        cursor: pointer;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -116,7 +117,6 @@
         display: grid;
         grid-template-columns: repeat(2,1fr);
         max-height: 0;
-        overflow: hidden;
        &-text{
         margin-right: 40px;
         margin-top: 16px;
