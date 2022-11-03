@@ -1,6 +1,6 @@
 
 import * as flsFunctions from "./modules/functions.js";
-import * as accordionFunction from "./modules/trip.js"
+import * as accordionFunction from "./modules/accordion.js"
 
 flsFunctions.isWebp();
 
@@ -130,30 +130,6 @@ const clinicSwiper = new Swiper('.clinic__right-swiper', {
     delay: 2200,
   },
 });
-const colSwiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-  slidesPerView: 1,
-  spaceBetween: 20,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  
-  autoplay: {
-    delay: 2200,
-  },
-});
 
 
 const reviewsSwiper = new Swiper('.reviews__sliders__swiper', {
@@ -201,7 +177,8 @@ const reviewsSwiper = new Swiper('.reviews__sliders__swiper', {
 
 
 });
-
+// var url = window.location.href;
+// if(url.indexOf('http://localhost:3000/index.html') != -1){}
   
 const articlesCard = document.querySelector('.articles__bot-hidden');
 const articlesBtn = document.querySelector('.articles__btn');
@@ -246,20 +223,7 @@ if (offerBtn && offerCard){offerBtn.addEventListener('click', (e)=>{
 //   }
 // })
 
-
-// document.querySelectorAll('.accrodion').forEach((el)=>{
-//   el.addEventListener('click',()=>{
-//     let cont = el.nextElementSibling;
-//     console.log(cont);
-//     if(cont.style.display){
-//       document.querySelectorAll('.content').forEach((el)=>el.style.display = null)
-//     } else {
-//       document.querySelectorAll('.content').forEach((el)=>el.style.display = null)
-//       cont.style.display = "block";
-//     }
-//   })
-//   })
-accordionFunction.accordion()
+accordionFunction.accordionAboutDoctor()
 
 })
 

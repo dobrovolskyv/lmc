@@ -98,6 +98,7 @@
 .about-doctor{
     margin-top: 165px;
     padding: 0 10px;
+    
     &__contentbox{
         padding: 18px 40px;
         width: 100%;
@@ -121,7 +122,9 @@
     &__answer{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        max-height: 0;
+        max-height: 0px;
+        overflow: hidden;
+        transition: all 0.4s ease-in;
        &-text{
         margin-right: 40px;
         margin-top: 16px;

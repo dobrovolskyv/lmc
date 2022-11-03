@@ -80,12 +80,12 @@
 }
 .our-services-page7__menu__services {
     width: 309px;
-    max-height: 400px;
+    max-height: 600px;
     margin-right: 20px;
     border-radius: 4px;
     padding: 14px;
-    color: #FFF9EF;
-    background-color: #093A67;
+    color: $bg;
+    background-color: $primary;
   }
   .our-services-page7__menu__services__item {
     display: flex;
@@ -93,6 +93,18 @@
     border-bottom: 1px solid #FFF9EF;
     margin-top: 14px;
   }
+ //sidebar menu
+ .submenu__services__list{
+    flex-direction: column;
+ }
+ .menu__services__item{
+    flex-direction: column;
+    div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+ }
 
 
 @media (max-width: 640px) {

@@ -184,8 +184,8 @@
     }
         .header__arrow-nav {
                 position: absolute;
-                bottom: 20px;
-                right: 40px;
+                bottom: 20%;
+                right: 10%;
                 display: flex;
                 align-items: center;
             
@@ -200,7 +200,9 @@
                 padding: 5px 10px;
                 margin-left: 16px;
                 font-size: $fs14;
+               
                 }
+               
             
         }
 }
@@ -1280,8 +1282,6 @@
             }
         }
 
-        &__item {}
-
         &__link {
             color: $primary;
 
@@ -1415,7 +1415,7 @@
 //адаптив под планшет
 //
 //
-@media (max-width: 640px) {
+@media (max-width: 610px) {
     //
     //
     //main page
@@ -1525,6 +1525,12 @@
                 display: none;
             }
         }
+        &-main-page__bot{
+            margin-top: 200px;
+        }
+        &__arrow-nav{
+
+        }
     }
     .title__offer{
         font-size: $fs32;
@@ -1590,13 +1596,16 @@
     //
     //
     //
+    
     .spacialist{
        
         .specialist__sliders__swiper{
             width: 170px;
             height: 270px;
+            display: none;
         }
         &__sliders{
+            display: none;
             &-box{
                .swiper-slide{
                 width: 170px;

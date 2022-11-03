@@ -1,13 +1,17 @@
 .error{
-    margin-top: $marginTitle;
+    margin-top: 400px;
+    margin-bottom: 200px;
     &__title{
         font-size: 72px;
     }
     &__subtitle{
         font-size: $fs42;
+        margin: 20px 0;
     }
-    .error__link{
-        color: $secondaryRed;
-        text-decoration: underline;
-    }
+    a{
+        
+    color: $secondaryRed;
+    text-decoration: underline;
+}
+
 }

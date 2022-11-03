@@ -164,8 +164,8 @@
 }
 .main-page__header .header__arrow-nav {
   position: absolute;
-  bottom: 20px;
-  right: 40px;
+  bottom: 20%;
+  right: 10%;
   display: flex;
   align-items: center;
 }
@@ -1047,7 +1047,7 @@
   overflow: hidden;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 610px) {
   .title {
     font-size: 36px;
   }
@@ -1151,7 +1151,9 @@
   .header__bot-call {
     display: none;
   }
-
+  .header-main-page__bot {
+    margin-top: 200px;
+  }
   .title__offer {
     font-size: 32px;
     line-height: 37px;
@@ -1204,6 +1206,10 @@
   .spacialist .specialist__sliders__swiper {
     width: 170px;
     height: 270px;
+    display: none;
+  }
+  .spacialist__sliders {
+    display: none;
   }
   .spacialist__sliders-box .swiper-slide {
     width: 170px;
@@ -2275,7 +2281,9 @@
 .about-doctor__answer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  max-height: 0;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 0.4s ease-in;
 }
 .about-doctor__answer-text {
   margin-right: 40px;
@@ -2889,10 +2897,6 @@
   margin-top: 250px;
 }
 
-.about-doctor__answer {
-  display: none;
-}
-
 @media (max-width: 320px) {
   .contacts {
     margin-top: 100px;
@@ -2984,7 +2988,7 @@
 
 .our-services-page7__menu__services {
   width: 309px;
-  max-height: 400px;
+  max-height: 600px;
   margin-right: 20px;
   border-radius: 4px;
   padding: 14px;
@@ -2997,6 +3001,19 @@
   justify-content: space-between;
   border-bottom: 1px solid #FFF9EF;
   margin-top: 14px;
+}
+
+.submenu__services__list {
+  flex-direction: column;
+}
+
+.menu__services__item {
+  flex-direction: column;
+}
+.menu__services__item div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media (max-width: 320px) {
@@ -3545,15 +3562,17 @@
   }
 }
 .error {
-  margin-top: 250px;
+  margin-top: 400px;
+  margin-bottom: 200px;
 }
 .error__title {
   font-size: 72px;
 }
 .error__subtitle {
   font-size: 42px;
+  margin: 20px 0;
 }
-.error .error__link {
+.error a {
   color: #972A29;
   text-decoration: underline;
 }
