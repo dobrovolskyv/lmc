@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
   width: 1300px;
   position: absolute;
@@ -237,6 +238,9 @@
 .services__bot-phone {
   display: none;
 }
+.services__bot-tablet {
+  display: none;
+}
 
 .content-card__title {
   padding: 20px 40px;
@@ -380,6 +384,12 @@
   font-size: 20px;
   line-height: 140%;
 }
+.about .about__wrapper-tablet {
+  display: none;
+}
+.about .about__img-tablet {
+  display: none;
+}
 
 .specialist {
   margin-top: 154px;
@@ -398,7 +408,7 @@
   justify-content: end;
   flex-direction: column-reverse;
   margin-right: 24px;
-  width: 309px;
+  max-width: 309px;
   height: 395px;
   background-image: url("../../img/doctor.jpg");
   background-position: center 0;
@@ -598,6 +608,9 @@
   text-align: right;
   text-decoration-line: underline;
 }
+.reviews__sliders-name {
+  font-weight: 700;
+}
 .reviews__sliders-box {
   display: flex;
   flex-direction: column;
@@ -684,6 +697,9 @@
 .contacts {
   margin-top: 140px;
   font-family: "Fira Sans";
+}
+.contacts__btn-tablet {
+  display: none;
 }
 .contacts__top {
   display: flex;
@@ -952,6 +968,7 @@
   padding-top: 20px;
 }
 .header__menu__list > li {
+  padding-bottom: 10px;
   position: relative;
 }
 .header__menu__list > li:not(:first-child) {
@@ -968,12 +985,13 @@
   color: #972A29;
 }
 .header__submenu__list {
+  margin-top: 10px;
   display: none;
   position: absolute;
   left: 0;
   top: 36px;
   min-width: 350px;
-  padding-top: 6px;
+  padding-top: 0px;
   background-color: #093A67;
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
@@ -985,6 +1003,12 @@
 .header__submenu__list li:hover {
   background: #072846;
 }
+.header__submenu__list li:hover:first-child {
+  border-top-right-radius: 8px;
+}
+.header__submenu__list li:hover:last-child {
+  border-bottom-right-radius: 8px;
+}
 .header__submenu__link {
   color: #FFF9EF;
 }
@@ -994,7 +1018,6 @@
   left: 100%;
   top: 0px;
   min-width: 250px;
-  padding: 0 0 0 10px;
   background-color: #093A67;
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
@@ -1034,13 +1057,20 @@
   top: 15px;
   width: 0;
   height: 0;
-  border-top: 5px solid black;
+  border-top: 5px solid #093A67;
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
 }
 
-.arrow__right {
-  transform: rotate(-90deg);
+.arrow__menu-right {
+  position: absolute;
+  top: 15px;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-left: 5px solid #FFF9EF;
+  border-bottom: 5px solid transparent;
 }
 
 .header__slides__swiper {
@@ -1060,6 +1090,8 @@
   body {
     font-size: 16px;
     line-height: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   h2 {
@@ -1146,7 +1178,8 @@
   }
   .header__bot {
     max-width: 600px;
-    margin-top: 20px;
+    height: 56px;
+    margin-top: 0px;
   }
   .header__bot-call {
     display: none;
@@ -1191,8 +1224,51 @@
     border-radius: 4px;
   }
 
+  .services {
+    margin: 200px 0px 0;
+    position: relative;
+  }
   .services__subtitle {
     width: 100%;
+  }
+  .services__content-card {
+    width: 439px;
+    margin-right: 25px;
+    margin-top: 23px;
+    display: flex;
+    flex-direction: column;
+  }
+  .services .content-card__description {
+    justify-content: space-between;
+  }
+  .services .content-card__description ul {
+    margin-bottom: 20px;
+  }
+  .services .content-card__description li {
+    width: 230px;
+    font-size: 14px;
+  }
+  .services__bot-tablet {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .services__bot-tablet .content-card__title {
+    padding: 5px 16px;
+    margin-top: 20px;
+  }
+  .services__bot-tablet .content-card__title img {
+    width: 64px;
+    height: 64px;
+  }
+  .services__bot-tablet .content-card__title p {
+    font-size: 32px;
+  }
+  .services__bot-tablet .services__sliders-arrow {
+    top: 30%;
+    width: 38px;
+    height: 38px;
   }
 
   .about__citate__text {
@@ -1202,18 +1278,64 @@
     width: 210px;
     height: 252px;
   }
+  .about__wrapper {
+    display: none;
+  }
+  .about .about__wrapper-tablet {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .about__right-tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__left-tablet {
+    width: 60%;
+  }
+  .about__table-tablet {
+    color: #972A29;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 209px;
+  }
+  .about__table-tablet .about__table__span-tablet {
+    font-size: 48px;
+    line-height: 140%;
+    font-family: "Oranienbaum";
+    font-weight: 400;
+  }
+  .about__table-tablet .about__table__td-tablet {
+    font-size: 14px;
+  }
+  .about__table-tablet .about__table__td-secondary-tablet {
+    font-size: 20px;
+  }
+  .about .about__img-tablet {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 596px;
+    height: 257px;
+  }
+  .about .about__img-tablet img {
+    width: 90%;
+  }
 
+  .spacialist .swiper-slide {
+    width: 50%;
+    height: 200px;
+  }
   .spacialist .specialist__sliders__swiper {
-    width: 170px;
-    height: 270px;
-    display: none;
+    width: 50%;
+    max-height: 80%;
   }
-  .spacialist__sliders {
-    display: none;
-  }
-  .spacialist__sliders-box .swiper-slide {
-    width: 170px;
-    height: 270px;
+  .spacialist .specialist__sliders__swiper .swiper-button-prev {
+    left: 82%;
   }
 
   .offer__bot {
@@ -1225,12 +1347,12 @@
     gap: 20px;
   }
   .offer__card {
-    max-width: 282px;
-    max-height: 368px;
+    max-width: 286px;
+    max-height: 371px;
     border-radius: 4px;
   }
   .offer__card__text {
-    margin-top: 12.8em;
+    margin-top: 10.2em;
   }
 
   .clinic__wrapper {
@@ -1252,19 +1374,59 @@
     border: 1px solid #AE8452;
     border-radius: 4px;
   }
+  .clinic .swiper-button-next {
+    right: 10%;
+  }
+  .clinic .clinic__right-pagination.swiper-pagination {
+    bottom: 10%;
+  }
 
+  .reviews {
+    margin: 100px 0px 0;
+  }
   .reviews .reviews__sliders_swiper .swiper {
     margin-top: 40px;
   }
+  .reviews__sliders-top {
+    display: flex;
+    align-items: center;
+  }
+  .reviews__sliders-top img {
+    margin-right: 10px;
+  }
+  .reviews__sliders-from {
+    margin-left: auto;
+  }
+  .reviews .reviews__sliders-box {
+    padding: 10px 20px;
+    height: 250px;
+  }
 
+  .articles {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .articles__card {
+    margin-top: 61px;
+    position: relative;
+    max-width: 309px;
+    height: 294px;
+  }
+  .articles__card__subtitle {
+    margin-top: 30px;
+  }
   .articles__bot-visiable {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
   .articles__bot-hidden {
+    margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+  }
+  .articles .articles__btn {
+    margin: 140px 30% 0px;
   }
 
   .contacts__bot {
@@ -1273,12 +1435,50 @@
   }
   .contacts__bot__info {
     width: 100%;
+    padding: 20px;
+  }
+  .contacts__bot__info-adress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+  }
+  .contacts__bot__info-adress div {
+    width: 60%;
+  }
+  .contacts__bot__info-text {
+    font-size: 16px;
+  }
+  .contacts__bot__info-subtext {
+    font-size: 14px;
+  }
+  .contacts__bot__info-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
   .contacts__bot__img {
-    width: 592px;
+    width: 100%;
     height: 266px;
   }
-
+  .contacts__btn {
+    display: none;
+  }
+  .contacts__btn-tablet {
+    display: flex;
+    padding: 10px 20px;
+    width: 202px;
+    height: 38px;
+    background: #972A29;
+    border: none;
+    border-radius: 4px;
+    font-family: "Fira Sans";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFF9EF;
+  }
   .record__bot {
     display: block;
     margin-top: 10px;
@@ -2005,6 +2205,10 @@
     height: 38px;
     padding: 4px 18px;
     font-size: 10px;
+  }
+
+  .services__bot {
+    display: none;
   }
 
   .specialist__sliders__swiper .specialist__slider .swiper-slide {
@@ -2988,12 +3192,9 @@
 
 .our-services-page7__menu__services {
   width: 309px;
-  max-height: 600px;
   margin-right: 20px;
   border-radius: 4px;
-  padding: 14px;
   color: #FFF9EF;
-  background-color: #093A67;
 }
 
 .our-services-page7__menu__services__item {
@@ -3014,6 +3215,65 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.accordion__menu {
+  background-color: #093A67;
+  width: 309px;
+  color: #fff;
+  border-radius: 4px;
+}
+.accordion__menu__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion__menu__btn {
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 16px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: 0.5s;
+  border-bottom: 1px solid #FFF9EF;
+  border-width: 96%;
+}
+
+.active, .accordion__menu__btn:hover {
+  background-color: #083054;
+}
+
+.accordion__menu__btn:after {
+  content: "+";
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "−";
+}
+
+.accordion__menu__item {
+  padding: 0 0px;
+  color: #212121;
+  color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+.accordion__menu__item p {
+  padding: 16px;
+  font-size: 14px;
+}
+.accordion__menu__item button {
+  font-size: 16px;
 }
 
 @media (max-width: 320px) {
@@ -3375,7 +3635,7 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
-@media (max-width: 640px) {
+@media (max-width: 610px) {
   .our-services-page7 {
     margin-top: 200px;
   }
@@ -3387,7 +3647,7 @@
     display: none;
   }
 
-  .articles .btn {
+  .articles__btn {
     margin: 15px 28% 0px;
   }
 
@@ -3659,7 +3919,7 @@ h2 {
 }
 
 .specialist__sliders__swiper {
-  width: 1320px;
+  max-width: 1320px;
   height: 507px;
   overflow: hidden;
   position: relative;
@@ -3738,19 +3998,6 @@ h2 {
 
 .services__content-watch-tablet {
   display: none;
-}
-
-.visiable {
-  visibility: hidden;
-}
-
-.content {
-  transition: all 0.4s linear;
-  display: none;
-}
-
-.accrodion {
-  border: 2px solid red;
 }
 
 .services__content-watch__phone {

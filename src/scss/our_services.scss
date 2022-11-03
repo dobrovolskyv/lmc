@@ -80,12 +80,10 @@
 }
 .our-services-page7__menu__services {
     width: 309px;
-    max-height: 600px;
+    
     margin-right: 20px;
     border-radius: 4px;
-    padding: 14px;
     color: $bg;
-    background-color: $primary;
   }
   .our-services-page7__menu__services__item {
     display: flex;
@@ -105,6 +103,70 @@
         align-items: center;
     }
  }
+//
+//
+//
+//accordioin menu
+//
+//
+.accordion__menu{
+    background-color: $primary;
+    width: 309px;
+    color: $white;
+    border-radius: 4px;
+    &__list{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.accordion__menu__btn {
+    background-color: transparent;
+    color: $white;
+    cursor: pointer;
+    padding: 16px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.5s;
+    border-bottom: 1px solid $bg;
+    border-width: 96%;
+    
+}
+
+.active, .accordion__menu__btn:hover {
+    background-color: $bgFooter;
+}
+
+.accordion__menu__btn:after {
+    content: '\002B';
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.accordion__menu__item {
+    padding: 0 0px;
+    color: #212121;
+    color: $white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    p{
+        padding: 16px;
+        font-size: $fs14;
+    }
+    button{
+        font-size: $fs16;
+    }
+}
 
 
 @media (max-width: 640px) {

@@ -8,7 +8,7 @@
     }
 }
 
-@media (max-width: 640px){
+@media (max-width: 610px){
     .our-services-page7{
         margin-top: $tabletMargin;
     }
@@ -19,7 +19,7 @@
         }
     }
     .articles{
-        .btn{
+        &__btn{
             margin: 15px 28% 0px;
         }
     }

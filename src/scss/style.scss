@@ -93,7 +93,7 @@ color: $gold;
 }
 
 .specialist__sliders__swiper{
-    width: 1320px;
+    max-width: 1320px;
     height: 507px;
     overflow: hidden;
     position: relative;
@@ -180,19 +180,26 @@ color: $gold;
 .services__content-watch-tablet{
     display: none;
 }
-.visiable{
-    visibility: hidden;
-}
+// .visiable{
+//     visibility: hidden;
+// }
 
-.content{
-    transition: all 0.4s linear;
-    display: none;
-}
 
-.accrodion{
-    border: 2px solid red;
-}
+
 
 .services__content-watch__phone{
     display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

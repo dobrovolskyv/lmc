@@ -280,6 +280,9 @@
     &__bot-phone{
         display: none;
     }
+    &__bot-tablet{
+        display: none;
+    }
 }
 
 .content-card {
@@ -380,7 +383,6 @@
 .about {
     margin-top: 140px;
     &__wrapper {
-        
         display: flex;
         justify-content: space-between;
     }
@@ -462,6 +464,12 @@
             line-height: 140%;
         }
     }
+    .about__wrapper-tablet{
+        display: none;
+    }
+    .about__img-tablet{
+        display: none;
+    }
 
 }
 
@@ -488,7 +496,7 @@
             justify-content: end;
             flex-direction: column-reverse;
             margin-right: 24px;
-            width: 309px;
+            max-width: 309px;
             height: 395px;
             background-image: url('../../img/doctor.jpg');
             background-position: center 0;
@@ -743,6 +751,9 @@
             text-decoration-line: underline;
         }
     }
+    &__sliders-name{
+        font-weight: 700;
+    }
 
     &__sliders-box {
         display: flex;
@@ -857,7 +868,9 @@
 .contacts {
     margin-top: $marginTop;
     font-family: 'Fira Sans';
-
+    &__btn-tablet{
+        display: none;
+    }
     &__top {
         display: flex;
         justify-content: space-between;
@@ -1183,80 +1196,12 @@
     }
 }
 
-// .arrow__prev {
-//     transform: rotate(-180deg);
-
-// }
-
-// .specialist__arrow {
-//     position: absolute;
-//     top: 20%;
-//     left: 30%;
-//     z-index: 100;
-// }
 
 
 
 
 
-//
-//
-//MENU NAV
-//
-//
-// .menu__list {
-//     display: flex;
-//     align-items: center;
 
-// }
-
-// .menu__item {
-//     padding-bottom: 30px;
-//     margin-left: 30px;
-//     position: relative;
-// }
-
-// .menu__item:hover .submenu__item {
-//     display: block;
-// }
-
-// .submenu__item {
-//     display: none;
-//     width: 385px;
-//     background: $white;
-//     position: absolute;
-//     top: 30px;
-// }
-
-// .submenu__list {
-//     display: flex;
-//     flex-direction: column;
-
-// }
-
-// .menu__list a {
-//     display: inline-block;
-//     padding: 5px;
-// }
-
-// .sub-submenu__list {
-//     position: absolute;
-//     top: 0px;
-//     left: 100%;
-// }
-
-// .sub-submenu__item {
-//     display: none;
-//     width: 385px;
-//     background: $white;
-
-// }
-
-// .submenu__item:hover .sub-submenu__item {
-//     display: block;
-// }
-
-//
 //
 // new menu
 //
@@ -1268,7 +1213,7 @@
             justify-content: space-between;
             padding-top: 20px;
             & >li {
-                
+                padding-bottom: 10px;
                 position: relative;
                 &:not(:first-child){
                     margin-left: 30px;
@@ -1293,14 +1238,15 @@
     }
 
     &__submenu {
-
+        
         &__list {
+            margin-top: 10px;
             display: none;
             position: absolute;
             left: 0;
             top: 36px;
             min-width: 350px;
-            padding-top: 6px;
+            padding-top: 0px;
             background-color: $primary;
             border-bottom-right-radius: 8px;
             border-top-right-radius: 8px;
@@ -1309,6 +1255,14 @@
                 width: 100%;
                 &:hover{
                     background: $listHover;
+                    &:first-child{
+                       
+                    border-top-right-radius: 8px;
+                    }
+                    &:last-child{
+                        border-bottom-right-radius: 8px;
+                    }
+
                 }
             }
         }
@@ -1327,7 +1281,7 @@
             left: 100%;
             top: 0px;
             min-width: 250px;
-            padding: 0 0 0 10px;
+            
             background-color: $primary;
             border-bottom-right-radius: 8px;
             border-top-right-radius: 8px;
@@ -1377,15 +1331,23 @@
     top: 15px;
     width: 0;
     height: 0;
-    border-top: 5px solid black;
+    border-top: 5px solid $primary;
     border-right: 5px solid transparent;
     border-left: 5px solid transparent;
 
 }
-
-.arrow__right {
-    transform: rotate(-90deg);
+.arrow__menu-right{
+    position: absolute;
+    top: 15px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-left: 5px solid $bg;
+    border-bottom: 5px solid transparent;
 }
+
+
 .header__slides__swiper{
     overflow: hidden;
 }
@@ -1431,6 +1393,8 @@
     body{
         font-size: $fs16;
         line-height: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     h2{
         line-height: 42px;
@@ -1520,7 +1484,8 @@
         
         &__bot{
             max-width: 600px;
-            margin-top: 20px;
+            height: 56px;
+            margin-top: 0px;
             &-call{
                 display: none;
             }
@@ -1572,25 +1537,127 @@
     //
     //
 
-    .services{
-        &__subtitle{
-            width: 100%
+        .services {
+            margin: 200px 0px 0;
+            position: relative;
+            &__subtitle {
+                width: 100%
+            }
+    
+            &__content-card {
+                width: 439px;
+                margin-right: 25px;
+                margin-top: 23px;
+                display: flex;
+                flex-direction: column;
+    
+    
+            }
+    
+            .content-card__description {
+                
+                justify-content: space-between;
+                ul{
+                    margin-bottom: 20px;
+                }
+                li {
+                    width: 230px;
+                    font-size: $fs14;
+                }
+            }
+    
+            &__bot-tablet {
+                
+                margin-top: 100px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+    
+                .content-card {
+                    &__title {
+                        padding: 5px 16px;
+                        margin-top: 20px;
+    
+                        img {
+                            width: 64px;
+                            height: 64px;
+                        }
+    
+                        p {
+                            font-size: $fs32;
+                        }
+                    }
+                }
+                .services__sliders-arrow{
+                    top: 30%;
+                    width: 38px;
+                    height: 38px;
+                }
+            }
         }
-    }
-    //О клинике
-    //
-    //
-    //
-    //
-    .about{
-        &__citate__text{
-            font-size: $fs18;
+    
+    
+        .about{
+           
+            &__citate__text{
+                font-size: $fs18;
+            }
+            &__right__img {
+                width: 210px;
+                height: 252px;
+            }
+            &__wrapper{
+                display: none;
+            }
+            .about__wrapper-tablet{
+                max-width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+            &__right-tablet{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            &__left-tablet{
+                width: 60%;
+            }
+            &__table-tablet{
+                color: $secondaryRed;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                width: 209px;
+                .about__table__span-tablet{
+                    font-size: 48px;
+                    line-height: 140%;
+                    font-family: 'Oranienbaum';
+                    font-weight: 400;
+
+                }
+                .about__table__td-tablet{
+                    font-size: $fs14;
+
+                }
+                .about__table__td-secondary-tablet{
+                    font-size: $fs20;
+                }
+            }
+            .about__img-tablet{
+                margin-top: 30px;
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+                max-width: 596px;
+                height: 257px;
+                img{
+                    width: 90%;
+                }
+            }
         }
-        &__right__img {
-            width: 210px;
-            height: 252px;
-        }
-    }
+    
+    
     //Наши специалисты
     //
     //
@@ -1598,25 +1665,21 @@
     //
     
     .spacialist{
-       
+        .swiper-slide{
+            
+            width: 50%;
+            height: 200px;
+           } 
         .specialist__sliders__swiper{
-            width: 170px;
-            height: 270px;
-            display: none;
+            width: 50%;
+            max-height: 80%;
         }
-        &__sliders{
-            display: none;
-            &-box{
-               .swiper-slide{
-                width: 170px;
-            height: 270px;
-               } 
-            }
+    
+        .specialist__sliders__swiper .swiper-button-prev {
+            left: 82%;
         }
     }
-    
-   
-    //ВЫГОДНЫЕ ПРЕДЛОЖЕНИЯ
+     //ВЫГОДНЫЕ ПРЕДЛОЖЕНИЯ
     //
     //
     .offer{
@@ -1629,20 +1692,21 @@
             }
         }
         &__card{
-            max-width: 282px;
-            max-height: 368px;
+            max-width: 286px;
+            max-height: 371px;
             border-radius: 4px;
             &__text{
-                margin-top: 12.8em;
+                margin-top: 10.2em;
             }
         }
     }
-     //
+         //
     //
     //Взгляните на клинику
     //
     //
     .clinic{
+       
         &__wrapper{
             flex-direction: column;
             .specialist__subtitle {
@@ -1667,33 +1731,79 @@
                 }
             }
         }
+        .swiper-button-next{
+            right: 10%;
+        }
+        .clinic__right-pagination.swiper-pagination{
+            bottom: 10%;
+        }
     }
     //
-    //
+       //
     //Отзывы пациентов
     //
     //
-    .reviews{
-        .reviews__sliders_swiper .swiper{
+    .reviews {
+        margin: 100px 0px 0;
+
+        .reviews__sliders_swiper .swiper {
             margin-top: 40px;
         }
+
+        &__sliders {
+            &-top {
+                display: flex;
+                align-items: center;
+
+                img {
+                    margin-right: 10px;
+                }
+            }
+            &-from{
+               margin-left: auto;
+            }
+        }
+        .reviews__sliders-box{
+            padding: 10px 20px;
+            height: 250px;
+        }
     }
-     //
-    //
+ //
+//
+ 
+
+ 
     //Статьи
     //
     //
     .articles{
+        margin-left: 10px;
+        margin-right: 10px;
+        &__card {
+            margin-top: 61px;
+            position: relative;
+            max-width: 309px;
+            height: 294px;
+            &__subtitle{
+            margin-top: 30px;
+            }
+        }
         &__bot-visiable{
+            
             grid-template-columns: repeat(2,1fr);
             gap: 20px;
         }
         &__bot-hidden{
+            margin-top: 20px;
             display: grid;
             grid-template-columns: repeat(2,1fr);
             gap: 20px;
         }
+        .articles__btn{
+            margin: 140px 30% 0px;
+        }
     }
+    
      //
     //
     //Контакты
@@ -1706,12 +1816,54 @@
             border: 2px solid black;
             &__info{
                 width: 100%;
+                padding: 20px;
+                &-adress{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: $fs18;
+                    div{
+                        width: 60%;
+                    }
+                }
+                &-text{
+                    font-size: $fs16;
+                }
+                &-subtext{
+                    font-size: $fs14;
+                }
+                &-list{
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                }
             }
             &__img{
-                width: 592px;
+                width: 100%;
                 height: 266px;
             }
         }
+        &__btn{
+            display: none;
+            &-tablet{
+                display: flex;
+                padding: 10px 20px;
+                width: 202px;
+                height: 38px;
+                background: $secondaryRed;
+                border: none;
+                border-radius: 4px;
+                font-family: 'Fira Sans';
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                color: $bg;
+    
+            }
+        }
+        .articles__btn-tablet{}
+        
     }
       //
     //
@@ -1779,7 +1931,11 @@
             }
     
         }
-}
+    
+    }
+  
+   
+  
 //
 //
 //

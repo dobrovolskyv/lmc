@@ -60,7 +60,7 @@ const headerSlides = new Swiper('.header__slides__swiper', {
   },
 });
 
-const swiper = new Swiper('.specialist__sliders__swiper', {
+const servicesSwiper = new Swiper('.services__bot-tablet', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -77,7 +77,46 @@ const swiper = new Swiper('.specialist__sliders__swiper', {
       spaceBetween: 20
     },
   
-    640: {
+    320: {
+      slidesPerView: 1.2,
+      spaceBetween: 20
+    },
+  
+   
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+  autoplay: {
+    delay: 2500,
+  },
+});
+const Specialistswiper = new Swiper('.specialist__sliders__swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  spaceBetween: 40,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    200: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+  
+    340: {
       slidesPerView: 2.2,
       spaceBetween: 20
     },
@@ -177,9 +216,7 @@ const reviewsSwiper = new Swiper('.reviews__sliders__swiper', {
 
 
 });
-// var url = window.location.href;
-// if(url.indexOf('http://localhost:3000/index.html') != -1){}
-  
+
 const articlesCard = document.querySelector('.articles__bot-hidden');
 const articlesBtn = document.querySelector('.articles__btn');
 
@@ -212,18 +249,59 @@ if (offerBtn && offerCard){offerBtn.addEventListener('click', (e)=>{
     offerCard.style.display = "none";
   }
 })}
-// const offerServicesCard = document.querySelectorAll('.offer-services__bot-hidden');
-// const offerServicesBtn = document.querySelector('.offer-services__btn');
 
-// offerServicesBtn.addEventListener('click', (e)=>{
-//   if (offerServicesCard.style.display === "none") {
-//     offerServicesCard.style.display = "grid";
-//   } else {
-//     offerServicesCard.style.display = "none";
-//   }
-// })
+// var acc = document.getElementsByClassName("accordion__menu__item");
+// var i;
 
-accordionFunction.accordionAboutDoctor()
+// for (i = 0; i < acc.length; i++) {
+//   acc[i].addEventListener("click", function() {
+//     this.classList.toggle("active");
+//     var panel = this.nextElementSibling;
+//     if (panel.style.maxHeight){
+//       panel.style.maxHeight = null;
+//     } else {
+//       panel.style.maxHeight = panel.scrollHeight + "px";
+      
+//     } 
+//   });
+// }
+// function accord (className){
+//   let  cnStr = className.toString();
+//  let cn = document.getElementsByClassName(cnStr)
+//  let i;
+//  for (i = 0; i < cn.length; i++) {
+//   cn[i].addEventListener("click", function() {
+//     this.classList.toggle("active");
+//     var panel = this.nextElementSibling;
+//     if (panel.style.maxHeight){
+//       panel.style.maxHeight = null;
+//     } else {
+//       panel.style.maxHeight = panel.scrollHeight + "px";
+      
+//     } 
+//   });
+// }
+
+var acci = document.getElementsByClassName("accordion__menu__btn");
+var i;
+
+for (i = 0; i < acci.length; i++) {
+  acci[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+
+
+
+
+
+accordionFunction.accordionAboutDoctor();
 
 })
 
