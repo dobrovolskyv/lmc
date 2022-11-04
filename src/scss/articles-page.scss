@@ -8,26 +8,42 @@
     }
 }
 
-@media (max-width: 610px){
+@media (max-width: 640px){
+    
     .our-services-page7{
+        padding: 0px 5px;
         margin-top: $tabletMargin;
     }
     .questions{
+        padding: 0px 5px;
         font-size: $fs16;
+        .questions__subtitle{
+            font-size: $fs16;
+        }
         &__right{
             display: none;
         }
+
     }
     .articles{
+        padding: 0px 5px;
         &__btn{
             margin: 15px 28% 0px;
         }
+        &__bot{
+            grid-template-columns: repeat(2,1fr);
+            gap: 10px;
+           
+        }
+        &__card{
+            margin-top: 10px;
+            height: 360px;
+            &__text{
+                padding: 10px;
+            }
+        }
     }
-    .articles__bot{
-        
-        grid-template-columns: repeat(2,1fr);
-        gap: 10px;
-    }
+   
 }
 
 @media (max-width: 320px){

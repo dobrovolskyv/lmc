@@ -170,7 +170,49 @@
 
 
 @media (max-width: 640px) {
-   
+    .our-services-page7{
+        &__wrapper{
+            
+            flex-direction: column;
+        }
+        &__bot{
+            margin-top: 80px;
+        }
+        .accordion__menu{
+            width: 580px;
+        }
+        &__content-card{
+            padding: 10px 10px;
+            &__title{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 10px;
+                }
+                p{
+                    font-size: $fs30;
+                }
+            }
+            &__description{
+                font-size: $fs16;
+                &-bot{
+                  a{
+                    font-size: $fs16;
+                }  
+                }
+            }
+            &__more{
+                flex-grow: 0;
+                p{
+                    font-size: $fs16;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 320px) {

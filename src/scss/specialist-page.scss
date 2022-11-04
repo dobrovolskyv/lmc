@@ -140,18 +140,67 @@
 }
 
 @media (max-width: 640px) {
+   .container{
+    max-width: 592px;
+   }
     .specialist-page__header{
         margin-top: 150px;
-    }
-    .header{
-        &__specialist-page__title{
-            margin-top: 20px;
-            font-size: $fs36;
-            line-height: 140%;
+        .about__right__img{
+            
+            width: 300px;
+            height: 350px;
+            margin-left: 15px;
         }
-        &__skills__item{
+        .header__skills__item {
+            margin-top: 0px;
+            font-size: $fs16
+        }
+    }
+    .header__specialist-page{
+        &__title{
+            margin-top: 20px;
+            font-size: $fs24;
+            line-height: 140%;
+            margin-bottom: 10px;
+        }
+        .header__skills__item{
             font-size: $fs18;
             line-height: 120%;
+        }
+        &__list{
+            margin-top: 40px;
+        }
+        &__raiting{
+            img{
+                width: 15px;
+                height: 15px;
+            }
+        }
+        &__reviews {
+            font-size: $fs16;
+        }
+        &__item{
+            font-size: $fs16;
+            margin-top: 0;
+        }
+        &__contentbox{
+            // flex-direction: column;
+            .undertitle{
+                margin-top: 4px;
+                font-size: $fs10;
+            }
+        }
+       &__call{
+        flex-direction: column;
+        margin-top: 36px;
+        .header__call-link{
+            margin-right: 0;
+            padding: 10px 18px;
+            margin-bottom: 10px;
+        }
+       }
+        .header__skills{
+            margin-top: 100px;
         }
     }
     //
@@ -160,19 +209,25 @@
     //
     //
     .about-doctor{
+        margin-top: 100px;
+        .services__content-watch{
+        }
         &__title{
-            font-size: $fs32;
+            font-size: $fs24;
             
         }
         &__contentbox{
-            padding: 6px 40px;
+            padding: 6px 25px;
             margin-top: 20px;
         }
         &__question{
             img{
-                width: 35px;
-                height: 35px;
+                width: 30px;
+                height: 30px;
             }
+        }
+        &__answer-text{
+            font-size: $fs16;
         }
     }
     //
@@ -182,6 +237,7 @@
     //
         .reviews__sliders__swiper{
             margin-top: 20px;  
+            width: 588px;
         }
     //
     //
@@ -210,12 +266,13 @@
     //
     //
     //
-
+    //SIMILAR SERVICES
     //
     //
     //
-    //
-    //
+    .similar__specialist-page3{
+        margin-top: 100px;
+    }
     
 }
 

@@ -72,10 +72,7 @@
         max-width: 871px;
         margin-right: 20px;
     }
-    .questions__subtitle{
-        margin-top: 20px;
-        font-size: $fs20;
-    }
+    
     &__right{
         max-width: 421px;
         height: 821px;
@@ -84,6 +81,7 @@
         margin-top: 60px;
     }
     &__contentbox{
+        
         &__list{
         margin-top: 15px;
         }

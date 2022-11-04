@@ -360,16 +360,16 @@
                         <div class="swiper-wrapper">
                             <!-- Slides -->
                             <div class="swiper-slide">
-                                <img src="./img/clinic.jpg" alt="">
+                                <img class="clinic__right-img" src="./img/clinic.jpg" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <img src="./img/clinic.jpg" alt="">
+                                <img class="clinic__right-img" src="./img/clinic.jpg" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <img src="./img/clinic.jpg" alt="">
+                                <img class="clinic__right-img" src="./img/clinic.jpg" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <img src="./img/clinic.jpg" alt="">
+                                <img class="clinic__right-img" src="./img/clinic.jpg" alt="">
                             </div>
 
                         </div>
@@ -482,22 +482,8 @@
                             <p class="sliders-box__doctor">Колодин Тимур Викторович</p>
                         </div>
                     </div>
-                    <svg class="swiper-button-next specialist__arrow" width="40" height="40" viewBox="0 0 40 40"
-                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="0.5" y="0.5" width="39" height="39" rx="3.5" fill="#FFF9EF" />
-                        <path
-                            d="M23.0794 13.875L23.0794 13L24.8394 13L24.8394 13.875C24.8394 15.7779 25.3951 17.8689 26.5999 18.6878C27.827 19.5218 29.0209 19.5476 31 19.5627L31 20.4377C28.9748 20.4377 27.85 20.463 26.5999 21.3127C25.3951 22.1315 24.8394 24.2221 24.8394 26.125L24.8394 27L23.0794 27L23.0794 26.125C23.0794 23.7753 24.6121 21.5923 26.1599 20.4377L9.01117 20.8748L9 20.8752L9 19.1252L26.1599 19.5627C24.6124 18.4081 23.0794 16.2244 23.0794 13.875Z"
-                            fill="#AE8452" />
-                        <rect class="arrow" x="0.5" y="0.5" width="39" height="39" rx="3.5" stroke="#AE8452" />
-                    </svg>
-                    <svg class="swiper-button-prev specialist__arrow arrow__prev" width="40" height="40"
-                        viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="0.5" y="0.5" width="39" height="39" rx="3.5" fill="#FFF9EF" />
-                        <path
-                            d="M23.0794 13.875L23.0794 13L24.8394 13L24.8394 13.875C24.8394 15.7779 25.3951 17.8689 26.5999 18.6878C27.827 19.5218 29.0209 19.5476 31 19.5627L31 20.4377C28.9748 20.4377 27.85 20.463 26.5999 21.3127C25.3951 22.1315 24.8394 24.2221 24.8394 26.125L24.8394 27L23.0794 27L23.0794 26.125C23.0794 23.7753 24.6121 21.5923 26.1599 20.4377L9.01117 20.8748L9 20.8752L9 19.1252L26.1599 19.5627C24.6124 18.4081 23.0794 16.2244 23.0794 13.875Z"
-                            fill="#AE8452" />
-                        <rect x="0.5" y="0.5" width="39" height="39" rx="3.5" stroke="#AE8452" />
-                    </svg>
+                    <img class="swiper-button-next specialist__sliders__arrow" src="./img/arrow_gold_right.png" alt="">
+                    <img class="swiper-button-prev specialist__sliders__arrow swiper-button-prev__tablet" src="./img/arrow_gold_left.png" alt="">
                 </div>
 
             </div>
@@ -648,6 +634,38 @@
                     </ul>
                </div>
             </div>
+            <div class="footer__main-middle__tablet">
+                <ul class="footer__main-list">
+                    <li class="footer__main-item">
+                        <img src="./img/map_footer.png" alt="">
+                        <div class="contacts__bot__info-textbox">
+                            <p>197110, г. Санкт-Петербург,<br>
+                                ул. Большая Зеленина 8, корп. 2, лит. А</p>
+                        </div>
+                    </li>
+                    <li class="footer__main-item">
+                        <img src="./img/tel_footer.png" alt="call">
+                        <div class="footer__main-textbox">
+                            <p class="footer__main-text">+7 812 445 99 14</p>
+                            <p class="footer__main-subtext">c 10:00 до 20:00, без выходных</p>
+                        </div>
+                    </li>
+                    <li class="footer__main-item">
+                        <img src="./img/mail_footer.png" alt="">
+                        <div class="footer__main-textbox">
+                            <p class="footer__main-text">info@ligamed.spb.ru</p>
+                            <p class="footer__main-subtext">пишите на E-mail</p>
+                        </div>
+                    </li>
+                    <li class="footer__main-item">
+                        <img src="./img/vk_footer.png" alt="">
+                        <div class="footer__main-textbox">
+                            <p class="footer__main-text">Мы ВКонтакте</p>
+                            <p class="footer__main-subtext">Будьте в курсе событий</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
             <div class="footer__main-bot">
                 <ul class="footer__main-bot__list">
                     <li class="footer__main-bot__item"><p>2022 Медицинский центр «ЛигайМед»</p></li>
@@ -655,6 +673,7 @@
                     <li class="footer__main-bot__item"><a href="">Версия для слабовидящих</a></li>
                     <li class="footer__main-bot__item"><a href="">Карта сайта</a></li>
                 </ul>
+                <p class="footer__main-bot__text">2022 Медицинский центр «ЛигайМед»</p>
             </div>
         </div>
         <div class="footer__main-phone">

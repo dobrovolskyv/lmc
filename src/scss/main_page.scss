@@ -292,9 +292,13 @@
     &__bot-phone{
         display: none;
     }
-    &__bot-tablet{
+    &__bot-tablet__wrapper{
         display: none;
     }
+    // .services__sliders-arrow-left,
+    // .services__sliders-arrow-right{
+    //     display: none;
+    // }
 }
 
 .content-card {
@@ -1401,7 +1405,7 @@
 //адаптив под планшет
 //
 //
-@media (max-width: 610px) {
+@media (max-width: 640px) {
     //
     //
     //main page
@@ -1418,8 +1422,6 @@
     body{
         font-size: $fs16;
         line-height: 100%;
-        margin-left: 10px;
-        margin-right: 10px;
     }
     h2{
         line-height: 42px;
@@ -1557,6 +1559,8 @@
     //
     //
     .main-page__header {
+        padding-left: 5px;
+        padding-right: 5px;
         height: 110%;
         background-position: center center;
         padding-top: 200px;
@@ -1588,6 +1592,7 @@
 
         .services {
             position: relative;
+            padding: 100px 5px 0px 5px;
             &__subtitle {
                 max-width: 100%;
             }
@@ -1613,10 +1618,16 @@
                     font-size: $fs14;
                 }
             }
-    
-            &__bot-tablet {
+            &__bot{
+                display: none;
+            }
+            &__bot-tablet__wrapper{
                 position: relative;
-                margin-top: 100px;
+                padding-top: 50px;
+            }
+            &__bot-tablet {
+                
+                margin-top: 0px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -1640,7 +1651,7 @@
             }
             .services__sliders-arrow-left,
             .services__sliders-arrow-right{
-                top: 50%;
+                top: 7%;
                 width: 38px;
                 height: 38px;
             }
@@ -1651,7 +1662,7 @@
     
     
         .about{
-           
+           padding: 0 5px;
             &__citate__text{
                 font-size: $fs18;
             }
@@ -1663,7 +1674,7 @@
                 display: none;
             }
             .about__wrapper-tablet{
-                max-width: 100%;
+                max-width: 588px;
                 display: flex;
                 justify-content: space-between;
             }
@@ -1741,6 +1752,7 @@
     //
     //
     .offer{
+        padding: 0 5px;
         overflow: hidden;
         &__bot{
             grid-template-columns: repeat(2,1fr);
@@ -1765,7 +1777,7 @@
     //
     //
     .clinic{
-       
+       padding: 0 5px;
         &__wrapper{
             flex-direction: column;
             .specialist__subtitle {
@@ -1782,7 +1794,7 @@
                 
                 
                 img{
-                    width: 580px;
+                    width: 588px;
                     height: 365px;
                     border: 1px solid $gold;
                     border-radius: 4px;
@@ -1797,17 +1809,14 @@
             bottom: 10%;
         }
     }
-    //
+    
        //
     //Отзывы пациентов
     //
     //
     .reviews {
-
-        .reviews__sliders_swiper .swiper {
-            margin-top: 40px;
-        }
-
+        padding: 0 5px;
+       
         &__sliders {
             &-top {
                 display: flex;
@@ -1867,10 +1876,10 @@
             gap: 20px;
         }
         &__bot-hidden{
-            margin-top: 20px;
+            margin-top: 10px;
             display: grid;
             grid-template-columns: repeat(2,1fr);
-            gap: 20px;
+            gap: 10px;
         }
         .articles__btn{
             margin: 140px 30% 0px;
@@ -1886,10 +1895,11 @@
         
         &__bot{
             flex-direction: column;
-            border: 2px solid black;
             &__info{
-                width: 100%;
+                width: 580px;
                 padding: 20px;
+                border-width: 1px 1px 0px 1px;
+                border-radius: 4px 4px 0px 0px;
                 &-adress{
                     display: flex;
                     justify-content: space-between;
@@ -1911,8 +1921,10 @@
                 }
             }
             &__img{
-                width: 100%;
-                height: 266px;
+                width: 580px;
+                height: 300px;
+                border-width: 0px 1px 1px 1px;
+                border-radius: 0px 0px 4px 4px;
             }
         }
         &__btn{
@@ -1944,6 +1956,7 @@
     //
     //
     .record{
+        padding: 0 5px;
         &__bot{
             display: block;
             margin-top: 10px;
@@ -1958,33 +1971,66 @@
     }
         .footer {
             &::before{
-                bottom: 31%;
-                width: 99%;
+                bottom: 23%;
+                width: 100%;
+                height: 450px;
             }
             &__main {
+                padding: 0 10px;
                 &-top {
                     margin-top: 50px;
-    
+                    justify-content: space-between;
+                    margin-left: 5%;
                 }
+               
     
                 &-item {
-                    font-size: $fs14;
-                    max-width: 210px;
+                    font-size: $fs12;
+                    line-height: 140%;
+                    width: 220px;
+                    font-weight: 300;
+                    z-index: 1;
                     img{
                         width: 40px;
                         height: 40px;
                     }
                 }
+                &-bot__text{
+                    margin-top: 20px;
+                    font-size: $fs14;
+                    line-height: 140%;
+                    color: $bg;
+                }
                 &-bot__item{
+                    z-index: 1;
+                    &:nth-child(1){
+                        display: none;
+                    }
                     font-size: $fs14;
                     a{
                         font-size: $fs14;
                     }
                 }
+                &__contacts{
+                    display: none;
+                }
+                &-middle__tablet{
+                    z-index: 1;
+                    margin-top: 40px;
+                    margin-left: 5%;
+
+                }
+                &-list{
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                }
+                
             }
     
             &__top {
                 display: block;
+                width: 500px;
+                margin-left: 60px;
                 &-text{
                     font-size: $fs16;
 
@@ -2000,6 +2046,10 @@
             }
             &__form{
                 margin: 20px 0;
+            }
+            &__alert{
+                padding: 0 5px;
+                font-size: $fs20;
             }
     
         }

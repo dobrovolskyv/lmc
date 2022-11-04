@@ -6,9 +6,10 @@
     justify-content: space-around;
 }
 
-@media (max-width: 610px){
+@media (max-width: 640px){
     .analysis-page__header{
         margin-top: $tabletMargin;
+        padding: 0 5px;
         &__bot{
             display: grid;
             grid-template-columns: repeat(2,1fr);
@@ -23,7 +24,20 @@
             }
             }
         }
+        .analysis-page__header__bot{
+            margin-top: 60px;
+        }
+        .header__bot-contentbox-page2{
+            
+            padding: 10px 10px;
+            height: 90px;
+            img{
+                width: 60px;
+                height: 60px;
+            }
+        }
     }
+    
     .header__procedures{
         &__contentbox{
           padding: 20px 20px;  

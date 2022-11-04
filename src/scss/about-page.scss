@@ -121,7 +121,8 @@
     //
     //
     .header__about-page{
-        margin-top: 200px;
+        padding: 0 5px;
+        margin-top: 150px;
         &__wrapper{
             max-width: 580px;
             flex-direction: column;
@@ -130,6 +131,7 @@
             }
             .about__right{
                 order: -1;
+                display: none;
                 &__img{
                     
                 }
@@ -157,6 +159,7 @@
     //
     //
     .direction{
+        padding: 0 5px;
         margin-top: 120px;
         &__contentbox{
             grid-template-columns: repeat(2,1fr);
@@ -181,6 +184,7 @@
     //
     //
     .clinic{
+        padding: 0 5px;
         .specialist__subtitle{
             width: 100%;
         }
@@ -195,19 +199,53 @@
                 margin-top: 32px;
                 }
         }
+        .clinic__right-img{
+            max-width: 588px;
+        }
     }
-
+//
+       //
+    //brochure clinic page
+    //
+    //
+    //
+    .brochure__about-page{
+        padding: 0 5px;
+    }
+     //
+    //
+    //specialis
+    //
+    //
+    .specialist{
+        padding: 0 5px;
+    }
      //
     //
     //CONTACT
     //
     //
-    .contacts__license{
-        flex-direction: column;
-        &__container{
-            margin-top: 20xp;
+    .contacts{
+        margin-top: 100px;
+        &__license{
+            flex-direction: column;
+            &__text{
+                font-size: $fs36;
+            }
+            &__img{
+                width: 50px;
+                height: 50px;
+                margin-left: 0;
+            }
+            &__container{
+                margin-top: 20px;
+            }
+            &__btn{
+                margin-right: 0;
+            }
         }
     }
+    
      //
     //
     //

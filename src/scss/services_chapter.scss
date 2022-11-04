@@ -92,11 +92,16 @@
 
 @media (max-width: 640px) {
     .services-chapter {
+        
+        
         &__physics {
             margin-top: $tabletMargin;
-
+            padding: 0 5px;
             &-wrapper {
                 flex-direction: column;
+            }
+            .accordion__menu{
+                width: 580px;
             }
         }
         &__contentbox{
@@ -114,8 +119,8 @@
                 font-size: $fs24;
             }
             &-btn__hidden{
-                width: 178px;
-                height: 38px;
+                width: 212px;
+                height: 44px;
                 padding: 4px 12px;
                 font-size: $fs12;
                 margin: 10px 0;
@@ -126,8 +131,9 @@
             }
         }
         &__content{
-            width: 290px;
-            height: 340px;
+            width: 270px;
+            height: 330px;
+            padding: 10px 17px;
         }
     }
 }

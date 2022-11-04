@@ -1,9 +1,10 @@
-.contacts{
-    margin-top: $marginTitle;
-}
+
 
 @media (max-width: 640px) {
-    
+    .contacts{
+        padding: 0 5px;
+        margin-top: $tabletMargin;
+    }
 }
 @media (max-width: 320px) {
     .contacts{

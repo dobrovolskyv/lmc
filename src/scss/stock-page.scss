@@ -196,8 +196,50 @@ color: #AE8452;
 }
 
 @media (max-width: 640px) {
+    .header__stock-page{
+        padding: 0 5px;
+        margin-top: 100px;
+        &__contentbox{
+            flex-direction: column;
+        }
+        &__right{
+            margin-top: 40px;
+            padding: 10px 20px;
+            max-width: 300px;
+            max-height: 210px;
+            &_price{
+                font-size: $fs18;
+            }
+            &-text{
+                font-size: 48px;
+                margin-bottom: 10px;
+            }
+        }
+        &__list{
+            margin: 40px 0 0 0;
+        }
+        &__link{
+            font-size: $fs14;
+            padding: 4px 8px;
+        }
+        &__bot{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+        }
+        &__content{
+            height: 100px;
+            font-size: $fs14;
+            padding: 10px 20px;
+            img{
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
     .similar{
-        margin-top: 200px;
+        margin-top: 100px;
+        flex-wrap: wrap;
     }
     //
     //

@@ -250,7 +250,7 @@
 .services__bot-phone {
   display: none;
 }
-.services__bot-tablet {
+.services__bot-tablet__wrapper {
   display: none;
 }
 
@@ -1098,7 +1098,7 @@
   overflow: hidden;
 }
 
-@media (max-width: 610px) {
+@media (max-width: 640px) {
   .title {
     font-size: 36px;
   }
@@ -1111,8 +1111,6 @@
   body {
     font-size: 16px;
     line-height: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
   }
 
   h2 {
@@ -1243,6 +1241,8 @@
   }
 
   .main-page__header {
+    padding-left: 5px;
+    padding-right: 5px;
     height: 110%;
     background-position: center center;
     padding-top: 200px;
@@ -1260,6 +1260,7 @@
 
   .services {
     position: relative;
+    padding: 100px 5px 0px 5px;
   }
   .services__subtitle {
     max-width: 100%;
@@ -1281,9 +1282,15 @@
     width: 230px;
     font-size: 14px;
   }
-  .services__bot-tablet {
+  .services__bot {
+    display: none;
+  }
+  .services__bot-tablet__wrapper {
     position: relative;
-    margin-top: 100px;
+    padding-top: 50px;
+  }
+  .services__bot-tablet {
+    margin-top: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1301,7 +1308,7 @@
   }
   .services .services__sliders-arrow-left,
 .services .services__sliders-arrow-right {
-    top: 50%;
+    top: 7%;
     width: 38px;
     height: 38px;
   }
@@ -1309,6 +1316,9 @@
     left: 84%;
   }
 
+  .about {
+    padding: 0 5px;
+  }
   .about__citate__text {
     font-size: 18px;
   }
@@ -1320,7 +1330,7 @@
     display: none;
   }
   .about .about__wrapper-tablet {
-    max-width: 100%;
+    max-width: 588px;
     display: flex;
     justify-content: space-between;
   }
@@ -1382,6 +1392,7 @@
   }
 
   .offer {
+    padding: 0 5px;
     overflow: hidden;
   }
   .offer__bot {
@@ -1401,6 +1412,9 @@
     margin-top: 9.2em;
   }
 
+  .clinic {
+    padding: 0 5px;
+  }
   .clinic__wrapper {
     flex-direction: column;
   }
@@ -1415,7 +1429,7 @@
     margin-top: 20px;
   }
   .clinic__right-swiper .swiper-slide img {
-    width: 580px;
+    width: 588px;
     height: 365px;
     border: 1px solid #AE8452;
     border-radius: 4px;
@@ -1427,8 +1441,8 @@
     bottom: 10%;
   }
 
-  .reviews .reviews__sliders_swiper .swiper {
-    margin-top: 40px;
+  .reviews {
+    padding: 0 5px;
   }
   .reviews__sliders-top {
     display: flex;
@@ -1471,10 +1485,10 @@
     gap: 20px;
   }
   .articles__bot-hidden {
-    margin-top: 20px;
+    margin-top: 10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 10px;
   }
   .articles .articles__btn {
     margin: 140px 30% 0px;
@@ -1482,11 +1496,12 @@
 
   .contacts__bot {
     flex-direction: column;
-    border: 2px solid black;
   }
   .contacts__bot__info {
-    width: 100%;
+    width: 580px;
     padding: 20px;
+    border-width: 1px 1px 0px 1px;
+    border-radius: 4px 4px 0px 0px;
   }
   .contacts__bot__info-adress {
     display: flex;
@@ -1508,8 +1523,10 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .contacts__bot__img {
-    width: 100%;
-    height: 266px;
+    width: 580px;
+    height: 300px;
+    border-width: 0px 1px 1px 1px;
+    border-radius: 0px 0px 4px 4px;
   }
   .contacts__btn {
     display: none;
@@ -1530,6 +1547,9 @@
     text-transform: uppercase;
     color: #FFF9EF;
   }
+  .record {
+    padding: 0 5px;
+  }
   .record__bot {
     display: block;
     margin-top: 10px;
@@ -1542,28 +1562,61 @@
   }
 
   .footer::before {
-    bottom: 31%;
-    width: 99%;
+    bottom: 23%;
+    width: 100%;
+    height: 450px;
+  }
+  .footer__main {
+    padding: 0 10px;
   }
   .footer__main-top {
     margin-top: 50px;
+    justify-content: space-between;
+    margin-left: 5%;
   }
   .footer__main-item {
-    font-size: 14px;
-    max-width: 210px;
+    font-size: 12px;
+    line-height: 140%;
+    width: 220px;
+    font-weight: 300;
+    z-index: 1;
   }
   .footer__main-item img {
     width: 40px;
     height: 40px;
   }
-  .footer__main-bot__item {
+  .footer__main-bot__text {
+    margin-top: 20px;
     font-size: 14px;
+    line-height: 140%;
+    color: #FFF9EF;
+  }
+  .footer__main-bot__item {
+    z-index: 1;
+    font-size: 14px;
+  }
+  .footer__main-bot__item:nth-child(1) {
+    display: none;
   }
   .footer__main-bot__item a {
     font-size: 14px;
   }
+  .footer__main__contacts {
+    display: none;
+  }
+  .footer__main-middle__tablet {
+    z-index: 1;
+    margin-top: 40px;
+    margin-left: 5%;
+  }
+  .footer__main-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
   .footer__top {
     display: block;
+    width: 500px;
+    margin-left: 60px;
   }
   .footer__top-text {
     font-size: 16px;
@@ -1576,6 +1629,10 @@
   }
   .footer__form {
     margin: 20px 0;
+  }
+  .footer__alert {
+    padding: 0 5px;
+    font-size: 20px;
   }
 }
 @media (max-width: 320px) {
@@ -2003,10 +2060,6 @@
 .questions__left {
   max-width: 871px;
   margin-right: 20px;
-}
-.questions .questions__subtitle {
-  margin-top: 20px;
-  font-size: 20px;
 }
 .questions__right {
   max-width: 421px;
@@ -2548,34 +2601,85 @@
 }
 
 @media (max-width: 640px) {
+  .container {
+    max-width: 592px;
+  }
+
   .specialist-page__header {
     margin-top: 150px;
+  }
+  .specialist-page__header .about__right__img {
+    width: 300px;
+    height: 350px;
+    margin-left: 15px;
+  }
+  .specialist-page__header .header__skills__item {
+    margin-top: 0px;
+    font-size: 16px;
   }
 
   .header__specialist-page__title {
     margin-top: 20px;
-    font-size: 36px;
+    font-size: 24px;
     line-height: 140%;
+    margin-bottom: 10px;
   }
-  .header__skills__item {
+  .header__specialist-page .header__skills__item {
     font-size: 18px;
     line-height: 120%;
   }
+  .header__specialist-page__list {
+    margin-top: 40px;
+  }
+  .header__specialist-page__raiting img {
+    width: 15px;
+    height: 15px;
+  }
+  .header__specialist-page__reviews {
+    font-size: 16px;
+  }
+  .header__specialist-page__item {
+    font-size: 16px;
+    margin-top: 0;
+  }
+  .header__specialist-page__contentbox .undertitle {
+    margin-top: 4px;
+    font-size: 10px;
+  }
+  .header__specialist-page__call {
+    flex-direction: column;
+    margin-top: 36px;
+  }
+  .header__specialist-page__call .header__call-link {
+    margin-right: 0;
+    padding: 10px 18px;
+    margin-bottom: 10px;
+  }
+  .header__specialist-page .header__skills {
+    margin-top: 100px;
+  }
 
+  .about-doctor {
+    margin-top: 100px;
+  }
   .about-doctor__title {
-    font-size: 32px;
+    font-size: 24px;
   }
   .about-doctor__contentbox {
-    padding: 6px 40px;
+    padding: 6px 25px;
     margin-top: 20px;
   }
   .about-doctor__question img {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
+  }
+  .about-doctor__answer-text {
+    font-size: 16px;
   }
 
   .reviews__sliders__swiper {
     margin-top: 20px;
+    width: 588px;
   }
 
   .specialist-page__questions__brochure {
@@ -2588,6 +2692,10 @@
   .specialist-page__questions__brochure .questions__brochure-btn {
     margin-top: 20px;
     width: 172px;
+  }
+
+  .similar__specialist-page3 {
+    margin-top: 100px;
   }
 }
 @media (max-width: 320px) {
@@ -2821,8 +2929,51 @@
 }
 
 @media (max-width: 640px) {
+  .header__stock-page {
+    padding: 0 5px;
+    margin-top: 100px;
+  }
+  .header__stock-page__contentbox {
+    flex-direction: column;
+  }
+  .header__stock-page__right {
+    margin-top: 40px;
+    padding: 10px 20px;
+    max-width: 300px;
+    max-height: 210px;
+  }
+  .header__stock-page__right_price {
+    font-size: 18px;
+  }
+  .header__stock-page__right-text {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  .header__stock-page__list {
+    margin: 40px 0 0 0;
+  }
+  .header__stock-page__link {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+  .header__stock-page__bot {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .header__stock-page__content {
+    height: 100px;
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  .header__stock-page__content img {
+    width: 40px;
+    height: 40px;
+  }
+
   .similar {
-    margin-top: 200px;
+    margin-top: 100px;
+    flex-wrap: wrap;
   }
 
   .skills__page4__wrapper {
@@ -3018,7 +3169,8 @@
 
 @media (max-width: 640px) {
   .header__about-page {
-    margin-top: 200px;
+    padding: 0 5px;
+    margin-top: 150px;
   }
   .header__about-page__wrapper {
     max-width: 580px;
@@ -3029,6 +3181,7 @@
   }
   .header__about-page__wrapper .about__right {
     order: -1;
+    display: none;
   }
   .header__about-page__wrapper .about__table__span {
     font-size: 70px;
@@ -3042,6 +3195,7 @@
   }
 
   .direction {
+    padding: 0 5px;
     margin-top: 120px;
   }
   .direction__contentbox {
@@ -3060,6 +3214,9 @@
     padding: 14px 20px 15px;
   }
 
+  .clinic {
+    padding: 0 5px;
+  }
   .clinic .specialist__subtitle {
     width: 100%;
   }
@@ -3072,12 +3229,37 @@
   .clinic-history .clinic-history__content:not(:first-child) {
     margin-top: 32px;
   }
+  .clinic .clinic__right-img {
+    max-width: 588px;
+  }
 
+  .brochure__about-page {
+    padding: 0 5px;
+  }
+
+  .specialist {
+    padding: 0 5px;
+  }
+
+  .contacts {
+    margin-top: 100px;
+  }
   .contacts__license {
     flex-direction: column;
   }
+  .contacts__license__text {
+    font-size: 36px;
+  }
+  .contacts__license__img {
+    width: 50px;
+    height: 50px;
+    margin-left: 0;
+  }
   .contacts__license__container {
-    margin-top: 20xp;
+    margin-top: 20px;
+  }
+  .contacts__license__btn {
+    margin-right: 0;
   }
 }
 @media (max-width: 320px) {
@@ -3142,10 +3324,12 @@
     margin-right: 0;
   }
 }
-.contacts {
-  margin-top: 250px;
+@media (max-width: 640px) {
+  .contacts {
+    padding: 0 5px;
+    margin-top: 150px;
+  }
 }
-
 @media (max-width: 320px) {
   .contacts {
     margin-top: 100px;
@@ -3321,6 +3505,46 @@
   font-size: 16px;
 }
 
+@media (max-width: 640px) {
+  .our-services-page7__wrapper {
+    flex-direction: column;
+  }
+  .our-services-page7__bot {
+    margin-top: 80px;
+  }
+  .our-services-page7 .accordion__menu {
+    width: 580px;
+  }
+  .our-services-page7__content-card {
+    padding: 10px 10px;
+  }
+  .our-services-page7__content-card__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .our-services-page7__content-card__title img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  .our-services-page7__content-card__title p {
+    font-size: 30px;
+  }
+  .our-services-page7__content-card__description {
+    font-size: 16px;
+  }
+  .our-services-page7__content-card__description-bot a {
+    font-size: 16px;
+  }
+  .our-services-page7__content-card__more {
+    flex-grow: 0;
+  }
+  .our-services-page7__content-card__more p {
+    font-size: 16px;
+  }
+}
 @media (max-width: 320px) {
   .our-services-page7__wrapper {
     flex-direction: column;
@@ -3419,10 +3643,14 @@
 
 @media (max-width: 640px) {
   .services-chapter__physics {
-    margin-top: 200px;
+    margin-top: 150px;
+    padding: 0 5px;
   }
   .services-chapter__physics-wrapper {
     flex-direction: column;
+  }
+  .services-chapter__physics .accordion__menu {
+    width: 580px;
   }
   .services-chapter__contentbox {
     margin-top: 20px;
@@ -3440,8 +3668,8 @@
     font-size: 24px;
   }
   .services-chapter__contentbox-btn__hidden {
-    width: 178px;
-    height: 38px;
+    width: 212px;
+    height: 44px;
     padding: 4px 12px;
     font-size: 12px;
     margin: 10px 0;
@@ -3451,8 +3679,9 @@
     transition: all 0.4s ease-in;
   }
   .services-chapter__content {
-    width: 290px;
-    height: 340px;
+    width: 270px;
+    height: 330px;
+    padding: 10px 17px;
   }
 }
 @media (max-width: 320px) {
@@ -3475,9 +3704,10 @@
   justify-content: space-around;
 }
 
-@media (max-width: 610px) {
+@media (max-width: 640px) {
   .analysis-page__header {
-    margin-top: 200px;
+    margin-top: 150px;
+    padding: 0 5px;
   }
   .analysis-page__header__bot {
     display: grid;
@@ -3491,6 +3721,17 @@
   .analysis-page__header__bot .header__bot-contentbox-page2:nth(3) {
     grid-column: span 2;
     width: 400px;
+  }
+  .analysis-page__header .analysis-page__header__bot {
+    margin-top: 60px;
+  }
+  .analysis-page__header .header__bot-contentbox-page2 {
+    padding: 10px 10px;
+    height: 90px;
+  }
+  .analysis-page__header .header__bot-contentbox-page2 img {
+    width: 60px;
+    height: 60px;
   }
 
   .header__procedures__contentbox {
@@ -3642,7 +3883,8 @@
 
 @media (max-width: 640px) {
   .specialist-chapter {
-    margin-top: 200px;
+    margin-top: 150px;
+    padding: 0 5px;
   }
   .specialist-chapter__wrapper {
     flex-direction: column;
@@ -3659,6 +3901,9 @@
   .specialist-chapter__content {
     max-width: 272px;
     max-height: 356px;
+  }
+  .specialist-chapter .accordion__menu {
+    width: 580px;
   }
 }
 @media (max-width: 320px) {
@@ -3680,25 +3925,39 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
-@media (max-width: 610px) {
+@media (max-width: 640px) {
   .our-services-page7 {
-    margin-top: 200px;
+    padding: 0px 5px;
+    margin-top: 150px;
   }
 
   .questions {
+    padding: 0px 5px;
+    font-size: 16px;
+  }
+  .questions .questions__subtitle {
     font-size: 16px;
   }
   .questions__right {
     display: none;
   }
 
+  .articles {
+    padding: 0px 5px;
+  }
   .articles__btn {
     margin: 15px 28% 0px;
   }
-
   .articles__bot {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+  }
+  .articles__card {
+    margin-top: 10px;
+    height: 360px;
+  }
+  .articles__card__text {
+    padding: 10px;
   }
 }
 @media (max-width: 320px) {
@@ -3772,7 +4031,8 @@
 
 @media (max-width: 640px) {
   .share-archive__offer {
-    margin-top: 200px;
+    margin-top: 150px;
+    padding: 0 5px;
   }
   .share-archive__offer__bot {
     grid-template-columns: repeat(2, 1fr);
@@ -3849,7 +4109,11 @@
 
 @media (max-width: 640px) {
   .blog-archive__articles {
-    margin-top: 140px;
+    padding: 0 5px;
+    margin-top: 150px;
+  }
+  .blog-archive__articles .specialist__subtitle {
+    font-size: 20px;
   }
   .blog-archive__articles__bot {
     grid-template-columns: repeat(2, 1fr);

@@ -108,7 +108,7 @@
 @media (max-width: 640px) {
     .specialist-chapter {
         margin-top: $tabletMargin;
-
+        padding: 0 5px;
         &__wrapper {
             flex-direction: column;
             .our-services-page7__menu__services{
@@ -124,6 +124,9 @@
         &__content{
             max-width: 272px;
             max-height: 356px;
+        }
+        .accordion__menu{
+            width: 580px;
         }
     }
 }

@@ -73,8 +73,10 @@
 
 @media (max-width: 640px) {
     .share-archive{
+        
         &__offer{
             margin-top: $tabletMargin;
+            padding: 0 5px;
             &__bot{
                 grid-template-columns: repeat(2, 1fr);
             }
