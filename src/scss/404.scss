@@ -1,6 +1,5 @@
 .error{
-    margin-top: 400px;
-    margin-bottom: 200px;
+    margin: 40% 10px;
     &__title{
         font-size: 72px;
     }
@@ -14,4 +13,37 @@
     text-decoration: underline;
 }
 
+}
+@media (max-width: 620px) {
+    .error{
+        margin: 40% 10px;
+        &__title{
+            font-size: 42px;
+        }
+        &__subtitle{
+            font-size: $fs20;
+            margin: 20px 0;
+        }
+        a{
+            
+        color: $secondaryRed;
+        text-decoration: underline;
+    }
+}
+}
+@media (max-width: 320px) {
+    .error{
+        margin: 40% 10px;
+        &__title{
+            font-size: 24px;
+        }
+        &__subtitle{
+            font-size: $fs16;
+        }
+        a{
+            font-size: $fs14;
+        color: $secondaryRed;
+        text-decoration: underline;
+    }
+}
 }
