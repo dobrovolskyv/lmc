@@ -173,6 +173,7 @@
                         </li>
                     </ul>
                 </nav>
+                
                 <div class="header__call">
                     <a class="header__call-link header__bot-call" href="#">записаться онлайн</a>
                     <button class="header__call-btn header__bot-call">заказать звонок</button>
@@ -205,13 +206,7 @@
                             <button class="header__call-btn">Смотреть акции</button>
                             
                         </div>
-                        <div class="header__arrow-nav">
-                                <img class="header__arrow-nav__arrow" src="./img/arrow_border_left.png" alt="">
-                                <div class="header__arrow-nav__container">
-                                    <p class="header__arrow-nav__text">Заголовок следующего слайда</p>
-                                    <img class="header__arrow-nav__arrow" src="./img/arrow_blue_right.png" alt="">
-                                </div>
-                            </div>
+                        
                     </div>
                     <div class="header__offer swiper-slide">
                         <h1 class="title title__offer">Заголовок №2 раскрывающий суть <span
@@ -222,13 +217,6 @@
                         <div class="header__call header__call-offer">
                             <a class="header__call-link" href="#">записаться онлайн</a>
                             <button class="header__call-btn">Смотреть акции</button>
-                        </div>
-                        <div class="header__arrow-nav">
-                            <img class="header__arrow-nav__arrow" src="./img/arrow_border_left.png" alt="">
-                            <div class="header__arrow-nav__container">
-                                <p class="header__arrow-nav__text">Заголовок следующего слайда</p>
-                                <img class="header__arrow-nav__arrow" src="./img/arrow_blue_right.png" alt="">
-                            </div>
                         </div>
                     </div>
                     <div class="header__offer swiper-slide">
@@ -241,13 +229,6 @@
                             <a class="header__call-link" href="#">записаться онлайн</a>
                             <button class="header__call-btn">Смотреть акции</button>
                         </div>
-                        <div class="header__arrow-nav">
-                            <img class="header__arrow-nav__arrow" src="./img/arrow_border_left.png" alt="">
-                            <div class="header__arrow-nav__container">
-                                <p class="header__arrow-nav__text">Заголовок следующего слайда</p>
-                                <img class="header__arrow-nav__arrow" src="./img/arrow_blue_right.png" alt="">
-                            </div>
-                        </div>
                     </div>
                     <div class="header__offer swiper-slide">
                         <h1 class="title title__offer">Заголовок №4 раскрывающий суть <span
@@ -258,13 +239,6 @@
                         <div class="header__call header__call-offer">
                             <a class="header__call-link" href="#">записаться онлайн</a>
                             <button class="header__call-btn">Смотреть акции</button>
-                        </div>
-                        <div class="header__arrow-nav">
-                            <img class="header__arrow-nav__arrow" src="./img/arrow_border_left.png" alt="">
-                            <div class="header__arrow-nav__container">
-                                <p class="header__arrow-nav__text">Заголовок следующего слайда</p>
-                                <img class="header__arrow-nav__arrow" src="./img/arrow_blue_right.png" alt="">
-                            </div>
                         </div>
                     </div>
                     <div class="header__offer swiper-slide">
@@ -277,18 +251,16 @@
                             <a class="header__call-link" href="#">записаться онлайн</a>
                             <button class="header__call-btn">Смотреть акции</button>
                         </div>
-                        <div class="header__arrow-nav">
-                            <img class="header__arrow-nav__arrow" src="./img/arrow_border_left.png" alt="">
-                            <div class="header__arrow-nav__container">
-                                <p class="header__arrow-nav__text">Заголовок следующего слайда</p>
-                                <img class="header__arrow-nav__arrow" src="./img/arrow_blue_right.png" alt="">
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="header__swiper-pagination swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="header__arrow-nav">
+                    <img class="header__arrow-nav__arrow-left swiper-button-prev" src="./img/arrow_border_left.png" alt="">
+                    <div class="header__arrow-nav__container">
+                        <p class="header__arrow-nav__text">Заголовок следующего слайда</p>
+                        <img class="header__arrow-nav__arrow swiper-button-next" src="./img/arrow_blue_right.png" alt="">
+                    </div>
+                </div>
             </div>
             <div class="header-main-page__bot">
                 <div class="header__bot-contentbox">
@@ -603,9 +575,10 @@
                         </div>
         
                     </div>
-                    <img class="swiper-button-prev services__sliders-arrow" src="./img/arrow_gold_left.png" alt="">
-                    <img class="swiper-button-next services__sliders-arrow" src="./img/arrow_gold_right.png" alt="">
+                    
                 </div>
+                <img class="swiper-button-prev services__sliders-arrow-left" src="./img/arrow_gold_left.png" alt="">
+                    <img class="swiper-button-next services__sliders-arrow-right" src="./img/arrow_gold_right.png" alt="">
                 <div class="services__bot-phone">
                     <div class="services__bot-phone__wrapper">
                         <div class="services__bot-phone__contentbox">

@@ -1,5 +1,5 @@
 .header {
-    width: 1300px;
+    max-width: 1300px;
     position: absolute;
     top: 20px;
     left: 50px;
@@ -109,7 +109,7 @@
     &__call {
         display: flex;
         align-items: center;
-
+        margin-top: 20px;
         &-offer {
             margin-top: 32px;
         }
@@ -169,14 +169,14 @@
 
 .main-page__header {
     background-image: url('../../img/bg_header.jpg');
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-position: center center;
     padding-top: 200px;
     background-size: cover;
     position: relative;
     .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
-        bottom: 11%;
+        bottom: 20%;
         span{
            background-color: $primary; 
         }
@@ -185,9 +185,15 @@
         .header__arrow-nav {
                 position: absolute;
                 bottom: 20%;
-                right: 10%;
+                right: 5%;
                 display: flex;
                 align-items: center;
+                &__arrow-left{
+                    margin-top: -20px;
+                    left: -15%;
+                    width: 40px;
+                    height: 40px;
+                }
             
             &__container{
                 width: 288px;
@@ -200,11 +206,17 @@
                 padding: 5px 10px;
                 margin-left: 16px;
                 font-size: $fs14;
+                img{
+                    margin-top: -12px;
+                    width: 25px;
+                    height: 20px;
+                }
                
                 }
                
             
         }
+       
 }
 
 .header-main-page__bot{
@@ -496,7 +508,7 @@
             justify-content: end;
             flex-direction: column-reverse;
             margin-right: 24px;
-            max-width: 309px;
+            width: 309px;
             height: 395px;
             background-image: url('../../img/doctor.jpg');
             background-position: center 0;
@@ -506,7 +518,7 @@
             &::after {
                 content: '';
                 width: 100%;
-                height: 57px;
+                height: 80px;
                 background-color: rgba(255, 255, 255, 0.7);
                 position: absolute;
                 bottom: 12%;
@@ -534,6 +546,13 @@
         height: 40px;
 
     }
+    &__sliders__swiper{
+        max-width: 1320px;
+        height: 507px;
+        // overflow: hidden;
+        // position: relative;
+    }
+    
 }
 
 
@@ -1208,12 +1227,15 @@
 //
 .header {
     &__menu {
+      
+       margin-right: 40px;
         &__list {
             display: flex;
+            align-items: center;
             justify-content: space-between;
-            padding-top: 20px;
+            
             & >li {
-                padding-bottom: 10px;
+                
                 position: relative;
                 &:not(:first-child){
                     margin-left: 30px;
@@ -1225,6 +1247,9 @@
                 padding: 10px 10px;
 
             }
+        }
+        &__item{
+            color: red;
         }
 
         &__link {
@@ -1245,7 +1270,7 @@
             position: absolute;
             left: 0;
             top: 36px;
-            min-width: 350px;
+            width: 300px;
             padding-top: 0px;
             background-color: $primary;
             border-bottom-right-radius: 8px;
@@ -1324,7 +1349,6 @@
     display: block;
 }
 
-.header__sub-sub-submenu__list>li {}
 
 .arrow {
     position: absolute;
@@ -1383,6 +1407,7 @@
     //main page
     //
     //
+  
     .title{
         font-size: $fs36;
     }
@@ -1470,20 +1495,19 @@
             display: none;
         }
         &__menu{
+            
             &__list{
                 padding-top: 0;
+               
             }
-            &__item{
-                width: 36px;
-            }
-            a{
-                font-size: $fs16;
-                width: 56px;
+            
+            &__link{
+                font-size: $fs14;
             }
         }
         
         &__bot{
-            max-width: 600px;
+            max-width: 580px;
             height: 56px;
             margin-top: 0px;
             &-call{
@@ -1491,10 +1515,7 @@
             }
         }
         &-main-page__bot{
-            margin-top: 200px;
-        }
-        &__arrow-nav{
-
+            margin-top: 115px;
         }
     }
     .title__offer{
@@ -1531,6 +1552,34 @@
     }
     //
     //
+    //main page header
+    //
+    //
+    //
+    .main-page__header {
+        height: 110%;
+        background-position: center center;
+        padding-top: 200px;
+        background-size: cover;
+        position: relative;
+        .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+            bottom: 26%;
+            left: -36%;
+            
+            
+        }
+            .header__arrow-nav {
+                    bottom: 26%;
+                    right: 10%;
+                   
+                   
+                
+            }
+           
+    }
+    //
+    //
+    //
     //Наши услуги
     //
     //
@@ -1538,10 +1587,9 @@
     //
 
         .services {
-            margin: 200px 0px 0;
             position: relative;
             &__subtitle {
-                width: 100%
+                max-width: 100%;
             }
     
             &__content-card {
@@ -1567,7 +1615,7 @@
             }
     
             &__bot-tablet {
-                
+                position: relative;
                 margin-top: 100px;
                 display: flex;
                 justify-content: space-between;
@@ -1588,11 +1636,16 @@
                         }
                     }
                 }
-                .services__sliders-arrow{
-                    top: 30%;
-                    width: 38px;
-                    height: 38px;
-                }
+                
+            }
+            .services__sliders-arrow-left,
+            .services__sliders-arrow-right{
+                top: 50%;
+                width: 38px;
+                height: 38px;
+            }
+            .services__sliders-arrow-left{
+                left: 84%;
             }
         }
     
@@ -1652,7 +1705,7 @@
                 max-width: 596px;
                 height: 257px;
                 img{
-                    width: 90%;
+                    width: 60%;
                 }
             }
         }
@@ -1674,15 +1727,21 @@
             width: 50%;
             max-height: 80%;
         }
+       
     
-        .specialist__sliders__swiper .swiper-button-prev {
-            left: 82%;
-        }
+        
+    }
+    .specialist__sliders__swiper .swiper-button-prev {
+        left: 82%;
+    }
+    .sliders-box__prof{
+        bottom: 22%;
     }
      //ВЫГОДНЫЕ ПРЕДЛОЖЕНИЯ
     //
     //
     .offer{
+        overflow: hidden;
         &__bot{
             grid-template-columns: repeat(2,1fr);
             gap: 20px;
@@ -1692,11 +1751,11 @@
             }
         }
         &__card{
-            max-width: 286px;
+            max-width: 278px;
             max-height: 371px;
             border-radius: 4px;
             &__text{
-                margin-top: 10.2em;
+                margin-top: 9.2em;
             }
         }
     }
@@ -1744,7 +1803,6 @@
     //
     //
     .reviews {
-        margin: 100px 0px 0;
 
         .reviews__sliders_swiper .swiper {
             margin-top: 40px;
@@ -1767,6 +1825,22 @@
             padding: 10px 20px;
             height: 250px;
         }
+        .swiper-button-next{
+            right: 3%;
+            top: 33%;
+            width: 40px;
+            height: 40px;
+    
+        }
+    
+        .swiper-button-prev{
+            left: 80%;
+            top: 33%;
+            width: 40px;
+            height: 40px;
+    
+        }
+    
     }
  //
 //
@@ -1777,8 +1851,7 @@
     //
     //
     .articles{
-        margin-left: 10px;
-        margin-right: 10px;
+        
         &__card {
             margin-top: 61px;
             position: relative;
@@ -1888,7 +1961,6 @@
                 bottom: 31%;
                 width: 99%;
             }
-            padding: 0 5px;
             &__main {
                 &-top {
                     margin-top: 50px;

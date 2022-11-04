@@ -307,7 +307,7 @@ color: #972A29;
 //ADAPTIVE FOR TABLET
 //
 //
-@media (max-width: 640px) {
+@media (max-width: 610px) {
     
     .services-page__header {
         margin-top: 150px;
@@ -469,9 +469,7 @@ color: #972A29;
 //
 //
 .offer {
-    &__card {
-        max-width: 290px;
-    }
+    
 
     &-services__bot-hidden {
         grid-template-columns: repeat(2, 1fr);
@@ -514,7 +512,7 @@ color: #972A29;
             margin-top: 30px;
         }
         .header__bot-contentbox{
-            max-width: 288px;
+            max-width: 286px;
             min-height: 150px;
             img{
                 margin-top: 30px;
