@@ -208,7 +208,7 @@
 }
 
 .services {
-  padding-top: 200px;
+  padding-top: 300px;
 }
 .services__top {
   justify-content: space-between;
@@ -400,6 +400,9 @@
   display: none;
 }
 .about .about__img-tablet {
+  display: none;
+}
+.about__img-phone {
   display: none;
 }
 
@@ -637,6 +640,7 @@
   height: 237px;
   border: 1px solid #AE8452;
   border-radius: 4px;
+  overflow-y: scroll;
 }
 .reviews .swiper-button-next {
   right: 3%;
@@ -898,6 +902,9 @@
   display: flex;
   justify-content: space-between;
   margin-top: 70px;
+}
+.footer__main-middle__tablet {
+  display: none;
 }
 .footer__main-item {
   display: flex;
@@ -1286,6 +1293,7 @@
     display: none;
   }
   .services__bot-tablet__wrapper {
+    display: block;
     position: relative;
     padding-top: 50px;
   }
@@ -1547,6 +1555,7 @@
     text-transform: uppercase;
     color: #FFF9EF;
   }
+
   .record {
     padding: 0 5px;
   }
@@ -1605,6 +1614,7 @@
     display: none;
   }
   .footer__main-middle__tablet {
+    display: block;
     z-index: 1;
     margin-top: 40px;
     margin-left: 5%;
@@ -1645,13 +1655,13 @@
   }
 
   .title {
-    font-size: 30px;
+    font-size: 24px;
     line-height: 140%;
   }
 
   h2 {
     font-size: 24px;
-    line-height: 140%;
+    line-height: 28px;
   }
 
   .undertitle {
@@ -1661,6 +1671,7 @@
   .header {
     max-width: 288px;
     top: 10px;
+    left: 7px;
   }
   .header__top-tablet__item {
     display: none;
@@ -1696,13 +1707,15 @@
   .header__call-offer {
     flex-direction: column;
     margin-top: 110px;
+    align-items: center;
+    justify-content: center;
   }
   .header__call-offer .header__call-link,
 .header__call-offer .header__call-btn {
-    width: 100%;
+    width: 96%;
     padding: 10px;
     min-height: 38px;
-    margin: 10px;
+    margin: 10px 10px;
   }
   .header-main-page__bot {
     grid-template-columns: repeat(1, 1fr);
@@ -1710,11 +1723,17 @@
 
   .main-page__header {
     padding-top: 120px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .main-page__header .header__arrow-nav {
+    display: none;
+  }
+  .main-page__header .header__swiper-pagination.swiper-pagination {
+    left: 0;
+    bottom: 39%;
   }
 
-  .services {
-    margin-top: 450px;
-  }
   .services .services__content-watch__phone {
     display: flex;
     align-items: center;
@@ -1730,6 +1749,9 @@
     font-size: 14px;
   }
   .services__bot {
+    display: none;
+  }
+  .services__bot-tablet__wrapper {
     display: none;
   }
   .services__bot-phone {
@@ -1768,6 +1790,9 @@
   .about__wrapper {
     flex-direction: column;
   }
+  .about__wrapper-tablet {
+    flex-direction: column;
+  }
   .about__left {
     width: 100%;
   }
@@ -1804,6 +1829,12 @@
   .about__right__img {
     width: 100%;
     height: 100%;
+  }
+  .about .about__img-tablet {
+    display: none;
+  }
+  .about__img-phone {
+    display: block;
   }
 
   .specialist .specialist__sliders__swiper {
@@ -4116,13 +4147,23 @@
     font-size: 20px;
   }
   .blog-archive__articles__bot {
+    gap: 20px;
     grid-template-columns: repeat(2, 1fr);
   }
-  .blog-archive__articles__card:nth-child(1), .blog-archive__articles__card:nth-child(7), .blog-archive__articles__card:nth-child(8) {
-    grid-column: span 2;
+  .blog-archive__articles__card-img {
+    width: 90%;
   }
-  .blog-archive__articles__card:nth-child(2) {
-    display: flex;
+  .blog-archive__articles__card__text {
+    width: 90%;
+  }
+  .blog-archive__card:nth-child(1), .blog-archive__card:nth-child(2), .blog-archive__card:nth-child(7), .blog-archive__card:nth-child(8) {
+    grid-column: span 1;
+  }
+  .blog-archive__card-img {
+    width: 90%;
+  }
+  .blog-archive__card__text {
+    width: 90%;
   }
 }
 @media (max-width: 320px) {
@@ -4177,6 +4218,75 @@
     text-decoration: underline;
   }
 }
+header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Гамбургер иконка */
+.menu-btn {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.menu-btn span {
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #222222;
+  transition: all 0.5s;
+}
+
+.menu-btn span:nth-of-type(2) {
+  top: calc(50% - 5px);
+}
+
+.menu-btn span:nth-of-type(3) {
+  top: calc(50% + 5px);
+}
+
+/* Меняем гамбургер иконку, когда меню открыто */
+.menu-btn.active span:nth-of-type(1) {
+  display: none;
+}
+
+.menu-btn.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);
+}
+
+.menu-btn.active span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg);
+}
+
+/* Меню, которое будет появляться */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  background: #FFEFBA;
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+}
+
+.menu.active {
+  transform: translateX(0);
+}
+
+.menu li {
+  list-style-type: none;
+}
+
 *,
 *::before,
 *::after {

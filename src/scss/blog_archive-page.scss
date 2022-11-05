@@ -62,32 +62,50 @@
         }
     }
 }
-
 @media (max-width: 640px) {
-    .blog-archive{
-        &__articles{
+    .blog-archive {
+        &__articles {
             padding: 0 5px;
             margin-top: $tabletMargin;
-            .specialist__subtitle{
-                    font-size: $fs20;
+
+            .specialist__subtitle {
+                font-size: $fs20;
             }
-            &__bot{
-                
-                grid-template-columns: repeat(2,1fr);
+
+            &__bot {
+                gap: 20px;
+                grid-template-columns: repeat(2, 1fr);
             }
-            &__card{
-                &:nth-child(1),
-                &:nth-child(7),
-                &:nth-child(8){
-                   grid-column: span 2;
-                   
+
+            &__card {
+                &-img {
+                    width: 90%;
                 }
-                &:nth-child(2){
-                   display: flex;
-                   
+
+                &__text {
+                    width: 90%;
                 }
+
             }
         }
+
+        &__card {
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(7),
+            &:nth-child(8){
+               grid-column: span 1;
+               
+            }
+            &-img {
+                width: 90%;
+            }
+
+            &__text {
+                width: 90%;
+            }
+        }
+
     }
 }
 @media (max-width: 320px) {
