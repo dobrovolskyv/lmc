@@ -1248,7 +1248,7 @@
   }
 
   .main-page__header {
-    padding-left: 5px;
+    padding-left: 20px;
     padding-right: 5px;
     height: 110%;
     background-position: center center;
@@ -2647,6 +2647,7 @@
   .specialist-page__header .header__skills__item {
     margin-top: 0px;
     font-size: 16px;
+    width: 200px;
   }
 
   .header__specialist-page__title {
@@ -2672,6 +2673,9 @@
   .header__specialist-page__item {
     font-size: 16px;
     margin-top: 0;
+  }
+  .header__specialist-page__contentbox {
+    justify-content: center;
   }
   .header__specialist-page__contentbox .undertitle {
     margin-top: 4px;
@@ -2727,6 +2731,30 @@
 
   .similar__specialist-page3 {
     margin-top: 100px;
+  }
+  .similar__specialist-page3 .similar__procedures__contentbox {
+    flex-direction: column;
+    max-height: 330px;
+    padding: 16px;
+  }
+  .similar__specialist-page3 .similar__procedures__contentbox img {
+    width: 150px;
+    height: 150px;
+  }
+  .similar__specialist-page3 .similar__procedures__contentbox-right {
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 17px;
+  }
+  .similar__specialist-page3 .similar__procedures__contentbox .similar__procedures__text {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .similar__specialist-page3 .similar__procedures__contentbox .similar__procedures__btn,
+.similar__specialist-page3 .similar__procedures__contentbox .similar__procedures__sale {
+    margin: 0 10px;
+    width: 200px;
+    padding: 10px 5px;
   }
 }
 @media (max-width: 320px) {
@@ -3006,7 +3034,31 @@
     margin-top: 100px;
     flex-wrap: wrap;
   }
-
+  .similar .similar__procedures__contentbox {
+    flex-direction: column;
+    max-height: 400px;
+    padding: 16px;
+  }
+  .similar .similar__procedures__contentbox img {
+    width: 150px;
+    height: 150px;
+  }
+  .similar .similar__procedures__contentbox-right {
+    margin-top: 20px;
+    margin-left: 17px;
+  }
+  .similar .similar__procedures__contentbox-right-btn {
+    margin-top: 10px;
+  }
+  .similar .similar__procedures__contentbox .similar__procedures__text {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .similar .similar__procedures__contentbox .similar__procedures__btn,
+.similar .similar__procedures__contentbox .similar__procedures__sale {
+    margin: 0 10px;
+    padding: 10px 5px;
+  }
   .skills__page4__wrapper {
     margin-top: 100px;
     flex-direction: column;
@@ -3049,6 +3101,12 @@
   .skills__page4 .header__skills__item {
     font-size: 16px;
   }
+  .skills__page4 .header__skills__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .skills__page4 .header__skills__stock .skills__page4 .header__skills__item {
+    margin-right: 0;
+  }
   .skills__page4 .header__stock-page__title {
     font-size: 32px;
   }
@@ -3057,6 +3115,38 @@
   }
   .skills__page4 .skills__page4__right-title {
     font-size: 32px;
+  }
+
+  .similar {
+    margin-top: 100px;
+    flex-wrap: wrap;
+  }
+  .similar .similar__procedures__contentbox {
+    flex-direction: column;
+    max-height: 400px;
+    padding: 16px;
+  }
+  .similar .similar__procedures__contentbox img {
+    width: 100px;
+    height: 100px;
+  }
+  .similar .similar__procedures__contentbox-right {
+    margin-top: 20px;
+    margin-left: 17px;
+  }
+  .similar .similar__procedures__contentbox-right-btn {
+    margin-top: 10px;
+  }
+  .similar .similar__procedures__contentbox .similar__procedures__text {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .similar .similar__procedures__contentbox .similar__procedures__btn,
+.similar .similar__procedures__contentbox .similar__procedures__sale {
+    margin: 5px;
+  }
+  .similar .similar__procedures__contentbox .similar__procedures__price {
+    margin: 2px;
   }
 
   .specialist {

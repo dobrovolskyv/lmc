@@ -240,6 +240,40 @@ color: #AE8452;
     .similar{
         margin-top: 100px;
         flex-wrap: wrap;
+        .similar__procedures__contentbox{
+            flex-direction: column;
+            max-height: 400px;
+            padding: 16px;
+           
+            img{
+                width: 150px;
+                height: 150px;
+            }
+            &-right{
+                // flex-direction: row;
+                margin-top: 20px;
+                margin-left: 17px;
+               &-btn{
+                margin-top: 10px;
+               }
+               
+            }
+            .similar__procedures__text{
+                font-size: $fs18;
+                font-weight: 700;
+
+            }
+            .similar__procedures__btn,
+            .similar__procedures__sale{
+                margin: 0 10px;
+                
+                padding: 10px 5px;
+            }
+            
+            .similar__procedures__price{
+            }
+        }
+       
     }
     //
     //
@@ -305,6 +339,13 @@ color: #AE8452;
             &__item{
                 font-size: $fs16;
             }
+            &__list{
+                grid-template-columns: repeat(1,1fr);
+            }
+            &__stock &__item {
+                margin-right: 0;
+               
+            }
         }
         .header__stock-page__title {
             font-size: $fs32;
@@ -317,6 +358,50 @@ color: #AE8452;
         }
     }
     //
+    //
+    //similar
+    //
+    //
+    //
+    .similar{
+        margin-top: 100px;
+        flex-wrap: wrap;
+        .similar__procedures__contentbox{
+            flex-direction: column;
+            max-height: 400px;
+            padding: 16px;
+           
+            img{
+                width: 100px;
+                height: 100px;
+            }
+            &-right{
+                // flex-direction: row;
+                margin-top: 20px;
+                margin-left: 17px;
+               &-btn{
+                margin-top: 10px;
+               }
+               
+            }
+            .similar__procedures__text{
+                font-size: $fs18;
+                font-weight: 700;
+
+            }
+            .similar__procedures__btn,
+            .similar__procedures__sale{
+                margin: 5px;
+                
+                
+            }
+            
+            .similar__procedures__price{
+                margin: 2px;
+            }
+        }
+       
+    }
     //
     //specialist
     //

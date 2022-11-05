@@ -153,7 +153,8 @@
         }
         .header__skills__item {
             margin-top: 0px;
-            font-size: $fs16
+            font-size: $fs16;
+            width: 200px;
         }
     }
     .header__specialist-page{
@@ -184,7 +185,7 @@
             margin-top: 0;
         }
         &__contentbox{
-            // flex-direction: column;
+            justify-content: center;
             .undertitle{
                 margin-top: 4px;
                 font-size: $fs10;
@@ -272,6 +273,37 @@
     //
     .similar__specialist-page3{
         margin-top: 100px;
+        .similar__procedures__contentbox{
+            flex-direction: column;
+            max-height: 330px;
+            padding: 16px;
+            img{
+                width: 150px;
+                height: 150px;
+            }
+            &-right{
+                flex-direction: row;
+                margin-top: 20px;
+                margin-left: 17px;
+               
+               
+            }
+            .similar__procedures__text{
+                font-size: $fs18;
+                font-weight: 700;
+
+            }
+            .similar__procedures__btn,
+            .similar__procedures__sale{
+                margin: 0 10px;
+                width: 200px;
+                padding: 10px 5px;
+            }
+            
+            .similar__procedures__price{
+            }
+        }
+       
     }
     
 }
