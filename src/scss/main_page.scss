@@ -518,6 +518,7 @@
             height: 395px;
             background-image: url('../../img/doctor.jpg');
             background-position: center 0;
+            background-size: cover;
             border: 1px solid $gold;
             border-radius: 4px;
 
@@ -2171,7 +2172,25 @@
     //
     
         .services {
-           
+            .content-card {
+                    &__description {
+                        ul {
+                            margin-left: 0;
+                            padding: 0;
+                            grid-template-columns: repeat(1, 1fr);
+                        }
+            
+            
+            
+                    }
+            
+                    &__more {
+                        margin: 0;
+                        p {
+                            font-size: $fs14;
+                        }
+                    }
+                }
     
             .services__content-watch__phone{
                 display: flex;
@@ -2195,6 +2214,7 @@
                 }
                 &-phone{
                     display: block;
+                   
                 }
                 &-phone__contentbox{
                     margin-top: 15px;
@@ -2202,6 +2222,12 @@
                     width: 100%;
                     border: 1px solid $gold;
                     border-radius: 4px;
+                    max-height: 600px;
+                    .about-doctor__answer{
+                        overflow: hidden;
+                        grid-template-columns: repeat(1,1fr);
+                    }
+                    
                 }
                 &-phone__content__title {
                     
@@ -2239,12 +2265,27 @@
         margin-top: 150px;
         &__wrapper{
             flex-direction: column;
+            
             &-tablet{
                 flex-direction: column;
             }
+           
         }
         &__left{
             width: 100%;
+            &-tablet{
+                width: 100%;
+                margin-top: 10px;
+                .about__img-phone{
+
+                   width: 288px;
+                   height: 320px; 
+                   &__img{
+                    width: 95%;
+                    height: 95%;
+                }
+                }
+            }
            
         }
         &__citate{
@@ -2254,7 +2295,7 @@
             }
         }
         &__subtitle{
-            font-size: $fs16;
+            font-size: $fs14;
             line-height: 120%;
             margin-top: 10px;
         }
@@ -2273,12 +2314,33 @@
                     font-size: $fs22;
                 }
             }
+            &__tr-tablet{
+                margin-right: 20px;
+            }
+            &-tablet{
+                width: 200px;
+                // flex-direction: row;
+                // align-items: flex-start;
+            }
         }
         &__right{
             order: -1;
             &__img{
                 width: 100%;
                 height: 100%;
+            }
+            &-tablet{
+                margin-top: 40px;
+                flex-direction: row;
+                .about__table__span-tablet{
+                    font-size: $fs32;
+                }
+                .about__table__td-secondary-tablet{
+                    font-size: $fs18;
+                }
+                .about__table__td-tablet{
+                    line-height: 140%;
+                }
             }
         }
         .about__img-tablet{
@@ -2297,7 +2359,14 @@
     .specialist{
         .specialist__sliders__swiper{
             max-width: 90%;
-            max-height: 90%;
+            max-height: 360px;
+            .swiper-button-prev{
+                left: 60%;
+                top: 7%;
+            }
+            .swiper-button-next{
+                top: 7%;
+            }
         }
         &__subtitle{
             font-size: $fs14;
@@ -2326,59 +2395,76 @@
         &__bot,
         &__bot-hidden{
             grid-template-columns: repeat(1,1fr);
+            .offer__card__text{
+                margin-top: 50%;
+                
+            }
         }
         .btn{
 
         }
+        
     }
     //
     //
     //clinic
     //
     //
-    .clinic{
-        .specialist__subtitle{
-            font-size: $fs14
-        }
-
-        &__advantage{
-            grid-template-columns: repeat(2,1fr);
-            &-contentbox{
-                flex-direction: column;
-                align-items: center;
-                
-                p{
-                    font-weight: 600;
-                    max-width: 110px;
-                    margin-top: 10px;
+        .clinic {
+            .specialist__subtitle {
+                font-size: $fs14
+            }
+    
+            &__advantage {
+                grid-template-columns: repeat(2, 1fr);
+    
+                &-contentbox {
+                    flex-direction: column;
+                    align-items: center;
+    
+                    p {
+                        font-weight: 600;
+                        max-width: 110px;
+                        margin-top: 10px;
+                    }
                 }
             }
-        }
-        &__right-swiper{
-            order: -1;
-        }
-        .clinic__right-swiper{
-            max-width: 288px;
-            max-height: 192px;
-            img{
-                width: 100%;
-                height: 100%;
+    
+            &__right-swiper {
+                order: -1;
+            }
+    
+            .clinic__right-swiper {
+                max-width: 288px;
+                max-height: 192px;
+    
+                .clinic__right-arrow {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            .clinic__right-pagination.swiper-pagination{
+                bottom: 0%;
             }
         }
-    }
     //
     //
     //reviews
     //
     //
     .reviews{
+        .reviews__sliders__swiper{
+            width: 288px;
+            height: 204px;
+            .reviews__sliders-box{
+                width: 280px;
+            }
+        }
         &__sliders{
             &-box{
                 min-height: 400px;
             }
-            &__swiper{
-            min-height: 425px;
-        }
+      
         }
         
     }

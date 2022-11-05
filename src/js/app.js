@@ -99,7 +99,7 @@ const servicesSwiper = new Swiper('.services__bot-tablet', {
     delay: 2500,
   },
 });
-const Specialistswiper = new Swiper('.specialist__sliders__swiper', {
+const specialistSwiper = new Swiper('.specialist__sliders__swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -112,7 +112,7 @@ const Specialistswiper = new Swiper('.specialist__sliders__swiper', {
   breakpoints: {
     // when window width is >= 320px
     200: {
-      slidesPerView: 1,
+      slidesPerView: 1.2,
       spaceBetween: 20
     },
   
