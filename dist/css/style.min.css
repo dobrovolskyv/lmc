@@ -4061,6 +4061,10 @@
   .services-chapter__contentbox {
     grid-template-columns: repeat(1, 1fr);
   }
+  .services-chapter__item-page {
+    margin-right: 0;
+    line-height: 140%;
+  }
   .services-chapter__content {
     padding: 10px;
     height: 292px;
@@ -4137,6 +4141,12 @@
   }
   .analysis-page__header__bot {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .analysis-page__header .subtitle {
+    font-size: 16px;
+  }
+  .analysis-page__header .header__call-offer {
+    margin-top: 50px;
   }
 
   .header__procedures {
@@ -4291,6 +4301,12 @@
   .specialist-chapter {
     margin-top: 100px;
   }
+  .specialist-chapter .accordion__menu {
+    width: 288px;
+  }
+  .specialist-chapter__contentbox-top, .specialist-chapter__contentbox-bot {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .our-services-page7 {
   margin-top: 250px;
@@ -4444,6 +4460,21 @@
   .share-archive__offer .undertitle {
     font-size: 10px;
   }
+  .share-archive__offer__bot {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .share-archive__offer__card__text {
+    margin-top: 70%;
+    max-width: 250px;
+  }
+  .share-archive__offer__card__title {
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .share-archive__offer__card__subtitle {
+    font-size: 14px;
+    line-height: 140%;
+  }
 }
 .blog-archive__articles {
   margin-top: 250px;
@@ -4531,9 +4562,16 @@
   .container {
     max-width: 288px;
   }
+
+  .blog-archive__articles__bot {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .blog-archive__articles .btn {
+    margin: 50px 7% 0px;
+  }
 }
 .error {
-  margin: 40% 10px;
+  margin: 30% 5%;
 }
 .error__title {
   font-size: 72px;
@@ -4549,7 +4587,7 @@
 
 @media (max-width: 620px) {
   .error {
-    margin: 40% 10px;
+    margin: 30% 5%;
   }
   .error__title {
     font-size: 42px;
@@ -4565,13 +4603,14 @@
 }
 @media (max-width: 320px) {
   .error {
-    margin: 40% 10px;
+    margin: 50% 5%;
   }
   .error__title {
-    font-size: 24px;
+    font-size: 30px;
   }
   .error__subtitle {
     font-size: 16px;
+    line-height: 140%;
   }
   .error a {
     font-size: 14px;

@@ -97,6 +97,23 @@
             .undertitle{
                 font-size: $fs10;
             }
+            &__bot{
+                grid-template-columns: repeat(1,1fr);
+            }
+            &__card{
+                &__text{
+                    margin-top: 70%;
+                    max-width: 250px;
+                }
+                &__title{
+                font-size: $fs16;
+                line-height: 140%;
+            }
+            &__subtitle{
+                font-size: $fs14;
+                line-height: 140%;
+            }
+            }
         }
     
 }

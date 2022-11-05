@@ -138,5 +138,12 @@
     }
     .specialist-chapter {
         margin-top: $phoneMargin;
+        .accordion__menu{
+            width: 288px;
+        }
+        &__contentbox-top,
+        &__contentbox-bot{
+            grid-template-columns: repeat(1,1fr);
+        }
     }
 }

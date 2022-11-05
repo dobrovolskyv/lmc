@@ -1,5 +1,5 @@
 .error{
-    margin: 40% 10px;
+    margin: 30% 5%;
     &__title{
         font-size: 72px;
     }
@@ -16,7 +16,7 @@
 }
 @media (max-width: 620px) {
     .error{
-        margin: 40% 10px;
+        margin: 30% 5%;
         &__title{
             font-size: 42px;
         }
@@ -33,12 +33,13 @@
 }
 @media (max-width: 320px) {
     .error{
-        margin: 40% 10px;
+        margin: 50% 5%;
         &__title{
-            font-size: 24px;
+            font-size: $fs30;
         }
         &__subtitle{
             font-size: $fs16;
+            line-height: 140%;
         }
         a{
             font-size: $fs14;

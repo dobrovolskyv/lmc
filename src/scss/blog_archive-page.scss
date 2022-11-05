@@ -112,5 +112,13 @@
     .container{
         max-width: 288px;
     }
+    .blog-archive__articles{
+        &__bot{
+            grid-template-columns: repeat(1,1fr);
+        }
+        .btn{
+            margin: 50px 7% 0px;
+        }
+    }
     
 }
