@@ -149,6 +149,9 @@
         }
             &__physics {
                 margin-top: $phoneMargin;
+                .accordion__menu{
+                    width: 288px;
+                }
             }
         }
     

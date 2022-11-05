@@ -936,6 +936,9 @@
                     line-height: 140%;
                     text-decoration-line: underline;
                 }
+                &-phone{
+                    display: none;
+                }
             }
 
             &-list {
@@ -1597,6 +1600,9 @@
     //
 
         .services {
+            .swiper-slide{
+                height: 400px;
+            }
             position: relative;
             padding: 100px 5px 0px 5px;
             &__subtitle {
@@ -1915,6 +1921,9 @@
                     div{
                         width: 60%;
                     }
+                    &-phone{
+                        display: none;
+                    }
                 }
                 &-text{
                     font-size: $fs16;
@@ -2087,6 +2096,7 @@
         font-size: $fs24;
         line-height: 28px;
     }
+  
     .undertitle{
         font-size: $fs10;
     }
@@ -2330,6 +2340,7 @@
                 height: 100%;
             }
             &-tablet{
+                margin-left: 40px;
                 margin-top: 40px;
                 flex-direction: row;
                 .about__table__span-tablet{
@@ -2361,11 +2372,15 @@
             max-width: 90%;
             max-height: 360px;
             .swiper-button-prev{
-                left: 60%;
+                left: 69%;
                 top: 7%;
+                width: 30px;
+                height: 30px;
             }
             .swiper-button-next{
                 top: 7%;
+                width: 30px;
+                height: 30px;
             }
         }
         &__subtitle{
@@ -2377,11 +2392,14 @@
         .sliders-box{
             
             &__prof{
-                bottom: 22%;
-                right: 18%;
+                bottom: 26%;
+                right: 5%;
+                margin-left: 6px;
             }
             &__doctor{
-                right: 18%;
+                font-size: $fs14;
+                bottom: 20%;
+                right: 13%;
             }
             
         }
@@ -2400,8 +2418,8 @@
                 
             }
         }
-        .btn{
-
+         .btn{
+            max-width: 50px 19% 0;
         }
         
     }
@@ -2417,6 +2435,7 @@
     
             &__advantage {
                 grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
     
                 &-contentbox {
                     flex-direction: column;
@@ -2455,7 +2474,7 @@
     .reviews{
         .reviews__sliders__swiper{
             width: 288px;
-            height: 204px;
+            height: 404px;
             .reviews__sliders-box{
                 width: 280px;
             }
@@ -2465,6 +2484,17 @@
                 min-height: 400px;
             }
       
+        }
+        .swiper-button-next{
+            width: 30px;
+            height: 30px;
+            top: 29%;
+        }
+        .swiper-button-prev{
+            width: 30px;
+            height: 30px;
+            top: 29%;
+            left: 74%;
         }
         
     }
@@ -2490,14 +2520,41 @@
     //contacts
     //
     //
-    .contacts{
-       
-        &__bot__img{
-            order: -1;
-            width: 100%;
-            height: 100%;
+        .contacts {
+    
+            &__bot__img {
+                order: -1;
+                width: 100%;
+                height: 100%;
+                border-width: 1px 1px 0px 1px;
+                border-radius: 4px 4px 0px 4px;
+            }
+    
+            &__bot {
+                &__info {
+                    width: 100%;
+                    border-width: 0px 1px 1px 1px;
+                    border-radius: 0px 4px 4px 4px;
+                    &-adress{
+                        display: none;
+                        &-phone{
+                            text-align: center;
+                            display: block;
+                            width: 240px;
+                            
+                        }
+                    }
+                    &-list{
+                        grid-template-columns: repeat(1,1fr);
+                    }
+                }
+            }
+            &__btn-tablet{
+                width: 100%;
+                margin-left: 10px;
+                padding: 10px 40px;
+            }
         }
-    }
     //
     //
     //record
@@ -2528,15 +2585,24 @@
     //
     //
     .footer{
+        &__bot__wrapper{
+            background-color: $primary;
+        }
         
         &::before{
             width: 100%;
             bottom: 6%;
             left: 0;
-            height: 500px;
+            height: 700px;
+            display: none;
         }
         &__top{
-            padding: 10px;
+            padding: 40px 10px;
+            margin-left: 0px;
+            width: 288px;
+            &-text{
+                font-size: $fs14;
+            }
         }
         &__btn{
             width: 100%;
@@ -2556,12 +2622,14 @@
         .footer__main{
             display: none;
             
+            
         }
         &__alert{
             font-size: $fs20;
         }
         &__main-phone{
-            
+            padding-top: 40px;
+            display: block;
             color: $bg;
             &__top-contentbox{
                 border: 1px solid $bg;
@@ -2573,7 +2641,10 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                img{
+                p{
+                    font-size: $fs16;
+                }
+                .footer__main-phone__top-img{
                     width: 20px;
                     height: 20px;
                 }
@@ -2629,6 +2700,13 @@
         &__alert{
             font-size: $fs10;
             text-align: center;
+            display: none;
+            &-bot{
+                font-size: $fs18;
+                line-height: 100%;
+            text-align: center;
+            color: $bgFooter;
+            }
         }
     }
 

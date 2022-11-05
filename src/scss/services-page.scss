@@ -305,7 +305,7 @@ color: #972A29;
 //ADAPTIVE FOR TABLET
 //
 //
-@media (max-width: 610px) {
+@media (max-width: 640px) {
     
     .services-page__header {
         margin-top: 150px;
@@ -475,10 +475,10 @@ color: #972A29;
     }
     .btn{
         margin: 50px 30% 0px;
-            width: 178px;
-            height: 38px;
-            padding: 4px 18px;
-            font-size: $fs10;
+        width: 178px;
+        height: 38px;
+        padding: 4px 18px;
+        font-size: $fs10;
         
     }
 }
@@ -498,7 +498,11 @@ color: #972A29;
 }
 
 @media (max-width: 320px) {
+  
     .services-page__header{
+        .header__menu-navpage__list .header__menu-navpage__item{
+    font-size: 6px;
+        }
         margin-top: 100px;
         .title{
             font-size: 28px;
@@ -511,18 +515,19 @@ color: #972A29;
         }
         .header__bot-contentbox{
             max-width: 286px;
-            min-height: 150px;
+            min-height: 110px;
+            padding: 6px 10px;
             img{
                 margin-top: 30px;
-                width: 70px;
-                height: 70px;
+                width: 50px;
+                height: 50px;
             }
             &-descr{
                 h4{
                     font-size: $fs14;
                 }
                 p{
-                    font-size: $fs14;
+                    font-size: $fs12;
                 }
             }
         }
@@ -564,22 +569,49 @@ color: #972A29;
             }
     
             &__brochure {
+                padding: 20px;
+                border-radius: 4px;
+                &-title{
+                    font-size: $fs20;
+                    line-height: 140%;
+                }
+                &-img{
+                    width: 50px;
+                    height: 50px;
+                }
+                &-text{
+                    font-size: $fs16;
+                    line-height: 140%;
+                }
+                &__subtext{
+                    line-height: 140%;
+                }
                 &-steps {
                     display: flex;
                     flex-direction: column;
+                    
                 }
     
                 &-step {
                     display: gird;
                     grid-template-columns: repeat(2,1fr);
+                    border-radius: 4px;
+                    margin-top: 10px;
                 }
-                &-img{
-                    width: 70px;
-                    height: 70px;
-                }
+                
             }
         }
     //
+    //
+    //reviews
+    //
+    //
+    //
+    .reviews{
+        .title{
+            font-size: 29px;
+        }
+    }
     //
     //offer
     //
@@ -591,7 +623,7 @@ color: #972A29;
     }
      //
     //
-    //offer
+    //similar
     //
     //
     .similar{

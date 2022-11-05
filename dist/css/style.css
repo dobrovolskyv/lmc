@@ -758,6 +758,9 @@
   line-height: 140%;
   text-decoration-line: underline;
 }
+.contacts__bot__info-adress-phone {
+  display: none;
+}
 .contacts__bot__info-list {
   margin-top: 42px;
 }
@@ -1270,6 +1273,9 @@
     position: relative;
     padding: 100px 5px 0px 5px;
   }
+  .services .swiper-slide {
+    height: 400px;
+  }
   .services__subtitle {
     max-width: 100%;
   }
@@ -1520,6 +1526,9 @@
   }
   .contacts__bot__info-adress div {
     width: 60%;
+  }
+  .contacts__bot__info-adress-phone {
+    display: none;
   }
   .contacts__bot__info-text {
     font-size: 16px;
@@ -1866,6 +1875,7 @@
     height: 100%;
   }
   .about__right-tablet {
+    margin-left: 40px;
     margin-top: 40px;
     flex-direction: row;
   }
@@ -1890,11 +1900,15 @@
     max-height: 360px;
   }
   .specialist .specialist__sliders__swiper .swiper-button-prev {
-    left: 60%;
+    left: 69%;
     top: 7%;
+    width: 30px;
+    height: 30px;
   }
   .specialist .specialist__sliders__swiper .swiper-button-next {
     top: 7%;
+    width: 30px;
+    height: 30px;
   }
   .specialist__subtitle {
     font-size: 14px;
@@ -1903,11 +1917,14 @@
     height: 80px;
   }
   .specialist .sliders-box__prof {
-    bottom: 22%;
-    right: 18%;
+    bottom: 26%;
+    right: 5%;
+    margin-left: 6px;
   }
   .specialist .sliders-box__doctor {
-    right: 18%;
+    font-size: 14px;
+    bottom: 20%;
+    right: 13%;
   }
 
   .offer__bot, .offer__bot-hidden {
@@ -1916,11 +1933,16 @@
   .offer__bot .offer__card__text, .offer__bot-hidden .offer__card__text {
     margin-top: 50%;
   }
+  .offer .btn {
+    max-width: 50px 19% 0;
+  }
+
   .clinic .specialist__subtitle {
     font-size: 14px;
   }
   .clinic__advantage {
     grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
   .clinic__advantage-contentbox {
     flex-direction: column;
@@ -1948,13 +1970,24 @@
 
   .reviews .reviews__sliders__swiper {
     width: 288px;
-    height: 204px;
+    height: 404px;
   }
   .reviews .reviews__sliders__swiper .reviews__sliders-box {
     width: 280px;
   }
   .reviews__sliders-box {
     min-height: 400px;
+  }
+  .reviews .swiper-button-next {
+    width: 30px;
+    height: 30px;
+    top: 29%;
+  }
+  .reviews .swiper-button-prev {
+    width: 30px;
+    height: 30px;
+    top: 29%;
+    left: 74%;
   }
 
   .articles__bot-visiable, .articles__bot-hidden {
@@ -1971,6 +2004,29 @@
     order: -1;
     width: 100%;
     height: 100%;
+    border-width: 1px 1px 0px 1px;
+    border-radius: 4px 4px 0px 4px;
+  }
+  .contacts__bot__info {
+    width: 100%;
+    border-width: 0px 1px 1px 1px;
+    border-radius: 0px 4px 4px 4px;
+  }
+  .contacts__bot__info-adress {
+    display: none;
+  }
+  .contacts__bot__info-adress-phone {
+    text-align: center;
+    display: block;
+    width: 240px;
+  }
+  .contacts__bot__info-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contacts__btn-tablet {
+    width: 100%;
+    margin-left: 10px;
+    padding: 10px 40px;
   }
 
   .record .undertitle {
@@ -1989,14 +2045,23 @@
     font-size: 14px;
   }
 
+  .footer__bot__wrapper {
+    background-color: #093A67;
+  }
   .footer::before {
     width: 100%;
     bottom: 6%;
     left: 0;
-    height: 500px;
+    height: 700px;
+    display: none;
   }
   .footer__top {
-    padding: 10px;
+    padding: 40px 10px;
+    margin-left: 0px;
+    width: 288px;
+  }
+  .footer__top-text {
+    font-size: 14px;
   }
   .footer__btn {
     width: 100%;
@@ -2020,6 +2085,8 @@
     font-size: 20px;
   }
   .footer__main-phone {
+    padding-top: 40px;
+    display: block;
     color: #FFF9EF;
   }
   .footer__main-phone__top-contentbox {
@@ -2033,7 +2100,10 @@
     justify-content: space-between;
     align-items: center;
   }
-  .footer__main-phone__top-text img {
+  .footer__main-phone__top-text p {
+    font-size: 16px;
+  }
+  .footer__main-phone__top-text .footer__main-phone__top-img {
     width: 20px;
     height: 20px;
   }
@@ -2084,6 +2154,13 @@
   .footer__alert {
     font-size: 10px;
     text-align: center;
+    display: none;
+  }
+  .footer__alert-bot {
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    color: #083054;
   }
 }
 .body {
@@ -2356,7 +2433,7 @@
   display: none;
 }
 
-@media (max-width: 610px) {
+@media (max-width: 640px) {
   .services-page__header {
     margin-top: 150px;
   }
@@ -2480,6 +2557,9 @@
   .services-page__header {
     margin-top: 100px;
   }
+  .services-page__header .header__menu-navpage__list .header__menu-navpage__item {
+    font-size: 6px;
+  }
   .services-page__header .title {
     font-size: 28px;
   }
@@ -2491,18 +2571,19 @@
   }
   .services-page__header .header__bot-contentbox {
     max-width: 286px;
-    min-height: 150px;
+    min-height: 110px;
+    padding: 6px 10px;
   }
   .services-page__header .header__bot-contentbox img {
     margin-top: 30px;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
   }
   .services-page__header .header__bot-contentbox-descr h4 {
     font-size: 14px;
   }
   .services-page__header .header__bot-contentbox-descr p {
-    font-size: 14px;
+    font-size: 12px;
   }
   .services-page__header .header__procedures {
     margin-top: 430px;
@@ -2530,6 +2611,25 @@
     max-width: 288px;
     margin-top: 20px;
   }
+  .questions__brochure {
+    padding: 20px;
+    border-radius: 4px;
+  }
+  .questions__brochure-title {
+    font-size: 20px;
+    line-height: 140%;
+  }
+  .questions__brochure-img {
+    width: 50px;
+    height: 50px;
+  }
+  .questions__brochure-text {
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .questions__brochure__subtext {
+    line-height: 140%;
+  }
   .questions__brochure-steps {
     display: flex;
     flex-direction: column;
@@ -2537,10 +2637,12 @@
   .questions__brochure-step {
     display: gird;
     grid-template-columns: repeat(2, 1fr);
+    border-radius: 4px;
+    margin-top: 10px;
   }
-  .questions__brochure-img {
-    width: 70px;
-    height: 70px;
+
+  .reviews .title {
+    font-size: 29px;
   }
 
   .offer-services__bot-hidden {
@@ -2823,6 +2925,13 @@
   }
 }
 @media (max-width: 320px) {
+  section .header__menu-navpage__list {
+    margin-bottom: 0px;
+  }
+  section .header__menu-navpage__list .header__menu-navpage__item {
+    font-size: 8px;
+  }
+
   .specialist-page__header {
     margin-top: 100px;
   }
@@ -2836,6 +2945,7 @@
   }
   .specialist-page__header .about__right__img {
     order: -1;
+    margin-left: 0;
   }
   .specialist-page__header .header__call-link {
     width: 100%;
@@ -2860,8 +2970,13 @@
     margin-left: 0;
     width: 288px;
   }
+  .specialist-page__header .header__skills__list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
   .specialist-page__header .header__skills__item {
     font-size: 16px;
+    line-height: 140%;
   }
 
   .about-doctor {
@@ -2869,6 +2984,18 @@
   }
   .about-doctor__title {
     font-size: 22px;
+  }
+
+  .similar .questions__brochure-title {
+    font-size: 18px;
+    line-height: 140%;
+    font-weight: 700;
+  }
+  .similar .questions__brochure-subtext {
+    line-height: 140%;
+  }
+  .similar .questions__brochure-btn {
+    width: 96%;
   }
 }
 .header__stock-page {
@@ -3055,7 +3182,7 @@
 @media (max-width: 640px) {
   .header__stock-page {
     padding: 0 5px;
-    margin-top: 100px;
+    margin-top: 150px;
   }
   .header__stock-page__contentbox {
     flex-direction: column;
@@ -3143,6 +3270,36 @@
   }
 }
 @media (max-width: 320px) {
+  .header__stock-page__right {
+    margin-top: 40px;
+    padding: 10px 20px;
+    max-width: 288px;
+    max-height: 190px;
+  }
+  .header__stock-page__right-sale {
+    font-size: 18px;
+  }
+  .header__stock-page__right-text {
+    font-size: 36px;
+  }
+  .header__stock-page__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .header__stock-page__link {
+    font-size: 8px;
+  }
+  .header__stock-page__bot {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .header__stock-page__content {
+    padding: 10px;
+    height: 82px;
+  }
+  .header__stock-page .btn__header-page2 {
+    margin-top: 10px;
+  }
+
   .similar {
     margin-top: 100px;
   }
@@ -3152,6 +3309,9 @@
   }
   .skills__page4__content-top__title {
     font-size: 30px;
+  }
+  .skills__page4__content-top__list {
+    grid-template-columns: repeat(1, 1fr);
   }
   .skills__page4__content-top__item {
     font-size: 16px;
@@ -3165,6 +3325,7 @@
   }
   .skills__page4 .header__skills__item {
     font-size: 16px;
+    margin-right: 0;
   }
   .skills__page4 .header__skills__list {
     grid-template-columns: repeat(1, 1fr);
@@ -3212,6 +3373,13 @@
   }
   .similar .similar__procedures__contentbox .similar__procedures__price {
     margin: 2px;
+  }
+
+  .brochure__stock-page .questions__brochure-btn {
+    width: 96%;
+  }
+  .brochure__stock-page .questions__brochure-subtext {
+    line-height: 140%;
   }
 
   .specialist {
@@ -3464,11 +3632,16 @@
     gap: 8px;
   }
   .direction__contentbox__title {
+    font-size: 16px;
     margin: 10px 0;
   }
   .direction__contentbox__subtitle {
     font-size: 14px;
     line-height: 140%;
+  }
+
+  .brochure__about-page .questions__brochure-btn {
+    width: 96%;
   }
 
   .clinic {
@@ -3486,6 +3659,10 @@
   }
   .clinic-history__line {
     height: 305px;
+  }
+  .clinic .clinic__right-swiper .swiper-slide img {
+    width: 100%;
+    height: 100%;
   }
 
   .contacts {
@@ -3520,16 +3697,23 @@
   .contacts {
     margin-top: 100px;
   }
+  .contacts__license__img {
+    width: 40px;
+    height: 40px;
+  }
+  .contacts__license__text {
+    margin: 10px 0;
+  }
 
   .about-doctor__contentbox {
     padding: 6px 14px;
   }
+  .about-doctor__question img {
+    width: 20px;
+    height: 20px;
+  }
   .about-doctor__title {
     font-size: 18px;
-  }
-  .about-doctor__title img {
-    width: 30px;
-    height: 30px;
   }
 }
 .our-services-page7__subtitle {
@@ -3744,6 +3928,9 @@
   .our-services-page7__menu__services {
     width: 100%;
   }
+  .our-services-page7 .accordion__menu {
+    width: 288px;
+  }
 }
 .services-chapter__physics {
   margin-top: 250px;
@@ -3880,6 +4067,9 @@
   }
   .services-chapter__physics {
     margin-top: 100px;
+  }
+  .services-chapter__physics .accordion__menu {
+    width: 288px;
   }
 }
 .analysis-page__header {
@@ -4149,6 +4339,22 @@
 @media (max-width: 320px) {
   .our-services-page7 {
     margin-top: 100px;
+  }
+
+  .questions .questions__brochure-btn {
+    width: 96%;
+  }
+  .questions .questions__brochure-text {
+    font-size: 18px;
+    line-height: 140%;
+    font-weight: 700;
+  }
+  .questions .questions__brochure-subtext {
+    line-height: 140%;
+  }
+
+  .articles__bot {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 .share-archive__offer {
@@ -4583,6 +4789,7 @@ h2 {
   display: flex;
   align-items: center;
   margin-bottom: 50px;
+  margin-top: 20px;
 }
 .header__menu-navpage__item {
   font-size: 16px;

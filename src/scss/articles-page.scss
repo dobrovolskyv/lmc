@@ -51,4 +51,35 @@
         margin-top: 100px;
     
     }
+    //
+    //
+    //qusetions
+    //
+    //
+    .questions{
+        .questions__brochure-btn{
+            width: 96%;
+        }
+        
+        .questions__brochure-text{
+            font-size: 18px;
+            line-height: 140%;
+            font-weight: 700;
+        }
+
+        .questions__brochure-subtext{
+            line-height: 140%;
+        }
+    }
+     //
+    //
+    //articles
+    //
+    //
+
+    .articles{
+        &__bot{
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
 }

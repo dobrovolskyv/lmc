@@ -26,6 +26,7 @@
             text-align: right;
             text-decoration:line-through;
             color: $gold;
+
         }
         &-text{
             font-family: 'Oranienbaum';
@@ -198,7 +199,7 @@ color: #AE8452;
 @media (max-width: 640px) {
     .header__stock-page{
         padding: 0 5px;
-        margin-top: 100px;
+        margin-top: $tabletMargin;
         &__contentbox{
             flex-direction: column;
         }
@@ -315,6 +316,37 @@ color: #AE8452;
     //
 }
 @media (max-width: 320px) {
+    .header__stock-page{
+        &__right{
+            margin-top: 40px;
+            padding: 10px 20px;
+            max-width: 288px;
+            max-height: 190px;
+          &-sale{
+            font-size: $fs18;
+            }  
+            &-text{
+                font-size: $fs36;
+            }
+        }
+        &__list{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        &__link{
+            font-size: $fs8;
+        }
+        &__bot{
+            grid-template-columns: repeat(1,1fr);
+        }
+        &__content{
+            padding: 10px;
+            height: 82px;
+        }
+        .btn__header-page2{
+            margin-top: 10px;
+        }
+    }
     .similar{
         margin-top: 100px;
     }
@@ -323,6 +355,9 @@ color: #AE8452;
             margin-top: 100px;
             &__title{
                 font-size: $fs30;
+            }
+            &__list{
+                grid-template-columns: repeat(1,1fr);
             }
             &__item{
                 font-size: $fs16;
@@ -338,6 +373,7 @@ color: #AE8452;
             }
             &__item{
                 font-size: $fs16;
+                margin-right: 0;
             }
             &__list{
                 grid-template-columns: repeat(1,1fr);
@@ -355,6 +391,7 @@ color: #AE8452;
             &-title{
                 font-size: $fs32;
             }
+            
         }
     }
     //
@@ -403,6 +440,18 @@ color: #AE8452;
        
     }
     //
+    //brochure
+    //
+    //
+    //
+    .brochure__stock-page{
+            .questions__brochure-btn{
+                width: 96%;
+            }
+            .questions__brochure-subtext{
+                line-height: 140%;
+            }
+    }
     //specialist
     //
     //
@@ -412,6 +461,11 @@ color: #AE8452;
             font-size: $fs10;
         }
     }
+     //
+    //
+    //offer
+    //
+    //
      //
     //
     //offer

@@ -9,18 +9,29 @@
 @media (max-width: 320px) {
     .contacts{
         margin-top: 100px;
+        &__license{
+            &__img{
+                width: 40px;
+                height: 40px;
+            }
+            &__text{
+                margin: 10px 0;
+            }
+        }
     }
     .about-doctor{
         &__contentbox{
             padding: 6px 14px;
         }
-        
+        &__question{
+            img{
+                width: 20px;
+                height: 20px;
+            }
+        }
         &__title{
             font-size: $fs18;
-            img{
-                width: 30px;
-                height: 30px;
-            }
+            
         }
     }
 }
