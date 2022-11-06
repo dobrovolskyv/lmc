@@ -150,14 +150,16 @@
 
 .active:after {
     content: "\2212";
+    color: white;
 }
+
 
 .accordion__menu__item {
     padding: 0 0px;
-    color: #212121;
     color: $white;
     max-height: 0;
-    overflow: hidden;
+    overflow: scroll;
+    
     transition: max-height 0.3s ease-out;
     p{
         padding: 16px;
