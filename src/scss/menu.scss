@@ -1,11 +1,15 @@
-header {
-	display: flex;
-	justify-content: flex-end;
+.menu-phone__contentbox{
+	color: $bg;
+}
+.menu__btn-phone__container {
+	position: absolute;
+	top: 10%;
+	left: 6%;
 }
 
 
 /* Гамбургер иконка */
-.menu-btn {
+.menu__btn-phone {
 	width: 30px;
 	height: 30px;
 	position: relative;
@@ -13,56 +17,165 @@ header {
 	overflow: hidden;
 }
 
-.menu-btn span {
+.menu__btn-phone span {
 	width: 30px;
 	height: 2px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background-color: #222222;
+	background-color: $primary;
 	transition: all 0.5s;
 }
 
-.menu-btn span:nth-of-type(2) {
+.menu__btn-phone span:nth-of-type(2) {
 	top: calc(50% - 5px);
 }
-.menu-btn span:nth-of-type(3) {
+.menu__btn-phone span:nth-of-type(3) {
 	top: calc(50% + 5px);
 }
 
 /* Меняем гамбургер иконку, когда меню открыто */
-.menu-btn.active span:nth-of-type(1) {
+.menu__btn-phone.active span:nth-of-type(1) {
   display: none;
 }
-.menu-btn.active span:nth-of-type(2) {
+.menu__btn-phone.active span:nth-of-type(2) {
+	background-color: $primary;
   top: 50%;
   transform: translate(-50%, 0%) rotate(45deg);  
 }
-.menu-btn.active span:nth-of-type(3) {
+.menu__btn-phone.active span:nth-of-type(3) {
+	background-color: $primary;
   top: 50%;
   transform: translate(-50%, 0%) rotate(-45deg); 
 }
 
 /* Меню, которое будет появляться */
-.menu {
-	position: fixed;
-	top: 0;
-	left: 0;
+.menu-phone {
+	
 	width: 100%;
 	height: 100%;
 	padding: 15px;
-  background: #FFEFBA;
+  	background: $primary;
 	transform: translateX(-100%);
 	transition: transform 0.5s; 
+	.accordion__menu{
+		width: 288px;
+	}
+	&__logos{
+		img:not(:first-child){
+			margin-left: 10px;
+		}
+	}
+	&__logos-tel{
+		color: $secondary;
+		font-size: $fs16;
+		margin-left: 34px;
+	}
+	&__record{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+		&-text{
+			font-size: $fs14;
+			line-height: 140%;
+			margin-left: 40px;
+		}
+		&-container{
+			display: flex;
+			align-items: center;
+		}
+		&-link{
+			font-size: $fs14;
+			margin-left: 10px;
+		}
+	}
+	&__search{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&__container{
+			width: 100%;
+		}
+		&__input{
+			border: none;
+			border-bottom: 1px solid $secondary;
+			background: transparent;
+			padding: 10px;
+			width: 100%;
+			outline:none;
+			&:focus{
+				border: none;
+				color: $secondary;
+				border-bottom: 1px solid $secondary;
+			}
+		}
+	}
+	&__middle{
+		margin-top: 20px;
+		&-link{
+			font-size: 40px;
+			line-height: 56px;
+			color: $secondary;
+			border-bottom: 1px solid $secondary;
+			position: relative;
+			span{
+				font-size: $fs16;
+				position: absolute;
+				top: -40%;
+				right: -14%;
+			
+				
+			}
+		}
+		&-span{
+			
+				left: 100%;
+			
+		}
+	}
 }
 
-.menu.active {
+.menu-phone.active {
 	transform: translateX(0);
 }
 
-.menu li {
+.menu-phone li {
+	list-style-type: none;
+}
+
+.active:after{
+	display: none;
+}
+.menu2-phone.active {
+	transform: translateX(0);
+}
+
+.menu2-phone li {
 	list-style-type: none;
 }
 
 
+.go-back{
+	z-index:3;
+	overflow: hidden
+}
+.menu2-phone{
+	position: absolute;
+	top: 0%;
+	width: 100%;
+	height: 200%;
+	padding: 15px;
+  	background: $primary;
+	transform: translateX(-110%);
+	transition: transform 0.5s;
+	.accrdion__menu{
+		width: 280px;
+	}
+}
+
+.go-back{
+	color: white;
+	margin: 30px;
+	z-index: 100;
+}

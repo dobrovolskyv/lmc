@@ -297,13 +297,41 @@ for (i = 0; i < acci.length; i++) {
   });
 }
 
-// let menuBtn = document.querySelector('.menu-btn');
-// let menu = document.querySelector('.menu');
+let menuBtn = document.querySelector('.menu__btn-phone');
+let menu = document.querySelector('.menu-phone');
 
-// menuBtn.addEventListener('click', function(){
-// 	menuBtn.classList.toggle('active');
-// 	menu.classList.toggle('active');
+
+let openSecondMenu = document.querySelector('.menu-phone__middle-list');
+let menuSecond = document.querySelector('.menu2-phone')
+let btnBack2 = document.querySelector('.go-back2')
+let btnBack = document.querySelector('.go-back')
+
+
+if (menuBtn && menu){menuBtn.addEventListener('click', function(){
+
+	menuBtn.classList.toggle('active');
+	menu.classList.toggle('active');
+	
+})
+}
+if (openSecondMenu && menuSecond){openSecondMenu.addEventListener('click', function(){
+
+	openSecondMenu.classList.toggle('active');
+	menuSecond.classList.toggle('active');
+	
+})
+}
+// btnBack2.forEach((el)=>{
+//   el.addEventListener('click',()=>{
+        
+//         if (menuSecond.style.transform === "translateX(-110%)") {
+//           menuSecond.style.transform = "translateX(0)";
+//         } else {
+//           menuSecond.style.transform = "translateX(-110%)";
+//         }
+//       })
 // })
+
 
 
 

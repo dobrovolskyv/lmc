@@ -309,7 +309,8 @@ color: #972A29;
     
     .services-page__header {
         margin-top: 150px;
-
+        margin-left: 24px;
+        
         .header {
             
             margin: 0 5px;
@@ -323,7 +324,7 @@ color: #972A29;
 
                 &-contentbox {
                     max-height: 150px;
-                    max-width: 43%;
+                    max-width: 92%;
                     &-descr{
                         width: 100%;
                       h4{
@@ -346,7 +347,7 @@ color: #972A29;
 
             }
             &__procedures{
-                margin-top: 320px;
+                margin-top: 380px;
                 font-size: $fs16;
                 &__contentbox{
                     padding: 0px 18px;
@@ -500,8 +501,9 @@ color: #972A29;
 @media (max-width: 320px) {
   
     .services-page__header{
+       
         .header__menu-navpage__list .header__menu-navpage__item{
-    font-size: 6px;
+            font-size: 6px;
         }
         margin-top: 100px;
         .title{
