@@ -4696,7 +4696,7 @@
   height: 100%;
   padding: 15px;
   background: #093A67;
-  transform: translateX(-100%);
+  transform: translateX(-120%);
   transition: transform 0.5s;
 }
 .menu-phone .accordion__menu {
@@ -4801,7 +4801,7 @@
   height: 200%;
   padding: 15px;
   background: #093A67;
-  transform: translateX(-110%);
+  transform: translateX(-120%);
   transition: transform 0.5s;
 }
 .menu2-phone .accrdion__menu {
