@@ -54,10 +54,8 @@ const headerSlides = new Swiper('.header__slides__swiper', {
   // And if we need scrollbar
   scrollbar: {
     el: '.swiper-scrollbar',
-  },
-  autoplay: {
-    delay: 2000,
-  },
+  }, 
+ 
 });
 
 const servicesSwiper = new Swiper('.services__bot-tablet', {
@@ -302,6 +300,7 @@ let menu = document.querySelector('.menu-phone');
 
 
 let openSecondMenu = document.querySelector('.menu-phone__middle-list');
+
 let menuSecond = document.querySelector('.menu2-phone')
 let btnBack2 = document.querySelector('.go-back2')
 let btnBack = document.querySelector('.go-back')
@@ -310,17 +309,20 @@ let btnBack = document.querySelector('.go-back')
 if (menuBtn && menu){menuBtn.addEventListener('click', function(){
 
 	menuBtn.classList.toggle('active');
+  
 	menu.classList.toggle('active');
-	
+  if(!menu.classList.include('active')){
+    menuSecond.classList.toggle('active')
+  }
 })
 }
-if (openSecondMenu && menuSecond){openSecondMenu.addEventListener('click', function(){
+// if (openSecondMenu && menuSecond){openSecondMenu.addEventListener('click', function(){
 
-	openSecondMenu.classList.toggle('active');
-	menuSecond.classList.toggle('active');
+// 	openSecondMenu.classList.toggle('active');
+// 	menuSecond.classList.toggle('active');
 	
-})
-}
+// })
+// }
 // btnBack2.forEach((el)=>{
 //   el.addEventListener('click',()=>{
         

@@ -1,13 +1,14 @@
-
+.contacts-page{
+    margin-top: $marginTitle;
+}
 
 @media (max-width: 640px) {
-    .contacts{
-        padding: 0 5px;
+    .contacts-page{
         margin-top: $tabletMargin;
     }
 }
 @media (max-width: 320px) {
-    .contacts{
+    .contacts-page{
         margin-top: 100px;
         &__license{
             &__img{

@@ -241,9 +241,12 @@ color: #AE8452;
     .similar{
         margin-top: 100px;
         flex-wrap: wrap;
+        .similar__procedures__contentbox-right{
+            grid-template-columns: repeat(1,1fr);
+        }
         .similar__procedures__contentbox{
             flex-direction: column;
-            max-height: 400px;
+            max-height: 430px;
             padding: 16px;
            
             img{
@@ -403,6 +406,7 @@ color: #AE8452;
     .similar{
         margin-top: 100px;
         flex-wrap: wrap;
+       
         .similar__procedures__contentbox{
             flex-direction: column;
             max-height: 400px;
@@ -413,7 +417,7 @@ color: #AE8452;
                 height: 100px;
             }
             &-right{
-                // flex-direction: row;
+                
                 margin-top: 20px;
                 margin-left: 17px;
                &-btn{
@@ -426,7 +430,9 @@ color: #AE8452;
                 font-weight: 700;
 
             }
-            .similar__procedures__btn,
+            .similar__procedures__btn{
+                margin-bottom: 10px;
+            }
             .similar__procedures__sale{
                 margin: 5px;
                 
@@ -477,7 +483,7 @@ color: #AE8452;
             font-size: $fs10;
         }
         &__card{
-            height: 313px;
+            height: 356px;
             &__subtitle{
                 font-size: $fs14;
             }
