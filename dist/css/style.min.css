@@ -1,14 +1,15 @@
 @charset "UTF-8";
 .header {
-  max-width: 1300px;
+  width: 1200px;
   position: absolute;
-  top: 20px;
-  left: 50px;
+  top: 2%;
+  transform: translate(10%);
 }
 .header__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #FFF9EF;
 }
 .header__top__tel {
   color: #093A67;
@@ -16,6 +17,13 @@
 }
 .header__top-tablet__list {
   display: none;
+}
+.header__top-logo__contentbox {
+  display: flex;
+  align-items: center;
+}
+.header__top-img__logo {
+  margin-right: 20px;
 }
 .header__top__items {
   font-size: 14px;
@@ -31,11 +39,10 @@
 }
 .header__top__input {
   border-radius: 30px;
-  padding: 0 30px;
 }
 .header__input {
   border-radius: 30px;
-  width: 300px;
+  width: 252px;
   height: 40px;
   background-color: #fff;
   padding: 10px 15px;
@@ -52,25 +59,24 @@
 }
 .header__input-search {
   position: absolute;
-  top: 44px;
-  right: 45px;
+  top: 22%;
+  right: 1%;
   fill: #FFF9EF;
 }
 .header__bot {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1320px;
+  max-width: 1200px;
   height: 115px;
 }
 .header__bot-phone {
   display: none;
 }
 .header__bot-contentbox {
-  padding: 28px 27px;
-  max-width: 1320px;
-  height: 115px;
-  background-color: #093A67;
+  padding: 22px 27px;
+  max-width: 1200px;
+  height: 94px;
   display: flex;
   color: #fff;
 }
@@ -96,7 +102,6 @@
 .header__call {
   display: flex;
   align-items: center;
-  margin-top: 20px;
 }
 .header__call-offer {
   margin-top: 32px;
@@ -104,30 +109,35 @@
 .header__call-link {
   font-family: "Fira Sans";
   color: #FFF9EF;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 17px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   background-color: #972A29;
-  min-width: 212px;
+  max-width: 212px;
   height: 44px;
   border-radius: 4px;
-  padding: 15px 30px;
+  padding: 13px 30px;
   margin-right: 24px;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position-x: right;
+  transition: background-size 0.5s;
 }
 .header__call-link:hover {
-  background-color: #5B1919;
-  transition: all 0.4s ease-in;
+  background-size: 100% 100%;
+  background-position-x: left;
+  background-image: linear-gradient(#5B1919, #5B1919);
 }
 .header__call-btn {
   font-family: "Fira Sans";
   background: transparent;
   color: #093A67;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 17px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  min-width: 212px;
+  max-width: 212px;
   height: 44px;
   border-radius: 4px;
   padding: 13px 30px;
@@ -167,7 +177,7 @@
 .main-page__header .header__arrow-nav {
   position: absolute;
   bottom: 20%;
-  right: 5%;
+  right: 4%;
   display: flex;
   align-items: center;
 }
@@ -201,14 +211,17 @@
   justify-content: space-between;
   align-items: center;
   border-radius: 4px;
+  background: #093A67;
+  margin-top: 132px;
 }
 
 .title__offer {
   max-width: 928px;
+  text-transform: uppercase;
 }
 
 .services {
-  padding-top: 300px;
+  padding-top: 200px;
 }
 .services__top {
   justify-content: space-between;
@@ -233,11 +246,33 @@
 .services__content-card {
   border: 1px solid #AE8452;
   border-radius: 4px;
-  width: 628px;
+  width: 580px;
   margin-right: 25px;
   margin-top: 23px;
   display: flex;
   flex-direction: column;
+  padding: 26px 36px;
+}
+.services__content-card:hover {
+  border-width: 2px;
+  box-shadow: 3px 1px 5px #AE8452;
+}
+.services__content-card-bot {
+  width: 379px;
+}
+.services__content-card-bot .content-card__title-bot {
+  width: 312px;
+  padding-right: 60px;
+}
+.services__content-card-bot .content-card__title-bot p {
+  font-size: 36px;
+}
+.services__content-card-bot .content-card__description-bot ul {
+  padding-left: 0;
+  padding-bottom: 0;
+}
+.services__content-card-bot .content-card__more p {
+  font-size: 16px;
 }
 .services__contentbox-top {
   display: flex;
@@ -255,17 +290,15 @@
 }
 
 .content-card__title {
-  padding: 20px 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 26px;
 }
 .content-card__title p {
   font-family: "Oranienbaum";
   font-style: normal;
   font-weight: 400;
-  font-size: 42px;
+  font-size: 36px;
   line-height: 100%;
   color: #972A29;
   margin-left: 46px;
@@ -288,7 +321,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   flex-wrap: wrap;
-  padding-left: 38px;
+  padding-left: 110px;
   align-items: center;
   text-decoration: underline;
   margin-bottom: 62px;
@@ -320,7 +353,7 @@
 }
 .content-card__more p {
   color: #972A29;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 28px;
   letter-spacing: 0em;
   margin-right: 14px;
@@ -328,10 +361,12 @@
 
 .about {
   margin-top: 140px;
+  position: relative;
 }
 .about__wrapper {
   display: flex;
   justify-content: space-between;
+  margin-top: 15px;
 }
 .about__left {
   margin-right: 43px;
@@ -339,6 +374,22 @@
 }
 .about__left-table {
   margin-top: 20px;
+}
+.about__right {
+  position: relative;
+}
+.about__right-border {
+  position: absolute;
+  width: 100%;
+  height: 536px;
+  top: 9%;
+  border: 1px solid #AE8452;
+  border-radius: 4px;
+  transform: rotate(-2deg);
+}
+.about__right-border:hover {
+  transform: rotate(2deg);
+  transition: all 0.4s linear;
 }
 .about__citate {
   margin-bottom: 41px;
@@ -382,7 +433,7 @@
   display: block;
   font-family: "Oranienbaum";
   font-weight: 400;
-  font-size: 96px;
+  font-size: 80px;
   line-height: 111px;
 }
 .about__table__td-secondary {
@@ -407,7 +458,7 @@
 }
 
 .specialist {
-  margin-top: 154px;
+  margin-top: 140px;
   position: relative;
 }
 .specialist__subtitle {
@@ -422,21 +473,12 @@
   display: flex;
   justify-content: end;
   flex-direction: column-reverse;
-  width: 309px;
-  height: 395px;
+  overflow: hidden;
   background-image: url("../../img/doctor.jpg");
   background-position: center 0;
   background-size: cover;
   border: 1px solid #AE8452;
   border-radius: 4px;
-}
-.specialist__sliders-box::after {
-  content: "";
-  width: 100%;
-  height: 80px;
-  background-color: rgba(255, 255, 255, 0.7);
-  position: absolute;
-  bottom: 12%;
 }
 .specialist__sliders__arrow {
   position: absolute;
@@ -456,8 +498,69 @@
   height: 40px;
 }
 .specialist__sliders__swiper {
-  max-width: 1320px;
+  max-width: 1200px;
   height: 507px;
+}
+.specialist__content-text {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 249, 239, 0.6);
+  width: 100%;
+  padding: 14px 40px;
+  transform: translateY(60px);
+}
+.specialist__content-undertitle {
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.specialist__content-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+.specialist__content-btn-record {
+  margin: 15px 0;
+  padding: 0px 30px;
+  max-width: 268px;
+  height: 44px;
+  background: #972A29;
+  border: none;
+  border-radius: 4px;
+  font-family: "Fira Sans";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFF9EF;
+}
+.specialist__content-btn-record:hover {
+  background-color: #5B1919;
+  transition: all 0.4s ease-in;
+}
+.specialist__content-btn-more {
+  padding: 0px 30px;
+  max-width: 268px;
+  height: 44px;
+  background: transparent;
+  border: none;
+  border: 1px solid #093A67;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #093A67;
+}
+.specialist__content-btn-more:hover {
+  background: #093A67;
+  color: #FFF9EF;
+  transition: all 0.4s ease-in;
+}
+.specialist .specialist__sliders-box:hover .specialist__content-text {
+  transform: translateY(-60px);
+  transition: all 0.8s ease-in;
 }
 
 .sliders-box__prof {
@@ -502,8 +605,8 @@
   display: none;
 }
 .offer__card {
-  width: 309px;
-  height: 395px;
+  width: 252px;
+  height: 322px;
   background-image: url("../../img/offer/offer3.jpg");
   background-size: cover;
   background-position: center center;
@@ -530,30 +633,37 @@
 .offer__card__title {
   font-family: "Fira Sans";
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 140%;
 }
 .offer__card__subtitle {
   font-family: "Fira Sans";
   font-weight: 300;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 140%;
 }
 .offer__btn {
-  margin: 50px 44% 0px;
-  padding: 0px 30px;
-  width: 180px;
-  height: 40px;
-  background: #972A29;
-  border: none;
-  border-radius: 4px;
-  font-family: "Fira Sans";
-  font-weight: 400;
+  margin: 50px 39% 0px;
+  color: #FFF9EF;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 17px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #FFF9EF;
+  background-color: #972A29;
+  width: 212px;
+  height: 44px;
+  border-radius: 4px;
+  padding: 13px 30px;
+  border: none;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position-x: right;
+  transition: background-size 0.5s;
+}
+.offer__btn:hover {
+  background-size: 100% 100%;
+  background-position-x: left;
+  background-image: linear-gradient(#5B1919, #5B1919);
 }
 
 .clinic {
@@ -562,6 +672,21 @@
 .clinic__wrapper {
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
+.clinic__wrapper .about__right-swiper__border {
+  position: absolute;
+  width: 53%;
+  height: 401px;
+  top: 0%;
+  right: 0%;
+  border: 1px solid #AE8452;
+  border-radius: 4px;
+  transform: rotate(-2deg);
+}
+.clinic__wrapper .about__right-swiper__border:hover {
+  transform: rotate(2deg);
+  transition: all 0.4s linear;
 }
 .clinic__advantage {
   display: grid;
@@ -578,9 +703,10 @@
 }
 .clinic__advantage-text {
   font-family: "Fira Sans";
-  font-weight: 500;
+  font-weight: 700;
   font-size: 14px;
   line-height: 17px;
+  margin-left: 8px;
 }
 .clinic__right-pagination {
   margin-bottom: 4%;
@@ -599,6 +725,13 @@
   top: 50%;
   width: 40px;
   height: 40px;
+}
+.clinic .specialist__subtitle {
+  max-width: 416px;
+}
+.clinic .clinic__right-swiper:hover img ~ .about__right-swiper__border {
+  transform: rotate(2deg);
+  transition: all 0.4s linear;
 }
 
 .reviews {
@@ -992,7 +1125,7 @@
 }
 
 .header__menu {
-  margin-right: 40px;
+  width: 698px;
 }
 .header__menu__list {
   display: flex;
@@ -1008,6 +1141,7 @@
 .header__menu__list a {
   display: inline-block;
   padding: 10px 10px;
+  font-size: 16px;
 }
 .header__menu__item {
   color: red;
@@ -4874,7 +5008,7 @@ button {
 }
 
 body {
-  font-family: "Fira Sans", "Oranienbaum", serif;
+  font-family: "Fira Sans", "Oranienbaum", sans-serif;
   color: #093A67;
   font-style: normal;
   font-weight: 300;
@@ -4889,7 +5023,7 @@ header {
 }
 
 .container {
-  max-width: 1320px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -4903,7 +5037,7 @@ h1 {
 }
 
 h2 {
-  font-size: 58px;
+  font-size: 48px;
   line-height: 66px;
   font-weight: 400;
 }
@@ -4953,6 +5087,15 @@ h2 {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #FFF9EF;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position-x: right;
+  transition: background-size 0.5s;
+}
+.btn:hover {
+  background-size: 100% 100%;
+  background-position-x: left;
+  background-image: linear-gradient(#5B1919, #5B1919);
 }
 
 .btn:hover {

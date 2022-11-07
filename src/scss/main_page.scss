@@ -1,14 +1,14 @@
 .header {
-    max-width: 1300px;
+    width: 1200px;
     position: absolute;
-    top: 20px;
-    left: 50px;
+    top: 2%;
+    transform: translate(10%);
    
     &__top {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        background-color: $bg;
         &__tel {
             color: $primary;
             font-size: 32px;
@@ -16,7 +16,15 @@
         &-tablet__list{
             display: none;
         }
+        &-logo__contentbox{
+            display: flex;
+            align-items: center;
+        }
+        &-img__logo{
+            margin-right: 20px;
+        }
     }
+
 
     &__top__items {
         font-size: 14px;
@@ -35,13 +43,13 @@
 
     &__top__input {
         border-radius: 30px;
-        padding: 0 30px;
+        
     }
 
 
     &__input {
         border-radius: 30px;
-        width: 300px;
+        width: 252px;
         height: 40px;
         background-color: $white;
         padding: 10px 15px;
@@ -57,8 +65,8 @@
         }
         &-search{
             position: absolute;
-            top: 44px;
-            right: 45px;
+            top: 22%;
+            right: 1%;
             fill: $bg;
         }
     }
@@ -68,17 +76,17 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 1320px;
+        max-width: 1200px;
         height: 115px;
         
         &-phone{
             display: none;
         }
         &-contentbox {
-            padding: 28px 27px;
-            max-width: 1320px;
-            height: 115px;
-            background-color: $primary;
+            padding: 22px 27px;
+            max-width: 1200px;
+            height: 94px;
+            // background-color: $primary;
             display: flex;
             color: $white;
 
@@ -109,7 +117,7 @@
     &__call {
         display: flex;
         align-items: center;
-        margin-top: 20px;
+        
         &-offer {
             margin-top: 32px;
         }
@@ -117,19 +125,26 @@
         &-link {
             font-family: 'Fira Sans';
             color: $colorBtn;
-            font-size: $fs14;
+            font-size: $fs12;
             line-height: 17px;
             letter-spacing: 0.05em;
             text-transform: uppercase;
             background-color: $secondaryRed;
-            min-width: 212px;
+            max-width: 212px;
             height: 44px;
             border-radius: 4px;
-            padding: 15px 30px;
+            padding: 13px 30px;
             margin-right: 24px;
-            &:hover{
-                background-color: $btnHover;
-                transition: all 0.4s ease-in;
+            
+            background-repeat: no-repeat;
+            background-size: 0% 100%;
+            background-position-x: right;
+            transition: background-size 0.5s;
+          
+            &:hover {
+              background-size: 100% 100%;
+              background-position-x: left;
+              background-image: linear-gradient($btnHover, $btnHover);
             }
         }
 
@@ -137,15 +152,16 @@
             font-family: 'Fira Sans';
             background: transparent;
             color: $primary;
-            font-size: $fs14;
+            font-size: $fs12;
             line-height: 17px;
             letter-spacing: 0.05em;
             text-transform: uppercase;
-            min-width: 212px;
+            max-width: 212px;
             height: 44px;
             border-radius: 4px;
             padding: 13px 30px;
             border: 1px solid $primary;
+           
             &:hover{
                 background: $primary;
                 color: $bg;
@@ -185,7 +201,7 @@
         .header__arrow-nav {
                 position: absolute;
                 bottom: 20%;
-                right: 5%;
+                right: 4%;
                 display: flex;
                 align-items: center;
                 &__arrow-left{
@@ -216,6 +232,7 @@
                
             
         }
+        
        
 }
 
@@ -225,11 +242,14 @@
     justify-content: space-between;
     align-items: center;
     border-radius: 4px;
+    background: $primary;
+    margin-top: 132px;
    
 }
 
 .title__offer {
     max-width: 928px;
+    text-transform: uppercase;
 }
 
 
@@ -241,7 +261,7 @@
 //
 
 .services {
-    padding-top: 300px;
+    padding-top: 200px;
 
     &__top {
         
@@ -271,13 +291,41 @@
     &__content-card {
         border: 1px solid #AE8452;
         border-radius: 4px;
-        width: 628px;
+        width: 580px;
         margin-right: 25px;
         margin-top: 23px;
         display: flex;
         flex-direction: column;
+        padding: 26px 36px;
+        &:hover{
+            border-width: 2px;
+            box-shadow: 3px 1px 5px $gold;
+        }
 
-
+                &-bot {
+                    width: 379px;
+        
+                    .content-card {
+                        &__title-bot {
+                            width: 312px;
+                            padding-right: 60px;
+                            p {
+                                font-size: $fs36;
+                            }
+                        }
+                        &__description-bot{
+                            ul{
+                                padding-left: 0;
+                                padding-bottom: 0;
+                            }
+                        }
+                        &__more{
+                            p{
+                                font-size: $fs16;
+                            }
+                        }
+                    }
+                }
     }
 
     &__contentbox-top {
@@ -288,6 +336,7 @@
     &__contentbox-bot {
         display: flex;
         justify-content: space-between;
+        
     }
     &__bot-phone{
         display: none;
@@ -303,17 +352,15 @@
 
 .content-card {
     &__title {
-        padding: 20px 40px;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 26px;
 
         p {
             font-family: 'Oranienbaum';
             font-style: normal;
             font-weight: 400;
-            font-size: 42px;
+            font-size: $fs36;
             line-height: 100%;
             color: $secondaryRed;
             margin-left: 46px;
@@ -342,7 +389,7 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             flex-wrap: wrap;
-            padding-left: 38px;
+            padding-left: 110px;
             align-items: center;
             text-decoration: underline;
             margin-bottom: 62px;
@@ -381,7 +428,7 @@
 
         p {
             color: $secondaryRed;
-            font-size: $fs20;
+            font-size: $fs16;
             line-height: 28px;
             letter-spacing: 0em;
             margin-right: 14px;
@@ -397,10 +444,12 @@
 //
 
 .about {
-    margin-top: 140px;
+    margin-top: $marginTop;
+    position: relative;
     &__wrapper {
         display: flex;
         justify-content: space-between;
+        margin-top: 15px;
     }
 
     &__left {
@@ -410,6 +459,22 @@
         &-table {
             margin-top: 20px;
         }
+    }
+    &__right{
+        position: relative;
+        &-border{
+            position: absolute;
+            width: 100%;
+            height: 536px;
+            top: 9%;
+            border: 1px solid $gold;
+            border-radius: 4px;
+            transform: rotate(-2deg);
+            &:hover{
+                transform: rotate(2deg);
+                transition: all 0.4s linear;
+            }
+    }
     }
 
     &__citate {
@@ -452,6 +517,7 @@
 
     &__right__img {
         margin-top: 25px;
+       
     }
 
     &__table {
@@ -462,7 +528,7 @@
             display: block;
             font-family: 'Oranienbaum';
             font-weight: 400;
-            font-size: 96px;
+            font-size: 80px;
             line-height: 111px;
 
         }
@@ -489,6 +555,7 @@
     &__img-phone{
         display: none;
     }
+   
 }
 
 //
@@ -498,13 +565,14 @@
 //
 
 .specialist {
-    margin-top: 154px;
+    margin-top: $marginTop;
     position: relative;
-
+    
     &__subtitle {
         margin-top: 12px;
     }
 
+   
     &__sliders {
         margin-top: 64px;
         display: flex;
@@ -513,23 +581,23 @@
             display: flex;
             justify-content: end;
             flex-direction: column-reverse;
+            overflow: hidden;
             // margin-right: 24px;
-            width: 309px;
-            height: 395px;
+            
             background-image: url('../../img/doctor.jpg');
             background-position: center 0;
             background-size: cover;
             border: 1px solid $gold;
             border-radius: 4px;
 
-            &::after {
-                content: '';
-                width: 100%;
-                height: 80px;
-                background-color: rgba(255, 255, 255, 0.7);
-                position: absolute;
-                bottom: 12%;
-            }
+            // &::after {
+            //     content: '';
+            //     width: 100%;
+            //     height: 80px;
+            //     background-color: rgba(255, 255, 255, 0.7);
+            //     position: absolute;
+            //     bottom: 12%;
+            // }
         }
         &__arrow{
             position: absolute;
@@ -554,12 +622,82 @@
 
     }
     &__sliders__swiper{
-        max-width: 1320px;
+        max-width: 1200px;
         height: 507px;
         // overflow: hidden;
         // position: relative;
     }
-    
+    &__content{
+        
+        &-text{
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(255, 249, 239, 0.6);
+            width: 100%;
+            padding: 14px 40px;
+            transform: translateY(60px);
+            
+           
+           
+        }
+        &-undertitle{
+            font-size: $fs10;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        &-title{
+            font-size: $fs16;
+            font-weight: 600;
+        }
+        &-btn{
+            &-record{
+                margin: 15px 0;
+                padding: 0px 30px;
+                max-width: 268px;
+                height: 44px;
+                background: $secondaryRed;
+                border: none;
+                border-radius: 4px;
+                font-family: 'Fira Sans';
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                color: $bg;
+                &:hover{
+                    background-color: $btnHover;
+                    transition: all .4s ease-in;
+                }
+            }
+            &-more{
+                padding: 0px 30px;
+                max-width: 268px;
+                height: 44px;
+                background: transparent;
+                border: none;
+                border: 1px solid $primary;
+                border-radius: 4px;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                color: $primary;
+                &:hover{
+                    background: $primary;
+                    color: $bg;
+                    transition: all 0.4s ease-in;
+                }
+            }
+        }
+        
+    }
+    .specialist__sliders-box:hover .specialist__content-text{
+        transform: translateY(-60px);
+        transition: all 0.8s ease-in;
+    }
+   
 }
 
 
@@ -618,8 +756,8 @@
     }
 
     &__card {
-        width: 309px;
-        height: 395px;
+        width: 252px;
+        height: 322px;
         background-image: url('../../img/offer/offer3.jpg');
         background-size: cover;
         background-position: center center;
@@ -647,7 +785,7 @@
         &__title {
             font-family: 'Fira Sans';
             font-weight: 700;
-            font-size: $fs16;
+            font-size: $fs14;
             line-height: 140%;
 
         }
@@ -655,7 +793,7 @@
         &__subtitle {
             font-family: 'Fira Sans';
             font-weight: 300;
-            font-size: $fs14;
+            font-size: $fs12;
             line-height: 140%;
         }
 
@@ -663,20 +801,28 @@
 
     &__btn {
 
-        margin: 50px 44% 0px;
-        padding: 0px 30px;
-        width: 180px;
-        height: 40px;
-        background: $secondaryRed;
-        border: none;
-        border-radius: 4px;
-        font-family: 'Fira Sans';
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 14px;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        color: $bg;
+    margin: 50px 39% 0px;   
+    color: $colorBtn;
+    font-size: $fs12;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background-color: $secondaryRed;
+    width: 212px;
+    height: 44px;
+    border-radius: 4px;
+    padding: 13px 30px;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right;
+    transition: background-size 0.5s;
+    
+    &:hover {
+        background-size: 100% 100%;
+        background-position-x: left;
+        background-image: linear-gradient($btnHover, $btnHover);
+    }
 
     }
 }
@@ -693,6 +839,21 @@
     &__wrapper {
         display: flex;
         justify-content: space-between;
+        position: relative;
+        .about__right-swiper__border{
+            position: absolute;
+            width: 53%;
+            height: 401px;
+            top: 0%;
+            right: 0%;
+            border: 1px solid $gold;
+            border-radius: 4px;
+            transform: rotate(-2deg);
+          &:hover{
+                transform: rotate(2deg);
+                transition: all 0.4s linear;
+            }
+        }
     }
 
     &__advantage {
@@ -712,9 +873,10 @@
 
         &-text {
             font-family: 'Fira Sans';
-            font-weight: 500;
+            font-weight: 700;
             font-size: 14px;
             line-height: 17px;
+            margin-left: 8px;
         }
     }
     
@@ -730,6 +892,7 @@
         width: 630px;
         height: 420px;
         overflow: hidden;
+        
     }
     .swiper-button-next,
     .swiper-button-prev {
@@ -738,7 +901,16 @@
         height: 40px;
 
     }
-
+    .specialist__subtitle{
+        max-width: 416px;
+    }
+    &__border{
+        
+    }
+    .clinic__right-swiper:hover img ~ .about__right-swiper__border{
+        transform: rotate(2deg);
+        transition: all 0.4s linear;
+    }
 }
 
 //
@@ -1243,8 +1415,7 @@
 //
 .header {
     &__menu {
-      
-       margin-right: 40px;
+      width: 698px;
         &__list {
             display: flex;
             align-items: center;
@@ -1261,6 +1432,7 @@
             a {
                 display: inline-block;
                 padding: 10px 10px;
+                font-size: $fs16;
                 
             }
         }

@@ -63,7 +63,7 @@ const servicesSwiper = new Swiper('.services__bot-tablet', {
   direction: 'horizontal',
   loop: true,
   spaceBetween: 40,
-
+  slidesPerView: 4.2,
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
@@ -79,9 +79,13 @@ const servicesSwiper = new Swiper('.services__bot-tablet', {
       slidesPerView: 1.2,
       spaceBetween: 20
     },
-  
+   
    
   },
+  
+    
+    resizeObserver: false,
+  
 
   // Navigation arrows
   navigation: {
@@ -94,7 +98,7 @@ const servicesSwiper = new Swiper('.services__bot-tablet', {
     el: '.swiper-scrollbar',
   },
   autoplay: {
-    delay: 2500,
+    delay: 4500,
   },
 });
 const specialistSwiper = new Swiper('.specialist__sliders__swiper', {
@@ -300,7 +304,6 @@ let menu = document.querySelector('.menu-phone');
 
 
 let openSecondMenu = document.querySelector('.menu-phone__middle-list');
-
 let menuSecond = document.querySelector('.menu2-phone')
 let btnBack2 = document.querySelector('.go-back2')
 let btnBack = document.querySelector('.go-back')
@@ -309,20 +312,17 @@ let btnBack = document.querySelector('.go-back')
 if (menuBtn && menu){menuBtn.addEventListener('click', function(){
 
 	menuBtn.classList.toggle('active');
-  
 	menu.classList.toggle('active');
-  if(!menu.classList.include('active')){
-    menuSecond.classList.toggle('active')
-  }
+	
 })
 }
-// if (openSecondMenu && menuSecond){openSecondMenu.addEventListener('click', function(){
+if (openSecondMenu && menuSecond){openSecondMenu.addEventListener('click', function(){
 
-// 	openSecondMenu.classList.toggle('active');
-// 	menuSecond.classList.toggle('active');
+	openSecondMenu.classList.toggle('active');
+	menuSecond.classList.toggle('active');
 	
-// })
-// }
+})
+}
 // btnBack2.forEach((el)=>{
 //   el.addEventListener('click',()=>{
         

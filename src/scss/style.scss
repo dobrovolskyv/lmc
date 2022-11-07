@@ -37,7 +37,7 @@ button{
 
 
 body{
-font-family: 'Fira Sans', 'Oranienbaum', serif;
+font-family: 'Fira Sans', 'Oranienbaum', sans-serif;
 color: $primary;
 font-style: normal;
 font-weight: 300;
@@ -51,7 +51,7 @@ header{
 }
 
 .container{
-    max-width: 1320px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -65,7 +65,7 @@ text-align: left;
 
 }
 h2{
-    font-size: 58px;
+    font-size: 48px;
     line-height: 66px;
     font-weight: 400;
     
@@ -116,6 +116,16 @@ color: $gold;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: $bg;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right;
+    transition: background-size 0.5s;
+  
+    &:hover {
+      background-size: 100% 100%;
+      background-position-x: left;
+      background-image: linear-gradient($btnHover, $btnHover);
+    }
 }
 .btn:hover{
     background-color: $btnHover;
