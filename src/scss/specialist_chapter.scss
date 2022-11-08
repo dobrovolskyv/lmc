@@ -1,5 +1,8 @@
 .specialist-chapter{
     margin-top: $marginTitle;
+    .specialist__subtitle{
+        width: 900px;
+    }
     &__wrapper{
         margin-top: 40px;
         display: flex;
@@ -25,10 +28,11 @@
             grid-template-columns: repeat(3,1fr);
             gap: 28px;
         }
+        
     }
     &__content{
-        width: 308px;
-        height: 395px;
+        width: 252px;
+        height: 322px;
         background-image: url('../img/doctor.jpg');
         background-size: contain;
         overflow: hidden;
@@ -41,8 +45,8 @@
             flex-direction: column;
             background-color: rgba(255, 249, 239, 0.6);
             width: 100%;
-            padding: 14px 20px;
-            transform: translateY(130px);
+            padding: 5px 10px;
+            transform: translateY(110px);
            
         }
         &-undertitle{
@@ -70,9 +74,14 @@
                 letter-spacing: 0.05em;
                 text-transform: uppercase;
                 color: $bg;
-                &:hover{
-                    background-color: $btnHover;
-                    transition: all .4s ease-in;
+                background-repeat: no-repeat;
+                background-size: 0% 100%;
+                background-position-x: right;
+                transition: background-size 0.5s;
+                &:hover {
+                  background-size: 100% 100%;
+                  background-position-x: left;
+                  background-image: linear-gradient($btnHover, $btnHover);
                 }
             }
             &-more{
@@ -101,8 +110,8 @@
 }
 
 .specialist-chapter__content:hover .specialist-chapter__content-text{
-    transform: translateY(0px);
-    transition: all 0.8s ease-in;
+    transform: translateY(-2px);
+    transition: transform 0.8s ease-in;
 }
 
 @media (max-width: 640px) {

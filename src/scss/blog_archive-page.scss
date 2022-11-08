@@ -1,4 +1,14 @@
 .blog-archive{
+    .title{
+        font-family: 'Oranienbaum';
+font-style: normal;
+font-weight: 400;
+font-size: 52px;
+line-height: 60px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+    }
+    
     &__articles{
  margin-top: $marginTitle;
     }
@@ -27,7 +37,7 @@
             width: 100%;
             color: $bg;
             margin-top: -12px;
-            padding: 16px 10px;
+            padding: 10px 16px;
 
         }
         &__stock{
@@ -58,7 +68,7 @@
             
             font-size: $fs14;
             line-height: 120%;
-            margin-top: 20px;
+            margin-top: 46px;
         }
     }
 }

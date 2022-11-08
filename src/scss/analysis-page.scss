@@ -1,7 +1,41 @@
 .analysis-page__header{
     margin-top: $marginTitle;
+    .analysis-page__header__bot{
+        margin-top: 90px;
+    }
+    
     
 }
+.analysis-page__section {
+    .header__procedures {
+        margin-top: 77px;
+
+        &__contentbox {
+            margin-top: 27px;
+        }
+
+        &__text {
+            font-family: 'Oranienbaum';
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 140%;
+        }
+
+        &__price {
+            font-family: 'Oranienbaum';
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 140%;
+            text-align: right;
+            color: #972A29;
+        }
+    }
+
+    .questions__brochure {
+        margin-top: $marginTop;
+    }
+}
+
 .analysis-page__questions__brochure-steps{
     justify-content: space-around;
 }

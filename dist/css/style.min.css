@@ -437,19 +437,24 @@
   display: block;
   font-family: "Oranienbaum";
   font-weight: 400;
-  font-size: 80px;
+  font-size: 96px;
   line-height: 111px;
 }
 .about__table__td-secondary {
   font-family: "Oranienbaum";
-  font-weight: 600;
+  font-style: normal;
+  font-weight: 400;
   font-size: 32px;
   line-height: 37px;
+}
+.about__table__tr {
+  margin-right: 68px;
 }
 .about__table__td {
   font-family: "Fira Sans";
   font-size: 20px;
   line-height: 140%;
+  width: 193px;
 }
 .about .about__wrapper-tablet {
   display: none;
@@ -464,6 +469,10 @@
 .specialist {
   margin-top: 140px;
   position: relative;
+}
+.specialist .specialist__sliders-box.swiper-slide {
+  width: 252px;
+  height: 322px;
 }
 .specialist__subtitle {
   margin-top: 12px;
@@ -480,7 +489,7 @@
   overflow: hidden;
   background-image: url("../../img/doctor.jpg");
   background-position: center 0;
-  background-size: cover;
+  background-size: contain;
   border: 1px solid #AE8452;
   border-radius: 4px;
 }
@@ -511,8 +520,8 @@
   flex-direction: column;
   background-color: rgba(255, 249, 239, 0.6);
   width: 100%;
-  padding: 14px 40px;
-  transform: translateY(60px);
+  padding: 4px 10px;
+  transform: translateY(120px);
 }
 .specialist__content-undertitle {
   font-size: 10px;
@@ -538,10 +547,15 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #FFF9EF;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position-x: right;
+  transition: background-size 0.5s;
 }
 .specialist__content-btn-record:hover {
-  background-color: #5B1919;
-  transition: all 0.4s ease-in;
+  background-size: 100% 100%;
+  background-position-x: left;
+  background-image: linear-gradient(#5B1919, #5B1919);
 }
 .specialist__content-btn-more {
   padding: 0px 30px;
@@ -564,7 +578,7 @@
   transition: all 0.2s ease-in;
 }
 .specialist .specialist__sliders-box:hover .specialist__content-text {
-  transform: translateY(-60px);
+  transform: translateY(-1px);
   transition: all 0.8s ease-in;
 }
 
@@ -646,6 +660,7 @@
   font-weight: 300;
   font-size: 12px;
   line-height: 140%;
+  margin-top: 4px;
 }
 .offer__btn {
   margin: 50px 39% 0px;
@@ -1069,7 +1084,7 @@
 }
 .footer__form__input {
   padding: 9px 18px;
-  width: 259px;
+  width: 361px;
   height: 40px;
   border: 1px solid #FFF9EF;
   border-radius: 4px;
@@ -3111,10 +3126,14 @@
   justify-content: space-between;
   align-items: center;
 }
+.about-doctor__question img {
+  width: 40px;
+  height: 40px;
+}
 .about-doctor__title {
   font-family: "Oranienbaum";
   font-weight: 400;
-  font-size: 42px;
+  font-size: 36px;
   line-height: 100%;
 }
 .about-doctor__answer {
@@ -3362,9 +3381,10 @@
   border: 1px solid #AE8452;
   border-radius: 4px;
   text-align: center;
-  padding: 70px 30px;
+  padding: 46px 33px;
 }
 .header__stock-page__right-sale {
+  font-size: 24px;
   text-align: right;
   text-decoration: line-through;
   color: #AE8452;
@@ -3393,25 +3413,33 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #FFF9EF;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position-x: right;
+  transition: background-size 0.5s;
 }
 .header__stock-page__right-btn:hover {
-  background-color: #5B1919;
-  transition: all 0.4s ease-in;
+  background-size: 100% 100%;
+  background-position-x: left;
+  background-image: linear-gradient(#5B1919, #5B1919);
 }
 .header__stock-page__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin: 180px 190px 0px 180px;
+  margin: 118px 0px 0px 0px;
 }
 .header__stock-page__link {
   border: 1px solid #972A29;
   border-radius: 25px;
   padding: 10px 20px;
   color: #972A29;
+  font-size: 14px;
+  margin-right: 16px;
+  font-weight: 400;
 }
 .header__stock-page__bot {
-  margin-top: 40px;
+  margin-top: 29px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -3420,23 +3448,68 @@
   display: flex;
   align-items: center;
   background-color: #093A67;
-  max-width: 309px;
-  max-height: 116px;
+  width: 309px;
+  height: 116px;
   color: #FFF9EF;
   border-radius: 4px;
-  padding: 20px 40px;
+  padding: 28px 20px;
+  margin-right: 28px;
 }
 .header__stock-page__content img {
   width: 60px;
   height: 60px;
-  margin-right: 20px;
+  margin-right: 16px;
 }
 .header__stock-page__content p {
   font-size: 16px;
   line-height: 140%;
+  font-weight: 700;
 }
 .header__stock-page__procedures {
-  margin-top: 40px;
+  margin-top: 29px;
+}
+.header__stock-page__procedures .header__procedures__contentbox {
+  height: 105px;
+}
+.header__stock-page__procedures .header__procedures__text {
+  font-family: "Oranienbaum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+}
+.header__stock-page__procedures .header__procedures__sale {
+  font-family: "Oranienbaum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: right;
+  text-decoration-line: line-through;
+  color: #AE8452;
+  margin-right: 16px;
+}
+.header__stock-page__procedures .header__procedures__price {
+  font-family: "Oranienbaum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 140%;
+  text-align: right;
+  color: #972A29;
+}
+
+.similar {
+  margin-top: 165px;
+}
+.similar__procedures__contentbox-middle {
+  margin-left: 36px;
+}
+.similar__procedures__text {
+  font-family: "Oranienbaum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
 }
 
 .similar__procedures__price-sale {
@@ -3448,7 +3521,15 @@
 }
 
 .skills__page4 {
+  margin-top: 165px;
   padding: 0 10px;
+}
+.skills__page4 .skills__page4__content-top__title {
+  font-family: "Oranienbaum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 67px;
 }
 .skills__page4__title {
   font-size: 42px;
@@ -3484,6 +3565,7 @@
   padding: 50px 40px;
   text-align: center;
   max-width: 421px;
+  height: 361px;
   border: 1px solid #AE8452;
 }
 .skills__page4__right-title {
@@ -3491,11 +3573,10 @@
   line-height: 80%;
 }
 .skills__page4__right-list {
-  margin-top: 40px;
-  max-width: 280px;
+  margin-top: 50px;
 }
 .skills__page4__right-item {
-  margin-top: 10px;
+  margin-top: 12px;
 }
 .skills__page4__right-text {
   font-size: 16px;
@@ -3504,15 +3585,24 @@
 .skills__page4 .header__skills__item:last-child {
   padding-bottom: 10px;
 }
+.skills__page4 .header__skills__item {
+  font-size: 20px;
+  margin-top: 16px;
+}
 
 .header__skills__stock {
   margin: 0 28px 0 0;
   border: 1px solid #AE8452;
-  padding: 32px 34px;
+  padding: 32px 17px;
+  height: 361px;
 }
 .header__skills__stock .header__skills__item {
   margin-right: 10px;
   max-width: 360px;
+}
+
+.brochure__stock-page {
+  margin-top: 165px;
 }
 
 .questions__brochure__stock-page {
@@ -3757,16 +3847,46 @@
   display: flex;
   justify-content: space-between;
 }
+.header__about-page .about__right-border__about-page {
+  top: 4%;
+}
+.header__about-page .title {
+  font-size: 58px;
+}
+.header__about-page .about__citate__text {
+  font-family: "Fira Sans";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 31px;
+  line-height: 140%;
+  margin-top: 30px;
+}
+.header__about-page .about__subtitle {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 140%;
+  margin-top: 10px;
+}
 
 .direction {
   margin-top: 165px;
+}
+.direction .title {
+  font-size: 58px;
+  line-height: 67px;
+}
+.direction .subtitle {
+  font-size: 20px;
+  line-height: 140%;
 }
 .direction__content {
   max-width: 309px;
   max-height: 309px;
   border: 1px solid #AE8452;
   border-radius: 4px;
-  padding: 20px 30px 40px;
+  padding: 22px 20px;
 }
 .direction__contentbox {
   margin-top: 60px;
@@ -3782,10 +3902,11 @@
   font-size: 20px;
   font-weight: 500;
   color: #972A29;
-  margin-top: 40px;
+  margin-top: 42px;
 }
 .direction__contentbox__subtitle {
   font-size: 16px;
+  line-height: 140%;
 }
 
 .clinic-history {
@@ -3804,7 +3925,7 @@
 }
 .clinic-history__line {
   width: 3px;
-  height: 172px;
+  height: 200px;
   background-color: #972A29;
   margin-left: 18px;
 }
@@ -3816,6 +3937,8 @@
   margin-top: 60px;
 }
 .clinic-history__date {
+  font-family: "Oranienbaum";
+  font-style: normal;
   font-size: 36px;
   color: #972A29;
   padding-top: 5px;
@@ -3823,10 +3946,19 @@
 .clinic-history__text {
   margin-top: 8px;
   font-size: 20px;
+  line-height: 140%;
+}
+
+.brochure__about-page {
+  margin-top: 140px;
 }
 
 .contacts__btn {
   padding: 0 18px;
+}
+
+.contacts {
+  margin-top: 140px;
 }
 
 .contacts__license {
@@ -3842,13 +3974,11 @@
   align-items: center;
   max-height: 110px;
   padding: 10px 20px;
-}
-.contacts__license__img {
-  margin-left: 28px;
+  margin-right: 28px;
 }
 .contacts__license__text {
-  font-size: 42px;
-  margin: 0 40px;
+  font-size: 36px;
+  margin: 0 30px;
 }
 .contacts__license__btn {
   padding: 0px 18px;
@@ -3863,7 +3993,16 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #FFF9EF;
-  margin-right: 28px;
+  margin-left: 30px;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position-x: right;
+  transition: background-size 0.5s;
+}
+.contacts__license__btn:hover {
+  background-size: 100% 100%;
+  background-position-x: left;
+  background-image: linear-gradient(#5B1919, #5B1919);
 }
 
 @media (max-width: 640px) {
@@ -4091,7 +4230,12 @@
   color: #972A29;
 }
 .our-services-page7__content-card__title p {
+  font-size: 42px;
   margin-top: 20px;
+  line-height: 120%;
+}
+.our-services-page7__content-card__description {
+  text-align: left;
 }
 .our-services-page7__content-card__description ul {
   display: grid;
@@ -4101,6 +4245,9 @@
 .our-services-page7__content-card__description li {
   margin-top: 10px;
   text-decoration: underline;
+}
+.our-services-page7__content-card__description a {
+  font-size: 16px;
 }
 .our-services-page7__content-card__description-bot {
   display: flex;
@@ -4118,15 +4265,17 @@
   margin-top: 10px;
   text-decoration: underline;
 }
+.our-services-page7__content-card__description-bot a {
+  font-size: 16px;
+}
 .our-services-page7__content-card__more {
   margin-top: 20px;
   display: flex;
   align-items: center;
-  flex-grow: 1;
   justify-content: flex-end;
 }
 .our-services-page7__content-card__more p {
-  font-size: 20px;
+  font-size: 16px;
   color: #972A29;
 }
 .our-services-page7__content-card__more img {
@@ -4292,8 +4441,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 309px;
-  height: 375px;
+  width: 276px;
+  height: 366px;
   border: 1px solid #AE8452;
   border-radius: 4px;
   padding: 26px 21px;
@@ -4301,22 +4450,23 @@
 .services-chapter__contentbox {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 20px;
 }
 .services-chapter__contentbox-img {
   width: 104px;
   height: 104px;
 }
 .services-chapter__contentbox-text {
-  font-size: 24px;
+  font-size: 22px;
   margin: 16px 0;
 }
 .services-chapter__contentbox-date {
   color: #972A29;
   font-size: 32px;
+  font-weight: 400;
 }
 .services-chapter__contentbox-btn__hidden {
-  margin: 16px 0;
+  margin: 8px 0;
   padding: 0px 30px;
   width: 220px;
   height: 44px;
@@ -4331,6 +4481,14 @@
   text-transform: uppercase;
   color: #FFF9EF;
   visibility: hidden;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position-x: right;
+}
+.services-chapter__contentbox-btn__hidden:hover {
+  background-size: 100% 100%;
+  background-position-x: left;
+  background-image: linear-gradient(#5B1919, #5B1919);
 }
 .services-chapter__list-page {
   margin-top: 50px;
@@ -4359,7 +4517,7 @@
 
 .services-chapter__content:hover .services-chapter__contentbox-btn__hidden {
   visibility: visible;
-  transition: all 0.8s linear;
+  transition: visibility 0.8s, background-size 0.5s;
 }
 
 @media (max-width: 640px) {
@@ -4426,6 +4584,33 @@
 }
 .analysis-page__header {
   margin-top: 27vh;
+}
+.analysis-page__header .analysis-page__header__bot {
+  margin-top: 90px;
+}
+
+.analysis-page__section .header__procedures {
+  margin-top: 77px;
+}
+.analysis-page__section .header__procedures__contentbox {
+  margin-top: 27px;
+}
+.analysis-page__section .header__procedures__text {
+  font-family: "Oranienbaum";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 140%;
+}
+.analysis-page__section .header__procedures__price {
+  font-family: "Oranienbaum";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: right;
+  color: #972A29;
+}
+.analysis-page__section .questions__brochure {
+  margin-top: 140px;
 }
 
 .analysis-page__questions__brochure-steps {
@@ -4518,6 +4703,9 @@
 .specialist-chapter {
   margin-top: 27vh;
 }
+.specialist-chapter .specialist__subtitle {
+  width: 900px;
+}
 .specialist-chapter__wrapper {
   margin-top: 40px;
   display: flex;
@@ -4542,8 +4730,8 @@
   gap: 28px;
 }
 .specialist-chapter__content {
-  width: 308px;
-  height: 395px;
+  width: 252px;
+  height: 322px;
   background-image: url("../img/doctor.jpg");
   background-size: contain;
   overflow: hidden;
@@ -4557,8 +4745,8 @@
   flex-direction: column;
   background-color: rgba(255, 249, 239, 0.6);
   width: 100%;
-  padding: 14px 20px;
-  transform: translateY(130px);
+  padding: 5px 10px;
+  transform: translateY(110px);
 }
 .specialist-chapter__content-undertitle {
   font-size: 10px;
@@ -4584,10 +4772,15 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #FFF9EF;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position-x: right;
+  transition: background-size 0.5s;
 }
 .specialist-chapter__content-btn-record:hover {
-  background-color: #5B1919;
-  transition: all 0.4s ease-in;
+  background-size: 100% 100%;
+  background-position-x: left;
+  background-image: linear-gradient(#5B1919, #5B1919);
 }
 .specialist-chapter__content-btn-more {
   padding: 0px 30px;
@@ -4611,8 +4804,8 @@
 }
 
 .specialist-chapter__content:hover .specialist-chapter__content-text {
-  transform: translateY(0px);
-  transition: all 0.8s ease-in;
+  transform: translateY(-2px);
+  transition: transform 0.8s ease-in;
 }
 
 @media (max-width: 640px) {
@@ -4658,6 +4851,9 @@
 }
 .our-services-page7 {
   margin-top: 27vh;
+}
+.our-services-page7 .title {
+  text-transform: uppercase;
 }
 
 .articles__bot {
@@ -4728,14 +4924,19 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin-top: 56px;
-  gap: 28px;
+  gap: 10px;
 }
 .share-archive__offer__card {
-  width: 309px;
-  height: 395px;
+  width: 278px;
+  height: 356px;
   background-image: url("../../img/offer/offer3.jpg");
   background-size: cover;
   background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  margin-top: 14px;
 }
 .share-archive__offer__card__stock {
   font-family: "Fira Sans";
@@ -4748,7 +4949,7 @@
   background: #972A29;
   color: #FFF9EF;
   padding: 4px 16px;
-  margin-left: 20px;
+  margin-right: auto;
   margin-top: 20px;
   border-radius: 2px;
 }
@@ -4756,17 +4957,14 @@
   font-family: "Fira Sans";
   font-weight: 700;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 140%;
 }
 .share-archive__offer__card__subtitle {
   font-family: "Fira Sans";
   font-weight: 300;
   font-size: 12px;
-  line-height: 120%;
-}
-.share-archive__offer__card__text {
-  margin-left: 20px;
-  margin-top: 14.3em;
+  line-height: 140%;
+  margin-top: 4px;
 }
 .share-archive__btn {
   margin: 50px 44% 0px;
@@ -4824,6 +5022,15 @@
     line-height: 140%;
   }
 }
+.blog-archive .title {
+  font-family: "Oranienbaum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 60px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
 .blog-archive__articles {
   margin-top: 27vh;
 }
@@ -4848,7 +5055,7 @@
   width: 100%;
   color: #FFF9EF;
   margin-top: -12px;
-  padding: 16px 10px;
+  padding: 10px 16px;
 }
 .blog-archive__card__stock {
   font-weight: 500;
@@ -4875,7 +5082,7 @@
 .blog-archive__card__subtitle {
   font-size: 14px;
   line-height: 120%;
-  margin-top: 20px;
+  margin-top: 46px;
 }
 
 @media (max-width: 640px) {
@@ -5199,7 +5406,7 @@ h1 {
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 58px;
   line-height: 66px;
   font-weight: 400;
   font-family: "Oranienbaum";
@@ -5225,7 +5432,7 @@ h2 {
 
 .subtitle {
   font-family: "Fira Sans";
-  font-size: 16px;
+  font-size: 20px;
   line-height: 140%;
   max-width: 720px;
   margin-top: 12px;

@@ -21,8 +21,9 @@
         border: 1px solid $gold;
         border-radius: 4px;
         text-align: center;
-        padding: 70px 30px;
+        padding: 46px 33px;
         &-sale{
+            font-size: $fs24;
             text-align: right;
             text-decoration:line-through;
             color: $gold;
@@ -52,17 +53,23 @@
             letter-spacing: 0.05em;
             text-transform: uppercase;
             color: $bg;
-    &:hover{
-        background-color: $btnHover;
-        transition: all 0.4s ease-in;
-    }
+            background-repeat: no-repeat;
+            background-size: 0% 100%;
+            background-position-x: right;
+            transition: background-size 0.5s;
+          
+            &:hover {
+              background-size: 100% 100%;
+              background-position-x: left;
+              background-image: linear-gradient($btnHover, $btnHover);
+            }
         }
     }
     &__list{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        margin: 180px 190px 0px 180px;
+        margin: 118px 0px 0px 0px;
         
     }
     &__link{
@@ -70,9 +77,12 @@
         border-radius: 25px;
         padding: 10px 20px;
         color: $secondaryRed;
+        font-size: $fs14;
+        margin-right: 16px;
+        font-weight: 400;
     }
     &__bot{
-        margin-top: 40px;
+        margin-top: 29px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -81,23 +91,55 @@
         display: flex;
         align-items: center;
         background-color: $primary;
-        max-width: 309px;
-        max-height: 116px;
+        width: 309px;
+        height: 116px;
         color: $bg;
         border-radius: 4px;
-        padding: 20px 40px;
+        padding: 28px 20px;
+        margin-right: 28px;
         img{
             width: 60px;
             height: 60px;
-            margin-right: 20px;
+            margin-right: 16px;
         }
         p{
             font-size: $fs16;
             line-height: 140%;
+            font-weight: 700;
         }
     }
     &__procedures{
-        margin-top: 40px;
+        margin-top: 29px;
+        .header__procedures__contentbox{
+            height: 105px;
+        }
+        .header__procedures__text{
+            font-family: 'Oranienbaum';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 140%;
+        }
+        .header__procedures__sale{
+            font-family: 'Oranienbaum';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+text-align: right;
+text-decoration-line: line-through;
+color: $gold;
+margin-right: 16px;
+        }
+        .header__procedures__price{
+            font-family: 'Oranienbaum';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 140%;
+text-align: right;
+color: $secondaryRed;
+        }
     }
 }
 
@@ -107,7 +149,24 @@
 //Что входит в акцию
 //
 //
+.similar {
+    margin-top: 165px;
 
+    &__procedures {
+        &__contentbox {
+            &-middle {
+                margin-left: 36px;
+            }
+        }
+        &__text{
+            font-family: 'Oranienbaum';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 28px;
+
+        }
+    }
+}
 .similar__procedures__price-sale{
     font-family: 'Oranienbaum';
 font-weight: 400;
@@ -123,6 +182,14 @@ color: #AE8452;
 //
 
 .skills__page4{
+    margin-top: 165px;
+    .skills__page4__content-top__title{
+        font-family: 'Oranienbaum';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 58px;
+        line-height: 67px;
+    }
     &__title{
         font-size: $fs42;
     }
@@ -163,14 +230,14 @@ color: #AE8452;
         }
         text-align: center;
         max-width: 421px;
+        height: 361px;
         border:1px solid $gold;
         &-list{
-            margin-top: 40px;
-            max-width: 280px;
+            margin-top: 50px;
 
         }
         &-item{
-            margin-top: 10px;
+            margin-top: 12px;
         }
         &-text{
 
@@ -181,16 +248,24 @@ color: #AE8452;
     .header__skills__item:last-child{
         padding-bottom: 10px;
     }
+    .header__skills__item{
+        font-size: 20px;
+        margin-top: 16px;
+    }
 }
 .header__skills__stock{
     margin: 0 28px 0 0;
     border: 1px solid $gold;
-    padding: 32px 34px;
+    padding: 32px 17px;
+    height: 361px;
     .header__skills__item{
         margin-right: 10px;
         max-width: 360px;
     }
    
+}
+.brochure__stock-page{
+    margin-top: 165px;
 }
 .questions__brochure__stock-page{
     justify-content: space-around;

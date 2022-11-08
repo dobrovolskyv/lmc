@@ -126,7 +126,7 @@ const specialistSwiper = new Swiper('.specialist__sliders__swiper', {
    
     // when window width is >= 640px
     1220: {
-      slidesPerView: 3.2,
+      slidesPerView: 4.2,
       spaceBetween: 20,
     }
   },
