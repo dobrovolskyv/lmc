@@ -2,10 +2,38 @@
     background-color: $bg;
 }
 .services-page__header{
-    margin-top: 300px;
+    
+    margin-top: 27vh;
+    .title{
+        margin-top: 86px;
+
+    }
+    .header__procedures{
+        margin-top: 77px;
+        &__contentbox{
+            margin-top: 27px;
+        }
+        &__text{
+            font-family: 'Oranienbaum';
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 140%;
+        }
+        &__price{
+            font-family: 'Oranienbaum';
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 140%;
+            text-align: right;
+            color: #972A29;
+        }
+    }
 }
 .subtitle-page2{
-   max-width: 758px;
+   max-width: 680px;
+}
+.header__bot-page2{
+    margin-top: 130px;
 }
 .header__bot-contentbox-page2{
     margin-top: 122px;
@@ -50,10 +78,16 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: $bg;
-    &:hover{
-        background-color: $btnHover;
-        transition: all 0.4s ease-in;
-    }
+    background-repeat: no-repeat;
+            background-size: 0% 100%;
+            background-position-x: right;
+            transition: background-size 0.5s;
+          
+            &:hover {
+              background-size: 100% 100%;
+              background-position-x: left;
+              background-image: linear-gradient($btnHover, $btnHover);
+            }
 }
 
 //
@@ -62,8 +96,11 @@
 //
 //
 .questions{
-    margin-top: 93px;
+    margin-top: 86px;
     font-family: 'Fira Sans';
+    .questions__subtitle{
+        margin-top: 16px;
+    }
     &__wrapper{
         display: flex;
         justify-content: space-between;
@@ -93,6 +130,7 @@
             font-weight: 300;
             
         }
+       
     }
     &__brochure{
         text-align: center;
@@ -100,10 +138,15 @@
         background-color: $primary;
         color: $bg;
         padding: 40px 20px;
+        border-radius: 4px;
         &-title{
+            font-family: 'Oranienbaum';
+            font-style: normal;
+            font-weight: 400;
             font-size: 36px;
-            line-height: 40px;
-            font-weight: 600;
+            line-height: 100%;
+            text-align: center;
+            padding: 0 100px;
         }
         &-title-span{
             color: #ECBD86;
@@ -113,9 +156,10 @@
             display: flex;
             justify-content: space-between;
             text-align: center;
-            margin-top: 10px;
+            margin-top: 21px;
         }
         &-step{
+            border-radius: 4px;
             position: relative;
             max-width: 250px;
             border: 1px solid $bg;
@@ -134,6 +178,7 @@
         font-size: $fs14;
         }
         &-btn{
+            margin-top: 29px;
             padding: 0px 30px;
             width: 220px;
             height: 44px;
@@ -147,41 +192,78 @@
             letter-spacing: 0.05em;
             text-transform: uppercase;
             color: $bg;
-            &:hover{
-                background-color: $btnHover;
-                transition: all 0.4s ease-in;
+            background-repeat: no-repeat;
+            background-size: 0% 100%;
+            background-position-x: right;
+            transition: background-size 0.5s;
+          
+            &:hover {
+              background-size: 100% 100%;
+              background-position-x: left;
+              background-image: linear-gradient($btnHover, $btnHover);
             }
         }
+        
     }
     &__right{
         &-list{
+            border-radius: 4px;
         padding: 40px 30px;
         background-color: $primary;
         color: $bg;
     }
     &-item{
         margin-top: 10px;
-        font-size: $fs20;
+        font-size: $fs16;
         text-decoration: underline;
         &-first{
             margin-bottom: 20px;
             font-weight: 600;
-            font-size: $fs20;
+            font-size: $fs22;
             line-height: 140%;
             text-decoration: none;
         }
     }
     &-contentbox{
         margin-top: 16px;
-        padding: 20px 34px;
+        padding: 23px 29px;
         border: 1px solid $gold;
-        border-radius:4px;   
+        border-radius: 4px;   
         text-align: center;
+        width: 344px;
+        height: 147px;
  }
     &-text{  
-        font-size: $fs20;
+        font-size: $fs16;
         color: $secondaryRed;
-        margin-bottom: 28px;
+        margin-bottom: 16px;
+        line-height: 140%;
+    }
+    &-btn{
+        
+        padding: 0px 30px;
+        width: 220px;
+        height: 44px;
+        background: $secondaryRed;
+        border: none;
+        border-radius: 4px;
+        font-family: 'Fira Sans';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $bg;
+        background-repeat: no-repeat;
+        background-size: 0% 100%;
+        background-position-x: right;
+        transition: background-size 0.5s;
+      
+        &:hover {
+          background-size: 100% 100%;
+          background-position-x: left;
+          background-image: linear-gradient($btnHover, $btnHover);
+        }
     }
 }
     
@@ -197,6 +279,9 @@
 .similar{
     margin-top: $marginTop;
     padding: 0 10px;
+    .subtitle{
+        max-width: 525px;
+    }
     &__procedures{
         margin-top: 49px;
         &__text{
@@ -208,22 +293,22 @@
         &__subtext{
             font-size: $fs16;
             line-height: 120%;
+            margin-top: 4px;
         }
       &__contentbox{
-        margin-top: 16px;
+        margin-top: 24px;
         display: flex;
         align-items: center;
         width: 100%;
         justify-content: space-between;
         border: 1px solid #AE8452;
         border-radius: 4px;
-        padding: 30px 46px;
+        padding: 24px;
         max-height: 257px;
         &-middle{
             flex-direction: column;
-            max-width: 640px;
+            max-width: 728px;
             text-align: left;
-            margin-left: 36px;
         }
         &-right{
             display: flex;
@@ -236,7 +321,7 @@
     &__btn{
         border: none;
         color: #FFF9EF;
-  font-size: $fs14;
+  font-size: $fs12;
   line-height: 17px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -246,16 +331,22 @@
   border-radius: 4px;
   padding: 13px 20px;
   margin-top: 27px;
-  &:hover{
-    background-color: $btnHover;
-    transition: all 0.4s ease-in;
-}
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position-x: right;
+  transition: background-size 0.5s;
+
+  &:hover {
+    background-size: 100% 100%;
+    background-position-x: left;
+    background-image: linear-gradient($btnHover, $btnHover);
+  }
     }
 
     &__sale{
         background: transparent;
   color: $primary;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 17px;
   letter-spacing: 0.05em;
   text-transform: uppercase;

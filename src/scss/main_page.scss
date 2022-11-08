@@ -1,4 +1,6 @@
 .header {
+    // background-image: url('../img/bg_header.jpg');
+    // background-position: center 10%;
     width: 1200px;
     position: absolute;
     top: 2%;
@@ -86,10 +88,10 @@
             padding: 22px 27px;
             max-width: 1200px;
             height: 94px;
-            // background-color: $primary;
+            background-color: $primary;
             display: flex;
             color: $white;
-
+            border-radius: 4px;
             &-descr {
                 margin-left: 16px;
 
@@ -277,10 +279,12 @@
 
     &__content-watch {
         text-align: right;
+        display: flex;
+        align-items: center;
         a {
             margin-right: 15px;
             font-family: 'Fira Sans';
-            font-size: $fs20;
+            font-size: $fs16;
             text-align: right;
             text-decoration-line: underline;
             color: $secondaryRed;
@@ -615,7 +619,7 @@
     }
 
     .swiper-button-prev{
-        left: 92%;
+        left: 90%;
         top: 5%;
         width: 40px;
         height: 40px;
@@ -624,6 +628,7 @@
     &__sliders__swiper{
         max-width: 1200px;
         height: 507px;
+        cursor: grabbing;
         // overflow: hidden;
         // position: relative;
     }
@@ -687,7 +692,7 @@
                 &:hover{
                     background: $primary;
                     color: $bg;
-                    transition: all 0.4s ease-in;
+                    transition: all 0.2s ease-in;
                 }
             }
         }
@@ -750,14 +755,14 @@
         &-hidden {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            margin-top: 22px;
+            margin-top: 20px;
             display: none;
         }
     }
 
     &__card {
-        width: 252px;
-        height: 322px;
+        width: 278px;
+        height: 356px;
         background-image: url('../../img/offer/offer3.jpg');
         background-size: cover;
         background-position: center center;
@@ -849,6 +854,7 @@
             border: 1px solid $gold;
             border-radius: 4px;
             transform: rotate(-2deg);
+            z-index: 2;
           &:hover{
                 transform: rotate(2deg);
                 transition: all 0.4s linear;
@@ -904,10 +910,8 @@
     .specialist__subtitle{
         max-width: 416px;
     }
-    &__border{
-        
-    }
-    .clinic__right-swiper:hover img ~ .about__right-swiper__border{
+    
+    .swiper-slide:hover img ~ .about__right-swiper__border{
         transform: rotate(2deg);
         transition: all 0.4s linear;
     }
@@ -924,7 +928,7 @@
     margin-top: $marginTop;
     position: relative;
     &__sliders__swiper {
-        height: 289px;
+        height: 257px;
         
     }
 
@@ -934,49 +938,58 @@
         }
         display: flex;
         align-items: center;
-
+        &-top{
+            display: flex;
+            align-items: center;
+        }
         &-text {
             font-family: 'Fira Sans';
             font-size: $fs16;
             line-height: 120%;
+            overflow-y: scroll;
+            padding-bottom: 24px;
         }
 
         &-from {
             font-family: 'Fira Sans';
             font-size: $fs14;
             line-height: 140%;
-            text-align: right;
+            align-self: flex-end;
             text-decoration-line: underline;
+            
+        }
+        &-name{
+            font-weight: 700;
+            margin-left: 12px;
+        }
+        &-box {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 20px 40px;
+            gap: 16px;
+            width: 528px;
+            height: 237px;
+            border: 1px solid #AE8452;
+            border-radius: 4px;
+            overflow-y: scroll;
         }
     }
-    &__sliders-name{
-        font-weight: 700;
-    }
+   
 
-    &__sliders-box {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 20px 40px;
-        gap: 16px;
-        width: 528px;
-        height: 237px;
-        border: 1px solid #AE8452;
-        border-radius: 4px;
-        overflow-y: scroll;
-    }
+    
     
     .swiper-button-next{
-        right: 3%;
-        top: 25%;
+        right: 7.4%;
+        top: 30%;
         width: 40px;
         height: 40px;
 
     }
 
     .swiper-button-prev{
-        left: 90%;
-        top: 25%;
+        left: 85%;
+        top: 30%;
         width: 40px;
         height: 40px;
 
@@ -1000,14 +1013,18 @@
     &__bot-hidden{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
+        gap: 0px;
         display: none;
+        margin-top: 10px;
+    }
+    &__contentbox{
+        margin-top: 61px;
     }
     &__card {
-        margin-top: 61px;
+        
         position: relative;
-        max-width: 309px;
-        height: 395px;
+        width: 278px;
+        height: 356px;
 
         &-img {
             width: 100%;
@@ -1053,6 +1070,33 @@
             line-height: 120%;
             margin-top: 20px;
         }
+       
+    }
+    &__btn{
+        font-family: 'Fira Sans';
+        color: $colorBtn;
+        font-size: $fs12;
+        line-height: 17px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        background-color: $secondaryRed;
+        width: 212px;
+        height: 44px;
+        border-radius: 4px;
+        padding: 13px 30px;
+        margin: 50px 40% 0;
+        border: none;
+        
+        background-repeat: no-repeat;
+        background-size: 0% 100%;
+        background-position-x: right;
+        transition: background-size 0.5s;
+      
+        &:hover {
+          background-size: 100% 100%;
+          background-position-x: left;
+          background-image: linear-gradient($btnHover, $btnHover);
+        }
     }
 }
 
@@ -1076,6 +1120,7 @@
     }
 
     &__bot {
+        height: 540;
         margin-top: 52px;
         display: flex;
 
@@ -1094,7 +1139,7 @@
             border-color: #AE8452;
             border-radius: 4px 0px 0px 4px;
             padding-left: 52px;
-            padding-top: 67px;
+            padding-top: 53px;
 
             &-adress {
                 font-family: 'Oranienbaum';
@@ -1104,7 +1149,7 @@
 
                 a {
 
-                    font-size: $fs16;
+                    font-size: $fs14;
                     line-height: 140%;
                     text-decoration-line: underline;
                 }
@@ -1114,7 +1159,7 @@
             }
 
             &-list {
-                margin-top: 42px;
+                margin-top: 48px;
 
             }
 
@@ -1132,12 +1177,12 @@
             &-text {
 
                 font-weight: 400;
-                font-size: $fs20;
+                font-size: $fs18;
                 line-height: 140%;
             }
 
             &-subtext {
-                font-size: 16px;
+                font-size: 12px;
                 line-height: 140%;
             }
         }
@@ -1159,9 +1204,15 @@
         letter-spacing: 0.05em;
         text-transform: uppercase;
         color: $bg;
-        &:hover{
-            background-color: $btnHover;
-            transition: all 0.4s ease-in;
+        background-repeat: no-repeat;
+        background-size: 0% 100%;
+        background-position-x: right;
+        transition: background-size 0.5s;
+      
+        &:hover {
+          background-size: 100% 100%;
+          background-position-x: left;
+          background-image: linear-gradient($btnHover, $btnHover);
         }
     }
 }
@@ -1178,14 +1229,15 @@
     &__bot {
         display: flex;
         justify-content: space-between;
-        margin-top: 40px;
+        margin-top: 16px;
     }
 
-    &__subtitle {
-        width: 518px;
+    .record__subtitle {
+        width: 449px;
         font-family: 'Fira Sans';
-        font-size: $fs20;
+        font-size: $fs16;
         line-height: 140%;
+        margin-top: 0;
 
     }
 
@@ -1205,9 +1257,15 @@
         letter-spacing: 0.05em;
         text-transform: uppercase;
         color: $bg;
-        &:hover{
-            background-color: $btnHover;
-            transition: all 0.4s ease-in;
+        background-repeat: no-repeat;
+        background-size: 0% 100%;
+        background-position-x: right;
+        transition: background-size 0.5s;
+      
+        &:hover {
+          background-size: 100% 100%;
+          background-position-x: left;
+          background-image: linear-gradient($btnHover, $btnHover);
         }
 
     }
@@ -1216,6 +1274,7 @@
 .form {
     display: flex;
     flex-direction: column;
+    
     width: 646px;
     height: 260px;
 
@@ -1232,6 +1291,10 @@
 
     &__checkbox {
         margin-right: 16px;
+        
+        &-text{
+            font-size: $fs16;
+        }
     }
 }
 
@@ -1251,10 +1314,10 @@
     &__top {
         display: flex;
         justify-content: space-between;
-        padding: 26px;
+        padding: 26px 0;
 
         &-text {
-            max-width: 729px;
+            max-width: 620px;
             color: $bg;
             font-size: $fs20;
             line-height: 140%;
@@ -1267,8 +1330,8 @@
         align-items: center;
 
         &__input {
-            padding: 16px 18px;
-            width: 361px;
+            padding: 9px 18px;
+            width: 259px;
             height: 40px;
             border: 1px solid #FFF9EF;
             border-radius: 4px;
@@ -1279,12 +1342,30 @@
     }
 
     &__btn {
-        width: 220px;
-        height: 44px;
-        margin: 0 0 0 16px;
-        &:hover{
-            background-color: $btnHover;
-            transition: all 0.4s ease-in;
+        margin-left: 16px;
+        height: 40px;
+        padding: 0px 30px;
+        width: 180px;
+        height: 40px;
+        background: $secondaryRed;
+        border: none;
+        border-radius: 4px;
+        font-family: 'Fira Sans';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $bg;
+        background-repeat: no-repeat;
+        background-size: 0% 100%;
+        background-position-x: right;
+        transition: background-size 0.5s;
+      
+        &:hover {
+          background-size: 100% 100%;
+          background-position-x: left;
+          background-image: linear-gradient($btnHover, $btnHover);
         }
     }
 
@@ -1296,7 +1377,7 @@
         &-top {
             display: flex;
             justify-content: space-between;
-            margin-top: 70px;
+            margin-top: 50px;
 
         }
         &-middle__tablet{
@@ -1392,10 +1473,10 @@
     &::before {
         content: '';
         width: 100%;
-        height: 420px;
+        height: 440px;
         background-color: $primary;
         position: absolute;
-        bottom: 12%;
+        bottom: 16%;
         z-index: 0;
     }
     &__alert-bot{
@@ -1431,7 +1512,7 @@
 
             a {
                 display: inline-block;
-                padding: 10px 10px;
+                padding: 10px 7px;
                 font-size: $fs16;
                 
             }

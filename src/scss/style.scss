@@ -63,11 +63,14 @@ line-height: 74px;
 letter-spacing: 0.1em;
 text-align: left;
 
+
 }
 h2{
     font-size: 48px;
     line-height: 66px;
     font-weight: 400;
+    font-family: 'Oranienbaum';
+    line-height: 55px;
     
 }
 .title__span{
@@ -91,6 +94,7 @@ color: $gold;
     font-size: 16px;
     line-height: 140%;
     max-width: 720px;
+    margin-top: 12px;
 }
 
 
@@ -127,10 +131,7 @@ color: $gold;
       background-image: linear-gradient($btnHover, $btnHover);
     }
 }
-.btn:hover{
-    background-color: $btnHover;
-    transition: all 0.4s ease-in;
-}
+
 .btn2:hover{
     background: $primary;
     color: $bg;
@@ -171,7 +172,7 @@ color: $gold;
         display: flex;
         align-items: center;
         margin-bottom: 50px;
-        margin-top: 20px;
+        margin-top: 25px;
     }
     &__item{
         &:not(:first-child){

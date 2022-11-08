@@ -3,15 +3,21 @@
 }
 .specialist-page__header{
     margin-top: $marginTitle;
+    .about__right_specialist-page{
+    position: relative;
+    }
+    .about__right-border__specialist-page{
+        top: 3%;
+        height: 550px;
+    }
 }
 .header{
     &__skills{
-        margin-top: 140px;
-        margin-left: 10%;
+        margin-top: 165px;
+        margin-left: 3%;
         &__list{
             display: grid;
             grid-template-columns: repeat(2,1fr);
-            gap: 20px;
             align-items: center;
             
         }
@@ -59,7 +65,7 @@
         margin-left: 22px;
     }
     &__list{
-        margin-top: 116px;
+        margin-top: 75px;
     }
     &__item{
         font-size: $fs20;
@@ -70,14 +76,14 @@
         }
     }
     &__call{
-        margin-top: 180px;
+        margin-top: 75px;
     }
 }
 }
 
 
 .similar__specialist-page3{
-    margin-top: 140px;
+    margin-top: 165px;
     &__subtitle{
         font-size: $fs20;
     }
@@ -128,6 +134,7 @@
        &-text{
         margin-right: 40px;
         margin-top: 16px;
+        font-size: $fs16;
         &::before{
             content: '- ';
             color: $secondaryRed;
