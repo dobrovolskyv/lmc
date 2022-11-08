@@ -1,4 +1,4 @@
-
+import * as runingStr from "./modules/move.js";
 import * as flsFunctions from "./modules/functions.js";
 import * as accordionFunction from "./modules/accordion.js"
 
@@ -336,7 +336,7 @@ if (openSecondMenu && menuSecond){openSecondMenu.addEventListener('click', funct
 
 
 
-
+runingStr.runStr();
 accordionFunction.accordionAboutDoctor();
 
 })

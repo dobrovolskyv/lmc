@@ -15,7 +15,9 @@
 @import './404.scss';
 @import './menu.scss';
 
-
+html{
+    scroll-behavior: smooth;
+}
 *,
 *::before,
 *::after{
