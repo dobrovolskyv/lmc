@@ -6,9 +6,9 @@
     position:relative;
    
     &__top {
-        position: absolute;
+        position: fixed;
         top: 0%;
-        left: 0;
+        left: 38px;
         width: 100vw;
         display: flex;
         justify-content: center;
@@ -28,14 +28,14 @@
         &-logo__contentbox{
             display: flex;
             align-items: center;
-            margin-right: 74px;
+            margin-right: 50px;
         }
         &-img__logo{
             margin-right: 20px;
             // margin-left: -54px;
         }
         &__list{
-            margin-right: 74px;
+            margin-right: 80px;
         }
     }
     &__img__logo{
@@ -81,8 +81,8 @@
         }
         &-search{
             position: absolute;
-            top: 34%;
-            right: 4%;
+            top: 38%;
+            right: 7%;
             fill: $bg;
         }
     }
@@ -90,7 +90,7 @@
 
     &__bot {
         position: absolute;
-        top: 261%;
+        top: 293%;
         width: 1200px;
         display: flex;
         justify-content: space-between;

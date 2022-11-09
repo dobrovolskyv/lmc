@@ -151,7 +151,7 @@
 	display: none;
 }
 .menu2-phone.active {
-	transform: translateX(0);
+	transform: translateX(-8px);
 }
 
 .menu2-phone li {
@@ -163,19 +163,105 @@
 	z-index:3;
 	overflow: hidden
 }
-.menu2-phone{
+.menu2-phone {
 	position: absolute;
-	top: 0%;
-	width: 100%;
-	height: 200%;
+	
+	width: 113%;
+	height: 950px;
 	padding: 15px;
+	top: -15px;
   	background: $primary;
 	transform: translateX(-120%);
-	transition: transform 0.5s;
-	.accrdion__menu{
-		width: 280px;
+	transition: transform 0.5s; 
+	.accordion__menu{
+		width: 288px;
+	}
+	&__logos{
+		img:not(:first-child){
+			margin-left: 10px;
+		}
+	}
+	&__logos-tel{
+		color: $secondary;
+		font-size: $fs16;
+		margin-left: 34px;
+	}
+	&__record{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+		&-text{
+			font-size: $fs14;
+			line-height: 140%;
+			margin-left: 40px;
+		}
+		&-container{
+			display: flex;
+			align-items: center;
+		}
+		&-link{
+			font-size: $fs14;
+			margin-left: 10px;
+		}
+	}
+	&__search{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&__container{
+			width: 100%;
+		}
+		&__input{
+			border: none;
+			border-bottom: 1px solid $secondary;
+			background: transparent;
+			padding: 10px;
+			width: 100%;
+			outline:none;
+			&:focus{
+				border: none;
+				color: $secondary;
+				border-bottom: 1px solid $secondary;
+			}
+		}
+	}
+	&__middle{
+		margin-top: 20px;
+		&-link{
+			font-size: 40px;
+			line-height: 56px;
+			color: $secondary;
+			border-bottom: 1px solid $secondary;
+			position: relative;
+			span{
+				font-size: $fs16;
+				position: absolute;
+				top: -40%;
+				right: -14%;
+			
+				
+			}
+		}
+		&-span{
+			
+				left: 100%;
+			
+		}
 	}
 }
+// .menu2-phone{
+// 	position: absolute;
+// 	top: 0%;
+// 	width: 100%;
+// 	height: 200%;
+// 	padding: 15px;
+//   	background: $primary;
+// 	transform: translateX(-120%);
+// 	transition: transform 0.5s;
+// 	.accrdion__menu{
+// 		width: 280px;
+// 	}
+// }
 
 .go-back{
 	color: white;
@@ -185,3 +271,6 @@
 // .go-back2{
 // 	display: none;
 // }
+.header__top{
+	display: none;
+}

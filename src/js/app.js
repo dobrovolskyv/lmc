@@ -305,14 +305,16 @@ let menu = document.querySelector('.menu-phone');
 
 let openSecondMenu = document.querySelector('.menu-phone__middle-list');
 let menuSecond = document.querySelector('.menu2-phone')
-let btnBack2 = document.querySelector('.go-back2')
-let btnBack = document.querySelector('.go-back')
+let btnBack = document.querySelector('.go-back2')
 
 
 if (menuBtn && menu){menuBtn.addEventListener('click', function(){
 
 	menuBtn.classList.toggle('active');
 	menu.classList.toggle('active');
+  if( !menu.classList.contains('active') && menuSecond.classList.contains('active')){
+    menuSecond.classList.toggle('active');
+  }
 	
 })
 }
@@ -320,9 +322,15 @@ if (openSecondMenu && menuSecond){openSecondMenu.addEventListener('click', funct
 
 	openSecondMenu.classList.toggle('active');
 	menuSecond.classList.toggle('active');
+
 	
 })
 }
+btnBack.addEventListener('click', function(){
+  if (menuSecond){
+    menuSecond.classList.remove('active')
+  }
+})
 // btnBack2.forEach((el)=>{
 //   el.addEventListener('click',()=>{
         
