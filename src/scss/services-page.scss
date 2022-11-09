@@ -9,7 +9,7 @@
 
     }
     .header__procedures{
-        margin-top: 77px;
+        margin-top: 27px;
         &__contentbox{
             margin-top: 27px;
         }
@@ -34,9 +34,11 @@
 }
 .header__bot-page2{
     margin-top: 130px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr)
 }
-.header__bot-contentbox-page2{
-    margin-top: 122px;
+.header__bot-contentbox-page2:not(:last-child){
+    
     margin-right: 28px;
 }
 .header{
@@ -399,15 +401,22 @@ color: #972A29;
 @media (max-width: 640px) {
     
     .services-page__header {
-        margin-top: 150px;
-        margin-left: 24px;
-        
+        margin-top: $marginTitleTablet;
+        margin-left: 20px;
+        .title{
+            margin-top: 50px;
+        }
+        .subtitle{
+            font-size: 14px;
+        line-height: 140%;
+        width: 100%;
+        }
         .header {
             
             margin: 0 5px;
             &__bot {
                 &-page2 {
-                    margin-top: 50px;
+                    margin-top: 130px;
                     display: grid;
                     grid-template-columns: repeat(1, 1fr);
                     gap: 20px;
@@ -415,17 +424,24 @@ color: #972A29;
 
                 &-contentbox {
                     max-height: 150px;
-                    max-width: 92%;
+                    max-width: 96%;
+                    align-items: center;
+                    padding: 10px 28px;
+                    img{
+                        width: 49px;
+                        height: 48px;
+                    }
                     &-descr{
                         width: 100%;
                       h4{
                         font-weight: 700;
-                        font-size: $fs18; 
+                        font-size: $fs16; 
                         margin: 10px 0;
                       }
                            p{
                             
-                            font-size: $fs16; 
+                            font-size: $fs14;
+                            line-height: 140%; 
                            } 
                         
                     }
@@ -438,13 +454,21 @@ color: #972A29;
 
             }
             &__procedures{
-                margin-top: 380px;
+                margin-top: 20px;
                 font-size: $fs16;
                 &__contentbox{
+                    margin-top: 20px;
                     padding: 0px 18px;
+                    width: 96%;
+                }
+                &__text{
+                    font-size: $fs16;
+                    line-height: 140%;
                 }
                 &__price{
                     margin-right: 50px;
+                    font-size: $fs16;
+                    width: 51px;
                 }
                 .btn__header-page2{
                     width: 182px;
@@ -457,6 +481,30 @@ color: #972A29;
             
         }
     }
+//
+//
+//questions
+//
+//
+.questions{
+    &__brochure{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        &-steps{
+            flex-direction: column;
+        }
+        &-step{
+            max-width: 100%;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+    }
+    margin-left: 20px;
+    margin-right: 5px;
+    &__brochure-title {
+        padding: 0 20px;
+    }
+}
 //
 //
 //services

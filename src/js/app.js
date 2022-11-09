@@ -336,7 +336,7 @@ if (openSecondMenu && menuSecond){openSecondMenu.addEventListener('click', funct
 
 
 
-runingStr.runStr();
+// runingStr.runStr();
 accordionFunction.accordionAboutDoctor();
 
 })

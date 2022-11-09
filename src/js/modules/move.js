@@ -7,8 +7,8 @@ export function runStr (){
 document.querySelector('button').onclick = function() {
   clearInterval(interval)
 }
-    
-function move() {
+    if(wrapper && marquee && wrapperWidth && marqueeWidth){
+      function move() {
   var currentTX = getComputedStyle(marquee).transform.split(',');
   if( currentTX[4] === undefined ) {
     currentTX = -1;
@@ -25,4 +25,6 @@ function move() {
 }
 
 var interval = setInterval(move, 10);
+    }
+
 }

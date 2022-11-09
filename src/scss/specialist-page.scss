@@ -154,6 +154,7 @@
    .container{
     max-width: 592px;
    }
+ 
     .specialist-page__header{
         margin-top: 150px;
         .about__right__img{
@@ -167,6 +168,13 @@
             font-size: $fs16;
             width: 200px;
         }
+        .about__right-border__specialist-page {
+            top: 7%;
+            height: 353px;
+            right: 0%;
+            width: 96%;
+        }
+        
     }
     .header__specialist-page{
         &__title{
@@ -174,6 +182,9 @@
             font-size: $fs24;
             line-height: 140%;
             margin-bottom: 10px;
+        }
+        .header__skills{
+            margin-top: 120px;
         }
         .header__skills__item{
             font-size: $fs18;
@@ -272,6 +283,10 @@
             margin-top: 20px;
             width: 172px;
         }
+        }
+        .questions__brochure-btn {
+            margin-top: 20px;
+           width: 212px;
         }
     }
     //

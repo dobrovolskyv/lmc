@@ -17,6 +17,15 @@
     .our-services-page7{
         padding: 0px 5px;
         margin-top: $tabletMargin;
+        .title{
+            font-size: $fs36;
+        line-height: 140%;
+        }
+        .subtitle{
+        font-size: 16px;
+        line-height: 140%;
+        width: 100%;
+        }
     }
     .questions{
         padding: 0px 5px;

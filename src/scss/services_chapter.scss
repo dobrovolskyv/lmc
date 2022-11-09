@@ -114,6 +114,14 @@
             .accordion__menu{
                 width: 580px;
             }
+            .title{
+                text-decoration: underline;
+            }
+            .subtitle{
+                font-size: 16px;
+        line-height: 140%;
+        width: 100%;
+            }
         }
         &__contentbox{
             margin-top: 20px;
@@ -130,8 +138,8 @@
                 font-size: $fs24;
             }
             &-btn__hidden{
-                width: 212px;
-                height: 44px;
+                width: 178px;
+                height: 38px;
                 padding: 4px 12px;
                 font-size: $fs12;
                 margin: 10px 0;
