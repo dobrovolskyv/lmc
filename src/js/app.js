@@ -326,21 +326,13 @@ if (openSecondMenu && menuSecond){openSecondMenu.addEventListener('click', funct
 	
 })
 }
-btnBack.addEventListener('click', function(){
+if (btnBack){
+  btnBack.addEventListener('click', function(){
   if (menuSecond){
     menuSecond.classList.remove('active')
   }
 })
-// btnBack2.forEach((el)=>{
-//   el.addEventListener('click',()=>{
-        
-//         if (menuSecond.style.transform === "translateX(-110%)") {
-//           menuSecond.style.transform = "translateX(0)";
-//         } else {
-//           menuSecond.style.transform = "translateX(-110%)";
-//         }
-//       })
-// })
+}
 
 
 

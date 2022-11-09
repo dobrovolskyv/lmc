@@ -102,6 +102,7 @@
 }
 
 @media (max-width: 640px) {
+    
     .services-chapter {
         
         
@@ -115,12 +116,12 @@
                 width: 580px;
             }
             .title{
-                text-decoration: underline;
+                text-transform: uppercase;
             }
             .subtitle{
                 font-size: 16px;
-        line-height: 140%;
-        width: 100%;
+                line-height: 140%;
+                width: 100%;
             }
         }
         &__contentbox{

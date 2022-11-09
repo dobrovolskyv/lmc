@@ -10,7 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  background-color: #FFF9EF;
   z-index: 10;
   border-radius: 4px;
   padding: 10px 10px;
@@ -1477,6 +1477,7 @@
   .container {
     max-width: 592px;
     margin: 0 auto;
+    overflow: hidden;
   }
 
   .header {
@@ -4926,7 +4927,7 @@
     width: 580px;
   }
   .services-chapter__physics .title {
-    text-decoration: underline;
+    text-transform: uppercase;
   }
   .services-chapter__physics .subtitle {
     font-size: 16px;
@@ -5836,10 +5837,6 @@
   z-index: 1;
 }
 
-.header__top {
-  display: none;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -5867,7 +5864,7 @@ button {
 }
 
 body {
-  font-family: "Fira Sans", "Oranienbaum", sans-serif;
+  font-family: "Fira Sans", "Oranienbaum", sans-serif, serif;
   color: #093A67;
   font-style: normal;
   font-weight: 300;
