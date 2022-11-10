@@ -14,7 +14,7 @@
 	width: 30px;
 	height: 30px;
 	position: relative;
-	z-index:2;
+	z-index:15;
 	overflow: hidden;
 }
 
@@ -54,7 +54,7 @@
 /* Меню, которое будет появляться */
 .menu-phone {
 	position: absolute;
-	
+	z-index:14;
 	width: 114%;
 	height: 950px;
 	padding: 15px;
@@ -165,7 +165,7 @@
 }
 .menu2-phone {
 	position: absolute;
-	
+	z-index:14;
 	width: 113%;
 	height: 950px;
 	padding: 15px;

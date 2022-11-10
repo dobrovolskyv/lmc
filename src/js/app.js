@@ -188,7 +188,7 @@ const reviewsSwiper = new Swiper('.reviews__sliders__swiper', {
   breakpoints: {
     // when window width is >= 320px
     250: {
-      slidesPerView: 1,
+      slidesPerView: 1.2,
       spaceBetween: 20
     },
     600: {

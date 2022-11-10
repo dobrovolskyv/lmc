@@ -1012,6 +1012,9 @@
         transform: rotate(2deg);
         transition: all 0.4s linear;
     }
+    .clinic__swiper-phone{
+        display: none;
+    }
 }
 
 //
@@ -1092,6 +1095,9 @@
 
     }
 
+}
+.reviews .reviews__sliders-box {
+    height: 250px;
 }
 
 //
@@ -1330,7 +1336,7 @@
     }
 
     .record__subtitle {
-        width: 449px;
+        max-width: 449px;
         font-family: 'Fira Sans';
         font-size: $fs16;
         line-height: 140%;
@@ -2449,6 +2455,9 @@
             width: 588px;
             right: 0%;
         }
+        .clinic__swiper-phone{
+            display: none;
+        }
     }
     
        //
@@ -2495,6 +2504,9 @@
             height: 40px;
     
         }
+        .reviews__sliders-from {
+            margin-top: auto;
+        }
     
     }
  //
@@ -2508,7 +2520,6 @@
     .articles{
         &__contentbox{
             margin-top: 53px;
-            padding-left: 17px;
         }
         .articles__card{ 
             margin-top: 0;
@@ -2534,7 +2545,7 @@
             gap: 10px;
         }
         .articles__btn{
-            margin: 140px 30% 0px;
+            margin: 26px 12% 0px;
         }
     }
     
@@ -2544,11 +2555,11 @@
     //
     //
     .contacts{
-        padding-left: 20px;
-        padding-right: 5px;
+        
         &__bot{
             flex-direction: column;
             &__info{
+                
                 width: 580px;
                 padding: 20px;
                 border-width: 1px 1px 0px 1px;
@@ -2563,6 +2574,24 @@
                     }
                     &-phone{
                         display: none;
+                        p{
+                            font-family: 'Oranienbaum';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 20px;
+                            line-height: 120%;
+                            text-align: center;
+                            color: $bgFooter;
+                        }
+                        a{
+                            font-family: 'Fira Sans';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 140%;
+                    text-align: center;
+                    text-decoration-line: underline;
+                        }
                     }
                 }
                 &-text{
@@ -2574,11 +2603,12 @@
                 &-list{
                     display: grid;
                     grid-template-columns: repeat(2,1fr);
+                    margin-top: 18px;
                 }
             }
             &__img{
-                width: 580px;
-                height: 300px;
+                width: 288px;
+                height: 288px;
                 border-width: 0px 1px 1px 1px;
                 border-radius: 0px 0px 4px 4px;
             }
@@ -2588,7 +2618,7 @@
             &-tablet{
                 display: flex;
                 padding: 10px 20px;
-                width: 202px;
+                width: 278px;
                 height: 38px;
                 background: $secondaryRed;
                 border: none;
@@ -2600,10 +2630,19 @@
                 letter-spacing: 0.05em;
                 text-transform: uppercase;
                 color: $bg;
-    
             }
         }
-        
+        .contacts__bot__img{
+            width: 288px;
+            height: 288px;
+        }
+        .contacts__btn-tablet {
+            width: 118%;
+            margin-left: -19px;
+            padding: 10px 70px;
+            margin-top: 16px;
+            margin-bottom: 6px;
+        }
     }
       //
     //
@@ -2611,24 +2650,34 @@
     //
     //
     .record{
-        padding-left: 20px;
-        padding-right: 5px;
+      
         .undertitle{
             margin-left: 0;
+        }
+        .record__subtitle{
+            font-size: $fs12;
+            line-height: 140%;
         }
         &__bot{
             display: block;
             margin-top: 10px;
         }
         &__form{
-            padding: 0px 5px;
+            margin-top: 26px;
             .form__input{
                 width: 550px;
             }
+            .form__checkbox-text {
+                font-size: 12px;
+            }
             
+        }
+        &__btn{
+            width: 100%;
         }
     }
         .footer {
+            margin-top: $phoneMargin;
             &::before{
                 bottom: 23%;
                 width: 100%;
@@ -2724,12 +2773,7 @@
 //
 //
 @media (max-width: 320px) {
-    .container {
-        max-width: 288px;
-        margin: 0 auto;
-        overflow: hidden;
-        padding-left: 10px;
-    }
+    
     
     .services__content-watch{
         display: none;
@@ -2740,7 +2784,7 @@
         line-height: 140%;
     }
     .title__container > p.undertitle{
-        font-size: 14px;
+        font-size: 10px;
         line-height: 140%;
         letter-spacing: 0.1em;
        
@@ -2765,20 +2809,27 @@
         width: 288px;
         &__top{
             top: 6%;
-            width: 288px;
+            width: 320px;
+            padding: 5 2px;
+            z-index: 1s;
             &-tablet__item {
             display: none;
 
-        }
+            }
+            &__tel{
+                font-size: $fs16;
+            }
         }
 
         &__bot {
             display: none;
             &-phone{
                 width: 288px;
-                margin-top: 16px;
+                margin-top: 18px;
                 display: flex;
                 justify-content: space-between;
+                margin-right: 2px;
+                padding-right: 11px;
             }
             &-phone__record{
                 display: flex;
@@ -2859,6 +2910,7 @@
     //
     
         .services {
+            padding: 100px 0 0 0;
             .title{
                 font-size: $fs24;
         }
@@ -2958,7 +3010,8 @@
     //
     .about{
         margin-top: $phoneMargin;
-        
+        padding-left: 0;
+        padding-right: 0;
         &__wrapper{
             flex-direction: column;
             
@@ -2987,6 +3040,7 @@
            
         }
         &__citate{
+            margin-top: 16px;
             margin-bottom: 27px;
             p {
                 text-align: center;
@@ -3041,12 +3095,18 @@
                     line-height: 140%;
                 }
             }
+            &-border{
+                width: 87%;
+                height: 319px;
+                top: 6.5%;
+            }
         }
         .about__img-tablet{
             display: none;
         }
         &__img-phone{
             display: block;
+            
         }
         .about__content-watch__tablet{
             display: none;
@@ -3067,6 +3127,9 @@
         .about__wrapper-tablet{
             max-width: 288px;
         }
+        .about__img-phone__img{
+            height: 100%;
+        }
     }
     //
     //
@@ -3078,18 +3141,39 @@
             margin-left: 10px;
             height: 262px;
         }
+        &__content{
+            &-text{
+            padding: 4px;
+           
+        }
+        }
+        .specialist__content-undertitle{
+            font-size: 7px;
+            line-height: 140%;
+        }
+        .specialist__content-title{
+            font-size: 12px;
+            line-height: 140%;
+        }
+        .specialist__content-btn-record,
+        .specialist__content-btn-more{
+            max-width: 100%;
+            height: 38px;
+            font-size: $fs8;
+        }
+     
         .specialist__sliders__swiper{
             max-width: 260px;
             max-height: 257px;
             .swiper-button-prev{
-                left: 9%;
-                top: 7%;
+                left: 74%;
+                top: 19%;
                 width: 30px;
                 height: 30px;
             }
             .swiper-button-next{
-                top: 7%;
-                right: 58%;
+                top: 19%;
+                right: 0%;
                 width: 30px;
                 height: 30px;
             }
@@ -3114,6 +3198,10 @@
             }
             
         }
+        .specialist__sliders-box:hover .specialist__content-text {
+            transform: translateY(-130px);
+            transition: all 0.8s ease-in;
+        }
     }
      //
     //
@@ -3121,6 +3209,9 @@
     //
     //
     .offer{
+        .title{
+            font-size: 28px;
+        }
         &__bot,
         &__bot-hidden{
             grid-template-columns: repeat(1,1fr);
@@ -3129,10 +3220,14 @@
                 
             }
         }
-        section.offer > div > .offer__btn{
-            margin: 50px 17% 0;
-        }
         
+        .offer__btn {
+            margin: 32px 12% 0px;
+        }
+        .offer__bot-hidden{
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
     //
     //
@@ -3176,6 +3271,20 @@
             .clinic__right-pagination.swiper-pagination{
                 bottom: 0%;
             }
+            .clinic__swiper-phone{
+                display: block;
+            }
+            .clinic__right-swiper{
+                display: none;
+            }
+            
+        }
+        .clinic .clinic__wrapper .about__right-swiper__border {
+            top: 23.5%;
+            bottom: 0%;
+            height: 197px;
+            width: 266px;
+            right: 1%;
         }
     //
     //
@@ -3193,6 +3302,13 @@
         &__sliders{
             &-box{
                 min-height: 400px;
+            }
+            &-name{
+                font-size: $fs16;
+            }
+            &-text{
+                font-size: $fs12;
+                line-height: 140%;
             }
       
         }
