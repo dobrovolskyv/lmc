@@ -107,7 +107,7 @@
         
         
         &__physics {
-            margin-top: $tabletMargin;
+            margin-top: $marginTitleTablet;
             padding: 0 5px;
             &-wrapper {
                 flex-direction: column;
@@ -125,7 +125,7 @@
             }
         }
         &__contentbox{
-            margin-top: 20px;
+            margin-top: 32px;
             grid-template-columns: repeat(2,1fr);
             &-img{
                 width: 90px;

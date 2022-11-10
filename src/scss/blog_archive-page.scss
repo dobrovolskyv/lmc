@@ -76,7 +76,7 @@ text-transform: uppercase;
     .blog-archive {
         &__articles {
             padding: 0 5px;
-            margin-top: $tabletMargin;
+            margin-top: $marginTitleTablet;
 
             .specialist__subtitle {
                 font-size: $fs20;

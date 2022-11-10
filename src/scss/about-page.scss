@@ -26,6 +26,9 @@
         line-height: 140%;
         margin-top: 10px;
     }
+    .about__wrapper-tablet{
+        display: none;
+    }
 }
 .direction{
     margin-top: 165px;
@@ -171,22 +174,44 @@
     //
     //
     .header__about-page{
-        padding: 0 5px;
-        margin-top: 150px;
+       
+        margin-top: $marginTitleTablet;
+        &__title{
+            font-family: 'Oranienbaum';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 55px;
+        }
         &__wrapper{
+          
             max-width: 580px;
             flex-direction: column;
             .about__left{
                 width: 100%;
+                .title{
+                    font-size: $fs36;
+                    line-height: 140%;
+                }
+               
             }
             .about__right{
                 order: -1;
                 display: none;
                 &__img{
-                    
+                    order: -1;
                 }
             }
             .about{
+                &__subtitle{
+                        font-size: 16px;
+                        line-height: 140%;
+                    }
+                    &__citate__text{
+                        font-size: 18px;
+                        line-height: 140%;
+                        margin-top: 10px;
+                    }
                 &__table{
                     &__span{
                         font-size: 70px;
@@ -199,8 +224,38 @@
                         line-height: 130%;
                     }
                 }
+                
             }
             
+        }
+        .about__wrapper-tablet{
+            margin-top: 0;
+            display: flex;
+            .about{
+                &__subtitle{
+                        font-size: 16px;
+                        line-height: 140%;
+                    }
+                    &__citate__text{
+                        font-size: 18px;
+                        line-height: 140%;
+                        margin-top: 10px;
+                    }
+                &__table{
+                    &__span{
+                        font-size: 70px;
+                    }
+                    &__td-secondary{
+                        font-size: 26px;
+                    }
+                    &__td{
+                        font-size: 16px;
+                        line-height: 130%;
+                    }
+                }
+                
+            }
+
         }
     }
      //
@@ -209,7 +264,15 @@
     //
     //
     .direction{
-        padding: 0 5px;
+       .title{
+        font-size: $fs36;
+        line-height: 140%;
+       }
+       .subtitle{
+        padding-left: 0;
+        font-size: 16px;
+        line-height: 140%;
+       }
         margin-top: 120px;
         &__contentbox{
             grid-template-columns: repeat(2,1fr);
@@ -240,11 +303,15 @@
         }
         
         &-history{
+            margin-top: 140px;
             &__date{
                 font-size: 30px;
             }
             &__text{
                 font-size: $fs16;
+            }
+            &__line{
+                height: 145px;
             }
             .clinic-history__content:not(:first-child) {
                 margin-top: 32px;

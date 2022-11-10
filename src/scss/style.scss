@@ -169,24 +169,7 @@ color: $gold;
     justify-content: space-between;
     align-items: center;
 }
-.header__menu-navpage{
-    
-    &__list{
-        display: flex;
-        align-items: center;
-        margin-bottom: 50px;
-        margin-top: 25px;
-    }
-    &__item{
-        &:not(:first-child){
-            margin-left: 15px;
-        }
-        font-size: $fs16;
-        &:last-child{
-            color: #A9BACA;
-        }
-    }
-}
+
 .services__content-watch-tablet{
     display: none;
 }

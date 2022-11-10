@@ -79,7 +79,7 @@
     .share-archive{
         
         &__offer{
-            margin-top: $tabletMargin;
+            margin-top: $marginTitleTablet;
             padding: 0 5px;
             &__bot{
                 grid-template-columns: repeat(2, 1fr);

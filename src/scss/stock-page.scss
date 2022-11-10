@@ -277,8 +277,8 @@ color: #AE8452;
     }
     
     .header__stock-page{
-        padding-left: 20px;
-        margin-top: $tabletMargin;
+        
+        margin-top: $marginTitleTablet;
         .title{
             font-size: $fs36;
         }
@@ -393,11 +393,16 @@ color: #AE8452;
                }
                
             }
+            &-middle{
+                margin-left: 0;
+                width: 100%;
+            }
             .similar__procedures__text{
                 font-size: $fs18;
                 font-weight: 700;
 
             }
+          
             .similar__procedures__price{
                 font-size: $fs22;
 
@@ -425,6 +430,7 @@ color: #AE8452;
         height: 285px;
     }
     .skills__page4__content-top {
+        margin-top: 0;
         &__list{
             gap: 5px;
         }
@@ -477,10 +483,36 @@ color: #AE8452;
 }
     //
     //
+    //offer
     //
     //
-    //
+.offer{
+    .offer > .title__wrapper > p.specialist__subtitle.subtitle{
+        margin-left: 0;
+    }
+   
+    
+    .services__content-watch-tablet{
+        text-align: right;
+        display: flex;
+        align-items: center;
+        a {
+            margin-right: 15px;
+            font-family: 'Fira Sans';
+            font-size: $fs16;
+            text-align: right;
+            text-decoration-line: underline;
+            color: $secondaryRed;
+        }
+    }
+    .services__content-watch{
+        display: none;
+    }
 
+}
+.specialist__subtitle .subtitle{
+    margin-left: 0;
+}
     //
     //
     //

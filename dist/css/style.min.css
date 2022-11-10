@@ -5,7 +5,7 @@
 .header__top {
   position: fixed;
   top: 0%;
-  left: 38px;
+  left: 0px;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -27,6 +27,7 @@
   display: flex;
   align-items: center;
   margin-right: 50px;
+  margin-left: 62px;
 }
 .header__top-img__logo {
   margin-right: 20px;
@@ -173,6 +174,22 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 140%;
+}
+
+.header__menu-navpage__list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 25px;
+}
+.header__menu-navpage__item {
+  font-size: 16px;
+}
+.header__menu-navpage__item:not(:first-child) {
+  margin-left: 15px;
+}
+.header__menu-navpage__item:last-child {
+  color: #A9BACA;
 }
 
 .main-page__header {
@@ -1336,7 +1353,7 @@
   position: absolute;
   left: 100%;
   top: 0px;
-  min-width: 250px;
+  min-width: 300px;
   background-color: #093A67;
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
@@ -1382,14 +1399,7 @@
 }
 
 .arrow__menu-right {
-  position: absolute;
-  top: 15px;
-  width: 0;
-  height: 0;
-  border-top: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-left: 5px solid #972A29;
-  border-bottom: 5px solid transparent;
+  display: none;
 }
 
 .header__slides__swiper {
@@ -1398,23 +1408,24 @@
 
 @media (max-width: 640px) {
   .header__menu-navpage__list {
-    margin-top: 23px;
-    padding-left: 20px;
+    margin-top: 20px;
+    padding-left: 0px;
+    margin-bottom: 50px;
   }
 
   .header__menu-navpage__item a {
-    font-size: 14px;
+    font-size: 10px;
     line-height: 140%;
   }
 
   .header__menu {
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 15px;
     margin-right: 0px;
     width: 588px;
   }
   .header__menu__list {
-    width: 490px;
+    width: 460px;
   }
   .header__menu__list > li {
     position: relative;
@@ -1430,14 +1441,24 @@
   .header__submenu__list {
     width: 250px;
   }
+  .header__submenu__list li {
+    padding: 5px 10px;
+  }
   .header__submenu__link {
     font-size: 14px;
   }
   .header__sub-submenu__list {
     width: 250px;
   }
+  .header__sub-submenu__list li {
+    padding: 5px 10px;
+  }
   .header__sub-submenu__link {
     font-size: 14px;
+  }
+  .header__top-logo__contentbox {
+    margin-left: 5px;
+    margin-right: 35px;
   }
 
   .undertitle {
@@ -1470,6 +1491,10 @@
     font-size: 14px;
   }
 
+  .arrow {
+    top: 12px;
+  }
+
   .link_for_me {
     display: none;
   }
@@ -1489,7 +1514,7 @@
   .header__img__logo {
     width: 49px;
     height: 19px;
-    margin-right: 19px;
+    margin-right: 12px;
   }
   .header__img__logo-text {
     width: 91px;
@@ -1500,7 +1525,7 @@
     top: 80%;
     width: 592px;
     padding: 5px 2px;
-    margin-left: 10px;
+    margin-left: -2px;
     align-items: center;
   }
   .header__top__list {
@@ -1510,11 +1535,19 @@
     font-size: 18px;
     font-size: 14px;
     line-height: 17px;
+    margin-right: 0;
+    font-family: "Oranienbaum";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
   }
   .header__top-tablet__list {
+    margin-left: 25px;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
   }
   .header__top-tablet__item {
     display: flex;
@@ -1536,7 +1569,7 @@
   }
   .header__input-search {
     fill: #093A67;
-    top: 155%;
+    top: 120%;
   }
   .header__top__input {
     display: none;
@@ -1550,7 +1583,7 @@
   .header__bot {
     max-width: 580px;
     height: 56px;
-    margin-top: 0px;
+    margin-top: -25px;
   }
   .header__bot-call {
     display: none;
@@ -1599,7 +1632,6 @@
   }
 
   .main-page__header {
-    padding-left: 20px;
     padding-right: 5px;
     height: 110%;
     background-position: center center;
@@ -1613,7 +1645,7 @@
   }
   .main-page__header .header__arrow-nav {
     bottom: 28%;
-    right: 0%;
+    right: 3%;
   }
 
   .services {
@@ -1852,16 +1884,10 @@
     max-height: 80%;
   }
 
-  .title__container > div > h2 {
-    padding-left: 20px;
-  }
-
   .title__container > p.undertitle {
     font-size: 12px;
     line-height: 140%;
     letter-spacing: 0.1em;
-    padding-left: 20px;
-    padding-right: 5px;
   }
 
   .specialist.title__wrapper {
@@ -1885,16 +1911,12 @@
   }
 
   .offer {
-    padding-left: 20px;
-    padding-right: 5px;
     margin-top: 10%;
     overflow: hidden;
   }
   .offer__bot {
     grid-template-columns: repeat(2, 1fr);
     gap: 27px;
-    padding-left: 20px;
-    padding-right: 5px;
   }
   .offer__bot-hidden {
     grid-template-columns: repeat(2, 1fr);
@@ -2690,10 +2712,10 @@
 }
 
 .services-page__header {
-  margin-top: 27vh;
+  margin-top: 20vh;
 }
 .services-page__header .title {
-  margin-top: 86px;
+  margin-top: 150px;
 }
 .services-page__header .header__procedures {
   margin-top: 27px;
@@ -3041,8 +3063,7 @@
 
 @media (max-width: 640px) {
   .services-page__header {
-    margin-top: 23vh;
-    margin-left: 20px;
+    margin-top: 11vh;
   }
   .services-page__header .title {
     margin-top: 50px;
@@ -3326,7 +3347,7 @@
 }
 
 .specialist-page__header {
-  margin-top: 27vh;
+  margin-top: 20vh;
 }
 .specialist-page__header .about__right_specialist-page {
   position: relative;
@@ -3466,7 +3487,7 @@
   }
 
   .specialist-page__header {
-    margin-top: 150px;
+    margin-top: 11vh;
   }
   .specialist-page__header .about__right__img {
     width: 300px;
@@ -3474,14 +3495,15 @@
     margin-left: 15px;
   }
   .specialist-page__header .header__skills__item {
-    margin-top: 0px;
+    margin-top: 10px;
     font-size: 16px;
-    width: 200px;
+    line-height: 140%;
+    width: 250px;
   }
   .specialist-page__header .about__right-border__specialist-page {
     top: 7%;
     height: 353px;
-    right: 0%;
+    right: 1%;
     width: 96%;
   }
 
@@ -3674,7 +3696,7 @@
   }
 }
 .header__stock-page {
-  margin-top: 27vh;
+  margin-top: 20vh;
 }
 .header__stock-page__title {
   font-size: 64px;
@@ -3931,8 +3953,7 @@
   }
 
   .header__stock-page {
-    padding-left: 20px;
-    margin-top: 120px;
+    margin-top: 11vh;
   }
   .header__stock-page .title {
     font-size: 36px;
@@ -4042,6 +4063,10 @@
   .similar .similar__procedures__contentbox-right-btn {
     margin-top: 10px;
   }
+  .similar .similar__procedures__contentbox-middle {
+    margin-left: 0;
+    width: 100%;
+  }
   .similar .similar__procedures__contentbox .similar__procedures__text {
     font-size: 18px;
     font-weight: 700;
@@ -4057,6 +4082,9 @@
   .skills__page4__right {
     padding: 20px 20px;
     height: 285px;
+  }
+  .skills__page4 .skills__page4__content-top {
+    margin-top: 0;
   }
   .skills__page4 .skills__page4__content-top__list {
     gap: 5px;
@@ -4095,6 +4123,30 @@
   }
   .skills__page4__wrapper .skills__page4__right-list {
     max-width: 100%;
+  }
+
+  .offer .offer > .title__wrapper > p.specialist__subtitle.subtitle {
+    margin-left: 0;
+  }
+  .offer .services__content-watch-tablet {
+    text-align: right;
+    display: flex;
+    align-items: center;
+  }
+  .offer .services__content-watch-tablet a {
+    margin-right: 15px;
+    font-family: "Fira Sans";
+    font-size: 16px;
+    text-align: right;
+    text-decoration-line: underline;
+    color: #972A29;
+  }
+  .offer .services__content-watch {
+    display: none;
+  }
+
+  .specialist__subtitle .subtitle {
+    margin-left: 0;
   }
 }
 @media (max-width: 320px) {
@@ -4236,7 +4288,7 @@
   }
 }
 .header__about-page {
-  margin-top: 27vh;
+  margin-top: 20vh;
 }
 .header__about-page__wrapper {
   display: flex;
@@ -4263,6 +4315,9 @@
   font-size: 20px;
   line-height: 140%;
   margin-top: 10px;
+}
+.header__about-page .about__wrapper-tablet {
+  display: none;
 }
 
 .direction {
@@ -4402,8 +4457,14 @@
 
 @media (max-width: 640px) {
   .header__about-page {
-    padding: 0 5px;
-    margin-top: 150px;
+    margin-top: 11vh;
+  }
+  .header__about-page__title {
+    font-family: "Oranienbaum";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 55px;
   }
   .header__about-page__wrapper {
     max-width: 580px;
@@ -4412,9 +4473,25 @@
   .header__about-page__wrapper .about__left {
     width: 100%;
   }
+  .header__about-page__wrapper .about__left .title {
+    font-size: 36px;
+    line-height: 140%;
+  }
   .header__about-page__wrapper .about__right {
     order: -1;
     display: none;
+  }
+  .header__about-page__wrapper .about__right__img {
+    order: -1;
+  }
+  .header__about-page__wrapper .about__subtitle {
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .header__about-page__wrapper .about__citate__text {
+    font-size: 18px;
+    line-height: 140%;
+    margin-top: 10px;
   }
   .header__about-page__wrapper .about__table__span {
     font-size: 70px;
@@ -4426,10 +4503,41 @@
     font-size: 16px;
     line-height: 130%;
   }
+  .header__about-page .about__wrapper-tablet {
+    margin-top: 0;
+    display: flex;
+  }
+  .header__about-page .about__wrapper-tablet .about__subtitle {
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .header__about-page .about__wrapper-tablet .about__citate__text {
+    font-size: 18px;
+    line-height: 140%;
+    margin-top: 10px;
+  }
+  .header__about-page .about__wrapper-tablet .about__table__span {
+    font-size: 70px;
+  }
+  .header__about-page .about__wrapper-tablet .about__table__td-secondary {
+    font-size: 26px;
+  }
+  .header__about-page .about__wrapper-tablet .about__table__td {
+    font-size: 16px;
+    line-height: 130%;
+  }
 
   .direction {
-    padding: 0 5px;
     margin-top: 120px;
+  }
+  .direction .title {
+    font-size: 36px;
+    line-height: 140%;
+  }
+  .direction .subtitle {
+    padding-left: 0;
+    font-size: 16px;
+    line-height: 140%;
   }
   .direction__contentbox {
     grid-template-columns: repeat(2, 1fr);
@@ -4453,11 +4561,17 @@
   .clinic .specialist__subtitle {
     width: 100%;
   }
+  .clinic-history {
+    margin-top: 140px;
+  }
   .clinic-history__date {
     font-size: 30px;
   }
   .clinic-history__text {
     font-size: 16px;
+  }
+  .clinic-history__line {
+    height: 145px;
   }
   .clinic-history .clinic-history__content:not(:first-child) {
     margin-top: 32px;
@@ -4567,12 +4681,12 @@
   }
 }
 .contacts-page {
-  margin-top: 27vh;
+  margin-top: 20vh;
 }
 
 @media (max-width: 640px) {
   .contacts-page {
-    margin-top: 120px;
+    margin-top: 11vh;
   }
 }
 @media (max-width: 320px) {
@@ -4825,7 +4939,7 @@
   }
 }
 .services-chapter__physics {
-  margin-top: 27vh;
+  margin-top: 20vh;
 }
 .services-chapter__physics-wrapper {
   margin-top: 40px;
@@ -4917,7 +5031,7 @@
 
 @media (max-width: 640px) {
   .services-chapter__physics {
-    margin-top: 120px;
+    margin-top: 11vh;
     padding: 0 5px;
   }
   .services-chapter__physics-wrapper {
@@ -4935,7 +5049,7 @@
     width: 100%;
   }
   .services-chapter__contentbox {
-    margin-top: 20px;
+    margin-top: 32px;
     grid-template-columns: repeat(2, 1fr);
   }
   .services-chapter__contentbox-img {
@@ -4986,7 +5100,7 @@
   }
 }
 .analysis-page__header {
-  margin-top: 27vh;
+  margin-top: 20vh;
 }
 .analysis-page__header .analysis-page__header__bot {
   margin-top: 90px;
@@ -5022,7 +5136,7 @@
 
 @media (max-width: 640px) {
   .analysis-page__header {
-    margin-top: 120px;
+    margin-top: 11vh;
     padding: 0 5px;
   }
   .analysis-page__header .subtitle {
@@ -5109,7 +5223,7 @@
   }
 }
 .specialist-chapter {
-  margin-top: 27vh;
+  margin-top: 20vh;
 }
 .specialist-chapter .specialist__subtitle {
   width: 900px;
@@ -5218,7 +5332,7 @@
 
 @media (max-width: 640px) {
   .specialist-chapter {
-    margin-top: 120px;
+    margin-top: 11vh;
     padding: 0 5px;
   }
   .specialist-chapter__wrapper {
@@ -5258,7 +5372,7 @@
   }
 }
 .our-services-page7 {
-  margin-top: 27vh;
+  margin-top: 20vh;
 }
 .our-services-page7 .title {
   text-transform: uppercase;
@@ -5271,8 +5385,7 @@
 
 @media (max-width: 640px) {
   .our-services-page7 {
-    padding: 0px 5px;
-    margin-top: 120px;
+    margin-top: 11vh;
   }
   .our-services-page7 .title {
     font-size: 36px;
@@ -5335,7 +5448,7 @@
   }
 }
 .share-archive__offer {
-  margin-top: 27vh;
+  margin-top: 20vh;
 }
 .share-archive__offer__bot {
   display: grid;
@@ -5402,7 +5515,7 @@
 
 @media (max-width: 640px) {
   .share-archive__offer {
-    margin-top: 120px;
+    margin-top: 11vh;
     padding: 0 5px;
   }
   .share-archive__offer__bot {
@@ -5449,7 +5562,7 @@
   text-transform: uppercase;
 }
 .blog-archive__articles {
-  margin-top: 27vh;
+  margin-top: 20vh;
 }
 .blog-archive__articles__bot {
   margin-top: 72px;
@@ -5505,7 +5618,7 @@
 @media (max-width: 640px) {
   .blog-archive__articles {
     padding: 0 5px;
-    margin-top: 120px;
+    margin-top: 11vh;
   }
   .blog-archive__articles .specialist__subtitle {
     font-size: 20px;
@@ -5983,22 +6096,6 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.header__menu-navpage__list {
-  display: flex;
-  align-items: center;
-  margin-bottom: 50px;
-  margin-top: 25px;
-}
-.header__menu-navpage__item {
-  font-size: 16px;
-}
-.header__menu-navpage__item:not(:first-child) {
-  margin-left: 15px;
-}
-.header__menu-navpage__item:last-child {
-  color: #A9BACA;
 }
 
 .services__content-watch-tablet {

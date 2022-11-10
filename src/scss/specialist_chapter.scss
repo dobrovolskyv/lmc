@@ -116,7 +116,7 @@
 
 @media (max-width: 640px) {
     .specialist-chapter {
-        margin-top: $tabletMargin;
+        margin-top: $marginTitleTablet;
         padding: 0 5px;
         &__wrapper {
             flex-direction: column;

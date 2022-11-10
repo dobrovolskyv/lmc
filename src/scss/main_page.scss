@@ -8,7 +8,7 @@
     &__top {
         position: fixed;
         top: 0%;
-        left: 38px;
+        left: 0px;
         width: 100vw;
         display: flex;
         justify-content: center;
@@ -29,6 +29,7 @@
             display: flex;
             align-items: center;
             margin-right: 50px;
+            margin-left: 62px;
         }
         &-img__logo{
             margin-right: 20px;
@@ -200,7 +201,24 @@
     }
     
 }
-
+.header__menu-navpage{
+    
+    &__list{
+        display: flex;
+        align-items: center;
+        margin-bottom: 100px;
+        margin-top: 25px;
+    }
+    &__item{
+        &:not(:first-child){
+            margin-left: 15px;
+        }
+        font-size: $fs16;
+        &:last-child{
+            color: #A9BACA;
+        }
+    }
+}
 .main-page__header {
     background-image: url('../../img/bg_header.jpg');
     width: 100%;
@@ -216,6 +234,7 @@
         }
         
     }
+    
         .header__arrow-nav {
                 position: absolute;
                 bottom: 20%;
@@ -822,7 +841,7 @@
 
 .offer {
     margin-top: $marginTop;
-
+   
     &__bot {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -1662,7 +1681,7 @@
             position: absolute;
             left: 100%;
             top: 0px;
-            min-width: 250px;
+            min-width: 300px;
             
             background-color: $primary;
             border-bottom-right-radius: 8px;
@@ -1718,14 +1737,15 @@
 
 }
 .arrow__menu-right{
-    position: absolute;
-    top: 15px;
-    width: 0;
-    height: 0;
-    border-top: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-left: 5px solid $secondaryRed;
-    border-bottom: 5px solid transparent;
+    // position: absolute;
+    // top: 15px;
+    // width: 0;
+    // height: 0;
+    // border-top: 5px solid transparent;
+    // border-right: 5px solid transparent;
+    // border-left: 5px solid $secondaryRed;
+    // border-bottom: 5px solid transparent;
+    display: none;
 }
 
 
@@ -1760,12 +1780,13 @@
 //
 @media (max-width: 640px) {
     .header__menu-navpage__list{
-        margin-top: 23px;
-        padding-left: 20px;
+        margin-top: 20px;
+        padding-left: 0px;
+        margin-bottom: 50px;
     }
     .header__menu-navpage__item{
         a{
-            font-size: $fs14;
+            font-size: $fs10;
             line-height: 140%;
         }
     }
@@ -1777,11 +1798,11 @@
     .header{
         &__menu{
             margin-top: 20px;
-            margin-left: 20px;
+            margin-left: 15px;
             margin-right: 0px;
             width: 588px;
             &__list{
-                width: 490px;
+                width: 460px;
                 & >li {
                 
                     position: relative;
@@ -1800,6 +1821,9 @@
         &__submenu {
             &__list {
                 width: 250px;
+                li{
+                    padding: 5px 10px;
+                }
             }
 
             &__link {
@@ -1809,11 +1833,22 @@
         &__sub-submenu {
             &__list {
                 width: 250px;
+                li{
+                    padding: 5px 10px;
+                }
             }
 
             &__link {
                 font-size: $fs14;
             }
+        }
+        &__top{
+            &-logo__contentbox{
+            margin-left: 5px;
+            margin-right: 35px;
+            }
+         
+
         }
     }
     //
@@ -1847,6 +1882,9 @@
             font-size: $fs14;
         }
     }
+    .arrow{
+        top: 12px;
+    }
     .link_for_me{
         display: none;
     }
@@ -1865,7 +1903,7 @@
         &__img__logo{
             width: 49px;
             height: 19px;
-            margin-right: 19px;
+            margin-right: 12px;
             &-text{
                 width: 91px;
                 height: 21px;
@@ -1876,7 +1914,7 @@
             top: 80%;
             width: 592px;
             padding: 5px 2px;
-            margin-left: 10px;
+            margin-left: -2px;
             align-items: center;
             &__list{
                 display: none;
@@ -1885,12 +1923,21 @@
                 font-size: $fs18;
                 font-size: 14px;
                 line-height: 17px;
+                margin-right: 0;
+                font-family: 'Oranienbaum';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21px;
+                text-align: center;
+                text-transform: uppercase;
             }
             &-tablet{
                 &__list{
+                    margin-left: 25px;
                     display: flex;
                     align-items: center;
-                    flex-wrap: wrap;
+                    
                 }
                 &__item{
                     display: flex;
@@ -1913,7 +1960,7 @@
             display: none;
             &-search{
                 fill: $primary;
-                top: 155%;
+                top: 120%;
             }
         }
         &__top__input{
@@ -1934,7 +1981,7 @@
         &__bot{
             max-width: 580px;
             height: 56px;
-            margin-top: 0px;
+            margin-top: -25px;
             &-call{
                 display: none;
             }
@@ -1987,7 +2034,7 @@
     //
     .main-page__header {
         // margin-top: 162px;
-        padding-left: 20px;
+        
         padding-right: 5px;
         height: 110%;
         background-position: center center;
@@ -2002,7 +2049,7 @@
         }
             .header__arrow-nav {
                     bottom: 28%;
-                    right: 0%;
+                    right: 3%;
                    
                    
                 
@@ -2290,16 +2337,15 @@
         
         
     }
-    .title__container > div > h2{
-    padding-left: 20px;
-    }
-   
+    // .title__container > div > h2{
+    // padding-left: 20px;
+    // }
+    
  .title__container > p.undertitle{
     font-size: 12px;
     line-height: 140%;
     letter-spacing: 0.1em;
-    padding-left: 20px;
-    padding-right: 5px;
+   
     }
     .specialist.title__wrapper{
             
@@ -2323,15 +2369,14 @@
     //
     //
     .offer{
-        padding-left: 20px;
-    padding-right: 5px;
+    //     padding-left: 20px;
+    // padding-right: 5px;
     margin-top: 10%;
         overflow: hidden;
         &__bot{
             grid-template-columns: repeat(2,1fr);
             gap: 27px;
-            padding-left: 20px;
-             padding-right: 5px;
+            
             &-hidden{
                 grid-template-columns: repeat(2,1fr);
                 gap: 27px;
