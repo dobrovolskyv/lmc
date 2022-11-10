@@ -193,10 +193,10 @@
             width: 580px;
         }
         &__content-card{
-            padding: 10px 10px;
+            padding: 10px 5px;
             &__title{
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 img{
@@ -205,21 +205,32 @@
                     margin-right: 10px;
                 }
                 p{
-                    font-size: $fs30;
+                    font-size: $fs36;
+                    line-height: 140%;
+                    margin-top: 0;
                 }
             }
             &__description{
-                font-size: $fs16;
+               ul{
+                grid-template-columns: repeat(2,1fr)
+               }
+                font-size: $fs14;
+                margin-left: 10%;
+                a{
+                    font-size: $fs14;
+                    line-height: 140%;
+                    } 
                 &-bot{
                   a{
-                    font-size: $fs16;
-                }  
+                    font-size: $fs14;
+                    line-height: 140%;
+                    }  
                 }
             }
             &__more{
                 flex-grow: 0;
                 p{
-                    font-size: $fs16;
+                    font-size: $fs12;
                 }
             }
         }

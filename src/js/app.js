@@ -114,8 +114,8 @@ const specialistSwiper = new Swiper('.specialist__sliders__swiper', {
   breakpoints: {
     // when window width is >= 320px
     200: {
-      slidesPerView: 1.2,
-      spaceBetween: 20
+      slidesPerView: 1.5,
+      spaceBetween: 10
     },
   
     340: {

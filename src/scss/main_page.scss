@@ -1779,6 +1779,11 @@
 //
 //
 @media (max-width: 640px) {
+    .container{
+        max-width: 592px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
     .header__menu-navpage__list{
         margin-top: 20px;
         padding-left: 0px;
@@ -1845,7 +1850,7 @@
         &__top{
             &-logo__contentbox{
             margin-left: 5px;
-            margin-right: 35px;
+            margin-right: 20px;
             }
          
 
@@ -1888,11 +1893,7 @@
     .link_for_me{
         display: none;
     }
-    .container{
-        max-width: 592px;
-        margin: 0 auto;
-        overflow: hidden;
-    }
+  
    
     .header{
         width: 592px;
@@ -1955,6 +1956,7 @@
                     }
                 }
             }
+
         }
         &__input{
             display: none;
@@ -1996,7 +1998,7 @@
         letter-spacing: 0.1em;
     }
     .header__offer-subtitle{
-        width: 525px;
+        max-width: 525px;
     }
     .header__call-offer{
         display: flex;
@@ -2723,31 +2725,47 @@
 //
 @media (max-width: 320px) {
     .container {
-        width: 288px;
+        max-width: 288px;
+        margin: 0 auto;
+        overflow: hidden;
+        padding-left: 10px;
     }
     
     .services__content-watch{
         display: none;
     }
-
+   
     .title {
         font-size: $fs24;
         line-height: 140%;
     }
+    .title__container > p.undertitle{
+        font-size: 14px;
+        line-height: 140%;
+        letter-spacing: 0.1em;
+       
+        }
+    .title__container > p.subtitle{
+        font-size: 12px;
+        line-height: 140%;
+        padding-left: 0;
+        max-width: 288px;
+       
+        }
     h2{
         font-size: $fs24;
         line-height: 28px;
     }
   
     .undertitle{
-        font-size: $fs10;
+        font-size: $fs14;
     }
 
     .header {
-        max-width: 288px;
-        top: 10px;
-        left: 7px;
+        width: 288px;
         &__top{
+            top: 6%;
+            width: 288px;
             &-tablet__item {
             display: none;
 
@@ -2757,6 +2775,7 @@
         &__bot {
             display: none;
             &-phone{
+                width: 288px;
                 margin-top: 16px;
                 display: flex;
                 justify-content: space-between;
@@ -2781,18 +2800,23 @@
         }
 
         &__offer-subtitle {
-            width: 100%;
+            width: 288px;
+
+            font-size: $fs14;
+            line-height: 140%;
+            
         }
 
         &__call-offer {
             flex-direction: column;
-            margin-top: 110px;
+            margin-top: 160px;
             align-items: center;
             justify-content: center;
+            max-width: 288px;
 
             .header__call-link,
             .header__call-btn {
-                width: 96%;
+                max-width: 100%;
                 padding: 10px;
                 min-height: 38px;
                 margin: 10px 10px;
@@ -2804,11 +2828,22 @@
         }
         
     }
+        .header__call-link,
+        .header__call-btn {
+            width: 100%;
+            padding: 10px;
+            min-height: 38px;
+            margin: 10px 10px;
+        }
 
         .main-page__header {
-            padding-top: 120px;
-            padding-left: 0;
-            padding-right: 0;
+            .title{
+                font-size: 30px;
+                line-height: 140%;
+                max-width: 288px;
+            }
+           
+            padding-top: 40px;
             .header__arrow-nav{
                 display: none;
             }
@@ -2824,6 +2859,9 @@
     //
     
         .services {
+            .title{
+                font-size: $fs24;
+        }
             .content-card {
                     &__description {
                         ul {
@@ -2847,7 +2885,8 @@
             .services__content-watch__phone{
                 display: flex;
                 align-items: center;
-                justify-content: flex-end;
+                justify-content: flex-start;
+                margin-left: 30%;
                 a{
                     font-size: $fs12;
                     margin-right: 10px;
@@ -2858,6 +2897,7 @@
             }
             &__subtitle{
                 font-size: $fs14;
+                max-width: 288px;
             }
             &__bot {
                 display: none;
@@ -2871,7 +2911,7 @@
                 &-phone__contentbox{
                     margin-top: 15px;
                     padding: 10px 15px;
-                    width: 100%;
+                    width: 288px;
                     border: 1px solid $gold;
                     border-radius: 4px;
                     max-height: 600px;
@@ -2890,7 +2930,9 @@
                             margin-right: 10px;
                         }
 
-                        font-size: $fs16;
+                        font-size: $fs18;
+                        line-height: 140%;
+                        font-weight: 400;
                         display: flex;
                         align-items: center;
                     }
@@ -2907,6 +2949,7 @@
 
                 }
             }
+            
         }
     //
     //
@@ -2914,12 +2957,15 @@
     //
     //
     .about{
-        margin-top: 150px;
+        margin-top: $phoneMargin;
+        
         &__wrapper{
             flex-direction: column;
             
+            
             &-tablet{
                 flex-direction: column;
+                
             }
            
         }
@@ -2983,7 +3029,7 @@
             }
             &-tablet{
                 margin-left: 40px;
-                margin-top: 40px;
+                margin-top: 48px;
                 flex-direction: row;
                 .about__table__span-tablet{
                     font-size: $fs32;
@@ -3002,7 +3048,25 @@
         &__img-phone{
             display: block;
         }
-        
+        .about__content-watch__tablet{
+            display: none;
+        }
+        .about__content-watch__phone{
+            display: flex;
+            align-items: center;
+            margin-left: 35%;
+            font-size: 12px;
+            margin-top: 20px;
+            margin-right: 10px;
+            text-decoration-line: underline;
+            color: $secondaryRed;
+            img{
+                margin-left: 5px;
+            }
+        }
+        .about__wrapper-tablet{
+            max-width: 288px;
+        }
     }
     //
     //
@@ -3010,17 +3074,22 @@
     //
     //
     .specialist{
+        .swiper{
+            margin-left: 10px;
+            height: 262px;
+        }
         .specialist__sliders__swiper{
-            max-width: 90%;
-            max-height: 360px;
+            max-width: 260px;
+            max-height: 257px;
             .swiper-button-prev{
-                left: 69%;
+                left: 9%;
                 top: 7%;
                 width: 30px;
                 height: 30px;
             }
             .swiper-button-next{
                 top: 7%;
+                right: 58%;
                 width: 30px;
                 height: 30px;
             }

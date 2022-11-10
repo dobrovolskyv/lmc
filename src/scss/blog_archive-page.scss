@@ -119,9 +119,7 @@ text-transform: uppercase;
     }
 }
 @media (max-width: 320px) {
-    .container{
-        max-width: 288px;
-    }
+    
     .blog-archive__articles{
         &__bot{
             grid-template-columns: repeat(1,1fr);
