@@ -137,12 +137,13 @@
 
 @media (max-width: 320px) {
     .analysis-page__header{
-        margin-top: $phoneMargin;
+        margin-top: $marginTitlePhone;
         &__bot{
             grid-template-columns: repeat(1,1fr);
         }
         .subtitle{
-            font-size: $fs16;
+            font-size: $fs14;
+            line-height: 140%;
         }
         .header__call-offer{
             margin-top: 50px;

@@ -376,7 +376,7 @@ color: #AE8452;
         .similar__procedures__contentbox{
             flex-direction: column;
             max-height: 455px;
-            padding: 16px;
+            padding: 16px 5px;
            
             img{
                 width: 150px;
@@ -519,6 +519,7 @@ color: #AE8452;
 }
 @media (max-width: 320px) {
     .header__stock-page{
+        margin-top: $marginTitlePhone;
         &__right{
             margin-top: 40px;
             padding: 10px 20px;
@@ -533,37 +534,61 @@ color: #AE8452;
         }
         &__list{
             display: grid;
-            grid-template-columns: repeat(3,1fr);
+            grid-template-columns: repeat(2,1fr);
         }
         &__link{
-            font-size: $fs8;
+            font-size: 7px;
         }
         &__bot{
             grid-template-columns: repeat(1,1fr);
         }
         &__content{
+            p{
+                font-size: $fs14;
+                line-height: 140%;
+            }
             padding: 10px;
             height: 82px;
         }
         .btn__header-page2{
             margin-top: 10px;
         }
+        &__procedures{
+            margin-top: 20px;
+        }
+        .header__stock-page__procedures{
+            .header__procedures__contentbox{
+                height: 190px;
+            }
+            .header__procedures__text{
+                font-size: $fs20;
+            }
+        }
     }
     .similar{
         margin-top: 100px;
     }
     .skills__page4{
+        .skills__page4__content-top__item p{
+            font-size: $fs14;
+            line-height: 140%;
+        }
+        .skills__page4__content-top__title{
+            font-size: $fs30;
+            line-height: 140%;
+        }
         &__content-top{
             margin-top: 100px;
-            &__title{
-                font-size: $fs30;
-            }
+            
             &__list{
                 grid-template-columns: repeat(1,1fr);
             }
             &__item{
-                font-size: $fs16;
-                line-height: 140%;
+                
+               margin-top: 0px;
+               &::before{
+                margin-top: 5px;
+               }
             }
         }
         .header__skills{
@@ -572,10 +597,12 @@ color: #AE8452;
             }
             &__stock{
                 padding: 10px;
+                height: 480px;
             }
             &__item{
-                font-size: $fs16;
+                font-size: $fs14;
                 margin-right: 0;
+                margin-top: 10px;
             }
             &__list{
                 grid-template-columns: repeat(1,1fr);
@@ -586,12 +613,23 @@ color: #AE8452;
             }
         }
         .header__stock-page__title {
-            font-size: $fs32;
+            font-size: $fs30;
+        }
+        .skills__page4__title{
+            font-size: $fs30;
+            line-height: 140%;
         }
         .skills__page4__right {
             padding: 10px;
             &-title{
-                font-size: $fs32;
+                font-size: $fs30;
+            }
+            &-list{
+                margin-top: 30px;
+            }
+            &-text{
+                font-size: $fs14;
+                line-height: 140%;
             }
             
         }
@@ -618,7 +656,7 @@ color: #AE8452;
             &-right{
                 
                 margin-top: 20px;
-                margin-left: 17px;
+                margin-left: 0px;
                &-btn{
                 margin-top: 10px;
                }
@@ -633,13 +671,11 @@ color: #AE8452;
                 margin-bottom: 10px;
             }
             .similar__procedures__sale{
-                margin: 5px;
-                
-                
+                margin-left: 10px;
             }
             
             .similar__procedures__price{
-                margin: 2px;
+                margin: 0px;
             }
         }
        
@@ -650,6 +686,7 @@ color: #AE8452;
     //
     //
     .brochure__stock-page{
+        margin-top: 80px;
             .questions__brochure-btn{
                 width: 96%;
             }

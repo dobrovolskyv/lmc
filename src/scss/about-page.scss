@@ -376,7 +376,20 @@
 
 @media (max-width: 320px) {
     .header__about-page{
-        margin-top: 100px;
+        margin-top: $marginTitlePhone;
+        .about__right-border {
+            width: 87%;
+            height: 323px;
+            top: 40.5%;
+        }
+        .about__left-tablet .about__img-phone__img {
+            
+            height: 100%;
+        }
+       .about__wrapper-tablet .about__subtitle {
+            font-size: 14px;
+            line-height: 140%;
+        }
     }
     //
     //
@@ -384,10 +397,10 @@
     //
     //
     .direction{
-        margin-top: 100px;
+        margin-top: $phoneMargin;
         &__content{
             max-width: 146px;
-            padding: 8px 10px 15px;
+            padding: 9px 3px 7px;
         }
         &__contentbox{
             gap: 8px;
@@ -407,6 +420,7 @@
     //
     //
     .brochure__about-page{
+        margin-top: $phoneMargin;
        .questions__brochure-btn{
         width: 96%;
        }
@@ -437,7 +451,7 @@
     //
     //
     .contacts{
-        margin-top: 100px;
+        margin-top: 80px;
         &__license{
             &__container{
                 flex-direction: column;

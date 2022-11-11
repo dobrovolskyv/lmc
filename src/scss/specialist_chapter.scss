@@ -136,6 +136,7 @@
         }
         .accordion__menu{
             width: 580px;
+            border-radius: 4px;
         }
     }
 }
@@ -146,9 +147,10 @@
         line-height: 140%;
     }
     .specialist-chapter {
-        margin-top: $phoneMargin;
+        margin-top: $marginTitlePhone;
         .accordion__menu{
             width: 288px;
+            border-radius: 4px;
         }
         &__contentbox-top,
         &__contentbox-bot{

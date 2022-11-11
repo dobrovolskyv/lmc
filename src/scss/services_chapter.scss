@@ -114,6 +114,7 @@
             }
             .accordion__menu{
                 width: 580px;
+                border-radius: 4px;
             }
             .title{
                 text-transform: uppercase;
@@ -160,6 +161,7 @@
 
 @media (max-width: 320px){
     .services-chapter {
+        
         &__contentbox{
             grid-template-columns: repeat(1,1fr);
             
@@ -173,9 +175,17 @@
             height: 292px;
         }
             &__physics {
-                margin-top: $phoneMargin;
+                margin-top: $marginTitlePhone;
                 .accordion__menu{
                     width: 288px;
+                    border-radius: 4px;
+                }
+                
+                .subtitle{
+                    font-size: $fs14;
+                }
+                .accordion__menu__btn{
+                    font-size: 16px;
                 }
             }
         }

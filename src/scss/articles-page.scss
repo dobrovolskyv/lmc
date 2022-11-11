@@ -30,7 +30,7 @@
     .questions{
         padding: 0px 5px;
         font-size: $fs16;
-        .questions__subtitle{
+        .subtitle{
             font-size: $fs16;
         }
         &__right{
@@ -61,8 +61,15 @@
 
 @media (max-width: 320px){
     .our-services-page7 {
-        margin-top: 100px;
-    
+        margin-top: $marginTitlePhone;
+        & .title{
+            font-size: $fs30;
+            line-height: 140%;
+        }
+        .subtitle{
+            font-size: $fs14;
+            line-height: 140%;
+        }
     }
     //
     //

@@ -239,7 +239,13 @@
 
 @media (max-width: 320px) {
     .our-services-page7 {
-      
+        .content-card__description ul{
+            grid-template-columns: repeat(1, 1fr);
+            padding-left: 0px;
+        }
+        .content-card__description li{
+            font-size: $fs14;
+        }
 
         &__wrapper {
             flex-direction: column;
@@ -255,6 +261,10 @@
         }
         .accordion__menu{
             width: 288px;
+            border-radius: 4px;
+        }
+        .content-card__more p{
+            font-size: $fs12;
         }
     }
    

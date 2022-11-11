@@ -2774,6 +2774,19 @@
 //
 @media (max-width: 320px) {
     
+    .container__content-watch__phone{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 60%;
+        a{
+            font-size: $fs12;
+            margin-right: 10px;
+            text-decoration-line: underline;
+            color: $secondaryRed;
+
+        }
+    }
     
     .services__content-watch{
         display: none;
@@ -2812,6 +2825,9 @@
             width: 320px;
             padding: 5 2px;
             z-index: 1s;
+            &-logo__contentbox{
+                margin-right: 30px;
+            }
             &-tablet__item {
             display: none;
 
@@ -2829,7 +2845,7 @@
                 display: flex;
                 justify-content: space-between;
                 margin-right: 2px;
-                padding-right: 11px;
+                padding-right: 0px;
             }
             &-phone__record{
                 display: flex;
@@ -2938,7 +2954,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: flex-start;
-                margin-left: 30%;
+                margin-left: 60%;
                 a{
                     font-size: $fs12;
                     margin-right: 10px;
@@ -3202,6 +3218,19 @@
             transform: translateY(-130px);
             transition: all 0.8s ease-in;
         }
+        .services__content-watch__phone{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-left: 60%;
+            a{
+                font-size: $fs12;
+                margin-right: 10px;
+                text-decoration-line: underline;
+                color: $secondaryRed;
+
+            }
+        }
     }
      //
     //
@@ -3222,11 +3251,28 @@
         }
         
         .offer__btn {
-            margin: 32px 12% 0px;
+            margin: 32px 0% 0px;
+            width: 97%;
         }
         .offer__bot-hidden{
             padding-left: 0;
             padding-right: 0;
+        }
+        .services__content-watch__phone{
+            display: block;
+        }
+        .services__content-watch__phone{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-left: 60%;
+            a{
+                font-size: $fs12;
+                margin-right: 10px;
+                text-decoration-line: underline;
+                color: $secondaryRed;
+
+            }
         }
     }
     //
@@ -3239,10 +3285,14 @@
                 font-size: $fs14
             }
     
+            .clinic__advantage{
+                margin-left: 0;
+                margin-right: 0;
+            }
             &__advantage {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 10px;
-    
+                
                 &-contentbox {
                     flex-direction: column;
                     align-items: center;
@@ -3274,13 +3324,13 @@
             .clinic__swiper-phone{
                 display: block;
             }
-            .clinic__right-swiper{
+            .clinic__right-sliders{
                 display: none;
             }
             
         }
         .clinic .clinic__wrapper .about__right-swiper__border {
-            top: 23.5%;
+            top: 30.5%;
             bottom: 0%;
             height: 197px;
             width: 266px;
@@ -3324,6 +3374,7 @@
             left: 74%;
         }
         
+        
     }
       //
     //
@@ -3338,8 +3389,9 @@
         &__card{
             margin-top: 0;
         }
-       .btn{
-            margin: 10px 13% 0px;
+       .articles__btn{
+            margin: 10px 0% 0px;
+            width: 97%;
         }
     }
     //
@@ -3374,12 +3426,37 @@
                     &-list{
                         grid-template-columns: repeat(1,1fr);
                     }
+                    &-subtext{
+                        font-size: $fs12;
+                    }
                 }
             }
             &__btn-tablet{
                 width: 100%;
                 margin-left: 10px;
                 padding: 10px 40px;
+            }
+            &__license{
+                &__container{
+                    width: 100%;
+                    
+                }
+               
+               
+            }
+            .contacts__license__btn {
+                margin-right: 0;
+                margin-left: 0;
+                width: 100%;
+            }
+            .contacts__license__text {
+                margin: 10px 0;
+            }
+            .contacts__license__container{
+                max-height: 160px;
+                &:not(:first-child){
+                    margin-top: 29px;
+                }
             }
         }
     //

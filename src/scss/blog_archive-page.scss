@@ -119,13 +119,26 @@ text-transform: uppercase;
     }
 }
 @media (max-width: 320px) {
-    
+   
     .blog-archive__articles{
+        margin-top: $marginTitlePhone;
         &__bot{
+            margin-top: 30px;
             grid-template-columns: repeat(1,1fr);
+           
         }
         .btn{
             margin: 50px 7% 0px;
+        }
+        .offer__bot-hidden{
+                padding-left: 0;
+                padding-right: 0;
+        }
+        .blog-archive__card-img{
+            width: 100%;
+        }
+        .blog-archive__card__text{
+            width: 100%;
         }
     }
     
