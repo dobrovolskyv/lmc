@@ -1,7 +1,7 @@
 export function runStr (){
     var wrapper = document.querySelector('.alert'),
     marquee = document.querySelector('.alert__container'),   
-    wrapperWidth = wrapper.offsetWidth,
+    wrapperWidth = wrapper.offsetWidth;
     marqueeWidth = marquee.scrollWidth;
     
 document.querySelector('button').onclick = function() {

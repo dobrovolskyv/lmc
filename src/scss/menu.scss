@@ -272,3 +272,138 @@
 // .go-back2{
 // 	display: none;
 // }
+
+
+
+//
+//
+//new accrod menu
+//
+
+#accordian {
+	/*background: #78913c;*/
+  background: rgb(58, 78, 10);
+		width: 250px;
+		margin: 50px auto 0 auto;
+		color: white;
+}
+
+#accordian h3 {
+  background: #0a2f17;
+  background: linear-gradient(#0a2f17, #031d11);
+}
+
+#accordian h3 a {
+    position: relative;
+		display: block;
+		padding: 0 10px;
+		font-size: 12px;
+		line-height: 34px;
+		color: white;
+		text-decoration: none;
+}
+#accordian h3 a .InnerBar {
+  position: absolute;
+  width:auto;
+  top:3px;
+  left:35px;
+  right:0px;
+  bottom: 3px;
+	padding: 0 10px;
+  line-height: 28px;
+}
+
+#accordian h3 a:hover > .InnerBar {background: linear-gradient(#031d11, #0a2f17);}
+.InnerBarActive {background: linear-gradient(#031d11, #0a2f17);}
+
+#accordian h3:hover {
+		text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
+}
+
+i {	margin-right: 10px;}
+
+#accordian li {
+		list-style-type: none;
+}
+
+#accordian ul ul li a,
+#accordian h4 {
+		color: white;
+		text-decoration: none;
+		font-size: 11px;
+		line-height: 27px;
+		display: block;
+		padding: 0 15px;
+		transition: all 0.15s;
+		position: relative;
+}
+
+.SubOptn-Hover:hover {
+	background: #003545;
+	border-left: 5px solid lightgreen;
+  background: #4a5412;
+  border-left: 5px solid #7b9a50;
+  background: #4a6112;
+  border-left: 5px solid #7b9a50;
+  
+}
+
+#accordian ul ul {
+		display: none;
+}
+
+#accordian li.active>ul {
+		display: block;
+}
+
+#accordian ul ul ul {
+  border-left: 15px solid #2a3a09;
+}
+
+.SubMenu1, .SubMenu2 {
+  border-left-width: 15px;
+  border-right-width: 0px;
+  border-style: solid;
+  -webkit-border-image: 
+      -webkit-gradient(linear, 0 0, 0 100%, from(#304600), to(#243100)) 1 100%;
+  -webkit-border-image: 
+      -webkit-linear-gradient(#304600, #243100) 1 100%;
+  -moz-border-image:
+      -moz-linear-gradient(#304600, #243100) 1 100%;    
+  -o-border-image:
+      -o-linear-gradient(#304600, #243100) 1 100%;
+  border-image:
+      linear-gradient(to bottom, #304600, #243100) 1 100%;
+  background: linear-gradient(#243100, #304600);
+}
+
+.Counter01, .Counter02, .Counter03, .Counter04,
+.SubCounter01_01,
+.SubCounter02_01, .SubCounter02_02, .SubCounter02_03,
+.SubCounter03 {
+  position: absolute;
+  display: block;
+  float: right;
+  right: 10px;
+  padding: 2px 10px 0px 10px;
+  font: normal bold 12px/18px "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+          border-radius: 15px;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.75) inset, 0px 1px 0px #696969!important;
+    -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.75) inset, 0px 1px 0px #696969!important;
+         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.75) inset, 0px 1px 0px #696969!important;
+}
+
+.Counter01, .Counter02, .Counter03, .Counter04 {
+  top: 6px;
+  background: #182904;
+}
+
+.SubCounter01_01,
+.SubCounter02_01, .SubCounter02_02, .SubCounter02_03,
+.SubCounter03 {
+  top: 3px;
+  background: #324406;
+}
+

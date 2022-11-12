@@ -167,7 +167,7 @@
     padding: 0 0px;
     color: $white;
     max-height: 0;
-    overflow: scroll;
+    overflow: hidden;
     
     transition: max-height 0.3s ease-out;
     p{

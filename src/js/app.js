@@ -294,7 +294,7 @@ for (i = 0; i < acci.length; i++) {
     if (panel.style.maxHeight){
       panel.style.maxHeight = null;
     } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
+      panel.style.maxHeight = 700 + "px";
     } 
   });
 }
@@ -335,9 +335,53 @@ if (btnBack){
 }
 
 
-
+const alertStr= document.querySelector('.alert')
 // runingStr.runStr();
+// if(alert){
+//   runingStr.runStr();
+// }
 accordionFunction.accordionAboutDoctor();
+//
+//
+//
+//new accord
+//
+//
+//
+// let accordMenu = ("#accordian a").addEventListener('click', function () {
+//   var link = $(this);
+//   var closest_ul = link.closest("ul");
+//   var parallel_active_links = closest_ul.querySelector(".active");
+//   var closest_li = link.closest("li");
+//   var link_status = closest_li.classList.contains("active");
+//   var count = 0;
+
+//   closest_ul.find("ul").slideUp(function () {
+//     if (++count == closest_ul.querySelector("ul").length)
+//       parallel_active_links.removeClass("active");
+//   });
+
+//   if (!link_status) {
+//     closest_li.children("ul").slideDown();
+//     closest_li.addClass("active");
+//   }
+// });
+
+// $("h3 a").on("click", ".InnerBar", function () {
+//   $("h3 a span").removeClass("InnerBarActive");
+//   $(this).addClass("InnerBarActive");
+// });
+
+// // -> Count Menus Topics
+// $(".Counter01").html($(".Menu01 li").length);
+// $(".Counter02").html($(".Menu02 li").length);
+// $(".SubCounter02_01").html($(".SubMenu02-01 li").length);
+// $(".SubCounter02_02").html($(".SubMenu02-02 li").length);
+// $(".SubCounter02_03").html($(".SubMenu02-03 li").length);
+// $(".Counter03").html($(".Menu03 li").length);
+// $(".Counter04").html($(".Menu04 li").length);
+
+
 
 })
 

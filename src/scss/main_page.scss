@@ -20,7 +20,7 @@
         &__tel {
             color: $primary;
             font-size: 32px;
-            margin-right: 74px;
+            margin-right: 50px;
         }
         &-tablet__list{
             display: none;
@@ -29,14 +29,14 @@
             display: flex;
             align-items: center;
             margin-right: 50px;
-            margin-left: 62px;
+            margin-left: 2px;
         }
         &-img__logo{
             margin-right: 20px;
             // margin-left: -54px;
         }
         &__list{
-            margin-right: 80px;
+            margin-right: 55px;
         }
     }
     &__img__logo{
@@ -83,7 +83,7 @@
         &-search{
             position: absolute;
             top: 38%;
-            right: 7%;
+            right: 9%;
             fill: $bg;
         }
     }
@@ -199,8 +199,12 @@
         font-size: 16px;
         line-height: 140%;
     }
+    .header__bot-search-tablet{
+        display: none;
+    }
     
 }
+
 .header__menu-navpage{
     
     &__list{
@@ -238,7 +242,7 @@
         .header__arrow-nav {
                 position: absolute;
                 bottom: 20%;
-                right: 4%;
+                right: 8%;
                 display: flex;
                 align-items: center;
                 &__arrow-left{
@@ -1789,6 +1793,7 @@
         max-width: 592px;
         margin: 0 auto;
         overflow: hidden;
+        padding-left: 10px;
     }
     .header__menu-navpage__list{
         margin-top: 20px;
@@ -1813,7 +1818,7 @@
             margin-right: 0px;
             width: 588px;
             &__list{
-                width: 460px;
+                width: 420px;
                 & >li {
                 
                     position: relative;
@@ -1861,6 +1866,7 @@
          
 
         }
+        
     }
     //
     //
@@ -1997,7 +2003,11 @@
         &-main-page__bot{
             margin-top: 115px;
         }
+         .header__bot-search-tablet {
+            display: block;
+        }
     }
+    
     .title__offer{
         font-size: $fs32;
         line-height: 37px;
@@ -2839,6 +2849,9 @@
 
         &__bot {
             display: none;
+            &-contentbox{
+                padding: 15px;
+            }
             &-phone{
                 width: 288px;
                 margin-top: 18px;
@@ -2892,6 +2905,9 @@
 
         &-main-page__bot {
             grid-template-columns: repeat(1, 1fr);
+        }
+        .header__bot-search-tablet{
+            display: none;
         }
         
     }
