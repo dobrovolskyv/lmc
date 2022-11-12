@@ -232,16 +232,16 @@
     background-size: cover;
     position: relative;
     .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
-        bottom: 20%;
+        bottom: 6%;
         span{
            background-color: $primary; 
         }
         
     }
-    
+        
         .header__arrow-nav {
                 position: absolute;
-                bottom: 20%;
+                bottom: 5%;
                 right: 8%;
                 display: flex;
                 align-items: center;
@@ -3197,17 +3197,20 @@
         .specialist__sliders__swiper{
             max-width: 260px;
             max-height: 257px;
+            margin-top: -40px;
             .swiper-button-prev{
                 left: 74%;
                 top: 19%;
                 width: 30px;
                 height: 30px;
+                display: none;
             }
             .swiper-button-next{
                 top: 19%;
                 right: 0%;
                 width: 30px;
                 height: 30px;
+                display: none;
             }
         }
         &__subtitle{
@@ -3246,6 +3249,9 @@
                 color: $secondaryRed;
 
             }
+        }
+        .arrow-link__phone{
+            display: block;
         }
     }
      //
@@ -3382,14 +3388,25 @@
             width: 30px;
             height: 30px;
             top: 29%;
+            display: none;
         }
         .swiper-button-prev{
             width: 30px;
             height: 30px;
             top: 29%;
             left: 74%;
+            display: none;
         }
-        
+        .title__wrapper{
+            margin-bottom: 10px;
+        }
+        .arrow-link__phone{
+            display: block;
+        }
+        .reviews__sliders__swiper {
+            margin-top: 39px;
+            
+        }
         
     }
       //
@@ -3409,6 +3426,9 @@
             margin: 10px 0% 0px;
             width: 97%;
         }
+        .arrow-link__phone{
+            display: block;
+        }
     }
     //
     //
@@ -3418,15 +3438,18 @@
         .contacts {
     
             &__bot__img {
+                border: none;
                 order: -1;
                 width: 100%;
                 height: 100%;
                 border-width: 1px 1px 0px 1px;
-                border-radius: 4px 4px 0px 4px;
+                border-radius: 4px 4px 4px 4px;
             }
     
             &__bot {
+                
                 &__info {
+                    border: none;
                     width: 100%;
                     border-width: 0px 1px 1px 1px;
                     border-radius: 0px 4px 4px 4px;
@@ -3473,6 +3496,9 @@
                 &:not(:first-child){
                     margin-top: 29px;
                 }
+            }
+            .arrow-link__phone{
+                display: block;
             }
         }
     //

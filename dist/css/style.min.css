@@ -205,14 +205,14 @@
   position: relative;
 }
 .main-page__header .swiper-horizontal > .swiper-pagination-bullets, .main-page__header .swiper-pagination-bullets.swiper-pagination-horizontal, .main-page__header .swiper-pagination-custom, .main-page__header .swiper-pagination-fraction {
-  bottom: 20%;
+  bottom: 6%;
 }
 .main-page__header .swiper-horizontal > .swiper-pagination-bullets span, .main-page__header .swiper-pagination-bullets.swiper-pagination-horizontal span, .main-page__header .swiper-pagination-custom span, .main-page__header .swiper-pagination-fraction span {
   background-color: #093A67;
 }
 .main-page__header .header__arrow-nav {
   position: absolute;
-  bottom: 20%;
+  bottom: 5%;
   right: 8%;
   display: flex;
   align-items: center;
@@ -2609,18 +2609,21 @@
   .specialist .specialist__sliders__swiper {
     max-width: 260px;
     max-height: 257px;
+    margin-top: -40px;
   }
   .specialist .specialist__sliders__swiper .swiper-button-prev {
     left: 74%;
     top: 19%;
     width: 30px;
     height: 30px;
+    display: none;
   }
   .specialist .specialist__sliders__swiper .swiper-button-next {
     top: 19%;
     right: 0%;
     width: 30px;
     height: 30px;
+    display: none;
   }
   .specialist__subtitle {
     font-size: 14px;
@@ -2653,6 +2656,9 @@
     margin-right: 10px;
     text-decoration-line: underline;
     color: #972A29;
+  }
+  .specialist .arrow-link__phone {
+    display: block;
   }
 
   .offer .title {
@@ -2758,12 +2764,23 @@
     width: 30px;
     height: 30px;
     top: 29%;
+    display: none;
   }
   .reviews .swiper-button-prev {
     width: 30px;
     height: 30px;
     top: 29%;
     left: 74%;
+    display: none;
+  }
+  .reviews .title__wrapper {
+    margin-bottom: 10px;
+  }
+  .reviews .arrow-link__phone {
+    display: block;
+  }
+  .reviews .reviews__sliders__swiper {
+    margin-top: 39px;
   }
 
   .articles__bot-visiable, .articles__bot-hidden {
@@ -2776,15 +2793,20 @@
     margin: 10px 0% 0px;
     width: 97%;
   }
+  .articles .arrow-link__phone {
+    display: block;
+  }
 
   .contacts__bot__img {
+    border: none;
     order: -1;
     width: 100%;
     height: 100%;
     border-width: 1px 1px 0px 1px;
-    border-radius: 4px 4px 0px 4px;
+    border-radius: 4px 4px 4px 4px;
   }
   .contacts__bot__info {
+    border: none;
     width: 100%;
     border-width: 0px 1px 1px 1px;
     border-radius: 0px 4px 4px 4px;
@@ -2824,6 +2846,9 @@
   }
   .contacts .contacts__license__container:not(:first-child) {
     margin-top: 29px;
+  }
+  .contacts .arrow-link__phone {
+    display: block;
   }
 
   .record .undertitle {
@@ -3616,6 +3641,10 @@
     grid-column: span 1;
     grid-row: span 1;
     gap: 20px;
+  }
+
+  .specialist .arrow-link__phone {
+    display: block;
   }
 }
 .body {
@@ -6726,6 +6755,30 @@ h2 {
   margin-right: 10px;
   text-decoration-line: underline;
   color: #972A29;
+}
+
+.arrow-link__phone {
+  display: none;
+  margin-top: 10px;
+}
+.arrow-link__phone-container {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  text-decoration-line: underline;
+  display: flex;
+  align-items: center;
+  color: #972A29;
+  justify-content: flex-end;
+}
+.arrow-link__phone-container img {
+  margin-left: 5px;
+  width: 30px;
 }
 
 @media (max-width: 320px) {
