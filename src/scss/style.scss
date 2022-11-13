@@ -32,6 +32,7 @@ a{
     text-decoration: none;
     color: inherit;
     cursor: pointer;
+    
 }
 button{
     cursor: pointer;
@@ -68,7 +69,7 @@ text-align: left;
 
 }
 h2{
-    font-size: 58px;
+    font-size: 48px;
     line-height: 66px;
     font-weight: 400;
     font-family: 'Oranienbaum';
@@ -93,7 +94,7 @@ color: $gold;
 
 .subtitle{
     font-family: 'Fira Sans';
-    font-size: $fs20;
+    font-size: $fs16;
     line-height: 140%;
     max-width: 720px;
     margin-top: 12px;
@@ -283,8 +284,9 @@ margin-top: 20px;
         width: 0;
         outline: none;
         transition: all 0.2s;
+        color: $primary;
     }
-    &:hover input, input:focus, input:not(:placeholder-shown) ~ .header__bot-search-tablet__img{
+    &:hover input, input:focus, input:not(:placeholder-shown){
         width: 140px;
         padding: 9px 0px;
         padding-left: 10px;

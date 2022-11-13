@@ -19,6 +19,9 @@
   color: #093A67;
   font-size: 32px;
   margin-right: 50px;
+  font-family: "Oranienbaum";
+  font-style: normal;
+  font-weight: 400;
 }
 .header__top-tablet__list {
   display: none;
@@ -40,18 +43,21 @@
 }
 .header__top__items {
   font-size: 14px;
+  line-height: 140%;
+  font-weight: 400;
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+.header__top__items {
+  margin-bottom: 8px;
 }
 .header__top__items-img {
   margin-right: 8px;
-  margin-top: 8px;
-}
-.header__top__items-text {
-  margin-top: 8px;
 }
 .header__top__input {
   border-radius: 30px;
+  position: relative;
 }
 .header__input {
   border-radius: 30px;
@@ -65,20 +71,20 @@
   position: relative;
 }
 .header__input:focus {
-  background: #EBD1B2;
+  background: #FFF9EF;
 }
 .header__input:focus::placeholder {
-  color: #FFF9EF;
+  color: #093A67;
 }
 .header__input-search {
   position: absolute;
-  top: 38%;
-  right: 9%;
+  top: 22%;
+  right: 5%;
   fill: #FFF9EF;
 }
 .header__bot {
   position: absolute;
-  top: 293%;
+  top: 203%;
   width: 1200px;
   display: flex;
   justify-content: space-between;
@@ -200,7 +206,7 @@
   width: 100%;
   height: 100vh;
   background-position: center bottom;
-  padding-top: 200px;
+  padding-top: 23vh;
   background-size: cover;
   position: relative;
 }
@@ -242,13 +248,12 @@
 }
 
 .header-main-page__bot {
-  margin-top: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-radius: 4px;
   background: #093A67;
-  margin-top: 132px;
+  margin-top: 82px;
 }
 
 .title__offer {
@@ -257,15 +262,15 @@
 }
 
 .services {
-  padding-top: 200px;
+  padding-top: 100px;
 }
 .services__top {
   justify-content: space-between;
 }
 .services__subtitle {
-  max-width: 861px;
+  max-width: 700px;
   font-family: "Fira Sans";
-  font-size: 20px;
+  font-size: 16px;
   line-height: 140%;
   margin-top: 16px;
 }
@@ -282,6 +287,10 @@
   text-decoration-line: underline;
   color: #972A29;
 }
+.services__content-watch a:hover {
+  font-weight: 400;
+  transition: all 0.3s ease-in;
+}
 .services__content-card {
   border: 1px solid #AE8452;
   border-radius: 4px;
@@ -294,24 +303,38 @@
 }
 .services__content-card:hover {
   border-width: 2px;
-  box-shadow: 3px 1px 5px #AE8452;
 }
 .services__content-card-bot {
   width: 379px;
 }
 .services__content-card-bot .content-card__title-bot {
   width: 312px;
-  padding-right: 60px;
 }
 .services__content-card-bot .content-card__title-bot p {
   font-size: 36px;
+  margin-left: 0;
 }
 .services__content-card-bot .content-card__description-bot ul {
   padding-left: 0;
   padding-bottom: 0;
 }
-.services__content-card-bot .content-card__more p {
+.services__content-card-bot .content-card__more a {
   font-size: 16px;
+  line-height: 140%;
+  color: #972A29;
+}
+.services__content-card-bot .content-card__more a:hover {
+  font-weight: 400;
+  transition: all 0.3s ease-in;
+}
+.services__content-card .content-card__more a {
+  font-size: 16px;
+  line-height: 140%;
+  color: #972A29;
+}
+.services__content-card .content-card__more a:hover {
+  font-weight: 400;
+  transition: all 0.3s ease-in;
 }
 .services__contentbox-top {
   display: flex;
@@ -340,7 +363,6 @@
   font-size: 36px;
   line-height: 100%;
   color: #972A29;
-  margin-left: 46px;
 }
 .content-card__title-bot {
   width: 414px;
@@ -353,18 +375,16 @@
 .content-card__description {
   display: flex;
   justify-content: space-around;
-  flex-grow: 1;
 }
 .content-card__description ul {
   margin-top: 26px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   flex-wrap: wrap;
-  padding-left: 110px;
   align-items: center;
   text-decoration: underline;
   margin-bottom: 62px;
-  padding-bottom: 62px;
+  padding: 0 0px 37px 60px;
 }
 .content-card__description li {
   font-family: "Fira Sans";
@@ -374,7 +394,7 @@
   line-height: 140%;
   text-decoration-line: underline;
   margin-top: 12px;
-  width: 300px;
+  width: 240px;
 }
 .content-card__description-bot {
   text-align: center;
@@ -387,8 +407,7 @@
   display: flex;
   align-items: center;
   justify-content: end;
-  margin-bottom: 22px;
-  margin-right: 40px;
+  flex-grow: 1;
 }
 .content-card__more p {
   color: #972A29;
@@ -429,13 +448,21 @@
   white-space: nowrap;
   display: flex;
   align-items: center;
+  margin-right: 10px;
 }
 
 .about {
   margin-top: 140px;
   position: relative;
+  display: flex;
+  justify-content: space-between;
 }
-.about .about__content-watch__tablet {
+.about__title__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .about__title-tablet {
   display: none;
 }
 .about .about__title-watch__tablet {
@@ -451,7 +478,7 @@
   width: 700px;
 }
 .about__left-table {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .about__right {
   position: relative;
@@ -460,7 +487,7 @@
   position: absolute;
   width: 100%;
   height: 536px;
-  top: 9%;
+  top: 0%;
   border: 1px solid #AE8452;
   border-radius: 4px;
   transform: rotate(-2deg);
@@ -499,9 +526,6 @@
   font-size: 16px;
   line-height: 140%;
 }
-.about__right__img {
-  margin-top: 25px;
-}
 .about__table {
   color: #972A29;
   text-align: center;
@@ -526,8 +550,11 @@
 }
 .about__table__td {
   font-family: "Fira Sans";
-  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
   line-height: 140%;
+  text-align: center;
   width: 193px;
 }
 .about .about__wrapper-tablet {
@@ -599,11 +626,13 @@
 }
 .specialist__content-undertitle {
   font-size: 10px;
+  line-height: 140%;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 .specialist__content-title {
   font-size: 16px;
+  line-height: 140%;
   font-weight: 600;
 }
 .specialist__content-btn-record {
@@ -768,6 +797,9 @@
   justify-content: space-between;
   position: relative;
 }
+.clinic__wrapper .title__container .specialist__subtitle {
+  max-width: 516px;
+}
 .clinic__wrapper .about__right-swiper__border {
   position: absolute;
   width: 53%;
@@ -798,7 +830,7 @@
 }
 .clinic__advantage-text {
   font-family: "Fira Sans";
-  font-weight: 700;
+  font-weight: 500;
   font-size: 14px;
   line-height: 17px;
   margin-left: 8px;
@@ -854,7 +886,6 @@
   font-family: "Fira Sans";
   font-size: 16px;
   line-height: 120%;
-  overflow-y: scroll;
   padding-bottom: 24px;
 }
 .reviews__sliders-from {
@@ -1001,14 +1032,20 @@
   display: flex;
 }
 .contacts__bot__img {
-  width: 660px;
+  width: 600px;
+  height: 540px;
   border-width: 1px 1px 1px 0px;
   border-style: solid;
   border-color: #AE8452;
   border-radius: 0px 4px 4px 0px;
 }
+.contacts__bot__img div {
+  width: 600px;
+  height: 540px;
+}
 .contacts__bot__info {
-  width: 660px;
+  width: 600px;
+  height: 540px;
   border-width: 1px 0px 1px 1px;
   border-style: solid;
   border-color: #AE8452;
@@ -1042,6 +1079,10 @@
   height: 42px;
   margin-right: 19px;
 }
+.contacts__bot__info .map {
+  width: 100%;
+  height: 100%;
+}
 .contacts__bot__info-text {
   font-weight: 400;
   font-size: 18px;
@@ -1049,7 +1090,7 @@
 }
 .contacts__bot__info-subtext {
   font-size: 12px;
-  line-height: 140%;
+  line-height: 120%;
 }
 .contacts__btn {
   margin: 48px 0;
@@ -1310,6 +1351,11 @@
   display: inline-block;
   padding: 10px 7px;
   font-size: 16px;
+  font-family: "Oranienbaum";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.02em;
 }
 .header__menu__item {
   color: red;
@@ -1321,7 +1367,6 @@
   color: #972A29;
 }
 .header__submenu__list {
-  margin-top: 10px;
   display: none;
   position: absolute;
   left: 0;
@@ -1400,7 +1445,8 @@
 
 .arrow {
   position: absolute;
-  top: 15px;
+  top: 40%;
+  left: 94%;
   width: 0;
   height: 0;
   border-top: 5px solid #972A29;
@@ -1749,9 +1795,18 @@
     height: 38px;
   }
 
-  .about {
-    padding-left: 20px;
-    padding-right: 5px;
+  .alert__text {
+    font-size: 16px;
+  }
+
+  .about .about__title__container {
+    display: none;
+  }
+  .about .about__title-tablet {
+    display: block;
+  }
+  .about .about__title-watch__tablet {
+    display: block;
   }
   .about .title {
     display: none;
@@ -1884,6 +1939,9 @@
   .about .about__img-tablet img {
     width: 100%;
     height: 100%;
+  }
+  .about .about__content-watch__phone {
+    display: none;
   }
 
   .spacialist {
@@ -2058,7 +2116,7 @@
     gap: 10px;
   }
   .articles .articles__btn {
-    margin: 26px 12% 0px;
+    margin: 26px 30% 0px;
   }
 
   .contacts__bot {
@@ -2270,7 +2328,6 @@
 
   .title {
     font-size: 24px;
-    line-height: 140%;
   }
 
   .title__container > p.undertitle {
@@ -2693,7 +2750,21 @@
     text-decoration-line: underline;
     color: #972A29;
   }
+  .offer__card__title {
+    font-size: 12px;
+    line-height: 140%;
+  }
+  .offer .offer__card__subtitle {
+    font-size: 12px;
+    line-height: 140%;
+  }
 
+  .clinic .title__container > p.undertitle {
+    font-size: 10px;
+    line-height: 140%;
+    letter-spacing: 0.1em;
+    width: 225px;
+  }
   .clinic .specialist__subtitle {
     font-size: 14px;
   }
@@ -2704,18 +2775,28 @@
   .clinic__advantage {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .clinic__advantage-contentbox {
     flex-direction: column;
     align-items: center;
   }
   .clinic__advantage-contentbox p {
-    font-weight: 600;
     max-width: 110px;
     margin-top: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    text-align: center;
   }
   .clinic__right-swiper {
     order: -1;
+    padding-left: 0;
+    padding-right: 0;
   }
   .clinic .clinic__right-swiper {
     max-width: 288px;
@@ -2724,6 +2805,7 @@
   .clinic .clinic__right-swiper .clinic__right-arrow {
     width: 20px;
     height: 20px;
+    display: none;
   }
   .clinic .clinic__right-pagination.swiper-pagination {
     bottom: 0%;
@@ -2739,7 +2821,7 @@
     top: 30.5%;
     bottom: 0%;
     height: 197px;
-    width: 266px;
+    width: 280px;
     right: 1%;
   }
 
@@ -2851,6 +2933,9 @@
     display: block;
   }
 
+  .record .title {
+    line-height: 110%;
+  }
   .record .undertitle {
     font-size: 10px;
   }
@@ -2914,7 +2999,7 @@
   .footer__main-phone__top-contentbox {
     border: 1px solid #FFF9EF;
     border-radius: 4px;
-    padding: 5px 10px;
+    padding: 9px 16px;
     margin-top: 8px;
   }
   .footer__main-phone__top-text {
@@ -6633,7 +6718,7 @@ h1 {
 }
 
 h2 {
-  font-size: 58px;
+  font-size: 48px;
   line-height: 66px;
   font-weight: 400;
   font-family: "Oranienbaum";
@@ -6659,7 +6744,7 @@ h2 {
 
 .subtitle {
   font-family: "Fira Sans";
-  font-size: 20px;
+  font-size: 16px;
   line-height: 140%;
   max-width: 720px;
   margin-top: 12px;
@@ -6805,8 +6890,9 @@ h2 {
   width: 0;
   outline: none;
   transition: all 0.2s;
+  color: #093A67;
 }
-.header__bot-search-tablet:hover input, .header__bot-search-tablet input:focus, .header__bot-search-tablet input:not(:placeholder-shown) ~ .header__bot-search-tablet__img {
+.header__bot-search-tablet:hover input, .header__bot-search-tablet input:focus, .header__bot-search-tablet input:not(:placeholder-shown) {
   width: 140px;
   padding: 9px 0px;
   padding-left: 10px;
