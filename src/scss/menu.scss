@@ -16,6 +16,7 @@
 	position: relative;
 	z-index:15;
 	overflow: hidden;
+	text-align: left;
 }
 
 .menu__btn-phone span {
@@ -27,6 +28,10 @@
 	transform: translate(-50%, -50%);
 	background-color: $primary;
 	transition: all 0.5s;
+	
+	&:nth-child(1){
+		width: 20px;
+	}
 }
 
 .menu__btn-phone span:nth-of-type(2) {
@@ -141,7 +146,7 @@
 }
 
 .menu-phone.active {
-	transform: translateX(-4%);
+	transform: translateX(0%);
 }
 
 .menu-phone li {

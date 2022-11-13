@@ -1660,6 +1660,8 @@
 
   .header__offer-subtitle {
     max-width: 525px;
+    font-size: 14px;
+    line-height: 140%;
   }
 
   .header__call-offer {
@@ -1706,6 +1708,9 @@
   .main-page__header .header__arrow-nav {
     bottom: 28%;
     right: 3%;
+  }
+  .main-page__header .title {
+    max-width: 570px;
   }
 
   .services {
@@ -2408,7 +2413,7 @@
   }
   .header__call-offer {
     flex-direction: column;
-    margin-top: 160px;
+    margin-top: 110px;
     align-items: center;
     justify-content: center;
     max-width: 288px;
@@ -2422,6 +2427,8 @@
   }
   .header-main-page__bot {
     grid-template-columns: repeat(1, 1fr);
+    gap: 8px;
+    margin-top: 36px;
   }
   .header .header__bot-search-tablet {
     display: none;
@@ -2432,7 +2439,7 @@
     width: 100%;
     padding: 10px;
     min-height: 38px;
-    margin: 10px 10px;
+    margin: 6px 10px;
   }
 
   .main-page__header {
@@ -2448,7 +2455,7 @@
   }
   .main-page__header .header__swiper-pagination.swiper-pagination {
     left: 0;
-    bottom: 39%;
+    bottom: 59%;
   }
 
   .services {
@@ -2481,8 +2488,10 @@
     color: #972A29;
   }
   .services__subtitle {
-    font-size: 14px;
+    font-size: 12px;
+    line-height: 140%;
     max-width: 288px;
+    margin-top: 10px;
   }
   .services__bot {
     display: none;
@@ -2512,7 +2521,7 @@
   }
   .services__bot-phone__content__title div {
     font-size: 18px;
-    line-height: 140%;
+    line-height: 100%;
     font-weight: 400;
     display: flex;
     align-items: center;
@@ -2525,6 +2534,10 @@
   .services__bot-phone__content__title img {
     width: 17px;
     height: 17px;
+  }
+  .services__bot-phone__content__title img:hover {
+    transform: rotate(405deg);
+    transition: all 0.4s ease-in;
   }
 
   .about {
@@ -2596,16 +2609,28 @@
   }
   .about__right-tablet {
     margin-left: 40px;
-    margin-top: 48px;
+    margin-top: 38px;
     flex-direction: row;
   }
   .about__right-tablet .about__table__span-tablet {
-    font-size: 32px;
+    font-size: 48px;
+    line-height: 55px;
   }
   .about__right-tablet .about__table__td-secondary-tablet {
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 23px;
   }
   .about__right-tablet .about__table__td-tablet {
+    line-height: 140%;
+  }
+  .about__right-tablet .about__table__tr-tablet {
+    margin-top: 18px;
+  }
+  .about__right-tablet .about__table-tablet {
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
     line-height: 140%;
   }
   .about__right-border {
@@ -6301,6 +6326,7 @@
   position: relative;
   z-index: 15;
   overflow: hidden;
+  text-align: left;
 }
 
 .menu__btn-phone span {
@@ -6312,6 +6338,9 @@
   transform: translate(-50%, -50%);
   background-color: #093A67;
   transition: all 0.5s;
+}
+.menu__btn-phone span:nth-child(1) {
+  width: 20px;
 }
 
 .menu__btn-phone span:nth-of-type(2) {
@@ -6422,7 +6451,7 @@
 }
 
 .menu-phone.active {
-  transform: translateX(-4%);
+  transform: translateX(0%);
 }
 
 .menu-phone li {
@@ -6901,4 +6930,9 @@ h2 {
   position: absolute;
   top: 47%;
   right: 1%;
+}
+
+.rotate__cyrcles {
+  transform: rotate(405deg);
+  transition: all 0.4s ease-in;
 }
