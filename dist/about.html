@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221114172445">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap&_v=20221114172445" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap&_v=20221114172445" rel="stylesheet">
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20221114172445"
 />
     <title>about</title>
 </head>
@@ -39,16 +39,16 @@
                 <a class="header__top__tel" href="##tel:+78124459912">+7 812 445 99 12</a>
                 <div class="header__top__input">
                     <input class="header__input" type="search" placeholder="Поиск по сайту">
-                    <img class="header__input-search" src="./img/search_header.png" alt="">
+                    <picture><source srcset="./img/search_header.webp" type="image/webp"><img class="header__input-search" src="./img/search_header.png" alt=""></picture>
                 </div>
                 
                 
                 <ul class="header__top-tablet__list">
                     <li class="header__top-tablet__item">
-                        <img src="./img/chat_our_service_page.png" alt=""><a href="">Записаться</a>
+                        <picture><source srcset="./img/chat_our_service_page.webp" type="image/webp"><img src="./img/chat_our_service_page.png" alt=""></picture><a href="">Записаться</a>
                     </li>
                     <li class="header__top-tablet__item">
-                        <img src="./img/tel_contacts.png" alt=""><a href="">Заказать звонок</a>
+                        <picture><source srcset="./img/tel_contacts.webp" type="image/webp"><img src="./img/tel_contacts.png" alt=""></picture><a href="">Заказать звонок</a>
                     </li>
                 </ul>
             </div>
@@ -67,12 +67,24 @@
                                         </li>
                                         <li>
                                             <a href="" class="header__sub-submenu__link">Кардиолог</a>
+                                            <ul class="header__sub-sub-submenu__list">
+                                                <li><a href="" class="header__sub-sub-submenu__link">4lvl</a></li>
+                                                <li><a href="" class="header__sub-sub-submenu__link">4 lvl</a></li>
+                                                <li><a href="" class="header__sub-sub-submenu__link">4 lvl</a></li>
+                                            </ul>
                                         </li>
                                         <li>
                                             <a href="" class="header__sub-submenu__link">Невролог</a>
                                             
                                             <ul class="header__sub-sub-submenu__list">
-                                                <li><a href="" class="header__sub-sub-submenu__link">4lvl</a></li>
+                                                <li>
+                                                    <a href="" class="header__sub-sub-submenu__link">4lvl</a>
+                                                    <ul class="header__sub-sub-sub-submenu__list">
+                                                        <li><a href="" class="header__sub-sub-sub-submenu__link">5lvl</a></li>
+                                                        <li><a href="" class="header__sub-sub-submenu__link">5 lvl</a></li>
+                                                        <li><a href="" class="header__sub-sub-submenu__link">5 lvl</a></li>
+                                                    </ul>
+                                                </li>
                                                 <li><a href="" class="header__sub-sub-submenu__link">4 lvl</a></li>
                                                 <li><a href="" class="header__sub-sub-submenu__link">4 lvl</a></li>
                                             </ul>
@@ -167,6 +179,10 @@
                     <a class="header__call-link header__bot-call" href="#">записаться онлайн</a>
                     <button class="header__call-btn header__bot-call">заказать звонок</button>
                 </div>
+                <div class="header__bot-search-tablet">
+                        <input class="header__input-tablet" type="search" placeholder="Поиск по сайту">
+                        <picture><source srcset="./img/search_header.webp" type="image/webp"><img class="header__bot-search-tablet__img" src="./img/search_header.png" alt="search"></picture>
+                </div>
             </div>
             <div class="header__bot-phone">
                 <div class="header__menu-phone">
@@ -178,19 +194,19 @@
                                     <span></span>
                                     <span></span>
                                 </div>
-                                <p class="menu__btn-phone__container-text"></p>
+                                <p class="menu__btn-phone__container-text">Меню</p>
                             </div>
                             <div class="menu-phone">
                                 <div class="menu-phone__top">
                                   <div class="menu-phone__logos">
-                                    <img src="./img/lmc_menu_phone.png" alt="lmc">
-                                    <img src="./img/lmc_mune_phone_text.png" alt="lmc">
+                                    <picture><source srcset="./img/lmc_menu_phone.webp" type="image/webp"><img src="./img/lmc_menu_phone.png" alt="lmc"></picture>
+                                    <picture><source srcset="./img/lmc_mune_phone_text.webp" type="image/webp"><img src="./img/lmc_mune_phone_text.png" alt="lmc"></picture>
                                     <a class="menu-phone__logos-tel" href="tel:+78124459912">+7 812 445 99 12</a>
                                 </div>
                                 <div class="menu-phone__record">
                                     <p class="menu-phone__record-text">Меню</p>
                                     <div class="menu-phone__record-container">
-                                        <img src="./img/chat_header_menu.png" alt="chat">
+                                        <picture><source srcset="./img/chat_header_menu.webp" type="image/webp"><img src="./img/chat_header_menu.png" alt="chat"></picture>
                                         <a class="menu-phone__record-link" href="#">Записаться</a>
                                     </div>
                                 </div>  
@@ -199,7 +215,7 @@
                                         <input class="menu-phone__search__input" type="search" placeholder="Поиск по сайту">
                                         
                                     </div>
-                                    <img class="menu-phone__search-img" src="./img/search_header_menu_phone.png" alt="search">
+                                    <picture><source srcset="./img/search_header_menu_phone.webp" type="image/webp"><img class="menu-phone__search-img" src="./img/search_header_menu_phone.png" alt="search"></picture>
                                 </div>
                                 </div>
                                 <div class="menu-phone__middle">
@@ -215,38 +231,40 @@
                                 <div class="menu-phone__bot">
                                     <ul class="footer__main-phone__list">
                                         <li class="footer__main-phone__item">
-                                            <img src="../img/tel_footer.png" alt="tel">
+                                            <picture><source srcset="../img/tel_footer.webp" type="image/webp"><img src="../img/tel_footer.png" alt="tel"></picture>
                                             <div class="footer__main-phone__item-container">
                                                 <p class="footer__main-phone__item-span">+7 812 445 99 14</p>
                                                 <p>c 10:00 до 20:00, без выходных</p>
                                             </div>
                                         </li>
                                         <li class="footer__main-phone__item">
-                                            <img src="../img/vk_footer.png" alt="">
+                                            <picture><source srcset="../img/vk_footer.webp" type="image/webp"><img src="../img/vk_footer.png" alt=""></picture>
                                             <div class="footer__main-phone__item-container">
                                                 <p class="footer__main-phone__item-span">Мы ВКонтакте</p>
                                                 <a href="">Будьте в курсе событий</a>
                                             </div>
                                         </li>
                                         <li class="footer__main-phone__item">
-                                            <img src="../img/map_footer.png" alt="">
+                                            <picture><source srcset="../img/map_footer.webp" type="image/webp"><img src="../img/map_footer.png" alt=""></picture>
                                             <div class="footer__main-phone__item-container">
                                                 <p class="footer__main-phone__item-span">197110, г. Санкт-Петербург, 
                                                     ул. Большая Зеленина 8, корп. 2, лит. А</p>
                                             </div>
                                         </li>
                                         <li class="footer__main-phone__item">
-                                            <img src="../img/mail_footer.png" alt="">
+                                            <picture><source srcset="../img/mail_footer.webp" type="image/webp"><img src="../img/mail_footer.png" alt=""></picture>
                                             <div class="footer__main-phone__item-container">
                                                 <p class="footer__main-phone__item-span">info@ligamed.spb.ru</p>
                                                 <p>пишите на E-mail</p>
                                             </div>
                                         </li>
                                     </ul>
+                                    <div class="menu-phone__bot-container">
+                                        <a class="menu-phone__bot-link" href="">Версия для слабовидящих</a>
+                                    <a class="menu-phone__bot-link" href="">Политика конфеденциальности</a>
+                                    </div>
+                                    
                                 </div>
-                                <nav>
-                                   
-                                </nav>
                             </div>
                             
                         </div>
@@ -263,133 +281,142 @@
                                 </div>
                                 <div class="menu-phone__top">
                                     <div class="menu-phone__logos">
-                                      <img src="./img/lmc_menu_phone.png" alt="lmc">
-                                      <img src="./img/lmc_mune_phone_text.png" alt="lmc">
-                                      <a class="menu-phone__logos-tel" href="tel:+78124459912">+7 812 445 99 12</a>
-                                  </div>
-                                  <div class="menu-phone__record">
-                                      <p class="menu-phone__record-text">Меню</p>
-                                      <div class="menu-phone__record-container">
-                                          <img src="./img/chat_header_menu.png" alt="chat">
-                                          <a class="menu-phone__record-link" href="#">Записаться</a>
-                                      </div>
-                                  </div>  
-                                  <div class="menu-phone__search">
-                                      <div class="menu-phone__search__container">
-                                          <input class="menu-phone__search__input" type="search" placeholder="Поиск по сайту">
-                                          
-                                      </div>
-                                      <img class="menu-phone__search-img" src="./img/search_header_menu_phone.png" alt="search">
-                                  </div>
-                                  </div>
-                            <!-- <div class="go-back2">Назад</div> -->
-                            <div class="accordion__menu">
-                                <div class="accordion__menu__list">
-                                    <button class="accordion__menu__btn">Консультации врачей</button>
-                                    <div class="accordion__menu__item">
-                                        <button class="accordion__menu__btn">Консультации врачей</button>
-                                        <div class="accordion__menu__item">
-                                            <p>lvl3</p>
-                                            <p>lvl3</p>
-                                        </div>
-                                        <button class="accordion__menu__btn">Консультации врачей</button>
-                                        <div class="accordion__menu__item">
-                                            <p>lvl3</p>
+                                        <picture><source srcset="./img/lmc_menu_phone.webp" type="image/webp"><img src="./img/lmc_menu_phone.png" alt="lmc"></picture>
+                                        <picture><source srcset="./img/lmc_mune_phone_text.webp" type="image/webp"><img src="./img/lmc_mune_phone_text.png" alt="lmc"></picture>
+                                        <a class="menu-phone__logos-tel" href="tel:+78124459912">+7 812 445 99 12</a>
+                                    </div>
+                                    <div class="menu-phone__record">
+                                        <p class="menu-phone__record-text">Меню</p>
+                                        <div class="menu-phone__record-container">
+                                            <picture><source srcset="./img/chat_header_menu.webp" type="image/webp"><img src="./img/chat_header_menu.png" alt="chat"></picture>
+                                            <a class="menu-phone__record-link" href="#">Записаться</a>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="accordion__menu__list">
-                                    <button class="accordion__menu__btn">Врачебные манипуляции</button>
-                                    <div class="accordion__menu__item">
-                                        <button class="accordion__menu__btn">Дерматовенерология</button>
-                                        <div class="accordion__menu__item">
-                                            <p>lvl3</p>
-                                            <p>lvl3</p>
+                                    <div class="menu-phone__search">
+                                        <div class="menu-phone__search__container">
+                                            <input class="menu-phone__search__input" type="search" placeholder="Поиск по сайту">
+                        
                                         </div>
-                                        <button class="accordion__menu__btn">Мануальная терапия</button>
-                                        <div class="accordion__menu__item">
-                                            <p>lvl3</p>
-                                        </div>
-                                        <button class="accordion__menu__btn">Массаж</button>
-                                        <div class="accordion__menu__item">
-                                            <p>lvl3</p>
-                                        </div>
+                                        <picture><source srcset="./img/search_header_menu_phone.webp" type="image/webp"><img class="menu-phone__search-img" src="./img/search_header_menu_phone.png" alt="search"></picture>
                                     </div>
                                 </div>
-                                <div class="accordion__menu__list">
-                                    <button class="accordion__menu__btn">Общая физиотерапия</button>
-                                    <div class="accordion__menu__item">
-                                        <button class="accordion__menu__btn">КИглорефлексотерапия</button>
-                                        <div class="accordion__menu__item">
-                                            <p>lvl3</p>
-                                            <p>lvl3</p>
-                                        </div>
-                                        <button class="accordion__menu__btn">Магнитотерапия</button>
-                                        <div class="accordion__menu__item">
-                                           
-                                            <p>Капельная терапия</p>
-                                            <p>Капельная терапия</p>
-                                            <p>Капельная терапия</p>
-                                            <p>Капельная терапия</p>
-                                        </div>
+                                <div class="menu-phone__back-container">
+                                    <div class="go-back2">
+                                        <picture><source srcset="./img/arrow_left_menu_phone.webp" type="image/webp"><img src="./img/arrow_left_menu_phone.png" alt=""></picture>
+                                        <p class="go-back2__text">Назад</p>
+                                    </div>
+                                    <p class="menu-phone__back-title">
+                                        Услуги <span>01</span>
+                                    </p>
+                                </div>
+                        
+                                <div class="accordion__menu">
+                                    <div class="accordion__menu__list">
                                         <button class="accordion__menu__btn">Консультации врачей</button>
                                         <div class="accordion__menu__item">
-                                            <p>lvl3</p>
+                                            <button class="accordion__menu__btn">Консультации врачей</button>
+                                            <div class="accordion__menu__item">
+                                                <p>lvl3</p>
+                                                <p>lvl3</p>
+                                            </div>
+                                            <button class="accordion__menu__btn">Консультации врачей</button>
+                                            <div class="accordion__menu__item">
+                                                <p>lvl3</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="accordion__menu__list">
-                                    <button class="accordion__menu__btn">Стоматология</button>
-                                    <div class="accordion__menu__item">
-                                        <button class="accordion__menu__btn">Консультации врачей</button>
+                                    <div class="accordion__menu__list">
+                                        <button class="accordion__menu__btn">Врачебные манипуляции</button>
                                         <div class="accordion__menu__item">
-                                            <p>lvl3</p>
-                                            <p>lvl3</p>
-                                        </div>
-                                        <button class="accordion__menu__btn">Консультации врачей</button>
-                                        <button class="accordion__menu__btn">Консультации врачей</button>
-                                        <div class="accordion__menu__item">
-                                            <p>lvl3</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion__menu__list">
-                                    <button class="accordion__menu__btn">Ультразвуковые исследования</button>
-                                    <div class="accordion__menu__item">
-                                        <button class="accordion__menu__btn">Консультации врачей</button>
-                                        <div class="accordion__menu__item">
-                                            <p>lvl3</p>
-                                            <p>lvl3</p>
-                                        </div>
-                                        <button class="accordion__menu__btn">Консультации врачей</button>
-                                        <button class="accordion__menu__btn">Консультации врачей</button>
-                                        <div class="accordion__menu__item">
-                                            <p>lvl3</p>
+                                            <button class="accordion__menu__btn">Дерматовенерология</button>
+                                            <div class="accordion__menu__item">
+                                                <p>lvl3</p>
+                                                <p>lvl3</p>
+                                            </div>
+                                            <button class="accordion__menu__btn">Мануальная терапия</button>
+                                            <div class="accordion__menu__item">
+                                                <p>lvl3</p>
+                                            </div>
+                                            <button class="accordion__menu__btn">Массаж</button>
+                                            <div class="accordion__menu__item">
+                                                <p>lvl3</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="accordion__menu__list">
-                                    <button class="accordion__menu__btn">Косметология</button>
-                                    <div class="accordion__menu__item">
-                                        <button class="accordion__menu__btn">Консультации врачей</button>
+                                    <div class="accordion__menu__list">
+                                        <button class="accordion__menu__btn">Общая физиотерапия</button>
                                         <div class="accordion__menu__item">
-                                            <p>lvl3</p>
-                                            <p>lvl3</p>
+                                            <button class="accordion__menu__btn">КИглорефлексотерапия</button>
+                                            <div class="accordion__menu__item">
+                                                <p>lvl3</p>
+                                                <p>lvl3</p>
+                                            </div>
+                                            <button class="accordion__menu__btn">Магнитотерапия</button>
+                                            <div class="accordion__menu__item">
+                        
+                                                <p>Капельная терапия</p>
+                                                <p>Капельная терапия</p>
+                                                <p>Капельная терапия</p>
+                                                <p>Капельная терапия</p>
+                                            </div>
+                                            <button class="accordion__menu__btn">Консультации врачей</button>
+                                            <div class="accordion__menu__item">
+                                                <p>lvl3</p>
+                                            </div>
                                         </div>
-                                        <button class="accordion__menu__btn">Консультации врачей</button>
-                                        <button class="accordion__menu__btn">Консультации врачей</button>
+                                    </div>
+                                    <div class="accordion__menu__list">
+                                        <button class="accordion__menu__btn">Стоматология</button>
                                         <div class="accordion__menu__item">
-                                            <p>lvl3</p>
+                                            <button class="accordion__menu__btn">Консультации врачей</button>
+                                            <div class="accordion__menu__item">
+                                                <p>lvl3</p>
+                                                <p>lvl3</p>
+                                            </div>
+                                            <button class="accordion__menu__btn">Консультации врачей</button>
+                                            <button class="accordion__menu__btn">Консультации врачей</button>
+                                            <div class="accordion__menu__item">
+                                                <p>lvl3</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion__menu__list">
+                                        <button class="accordion__menu__btn">Ультразвуковые исследования</button>
+                                        <div class="accordion__menu__item">
+                                            <button class="accordion__menu__btn">Консультации врачей</button>
+                                            <div class="accordion__menu__item">
+                                                <p>lvl3</p>
+                                                <p>lvl3</p>
+                                            </div>
+                                            <button class="accordion__menu__btn">Консультации врачей</button>
+                                            <button class="accordion__menu__btn">Консультации врачей</button>
+                                            <div class="accordion__menu__item">
+                                                <p>lvl3</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion__menu__list">
+                                        <button class="accordion__menu__btn">Косметология</button>
+                                        <div class="accordion__menu__item">
+                                            <button class="accordion__menu__btn">Консультации врачей</button>
+                                            <div class="accordion__menu__item">
+                                                <p>lvl3</p>
+                                                <p>lvl3</p>
+                                            </div>
+                                            <button class="accordion__menu__btn">Консультации врачей</button>
+                                            <button class="accordion__menu__btn">Консультации врачей</button>
+                                            <div class="accordion__menu__item">
+                                                <p>lvl3</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    </div>
                 </div>
                 <div class="header__bot-phone__record">
-                    <img src="./img/chat_our_service_page.png" alt=""><a href="">Записаться</a>
+                    <picture><source srcset="./img/chat_our_service_page.webp" type="image/webp"><img src="./img/chat_our_service_page.png" alt=""></picture><a href="">Записаться</a>
                 </div>
             </div>
         </div>
@@ -424,7 +451,7 @@
                     </p>
                     <div class="services__content-watch__phone">
                         <a href="./our_services.html">Все услуги</a>
-                        <img src="./img/arrow_title.png" alt="">
+                        <picture><source srcset="./img/arrow_title.webp" type="image/webp"><img src="./img/arrow_title.png" alt=""></picture>
                     </div>
                     
                     <div class="about__left-table">
@@ -451,17 +478,17 @@
                 <div class="about__right">
                     <div class="services__content-watch">
                         <a href="#">Подробнее о клинике</a>
-                        <img src="./img/arrow_title.png" alt="">
+                        <picture><source srcset="./img/arrow_title.webp" type="image/webp"><img src="./img/arrow_title.png" alt=""></picture>
                         <div class="about__right-border"></div>
                     </div>
-                    <img class="about__right__img" src="./img/doctor.jpg" alt="">
+                    <picture><source srcset="./img/doctor.webp" type="image/webp"><img class="about__right__img" src="./img/doctor.jpg" alt=""></picture>
                 </div>
             </div>
             <div class="about__wrapper-tablet">
                 <div class="about__left-tablet">
                     <div class="about__img-phone">
                         <div class="about__right-border"></div>
-                        <img class="about__img-phone__img" src="./img/doctor.jpg" alt="">
+                        <picture><source srcset="./img/doctor.webp" type="image/webp"><img class="about__img-phone__img" src="./img/doctor.jpg" alt=""></picture>
                     </div>
                         <div class="about__citate">
                             <p class="about__citate__text">«Великая цитата о нашей клинике и не менее великой заботе о
@@ -483,7 +510,7 @@
                          
                         <div class="about__content-watch__phone">
                             <a href="./our_services.html">Подробнее о клинике</a>
-                            <img src="./img/arrow_title.png" alt="">
+                            <picture><source srcset="./img/arrow_title.webp" type="image/webp"><img src="./img/arrow_title.png" alt=""></picture>
                         </div> 
                 </div>
                 
@@ -524,7 +551,7 @@
                             <h2 class="title">Наши <span class="title__span">направления</span></h2>
                             <div class="services__content-watch">
                                 <a href="#">Смотреть все статьи</a>
-                                <img src="./img/arrow_title.png" alt="">
+                                <picture><source srcset="./img/arrow_title.webp" type="image/webp"><img src="./img/arrow_title.png" alt=""></picture>
                             </div>
                         </div>
                         
@@ -535,62 +562,62 @@
                 </div>
                 <div class="direction__contentbox">
                     <div class="direction__content">
-                        <img class="direction__contentbox__img" src="./img/heart_direction_page.png" alt="heart">
+                        <picture><source srcset="./img/heart_direction_page.webp" type="image/webp"><img class="direction__contentbox__img" src="./img/heart_direction_page.png" alt="heart"></picture>
                         <p class="direction__contentbox__title">Кардиология</p>
                         <p class="direction__contentbox__subtitle">Раздел медицины, который изучает строение, функцию, болезни сердца и сосудов человека.</p>
                     </div>
                     <div class="direction__content">
-                        <img class="direction__contentbox__img" src="./img/heart_direction_page.png" alt="heart">
+                        <picture><source srcset="./img/heart_direction_page.webp" type="image/webp"><img class="direction__contentbox__img" src="./img/heart_direction_page.png" alt="heart"></picture>
                         <p class="direction__contentbox__title">Неврология</p>
                         <p class="direction__contentbox__subtitle">Раздел медицины, который изучает строение, функцию, болезни сердца и сосудов человека.</p>
                     </div>
                     <div class="direction__content">
-                        <img class="direction__contentbox__img" src="./img/heart_direction_page.png" alt="heart">
+                        <picture><source srcset="./img/heart_direction_page.webp" type="image/webp"><img class="direction__contentbox__img" src="./img/heart_direction_page.png" alt="heart"></picture>
                         <p class="direction__contentbox__title">Эндокринология</p>
                         <p class="direction__contentbox__subtitle">Раздел медицины, который изучает строение, функцию, болезни сердца и сосудов человека.</p>
                     </div>
                     <div class="direction__content">
-                        <img class="direction__contentbox__img" src="./img/heart_direction_page.png" alt="heart">
+                        <picture><source srcset="./img/heart_direction_page.webp" type="image/webp"><img class="direction__contentbox__img" src="./img/heart_direction_page.png" alt="heart"></picture>
                         <p class="direction__contentbox__title">Гастрэнтерология</p>
                         <p class="direction__contentbox__subtitle">Раздел медицины, который изучает строение, функцию, болезни сердца и сосудов человека.</p>
                     </div>
                     <div class="direction__content">
-                        <img class="direction__contentbox__img" src="./img/heart_direction_page.png" alt="heart">
+                        <picture><source srcset="./img/heart_direction_page.webp" type="image/webp"><img class="direction__contentbox__img" src="./img/heart_direction_page.png" alt="heart"></picture>
                         <p class="direction__contentbox__title">Травматология</p>
                         <p class="direction__contentbox__subtitle">Раздел медицины, который изучает строение, функцию, болезни сердца и сосудов человека.</p>
                     </div>
                     <div class="direction__content">
-                        <img class="direction__contentbox__img" src="./img/heart_direction_page.png" alt="heart">
+                        <picture><source srcset="./img/heart_direction_page.webp" type="image/webp"><img class="direction__contentbox__img" src="./img/heart_direction_page.png" alt="heart"></picture>
                         <p class="direction__contentbox__title">Флебология</p>
                         <p class="direction__contentbox__subtitle">Раздел медицины, который изучает строение, функцию, болезни сердца и сосудов человека.</p>
                     </div>
                     <div class="direction__content">
-                        <img class="direction__contentbox__img" src="./img/heart_direction_page.png" alt="heart">
+                        <picture><source srcset="./img/heart_direction_page.webp" type="image/webp"><img class="direction__contentbox__img" src="./img/heart_direction_page.png" alt="heart"></picture>
                         <p class="direction__contentbox__title">Мануальная терапия, остеопатия</p>
                         <p class="direction__contentbox__subtitle">Раздел медицины, который изучает строение, функцию, болезни сердца и сосудов человека.</p>
                     </div>
                     <div class="direction__content">
-                        <img class="direction__contentbox__img" src="./img/heart_direction_page.png" alt="heart">
+                        <picture><source srcset="./img/heart_direction_page.webp" type="image/webp"><img class="direction__contentbox__img" src="./img/heart_direction_page.png" alt="heart"></picture>
                         <p class="direction__contentbox__title">Стоматология</p>
                         <p class="direction__contentbox__subtitle">Раздел медицины, который изучает строение, функцию, болезни сердца и сосудов человека.</p>
                     </div>
                     <div class="direction__content">
-                        <img class="direction__contentbox__img" src="./img/heart_direction_page.png" alt="heart">
+                        <picture><source srcset="./img/heart_direction_page.webp" type="image/webp"><img class="direction__contentbox__img" src="./img/heart_direction_page.png" alt="heart"></picture>
                         <p class="direction__contentbox__title">Косметология</p>
                         <p class="direction__contentbox__subtitle">Раздел медицины, который изучает строение, функцию, болезни сердца и сосудов человека.</p>
                     </div>
                     <div class="direction__content">
-                        <img class="direction__contentbox__img" src="./img/heart_direction_page.png" alt="heart">
+                        <picture><source srcset="./img/heart_direction_page.webp" type="image/webp"><img class="direction__contentbox__img" src="./img/heart_direction_page.png" alt="heart"></picture>
                         <p class="direction__contentbox__title">Врачебные манипуляции</p>
                         <p class="direction__contentbox__subtitle">Раздел медицины, который изучает строение, функцию, болезни сердца и сосудов человека.</p>
                     </div>
                     <div class="direction__content">
-                        <img class="direction__contentbox__img" src="./img/heart_direction_page.png" alt="heart">
+                        <picture><source srcset="./img/heart_direction_page.webp" type="image/webp"><img class="direction__contentbox__img" src="./img/heart_direction_page.png" alt="heart"></picture>
                         <p class="direction__contentbox__title">Диагностика</p>
                         <p class="direction__contentbox__subtitle">Раздел медицины, который изучает строение, функцию, болезни сердца и сосудов человека.</p>
                     </div>
                     <div class="direction__content">
-                        <img class="direction__contentbox__img" src="./img/heart_direction_page.png" alt="heart">
+                        <picture><source srcset="./img/heart_direction_page.webp" type="image/webp"><img class="direction__contentbox__img" src="./img/heart_direction_page.png" alt="heart"></picture>
                         <p class="direction__contentbox__title">Лабораторные анализы</p>
                         <p class="direction__contentbox__subtitle">Раздел медицины, который изучает строение, функцию, болезни сердца и сосудов человека.</p>
                     </div>
@@ -622,54 +649,54 @@
                                     
                                     <!-- Slides -->
                                     <div class="swiper-slide">
-                                        <img src="./img/clinic.jpg" alt="">
+                                        <picture><source srcset="./img/clinic.webp" type="image/webp"><img src="./img/clinic.jpg" alt=""></picture>
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="./img/clinic.jpg" alt="">
+                                        <picture><source srcset="./img/clinic.webp" type="image/webp"><img src="./img/clinic.jpg" alt=""></picture>
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="./img/clinic.jpg" alt="">
+                                        <picture><source srcset="./img/clinic.webp" type="image/webp"><img src="./img/clinic.jpg" alt=""></picture>
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="./img/clinic.jpg" alt="">
+                                        <picture><source srcset="./img/clinic.webp" type="image/webp"><img src="./img/clinic.jpg" alt=""></picture>
                                     </div>
         
                                 </div>
                                 <!-- If we need pagination -->
                                 <div class="clinic__right-pagination swiper-pagination"></div>
-                                <img class="swiper-button-prev clinic__right-arrow" src="./img/arrow_gold_left.png" alt="">
-                                <img class="swiper-button-next clinic__right-arrow" src="./img/arrow_gold_right.png" alt="">
+                                <picture><source srcset="./img/arrow_gold_left.webp" type="image/webp"><img class="swiper-button-prev clinic__right-arrow" src="./img/arrow_gold_left.png" alt=""></picture>
+                                <picture><source srcset="./img/arrow_gold_right.webp" type="image/webp"><img class="swiper-button-next clinic__right-arrow" src="./img/arrow_gold_right.png" alt=""></picture>
                                 
                             </div>
                         </div>
                         <div class="clinic__advantage">
                             <div class="clinic__advantage-contentbox">
-                                <img class="clinic__advantage-img" src="./img/doctor_icon.png" alt="">
+                                <picture><source srcset="./img/doctor_icon.webp" type="image/webp"><img class="clinic__advantage-img" src="./img/doctor_icon.png" alt=""></picture>
                                 <p class="clinic__advantage-text">Уютная клиника
                                     и комфортая атомсфера</p>
                             </div>
                             <div class="clinic__advantage-contentbox">
-                                <img class="clinic__advantage-img" src="./img/doctor_icon.png" alt="">
+                                <picture><source srcset="./img/doctor_icon.webp" type="image/webp"><img class="clinic__advantage-img" src="./img/doctor_icon.png" alt=""></picture>
                                 <p class="clinic__advantage-text">Уютная клиника
                                     и комфортая атомсфера</p>
                             </div>
                             <div class="clinic__advantage-contentbox">
-                                <img class="clinic__advantage-img" src="./img/doctor_icon.png" alt="">
+                                <picture><source srcset="./img/doctor_icon.webp" type="image/webp"><img class="clinic__advantage-img" src="./img/doctor_icon.png" alt=""></picture>
                                 <p class="clinic__advantage-text">Уютная клиника
                                     и комфортая атомсфера</p>
                             </div>
                             <div class="clinic__advantage-contentbox">
-                                <img class="clinic__advantage-img" src="./img/doctor_icon.png" alt="">
+                                <picture><source srcset="./img/doctor_icon.webp" type="image/webp"><img class="clinic__advantage-img" src="./img/doctor_icon.png" alt=""></picture>
                                 <p class="clinic__advantage-text">Уютная клиника
                                     и комфортая атомсфера</p>
                             </div>
                             <div class="clinic__advantage-contentbox">
-                                <img class="clinic__advantage-img" src="./img/doctor_icon.png" alt="">
+                                <picture><source srcset="./img/doctor_icon.webp" type="image/webp"><img class="clinic__advantage-img" src="./img/doctor_icon.png" alt=""></picture>
                                 <p class="clinic__advantage-text">Уютная клиника
                                     и комфортая атомсфера</p>
                             </div>
                             <div class="clinic__advantage-contentbox">
-                                <img class="clinic__advantage-img" src="./img/doctor_icon.png" alt="">
+                                <picture><source srcset="./img/doctor_icon.webp" type="image/webp"><img class="clinic__advantage-img" src="./img/doctor_icon.png" alt=""></picture>
                                 <p class="clinic__advantage-text">Уютная клиника
                                     и комфортая атомсфера</p>
                             </div>
@@ -684,23 +711,23 @@
                             
                             <!-- Slides -->
                             <div class="swiper-slide">
-                                <img src="./img/clinic.jpg" alt="">
+                                <picture><source srcset="./img/clinic.webp" type="image/webp"><img src="./img/clinic.jpg" alt=""></picture>
                             </div>
                             <div class="swiper-slide">
-                                <img src="./img/clinic.jpg" alt="">
+                                <picture><source srcset="./img/clinic.webp" type="image/webp"><img src="./img/clinic.jpg" alt=""></picture>
                             </div>
                             <div class="swiper-slide">
-                                <img src="./img/clinic.jpg" alt="">
+                                <picture><source srcset="./img/clinic.webp" type="image/webp"><img src="./img/clinic.jpg" alt=""></picture>
                             </div>
                             <div class="swiper-slide">
-                                <img src="./img/clinic.jpg" alt="">
+                                <picture><source srcset="./img/clinic.webp" type="image/webp"><img src="./img/clinic.jpg" alt=""></picture>
                             </div>
 
                         </div>
                         <!-- If we need pagination -->
                         <div class="clinic__right-pagination swiper-pagination"></div>
-                        <img class="swiper-button-prev clinic__right-arrow" src="./img/arrow_gold_left.png" alt="">
-                        <img class="swiper-button-next clinic__right-arrow" src="./img/arrow_gold_right.png" alt="">
+                        <picture><source srcset="./img/arrow_gold_left.webp" type="image/webp"><img class="swiper-button-prev clinic__right-arrow" src="./img/arrow_gold_left.png" alt=""></picture>
+                        <picture><source srcset="./img/arrow_gold_right.webp" type="image/webp"><img class="swiper-button-next clinic__right-arrow" src="./img/arrow_gold_right.png" alt=""></picture>
                         
                     </div>
                    </div>
@@ -748,7 +775,7 @@
                           <h2 class="title">Наши <span class="title__span">специалисты</span></h2>  
                           <div class="services__content-watch">
                             <a href="#">Смотреть всех специалистов</a>
-                            <img src="./img/arrow_title.png" alt="">
+                            <picture><source srcset="./img/arrow_title.webp" type="image/webp"><img src="./img/arrow_title.png" alt=""></picture>
                         </div>
                         </div>
                         
@@ -793,8 +820,8 @@
                                </div>
                         </div>
                     </div>
-                    <img class="swiper-button-next specialist__sliders__arrow" src="./img/arrow_gold_right.png" alt="">
-                    <img class="swiper-button-prev specialist__sliders__arrow swiper-button-prev__tablet" src="./img/arrow_gold_left.png" alt="">
+                    <picture><source srcset="./img/arrow_gold_right.webp" type="image/webp"><img class="swiper-button-next specialist__sliders__arrow" src="./img/arrow_gold_right.png" alt=""></picture>
+                    <picture><source srcset="./img/arrow_gold_left.webp" type="image/webp"><img class="swiper-button-prev specialist__sliders__arrow swiper-button-prev__tablet" src="./img/arrow_gold_left.png" alt=""></picture>
                 </div>
 
             </div>
@@ -803,38 +830,62 @@
             <div class="container">
                 <div class="contacts__top">
                     <h2 class="title">Контакты</h2>
+                    <div class="services__content-watch">
+                        <a href="#">Подробнее</a>
+                        <picture><source srcset="./img/arrow_title.webp" type="image/webp"><img src="./img/arrow_title.png" alt="arrow"></picture>
+                    </div>
+                    <div class="arrow-link__phone">
+                        <div class="arrow-link__phone-container">
+                          <a href="#">Подробнее</a>
+                        <picture><source srcset="./img/arrow_title.webp" type="image/webp"><img src="./img/arrow_title.png" alt=""></picture>  
+                        </div>
+                    </div>
                 </div>
                 <div class="contacts__bot">
                     <div class="contacts__bot__info">
                         <div class="contacts__bot__info-adress">
-                            <p>197110, г. Санкт-Петербург,<br>
+                            <div>
+                               <p>197110, г. Санкт-Петербург,<br>
                                 ул. Большая Зеленина 8, корп. 2, лит. А</p>
-                            <a href="#">Посмотреть фото входа</a>
+                            <a href="#">Посмотреть фото входа</a> 
+                            </div>
+                            
+                            <button class="contacts__btn-tablet">написать сообщение</button>
+                        </div>
+                        <div class="contacts__bot__info-adress-phone">
+                            <div>
+                               <p>197110, г. Санкт-Петербург,<br>
+                                ул. Большая Зеленина 8, корп. 2, лит. А</p>
+                                <button class="contacts__btn-tablet">написать сообщение</button>
+                            <a href="#">Посмотреть фото входа</a> 
+                            </div>
+                            
+                            
                         </div>
                         <ul class="contacts__bot__info-list">
                             <li class="contacts__bot__info-item">
-                                <img src="./img/map_contacts.png" alt="">
+                                <picture><source srcset="./img/map_contacts.webp" type="image/webp"><img src="./img/map_contacts.png" alt=""></picture>
                                 <div class="contacts__bot__info-textbox">
                                     <p class="contacts__bot__info-text">ст.м. Чкаловская</p>
                                     <p class="contacts__bot__info-subtext">2 минуты пешком</p>
                                 </div>
                             </li>
                             <li class="contacts__bot__info-item">
-                                <img src="./img/tel_contacts.png" alt="">
+                                <picture><source srcset="./img/tel_contacts.webp" type="image/webp"><img src="./img/tel_contacts.png" alt=""></picture>
                                 <div class="contacts__bot__info-textbox">
                                     <p class="contacts__bot__info-text">+7 812 445 99 14</p>
                                     <p class="contacts__bot__info-subtext">c 10:00 до 20:00, без выходных</p>
                                 </div>
                             </li>
                             <li class="contacts__bot__info-item">
-                                <img src="./img/mail_contacts.png" alt="">
+                                <picture><source srcset="./img/mail_contacts.webp" type="image/webp"><img src="./img/mail_contacts.png" alt=""></picture>
                                 <div class="contacts__bot__info-textbox">
                                     <p class="contacts__bot__info-text">info@ligamed.spb.ru</p>
                                     <p class="contacts__bot__info-subtext">пишите на E-mail</p>
                                 </div>
                             </li>
                             <li class="contacts__bot__info-item">
-                                <img src="./img/car_contacts.png" alt="">
+                                <picture><source srcset="./img/car_contacts.webp" type="image/webp"><img src="./img/car_contacts.png" alt=""></picture>
                                 <div class="contacts__bot__info-textbox">
                                     <p class="contacts__bot__info-text">Бесплатная парковка</p>
                                     <p class="contacts__bot__info-subtext">со стороны ул. Ропшинская 25</p>
@@ -843,19 +894,11 @@
                         </ul>
                         <button class="contacts__btn">написать сообщение</button>
                     </div>
-                    <img class="contacts__bot__img" src="./img/clinic.jpg" alt="">
-                </div>
-                <div class="contacts__license">
-                    <div class="contacts__license__container">
-                        <img class="contacts__license__img" src="./img/license_about_page.png" alt="">
-                        <p class="contacts__license__text">Лицензии</p>
-                        <button class="contacts__license__btn">написать сообщение</button>
+                    <div class="contacts__bot__img">
+                        <div class="map" style="position:relative;overflow:hidden;"><a href="https://yandex.com.ge/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.com.ge/maps/2/saint-petersburg/house/bolshaya_zelenina_ulitsa_8/Z0kYdA5kSkIGQFtjfXV0eHRibA==/?ll=30.294371%2C59.959819&utm_medium=mapframe&utm_source=maps&z=16.69" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Зеленина улица, 8 — Яндекс Карты</a><iframe src="https://yandex.com/map-widget/v1/-/CCUbu0f0~B" width="100%" height="100%" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
                     </div>
-                    <div class="contacts__license__container">
-                        <img class="contacts__license__img" src="./img/requisites_about_page.png" alt="">
-                        <p class="contacts__license__text">Реквизиты</p>
-                        <button class="contacts__license__btn">написать сообщение</button>
-                    </div>
+                   
+                    <!-- <picture><source srcset="./img/clinic.webp" type="image/webp"><img class="contacts__bot__img" src="./img/clinic.jpg" alt=""></picture> -->
                 </div>
             </div>
         </section>
@@ -875,7 +918,7 @@
                     <input class="form__input" type="tel" placeholder="Номер телефона*">
                     <div class="form__group">
                         <input class="form__checkbox" type="checkbox" id="checkbox">
-                        <label class="form__checkbox-text" for="checkbox">я согласен на обработку персональных данных</label>
+                        <label class="form__checkbox-text" for="checkbox">я согласен на обработку <a class="form__checkbox-link" href="">персональных данных</a> </label>
                     </div>
                     <button class="record__btn">позвоните мне</button>
                 </form>
@@ -915,28 +958,28 @@
                <div class="footer__main__contacts">
                     <ul class="footer__main-list">
                         <li class="footer__main-item">
-                            <img src="./img/map_footer.png" alt="">
+                            <picture><source srcset="./img/map_footer.webp" type="image/webp"><img src="./img/map_footer.png" alt=""></picture>
                             <div class="contacts__bot__info-textbox">
                                 <p>197110, г. Санкт-Петербург,<br>
                                     ул. Большая Зеленина 8, корп. 2, лит. А</p>
                             </div>
                         </li>
                         <li class="footer__main-item">
-                            <img src="./img/tel_footer.png" alt="call">
+                            <picture><source srcset="./img/tel_footer.webp" type="image/webp"><img src="./img/tel_footer.png" alt="call"></picture>
                             <div class="footer__main-textbox">
                                 <p class="footer__main-text">+7 812 445 99 14</p>
                                 <p class="footer__main-subtext">c 10:00 до 20:00, без выходных</p>
                             </div>
                         </li>
                         <li class="footer__main-item">
-                            <img src="./img/mail_footer.png" alt="">
+                            <picture><source srcset="./img/mail_footer.webp" type="image/webp"><img src="./img/mail_footer.png" alt=""></picture>
                             <div class="footer__main-textbox">
                                 <p class="footer__main-text">info@ligamed.spb.ru</p>
                                 <p class="footer__main-subtext">пишите на E-mail</p>
                             </div>
                         </li>
                         <li class="footer__main-item">
-                            <img src="./img/vk_footer.png" alt="">
+                            <picture><source srcset="./img/vk_footer.webp" type="image/webp"><img src="./img/vk_footer.png" alt=""></picture>
                             <div class="footer__main-textbox">
                                 <p class="footer__main-text">Мы ВКонтакте</p>
                                 <p class="footer__main-subtext">Будьте в курсе событий</p>
@@ -948,28 +991,28 @@
             <div class="footer__main-middle__tablet">
                 <ul class="footer__main-list">
                     <li class="footer__main-item">
-                        <img src="./img/map_footer.png" alt="">
+                        <picture><source srcset="./img/map_footer.webp" type="image/webp"><img src="./img/map_footer.png" alt=""></picture>
                         <div class="contacts__bot__info-textbox">
                             <p>197110, г. Санкт-Петербург,<br>
                                 ул. Большая Зеленина 8, корп. 2, лит. А</p>
                         </div>
                     </li>
                     <li class="footer__main-item">
-                        <img src="./img/tel_footer.png" alt="call">
+                        <picture><source srcset="./img/tel_footer.webp" type="image/webp"><img src="./img/tel_footer.png" alt="call"></picture>
                         <div class="footer__main-textbox">
                             <p class="footer__main-text">+7 812 445 99 14</p>
                             <p class="footer__main-subtext">c 10:00 до 20:00, без выходных</p>
                         </div>
                     </li>
                     <li class="footer__main-item">
-                        <img src="./img/mail_footer.png" alt="">
+                        <picture><source srcset="./img/mail_footer.webp" type="image/webp"><img src="./img/mail_footer.png" alt=""></picture>
                         <div class="footer__main-textbox">
                             <p class="footer__main-text">info@ligamed.spb.ru</p>
                             <p class="footer__main-subtext">пишите на E-mail</p>
                         </div>
                     </li>
                     <li class="footer__main-item">
-                        <img src="./img/vk_footer.png" alt="">
+                        <picture><source srcset="./img/vk_footer.webp" type="image/webp"><img src="./img/vk_footer.png" alt=""></picture>
                         <div class="footer__main-textbox">
                             <p class="footer__main-text">Мы ВКонтакте</p>
                             <p class="footer__main-subtext">Будьте в курсе событий</p>
@@ -987,8 +1030,6 @@
                 <p class="footer__main-bot__text">2022 Медицинский центр «ЛигайМед»</p>
             </div>
         </div>
-        
-        <div class="footer__alert"><p>имеются противопоказания.<br> необходима консультация специалиста</p></div>
     </div>
     <div class="footer__bot__wrapper">
         <div class="container">
@@ -997,7 +1038,7 @@
                     <div class="footer__main-phone__top-contentbox">
                          <div class="footer__main-phone__top-text about-doctor__question">
                                 <p>Компания</p>
-                                <img class="footer__main-phone__top-img" src="../img/plus_footer_phone.png" alt="plus">
+                                <picture><source srcset="../img/plus_footer_phone.webp" type="image/webp"><img class="footer__main-phone__top-img" src="../img/plus_footer_phone.png" alt="plus"></picture>
                             </div>
                             <div class="footer__main-phone__top-subtext about-doctor__answer">
                                 <ul class="footer__list">
@@ -1013,7 +1054,7 @@
                     <div class="footer__main-phone__top-contentbox">
                          <div class="footer__main-phone__top-text about-doctor__question">
                                 <p>Услуги</p>
-                                <img class="footer__main-phone__top-img" src="../img/plus_footer_phone.png" alt="plus">
+                                <picture><source srcset="../img/plus_footer_phone.webp" type="image/webp"><img class="footer__main-phone__top-img" src="../img/plus_footer_phone.png" alt="plus"></picture>
                             </div>
                             <div class="footer__main-phone__top-subtext about-doctor__answer">
                                 <ul class="footer__list">
@@ -1030,28 +1071,28 @@
                 </div>
                 <ul class="footer__main-phone__list">
                     <li class="footer__main-phone__item">
-                        <img src="../img/tel_footer.png" alt="tel">
+                        <picture><source srcset="../img/tel_footer.webp" type="image/webp"><img src="../img/tel_footer.png" alt="tel"></picture>
                         <div class="footer__main-phone__item-container">
                             <p class="footer__main-phone__item-span">+7 812 445 99 14</p>
                             <p>c 10:00 до 20:00, без выходных</p>
                         </div>
                     </li>
                     <li class="footer__main-phone__item">
-                        <img src="../img/vk_footer.png" alt="">
+                        <picture><source srcset="../img/vk_footer.webp" type="image/webp"><img src="../img/vk_footer.png" alt=""></picture>
                         <div class="footer__main-phone__item-container">
                             <p class="footer__main-phone__item-span">Мы ВКонтакте</p>
                             <a href="">Будьте в курсе событий</a>
                         </div>
                     </li>
                     <li class="footer__main-phone__item">
-                        <img src="../img/map_footer.png" alt="">
+                        <picture><source srcset="../img/map_footer.webp" type="image/webp"><img src="../img/map_footer.png" alt=""></picture>
                         <div class="footer__main-phone__item-container">
                             <p class="footer__main-phone__item-span">197110, г. Санкт-Петербург, 
                                 ул. Большая Зеленина 8, корп. 2, лит. А</p>
                         </div>
                     </li>
                     <li class="footer__main-phone__item">
-                        <img src="../img/mail_footer.png" alt="">
+                        <picture><source srcset="../img/mail_footer.webp" type="image/webp"><img src="../img/mail_footer.png" alt=""></picture>
                         <div class="footer__main-phone__item-container">
                             <p class="footer__main-phone__item-span">info@ligamed.spb.ru</p>
                             <p>пишите на E-mail</p>
@@ -1065,11 +1106,12 @@
                 </ul>
             </div>
         </div>
-        <div class="footer__alert-bot"><p>имеются противопоказания.<br> необходима консультация специалиста</p></div>
+        
     </div>
+    <picture><source srcset="../img/footer_text_img.webp" type="image/webp"><img class="footer__img__text" src="../img/footer_text_img.png" alt=""></picture>
 </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="js/app.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20221114172445"></script>
+    <script src="js/app.min.js?_v=20221114172445"></script>
 </body>
 
 </html>

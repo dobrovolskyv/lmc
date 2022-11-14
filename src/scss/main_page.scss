@@ -238,8 +238,11 @@
     padding-top: 23vh;
     background-size: cover;
     position: relative;
+    .container{
+        position: relative;
+    }
     .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
-        bottom: 6%;
+        bottom: 22%;
         span{
            background-color: $primary; 
         }
@@ -248,8 +251,8 @@
         
         .header__arrow-nav {
                 position: absolute;
-                bottom: 5%;
-                right: 8%;
+                bottom: 22%;
+                right: 0%;
                 display: flex;
                 align-items: center;
                 &__arrow-left{
@@ -1085,7 +1088,7 @@
     margin-top: $marginTop;
     position: relative;
     &__sliders__swiper {
-        height: 257px;
+        min-height: 257px;
         
     }
 
@@ -1125,10 +1128,10 @@
             padding: 20px 40px;
             gap: 16px;
             width: 528px;
-            height: 237px;
+            min-height: 237px;
             border: 1px solid #AE8452;
             border-radius: 4px;
-            overflow-y: scroll;
+            
         }
     }
    
@@ -1463,6 +1466,9 @@
         &-text{
             font-size: $fs16;
         }
+        &-link{
+            text-decoration: underline;
+        }
     }
 }
 
@@ -1644,11 +1650,14 @@
         height: 440px;
         background-color: $primary;
         position: absolute;
-        bottom: 16%;
+        bottom: 10%;
         z-index: 0;
     }
     &__alert-bot{
         display: none;
+    }
+    &__img__text{
+        width: 100%;
     }
 }
 
@@ -1708,16 +1717,18 @@
         
         &__list {
             // margin-top: 10px;
+            border-radius: 4px;
             display: none;
             position: absolute;
             left: 0;
             top: 36px;
-            width: 300px;
+            width: 252px;
             padding-top: 0px;
             background-color: $primary;
             border-bottom-right-radius: 8px;
             border-top-right-radius: 8px;
             li{
+                border-radius: 4px;
                 border-bottom: 1px solid $bg;
                 width: 100%;
                 font-size: $fs16;
@@ -1753,12 +1764,13 @@
     &__sub-submenu {
 
         &__list {
+            border-radius: 4px;
             display: none;
             position: absolute;
             left: 100%;
             top: 0px;
-            min-width: 300px;
-            
+            min-width: 252px;
+            border-radius: 4px;
             background-color: $primary;
             border-bottom-right-radius: 8px;
             border-top-right-radius: 8px;
@@ -1772,11 +1784,31 @@
     &__sub-sub-submenu {
 
         &__list {
+            border-radius: 4px;
             display: none;
             position: absolute;
             left: 100%;
             top: 0px;
-            min-width: 250px;
+            width: 252px;
+            padding: 0 0 0 10px;
+            background-color: $primary;
+            border-bottom-right-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        &__link {
+            color: $bg;
+        }
+    }
+    &__sub-sub-sub-submenu {
+
+        &__list {
+            border-radius: 4px;
+            display: none;
+            position: absolute;
+            left: 100%;
+            top: 0px;
+            width: 252px;
             padding: 0 0 0 10px;
             background-color: $primary;
             border-bottom-right-radius: 8px;
@@ -1798,6 +1830,9 @@
 }
 
  .header__sub-submenu__list>li:hover .header__sub-sub-submenu__list {
+    display: block;
+}
+ .header__sub-sub-submenu__list>li:hover .header__sub-sub-sub-submenu__list {
     display: block;
 }
 
@@ -1880,14 +1915,15 @@
     //
     .header{
         &__menu{
-            margin-top: 20px;
-            margin-left: 15px;
+            margin-top: 35px;
+            margin-left: 0px;
             margin-right: 0px;
             width: 588px;
             &__list{
                 width: 420px;
-                & >li {
                 
+                & >li {
+                    
                     position: relative;
                     &:not(:first-child){
                         margin-left: 0px;
@@ -1914,6 +1950,18 @@
             }
         }
         &__sub-submenu {
+            &__list {
+                width: 250px;
+                li{
+                    padding: 5px 10px;
+                }
+            }
+
+            &__link {
+                font-size: $fs14;
+            }
+        }
+        &__subsub-submenu {
             &__list {
                 width: 250px;
                 li{
@@ -2159,8 +2207,8 @@
             &__subtitle{
                 font-size: $fs14;
             }
-            margin-left: 10px;
-            margin-right: 5px;
+            // margin-left: 10px;
+            // margin-right: 5px;
             .swiper-slide{
                 height: 380px;
             }
@@ -2470,8 +2518,8 @@
     .specialist__subtitle.subtitle{
         font-size: 14px;
         line-height: 140%;
-        padding-left: 20px;
-        padding-right: 5px;
+        // padding-left: 20px;
+        // padding-right: 5px;
     }
     .specialist__sliders__swiper .swiper-button-prev {
         left: 82%;
@@ -2490,7 +2538,7 @@
         &__bot{
             grid-template-columns: repeat(2,1fr);
             gap: 27px;
-            
+            margin-top: 37px;
             &-hidden{
                 grid-template-columns: repeat(2,1fr);
                 gap: 27px;
@@ -2517,8 +2565,8 @@
     //
     //
     .clinic{
-        padding-left: 20px;
-        padding-right: 5px;
+        // padding-left: 20px;
+        // padding-right: 5px;
         &__wrapper{
             flex-direction: column;
             .specialist__subtitle {
@@ -2527,14 +2575,14 @@
            
         }
         &__advantage{
-            padding-left: 20px;
-             padding-right: 5px;
+            // padding-left: 20px;
+            //  padding-right: 5px;
             grid-template-columns: repeat(3,1fr);
             gap: 20px;
         }
         &__right-swiper{
-            padding-left: 20px;
-             padding-right: 5px;
+            // padding-left: 20px;
+            //  padding-right: 5px;
             margin-top: 30px;
             .swiper-slide{
                 
@@ -2549,17 +2597,17 @@
             }
         }
         .swiper-button-next{
-            right: 0%;
+            right: 9%;
         }
         .clinic__right-pagination.swiper-pagination{
             bottom: 10%;
         }
         .clinic__wrapper .about__right-swiper__border{
-            top: 49%;
+            top: 47%;
             bottom: -1%;
             height: 365px;
             width: 588px;
-            right: 0%;
+            right: 2%;
         }
         .clinic__swiper-phone{
             display: none;
@@ -2635,9 +2683,23 @@
             position: relative;
             max-width: 309px;
             height: 294px;
-            &__subtitle{
-            margin-top: 30px;
+            
+            
+           
+            &__stock{
+                font-size: $fs10;
+                line-height: 140%;
             }
+            &__title{
+                font-size: $fs12;
+                line-height: 140%;
+            }
+            &__subtitle{
+                font-size: $fs12;
+                line-height: 140%;
+                margin-top: 30px;
+            }
+            
         }
         &__bot-visiable{
             
@@ -2653,7 +2715,11 @@
         .articles__btn{
             margin: 26px 30% 0px;
         }
+        .articles__card__text{
+            padding: 16px 18px 12px;
+        }
     }
+    
     
      //
     //
@@ -2665,7 +2731,7 @@
         &__bot{
             flex-direction: column;
             &__info{
-                
+                height: 350px;
                 width: 580px;
                 padding: 20px;
                 border-width: 1px 1px 0px 1px;
@@ -2739,16 +2805,21 @@
             }
         }
         .contacts__bot__img{
-            width: 288px;
-            height: 288px;
+            width: 580px;
+        height: 266px;
         }
         .contacts__btn-tablet {
-            width: 118%;
-            margin-left: -19px;
-            padding: 10px 70px;
-            margin-top: 16px;
+            width: 202px;
+            padding: 12px 30px;
             margin-bottom: 6px;
         }
+    }
+    .contacts__bot__img .map{
+        width: 580px;
+        height: 266px;
+        border: none;
+        outline: none;
+        border-radius: 0px 0 4px 4px;
     }
       //
     //
@@ -2769,7 +2840,7 @@
             margin-top: 10px;
         }
         &__form{
-            margin-top: 26px;
+            margin-top: 48px;
             .form__input{
                 width: 550px;
             }
@@ -2779,13 +2850,13 @@
             
         }
         &__btn{
-            width: 100%;
+            width: 193px;
         }
     }
         .footer {
             margin-top: $phoneMargin;
             &::before{
-                bottom: 23%;
+                bottom: 22%;
                 width: 100%;
                 height: 450px;
             }
@@ -2866,8 +2937,13 @@
                 padding: 0 5px;
                 font-size: $fs20;
             }
-    
+            &__img__text{
+                margin-top: 0px;
+                width: 100%;
+                height: 50px;
+            }
         }
+        
     
     }
   
@@ -2913,7 +2989,7 @@
         line-height: 140%;
         padding-left: 0;
         max-width: 288px;
-       
+        margin-top: 10px;
         }
     h2{
         font-size: $fs24;
@@ -3030,7 +3106,7 @@
             }
             .header__swiper-pagination.swiper-pagination{
                 left: 0;
-                bottom: 59%;
+                bottom: 54%;
             }
         }
     //
@@ -3103,7 +3179,10 @@
                         overflow: hidden;
                         grid-template-columns: repeat(1,1fr);
                     }
-                    
+                    &:hover .services__bot-phone__img-plus{
+                        transform: rotate(405deg);
+                        transition: all 0.4s ease-in;
+                    }
                 }
                 &-phone__content__title {
                     
@@ -3130,10 +3209,9 @@
                     img {
                         width: 17px;
                         height: 17px;
-                        &:hover{
-                            transform: rotate(405deg);
+                        transform: rotate(0deg);
                             transition: all 0.4s ease-in;
-                        }
+                       
                     }
 
                 }
@@ -3266,8 +3344,8 @@
             align-items: center;
             margin-left: 35%;
             font-size: 12px;
-            margin-top: 20px;
-            margin-right: 10px;
+            margin-top: 4px;
+            margin-right: 0px;
             text-decoration-line: underline;
             color: $secondaryRed;
             img{
@@ -3315,7 +3393,7 @@
         .specialist__sliders__swiper{
             max-width: 260px;
             max-height: 257px;
-            margin-top: -40px;
+            margin-top: -30px;
             .swiper-button-prev{
                 left: 74%;
                 top: 19%;
@@ -3331,9 +3409,7 @@
                 display: none;
             }
         }
-        &__subtitle{
-            font-size: $fs14;
-        }
+      
         &__sliders-box::after{
             height: 80px;
         }
@@ -3351,8 +3427,11 @@
             }
             
         }
+        .specialist__content-text{
+            transform: translateY(108px);
+        }
         .specialist__sliders-box:hover .specialist__content-text {
-            transform: translateY(-130px);
+            transform: translateY(0px);
             transition: all 0.8s ease-in;
         }
         .services__content-watch__phone{
@@ -3371,7 +3450,11 @@
         .arrow-link__phone{
             display: block;
         }
+        
     }
+    .specialist .specialist__sliders-box.swiper-slide{
+            height: 193px;
+        }
      //
     //
     //offer
@@ -3379,7 +3462,8 @@
     //
     .offer{
         .title{
-            font-size: 28px;
+            font-size: 24px;
+            line-height: 140%;
         }
         &__bot,
         &__bot-hidden{
@@ -3406,12 +3490,16 @@
             align-items: center;
             justify-content: flex-start;
             margin-left: 60%;
+            margin-top: 4px;
             a{
                 font-size: $fs12;
                 margin-right: 10px;
                 text-decoration-line: underline;
                 color: $secondaryRed;
 
+            }
+            img{
+                width: 30px;
             }
         }
         &__card__title{
@@ -3463,6 +3551,9 @@
                         align-items: center;
                         text-align: center;
                     }
+                }
+                &-text{
+                    margin-left: 0px;
                 }
             }
     
@@ -3562,7 +3653,21 @@
             grid-template-columns: repeat(1,1fr);
         }
         &__card{
+               
             margin-top: 0;
+            
+            &__stock{
+                font-size: $fs10;
+                line-height: 140%;
+            }
+            &__title{
+                font-size: $fs12;
+                line-height: 140%;
+            }
+            &__subtitle{
+                font-size: $fs12;
+                line-height: 140%;
+            }
         }
        .articles__btn{
             margin: 10px 0% 0px;
@@ -3570,6 +3675,9 @@
         }
         .arrow-link__phone{
             display: block;
+        }
+        .articles__card__text{
+            padding: 12px 18px;
         }
     }
     //
@@ -3642,6 +3750,13 @@
             .arrow-link__phone{
                 display: block;
             }
+            
+        }
+        .contacts__bot__img .map{
+            width: 288px;
+            height: 288px;
+            border: none;
+            border-radius: 4px;
         }
     //
     //
@@ -3782,7 +3897,8 @@
                 }
                 &-span{
                     font-size: $fs16;
-                    font-weight: 600;
+                    font-weight: 400;
+                    line-height: 140%;
                     
                 }
             }
