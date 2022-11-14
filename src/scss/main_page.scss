@@ -1735,6 +1735,7 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                
                 &:hover{
                     background: $listHover;
                     &:first-child{
@@ -1746,6 +1747,9 @@
                     }
 
                 }
+                
+            }
+            & > li{
                 &::after{
                     content: '\25B6';
                     color: $secondaryRed;
@@ -1753,6 +1757,7 @@
                     height: 10%;
                 }
             }
+          
         }
 
         &__link {
@@ -1774,6 +1779,14 @@
             background-color: $primary;
             border-bottom-right-radius: 8px;
             border-top-right-radius: 8px;
+            & > li{
+                &::after{
+                    content: '\25B6';
+                    color: $secondaryRed;
+                    width: 10%;
+                    height: 10%;
+                }
+            }
         }
 
         &__link {
@@ -1794,7 +1807,16 @@
             background-color: $primary;
             border-bottom-right-radius: 8px;
             border-top-right-radius: 8px;
+            & > li{
+                &::after{
+                    content: '\25B6';
+                    color: $secondaryRed;
+                    width: 10%;
+                    height: 10%;
+                }
+            }
         }
+        
 
         &__link {
             color: $bg;

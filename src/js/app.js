@@ -289,7 +289,7 @@ var i;
 
 for (i = 0; i < acci.length; i++) {
   acci[i].addEventListener("click", function() {
-    this.classList.toggle("active");
+    this.classList.toggle("active1");
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight){
       panel.style.maxHeight = null;

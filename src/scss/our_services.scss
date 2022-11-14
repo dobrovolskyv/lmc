@@ -137,14 +137,34 @@
     border: none;
     text-align: left;
     outline: none;
-    font-size: 18px;
+    font-size: 16px;
     transition: 0.5s;
     border-bottom: 1px solid $bg;
     border-width: 96%;
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
     
 }
+.accordion__menu__btn.accordion__menu__btn-lvl2{
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+    color: #FFF9EF;
+}
+.accordion__menu__btn-lvl3{
+    font-family: 'Fira Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 140%;
+}
 
-.active, .accordion__menu__btn:hover {
+.active1, .accordion__menu__btn:hover {
     background-color: $primary;
 }
 
@@ -152,14 +172,17 @@
     content: '\002B';
     color: white;
     font-size: 18px;
-    font-weight: bold;
     float: right;
     margin-left: 5px;
 }
 
-.active:after {
+.active1:after {
     content: "\2212";
-    color: white;
+    // color: white;
+    // font-size: 18px;
+    // font-weight: bold;
+    // float: right;
+    // margin-left: 5px;
 }
 
 

@@ -1662,7 +1662,7 @@
   border-bottom-right-radius: 8px;
 }
 
-.header__submenu__list li::after {
+.header__submenu__list > li::after {
   content: "▶";
   color: #972A29;
   width: 10%;
@@ -1686,6 +1686,13 @@
   border-top-right-radius: 8px;
 }
 
+.header__sub-submenu__list > li::after {
+  content: "▶";
+  color: #972A29;
+  width: 10%;
+  height: 10%;
+}
+
 .header__sub-submenu__link {
   color: #FFF9EF;
 }
@@ -1701,6 +1708,13 @@
   background-color: #093A67;
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
+}
+
+.header__sub-sub-submenu__list > li::after {
+  content: "▶";
+  color: #972A29;
+  width: 10%;
+  height: 10%;
 }
 
 .header__sub-sub-submenu__link {
@@ -2977,13 +2991,35 @@
   border: none;
   text-align: left;
   outline: none;
-  font-size: 18px;
+  font-size: 16px;
   transition: 0.5s;
   border-bottom: 1px solid #FFF9EF;
   border-width: 96%;
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
 }
 
-.active,
+.accordion__menu__btn.accordion__menu__btn-lvl2 {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 140%;
+  color: #FFF9EF;
+}
+
+.accordion__menu__btn-lvl3 {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.active1,
 .accordion__menu__btn:hover {
   background-color: #093A67;
 }
@@ -2992,14 +3028,12 @@
   content: "+";
   color: white;
   font-size: 18px;
-  font-weight: bold;
   float: right;
   margin-left: 5px;
 }
 
-.active:after {
+.active1:after {
   content: "−";
-  color: white;
 }
 
 .accordion__menu__item {
@@ -3543,10 +3577,6 @@
   transform: translate(-50%, 0%) rotate(-45deg);
 }
 
-.menu__btn-phone.active span {
-  background-color: red;
-}
-
 /* Меню, которое будет появляться */
 
 .menu-phone {
@@ -3563,6 +3593,11 @@
 
 .menu-phone .accordion__menu {
   width: 288px;
+}
+
+.menu-phone__logos {
+  display: flex;
+  align-items: center;
 }
 
 .menu-phone__logos img:not(:first-child) {
@@ -3589,7 +3624,7 @@
 .menu-phone__record-text {
   font-size: 14px;
   line-height: 140%;
-  margin-left: 40px;
+  margin-left: 25px;
 }
 
 .menu-phone__record-container {
@@ -3725,7 +3760,7 @@
   width: 113%;
   height: 950px;
   padding: 15px;
-  top: -15px;
+  top: 0px;
   background: #093A67;
   transform: translateX(-120%);
   transition: transform 0.5s;
@@ -3815,6 +3850,10 @@
   left: 100%;
 }
 
+.menu2-phone .menu2__btn-phone {
+  top: 10px;
+}
+
 .menu-phone__back-container {
   display: flex;
   justify-content: space-between;
@@ -3852,139 +3891,6 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 140%;
-}
-
-#accordian {
-  /*background: #78913c;*/
-  background: rgb(58, 78, 10);
-  width: 250px;
-  margin: 50px auto 0 auto;
-  color: white;
-}
-
-#accordian h3 {
-  background: #0a2f17;
-  background: linear-gradient(#0a2f17, #031d11);
-}
-
-#accordian h3 a {
-  position: relative;
-  display: block;
-  padding: 0 10px;
-  font-size: 12px;
-  line-height: 34px;
-  color: white;
-  text-decoration: none;
-}
-
-#accordian h3 a .InnerBar {
-  position: absolute;
-  width: auto;
-  top: 3px;
-  left: 35px;
-  right: 0px;
-  bottom: 3px;
-  padding: 0 10px;
-  line-height: 28px;
-}
-
-#accordian h3 a:hover > .InnerBar {
-  background: linear-gradient(#031d11, #0a2f17);
-}
-
-.InnerBarActive {
-  background: linear-gradient(#031d11, #0a2f17);
-}
-
-#accordian h3:hover {
-  text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
-}
-
-i {
-  margin-right: 10px;
-}
-
-#accordian li {
-  list-style-type: none;
-}
-
-#accordian ul ul li a,
-#accordian h4 {
-  color: white;
-  text-decoration: none;
-  font-size: 11px;
-  line-height: 27px;
-  display: block;
-  padding: 0 15px;
-  transition: all 0.15s;
-  position: relative;
-}
-
-.SubOptn-Hover:hover {
-  background: #003545;
-  border-left: 5px solid lightgreen;
-  background: #4a5412;
-  border-left: 5px solid #7b9a50;
-  background: #4a6112;
-  border-left: 5px solid #7b9a50;
-}
-
-#accordian ul ul {
-  display: none;
-}
-
-#accordian li.active > ul {
-  display: block;
-}
-
-#accordian ul ul ul {
-  border-left: 15px solid #2a3a09;
-}
-
-.SubMenu1,
-.SubMenu2 {
-  border-left-width: 15px;
-  border-right-width: 0px;
-  border-style: solid;
-  -o-border-image: linear-gradient(to bottom, #304600, #243100) 1 100%;
-     border-image: linear-gradient(to bottom, #304600, #243100) 1 100%;
-  background: linear-gradient(#243100, #304600);
-}
-
-.Counter01,
-.Counter02,
-.Counter03,
-.Counter04,
-.SubCounter01_01,
-.SubCounter02_01,
-.SubCounter02_02,
-.SubCounter02_03,
-.SubCounter03 {
-  position: absolute;
-  display: block;
-  float: right;
-  right: 10px;
-  padding: 2px 10px 0px 10px;
-  font: normal bold 12px/18px "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-  border-radius: 15px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.75) inset, 0px 1px 0px #696969 !important;
-}
-
-.Counter01,
-.Counter02,
-.Counter03,
-.Counter04 {
-  top: 6px;
-  background: #182904;
-}
-
-.SubCounter01_01,
-.SubCounter02_01,
-.SubCounter02_02,
-.SubCounter02_03,
-.SubCounter03 {
-  top: 3px;
-  background: #324406;
 }
 
 html {
