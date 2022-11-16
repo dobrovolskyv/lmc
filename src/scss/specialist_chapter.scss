@@ -45,8 +45,9 @@
             flex-direction: column;
             background-color: rgba(255, 249, 239, 0.6);
             width: 100%;
+            height: 300px;
             padding: 5px 10px;
-            transform: translateY(110px);
+            transform: translateY(230px);
            
         }
         &-undertitle{
@@ -110,7 +111,7 @@
 }
 
 .specialist-chapter__content:hover .specialist-chapter__content-text{
-    transform: translateY(-2px);
+    transform: translateY(100px);
     transition: transform 0.8s ease-in;
 }
 

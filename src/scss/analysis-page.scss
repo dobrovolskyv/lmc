@@ -2,6 +2,9 @@
     margin-top: $marginTitle;
     .analysis-page__header__bot{
         margin-top: 90px;
+        display: flex;
+        justify-content: space-between;
+
     }
     
     
@@ -52,7 +55,7 @@
         line-height: 140%;
         width: 100%;
         }
-        &__bot{
+        .analysis-page__header__bot{
             display: grid;
             grid-template-columns: repeat(2,1fr);
             gap: 20px;
@@ -138,7 +141,8 @@
 @media (max-width: 320px) {
     .analysis-page__header{
         margin-top: $marginTitlePhone;
-        &__bot{
+        .analysis-page__header__bot{
+            display: grid;
             grid-template-columns: repeat(1,1fr);
         }
         .subtitle{

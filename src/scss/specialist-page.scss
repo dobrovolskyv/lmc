@@ -7,8 +7,8 @@
     position: relative;
     }
     .about__right-border__specialist-page{
-        top: 3%;
-        height: 550px;
+        top: 0%;
+        height: 539px;
     }
 }
 .header{
@@ -22,6 +22,8 @@
             
         }
         &__item{
+            font-family: 'Fira Sans';
+            font-style: normal;
             display: flex;
             margin-top: 16px;
             font-size: $fs20;
