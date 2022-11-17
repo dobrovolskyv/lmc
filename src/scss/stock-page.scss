@@ -192,6 +192,10 @@ color: #AE8452;
     }
     &__title{
         font-size: $fs42;
+        font-family: 'Oranienbaum';
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
     }
     padding: 0 10px;
     &__content-top{
@@ -440,6 +444,9 @@ color: #AE8452;
                 p{
                     font-size: $fs16;
                     line-height: 140%;
+                    margin-top: 10px;
+                }
+                &::before{
                     margin-top: 10px;
                 }
             }

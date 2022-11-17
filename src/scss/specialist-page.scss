@@ -122,8 +122,11 @@
         img{
             width: 40px;
             height: 40px;
+            transform: rotate(0deg);
+            transition: all 0.4s linear;
+           
         }
-        
+       
     }
     &__title{
         font-family: 'Oranienbaum';
@@ -148,6 +151,11 @@
        }
     }
 }
+
+.about-doctor__question:focus ~ .about-doctor__img{
+    transform: rotate(405deg);
+    transition: all 0.4s linear;
+}
 .about-doctor__contentbox.active .about-doctor__answer{
     min-height: 100px;
 }
@@ -169,9 +177,9 @@
             width: 250px;
         }
         .about__right-border__specialist-page {
-            top: 7%;
+            top: 0%;
             height: 353px;
-            right: 1%;
+            right: 0%;
             width: 96%;
         }
         
@@ -235,7 +243,7 @@
         margin-top: 100px;
        
         &__title{
-            font-size: $fs24;
+            font-size: 26px;
             
         }
         &__contentbox{
@@ -243,6 +251,7 @@
             margin-top: 20px;
         }
         &__question{
+            padding: 12px 8px;
             img{
                 width: 30px;
                 height: 30px;
@@ -334,6 +343,13 @@
     
 }
 @media (max-width: 320px) {
+    .container{
+        max-width: 288px;
+        margin: 0 auto;
+        overflow: hidden;
+        padding-left: 0px;
+    }
+
     section .header__menu-navpage__list {
         margin-bottom: 0px;
 

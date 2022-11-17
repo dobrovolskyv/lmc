@@ -79,7 +79,8 @@ text-transform: uppercase;
             margin-top: $marginTitleTablet;
 
             .specialist__subtitle {
-                font-size: $fs20;
+                font-size: $fs16;
+                line-height: 140%;
             }
 
             &__bot {
@@ -115,7 +116,10 @@ text-transform: uppercase;
                 width: 90%;
             }
         }
-
+       
+    }
+    .blog-archive__content-btn.btn{
+        margin: 10px 29% 0px;
     }
 }
 @media (max-width: 320px) {

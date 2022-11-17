@@ -259,7 +259,20 @@ if (offerBtn && offerCard){offerBtn.addEventListener('click', (e)=>{
     
     
 })}
+const archiveBtn = document.querySelector('.blog-archive__content-btn');
+if (offerBtn && offerCard&& archiveBtn){offerBtn.addEventListener('click', (e)=>{
+  
+  let cont = offerCard;
+  if(cont.style.maxHeight){
+    
+    archiveBtn.innerHTML="Смотреть все статьи"
+  } else {
+   
+    archiveBtn.innerHTML="Показать еще"
+  }
 
+
+})}
 // var acc = document.getElementsByClassName("accordion__menu__item");
 // var i;
 
@@ -275,6 +288,18 @@ if (offerBtn && offerCard){offerBtn.addEventListener('click', (e)=>{
 //     } 
 //   });
 // }
+
+const headerTop = document.querySelector('.header__top');
+
+window.addEventListener('scroll', function(){
+  if (headerTop){
+    if (window.pageYOffset> 130){
+      headerTop.style.backgroundColor = 'rgba(255, 249, 239, 1)';
+    } else{
+      headerTop.style.backgroundColor = 'rgba(255, 249, 239, 0.6)';
+    }
+  }
+})
 
 
 var acci = document.getElementsByClassName("accordion__menu__btn");

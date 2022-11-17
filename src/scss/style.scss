@@ -262,7 +262,13 @@ color: $gold;
 
 
 @media (max-width: 640px) {
-    
+    .container{
+        max-width: 592px;
+        margin: 0 auto;
+        overflow: hidden;
+        padding-left: 10px;
+    }
+        
 }
 @media (max-width: 320px) {
     .container{
@@ -281,24 +287,31 @@ color: $gold;
 
 .header__bot-search-tablet{
 display: flex;
-background: transparent;
-border-radius: 100px;
-border: 1px solid $gold;
+background-color: $white;
+    width: 140px;
+        background: transparent;
+        font-weight: 600;
+        color: $primary;
+        position: relative;
+        border: none;
+        border: 1px solid #093A67;
+        border-radius: 50px;
 margin-top: 20px;
+margin-right: 50px;
     & input{
         background: transparent;
         color: $bg;
         font-size: $fs12;
         border: none;
-        padding: 0;
-        width: 0;
+        padding: 1px 10px;
+        width: 140px;
         outline: none;
         transition: all 0.2s;
         color: $primary;
     }
     &:hover input, input:focus, input:not(:placeholder-shown){
         width: 140px;
-        padding: 9px 0px;
+        padding: 1px 10px;
         padding-left: 10px;
     }
     &__img{

@@ -233,8 +233,8 @@ line-height: 140%;
                     margin-right: 10px;
                 }
                 p{
-                    font-size: $fs36;
-                    line-height: 140%;
+                    font-size: 28px;
+                    line-height: 110%;
                     margin-top: 0;
                 }
             }
@@ -257,8 +257,11 @@ line-height: 140%;
             }
             &__more{
                 flex-grow: 0;
-                p{
-                    font-size: $fs12;
+                a{
+                    font-size: $fs14;
+                }
+                img{
+                    width: 30px;
                 }
             }
         }

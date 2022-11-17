@@ -6,6 +6,9 @@
     .contacts-page{
         margin-top: $marginTitleTablet;
     }
+    .contacts__bot__img {
+        height: 266px;
+    }
 }
 @media (max-width: 320px) {
     .contacts-page{
