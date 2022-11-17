@@ -15,7 +15,7 @@
         align-items: center;
         background-color: $bg;
         
-        z-index: 10;
+        z-index: 40;
         border-radius: 4px;
         padding: 10px 10px;
         &__tel {
@@ -35,9 +35,11 @@
             align-items: center;
             margin-right: 50px;
             margin-left: 2px;
+            
         }
         &-img__logo{
             margin-right: 20px;
+            
             // margin-left: -54px;
         }
         &__list{
@@ -46,6 +48,7 @@
     }
     &__img__logo{
         margin-right: 20px;
+        height: 36px;
     }
 
     &__top__items {
@@ -113,7 +116,7 @@
         // width: 1200px;
         width: 100vw;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         height: 72px;
         background: rgba($color: #FFF9EF, $alpha: 0.6);
@@ -257,7 +260,7 @@
     }
     .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
         bottom: 22%;
-        right: 20%;
+        z-index: 2;
         span{
            background-color: $primary; 
            
@@ -456,6 +459,10 @@
     &__contentbox-top {
         display: flex;
         justify-content: space-between;
+        .services__content-card{
+padding: 26px 36px;
+        }
+        
     }
 
     &__contentbox-bot {
@@ -490,6 +497,22 @@
             color: $secondaryRed;
             
 
+        }
+        &-top{
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+            max-width: 450px;
+            p{
+              font-family: "Oranienbaum";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 100%;
+            color: #972A29;  
+            margin-left: 24px;
+            }
+            
         }
 
         &-bot {
@@ -956,7 +979,9 @@
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             margin-top: 20px;
-            display: none;
+            max-height: 0;
+            overflow: hidden;
+            transition: all .5s linear;
         }
     }
 
@@ -1092,10 +1117,12 @@
         }
     }
     
-    &__right-pagination {
+    .clinic__right-pagination {
         margin-bottom: 4%;
+        z-index: 2;
         span{
             background-color: $primary; 
+            z-index: 1;
          }
     }
 
@@ -1136,10 +1163,7 @@
 .reviews {
     margin-top: $marginTop;
     position: relative;
-    &__sliders__swiper {
-        min-height: 257px;
-        
-    }
+    
 
     &__sliders {
         &__swiper{
@@ -1155,6 +1179,7 @@
             font-family: 'Fira Sans';
             font-size: $fs16;
             line-height: 120%;
+            
             padding-bottom: 24px;
         }
 
@@ -1207,6 +1232,10 @@
     }
 
 }
+.more{
+    display: none;
+}
+
 .reviews .reviews__sliders-box {
     height: 250px;
 }
@@ -1228,7 +1257,9 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 0px;
-        display: none;
+        max-height: 0;
+            overflow: hidden;
+            transition: all .5s linear;
         margin-top: 10px;
     }
     &__contentbox{
@@ -1661,6 +1692,9 @@
                     text-decoration-line: underline;
                 }
             }
+            &__text{
+                display: none;
+            }
         }
         &-phone{
             display: none;
@@ -1714,6 +1748,8 @@
     }
     &__img__text{
         width: 100%;
+        height: 70px;
+        margin-top: 10px;
     }
 }
 
@@ -1730,7 +1766,7 @@
 .header {
     &__menu {
       width: 698px;
-      margin-left: 110px;
+      margin-right: 110px;
         &__list {
             display: flex;
             align-items: center;
@@ -2977,6 +3013,7 @@
                     font-size: $fs14;
                     line-height: 140%;
                     color: $bg;
+                    display: block;
                 }
                 &-bot__item{
                     z-index: 1;

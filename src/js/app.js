@@ -42,7 +42,7 @@ const headerSlides = new Swiper('.header__slides__swiper', {
 
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination',
+    el: '.header__swiper-pagination',
   },
 
   // Navigation arrows
@@ -222,34 +222,42 @@ const reviewsSwiper = new Swiper('.reviews__sliders__swiper', {
 const articlesCard = document.querySelector('.articles__bot-hidden');
 const articlesBtn = document.querySelector('.articles__btn');
 
+// if (articlesBtn && articlesCard ){articlesBtn.addEventListener('click', (e)=>{
+//   if (articlesCard.style.display === "none") {
+//     articlesCard.style.display = "grid";
+//   } else {
+//     articlesCard.style.display = "none";
+//   }
+// })}
 if (articlesBtn && articlesCard ){articlesBtn.addEventListener('click', (e)=>{
-  if (articlesCard.style.display === "none") {
-    articlesCard.style.display = "grid";
-  } else {
-    articlesCard.style.display = "none";
-  }
+  let cont = articlesCard;
+      if(cont.style.maxHeight){
+        articlesCard.style.maxHeight = null;
+        articlesBtn.innerHTML="Показать еще"
+      } else {
+        articlesCard.style.maxHeight = null;
+        cont.style.maxHeight = cont.scrollHeight + "px";
+        articlesBtn.innerHTML="Смотреть все статьи"
+      }
 })}
 
 
 const offerCard = document.querySelector('.offer__bot-hidden');
 const offerBtn = document.querySelector('.offer__btn');
 
-// offerBtn.forEach((el)=>{
-//   el.addEventListener('click',()=>{
-//     console.log(offerCard)
-//     if (offerCard.style.display === "none") {
-//       offerCard.style.display = "grid";
-//     } else {
-//       offerCard.style.display = "none";
-//     }
-//   })
-// })
 if (offerBtn && offerCard){offerBtn.addEventListener('click', (e)=>{
-  if (offerCard.style.display === "none") {
-    offerCard.style.display = "grid";
-  } else {
-    offerCard.style.display = "none";
-  }
+  
+      let cont = offerCard;
+      if(cont.style.maxHeight){
+        offerCard.style.maxHeight = null;
+        offerBtn.innerHTML="Показать еще"
+      } else {
+        offerCard.style.maxHeight = null;
+        cont.style.maxHeight = cont.scrollHeight + "px";
+        offerBtn.innerHTML="Смотреть все акции"
+      }
+    
+    
 })}
 
 // var acc = document.getElementsByClassName("accordion__menu__item");
@@ -267,22 +275,7 @@ if (offerBtn && offerCard){offerBtn.addEventListener('click', (e)=>{
 //     } 
 //   });
 // }
-// function accord (className){
-//   let  cnStr = className.toString();
-//  let cn = document.getElementsByClassName(cnStr)
-//  let i;
-//  for (i = 0; i < cn.length; i++) {
-//   cn[i].addEventListener("click", function() {
-//     this.classList.toggle("active");
-//     var panel = this.nextElementSibling;
-//     if (panel.style.maxHeight){
-//       panel.style.maxHeight = null;
-//     } else {
-//       panel.style.maxHeight = panel.scrollHeight + "px";
-      
-//     } 
-//   });
-// }
+
 
 var acci = document.getElementsByClassName("accordion__menu__btn");
 var i;
@@ -344,44 +337,27 @@ accordionFunction.accordionAboutDoctor();
 //
 //
 //
-//new accord
-//
-//
-//
-// let accordMenu = ("#accordian a").addEventListener('click', function () {
-//   var link = $(this);
-//   var closest_ul = link.closest("ul");
-//   var parallel_active_links = closest_ul.querySelector(".active");
-//   var closest_li = link.closest("li");
-//   var link_status = closest_li.classList.contains("active");
-//   var count = 0;
 
-//   closest_ul.find("ul").slideUp(function () {
-//     if (++count == closest_ul.querySelector("ul").length)
-//       parallel_active_links.removeClass("active");
-//   });
+//
+//
+//
+// let dots = document.querySelector('.dots');
+// let more = document.querySelector('.more');
+// let btnReviews = document.querySelector('.testBtn')
 
-//   if (!link_status) {
-//     closest_li.children("ul").slideDown();
-//     closest_li.addClass("active");
+
+// btnReviews.addEventListener('click', function(){
+//  if(dots.style.display === "none"){
+//     dots.style.display ='block'
+//     btnReviews.innerHTML='Подробнее';
+//     more.style.display = "none";
+//   } else {
+//     dots.style.display = "none";
+//     btnReviews.innerHTML='Скрыть';
+//     more.style.display = "block";
 //   }
-// });
-
-// $("h3 a").on("click", ".InnerBar", function () {
-//   $("h3 a span").removeClass("InnerBarActive");
-//   $(this).addClass("InnerBarActive");
-// });
-
-// // -> Count Menus Topics
-// $(".Counter01").html($(".Menu01 li").length);
-// $(".Counter02").html($(".Menu02 li").length);
-// $(".SubCounter02_01").html($(".SubMenu02-01 li").length);
-// $(".SubCounter02_02").html($(".SubMenu02-02 li").length);
-// $(".SubCounter02_03").html($(".SubMenu02-03 li").length);
-// $(".Counter03").html($(".Menu03 li").length);
-// $(".Counter04").html($(".Menu04 li").length);
-
-
+ 
+// })
 
 })
 
