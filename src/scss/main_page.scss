@@ -2128,13 +2128,11 @@ padding: 26px 36px;
         &__menu{
             margin-top: 35px;
             margin-left: 0px;
-            margin-right: 20px;
+            margin-right: 128px;
             width: 420px;
             &__list{
                 width: 420px;
-                
                 & >li {
-                    
                     position: relative;
                     &:not(:first-child){
                         margin-left: 8px;
@@ -2251,9 +2249,8 @@ padding: 26px 36px;
         &__top{
             position: fixed;
             top: 66%;
-            width: 100%;
             padding: 5px 2px;
-            left: 15px;
+            left: 5px;
             // margin-left: -2px;
             align-items: center;
             &-logo__contentbox{
@@ -2275,7 +2272,7 @@ padding: 26px 36px;
                 line-height: 21px;
                 text-align: center;
                 text-transform: uppercase;
-                margin-left: 109px;
+                margin-left: 80px;
                 width: 136px;
             }
             &-tablet{
@@ -2326,9 +2323,8 @@ padding: 26px 36px;
         }
         
         &__bot{
-            width: 100%;
-            height: 56px;
-            margin-top: -40px;
+            top: 85%;
+            // margin-top: -40px;
             &-call{
                 display: none;
             }
@@ -3214,7 +3210,7 @@ padding: 26px 36px;
                     font-size: $fs14;
                     line-height: 140%;
                     color: $bg;
-                    display: block;
+                    display: none;
                 }
                 &-bot__item{
                     z-index: 1;
@@ -4320,6 +4316,7 @@ padding: 26px 36px;
             padding-bottom: 20px;
             text-align: center;
         }
+        
     }
 
 }

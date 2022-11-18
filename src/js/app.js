@@ -363,7 +363,17 @@ accordionFunction.accordionAboutDoctor();
 //
 //
 //
-
+ScrollReveal({
+  distance: '60px',
+  duration: 1500,
+  delay: 400
+});
+ScrollReveal().reveal('.main-page__header',{ delay: 200, origin:'bottom'});
+ScrollReveal().reveal('.title title__offer',{ delay: 300, origin:'bottom'});
+ScrollReveal().reveal('.title__span',{ delay: 400, origin:'bottom'});
+ScrollReveal().reveal('.services',{ delay: 400, origin:'bottom' });
+ScrollReveal().reveal('.about',{ delay: 300, origin:'bottom' });
+ScrollReveal().reveal('.specialist',{ delay: 200, origin:'bottom' });
 //
 //
 //

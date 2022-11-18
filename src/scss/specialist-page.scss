@@ -152,10 +152,10 @@
     }
 }
 
-.about-doctor__question:focus ~ .about-doctor__img{
-    transform: rotate(405deg);
-    transition: all 0.4s linear;
-}
+// .about-doctor__question:active .about-doctor__img{
+//     transform: rotate(405deg);
+//     transition: all 0.4s linear;
+// }
 .about-doctor__contentbox.active .about-doctor__answer{
     min-height: 100px;
 }
@@ -165,7 +165,6 @@
     .specialist-page__header{
         margin-top: $marginTitleTablet;
         .about__right__img{
-            
             width: 300px;
             height: 350px;
             margin-left: 15px;
@@ -255,10 +254,16 @@
             img{
                 width: 30px;
                 height: 30px;
+                transform: rotate(0deg);
+                transition: all 0.4s linear;
             }
         }
         &__answer-text{
             font-size: $fs16;
+        }
+        .about-doctor__question:hover .about-doctor__img{
+            transform: rotate(405deg);
+            transition: all 0.4s linear;
         }
     }
     //
