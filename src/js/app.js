@@ -2,6 +2,7 @@ import * as runingStr from "./modules/move.js";
 import * as flsFunctions from "./modules/functions.js";
 import * as accordionFunction from "./modules/accordion.js"
 
+
 flsFunctions.isWebp();
 
 
@@ -199,7 +200,7 @@ const reviewsSwiper = new Swiper('.reviews__sliders__swiper', {
    
     // when window width is >= 640px
     700: {
-      slidesPerView: 2,
+      slidesPerView: 2.1,
       spaceBetween: 40,
     }
   },

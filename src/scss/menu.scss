@@ -100,6 +100,7 @@
 			font-size: $fs14;
 			line-height: 140%;
 			margin-left: 25px;
+			margin-top: -7px;
 		}
 		&-container{
 			display: flex;
@@ -108,6 +109,7 @@
 		&-link{
 			font-size: $fs14;
 			margin-left: 10px;
+			text-decoration: underline;
 		}
 	}
 	&__search{
@@ -136,6 +138,9 @@
 				font-size: 14px;
 				line-height: 17px;
 			}
+			&::placeholder{
+				color: #FFF9EF;
+			}
 		}
 		&-img{
 			position: absolute;
@@ -146,6 +151,8 @@
 	&__middle{
 		margin-top: 20px;
 		&-link{
+			font-family: 'Oranienbaum';
+			font-style: normal;
 			font-size: 40px;
 			line-height: 56px;
 			color: $secondary;
@@ -376,4 +383,38 @@ line-height: 140%;
 //
 //new accrod menu
 //
+.accordion__menu__btn-lvl1{
+	font-family: 'Fira Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
 
+/* Background/Primary */
+color: #FFF9EF;
+}
+.accordion__menu__btn-lvl2{
+	font-family: 'Fira Sans';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 140%;
+	/* identical to box height, or 20px */
+	
+	/* Background/Primary */
+	color: #FFF9EF;
+}
+.accordion__menu__btn-lvl3{
+
+font-family: 'Fira Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 140%;
+color: #FFF9EF;
+
+}
+.accordion__menu__item-lvl3{
+	padding-left: 10px;
+}

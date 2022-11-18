@@ -2282,11 +2282,13 @@
                     <a class="header__call-link header__bot-call" href="#">записаться онлайн</a>
                     <button class="header__call-btn header__bot-call">заказать звонок</button>
                 </div>
-                <div class="header__bot-search-tablet">
-                    
+                <div class="div_search-header">
+                  <div class="header__bot-search-tablet">
                         <input class="header__input-tablet" type="search" placeholder="Поиск по сайту">
                         <img class="header__bot-search-tablet__img" src="./img/search_header.png" alt="search">
+                </div>  
                 </div>
+                
             </div>
             <div class="header__bot-phone">
                 <div class="header__menu-phone">
@@ -2427,7 +2429,7 @@
                                                 <p>lvl3</p>
                                             </div>
                                             <button class="accordion__menu__btn accordion__menu__btn-lvl2">Консультации врачей</button>
-                                            <div class="accordion__menu__item">
+                                            <div class="accordion__menu__item accordion__menu__item-lvl3">
                                                 <p>lvl3</p>
                                             </div>
                                         </div>
@@ -2532,7 +2534,7 @@
     <main>
         <section class="main-page__header">
             <div class="container">
-            <div class="header__slides__swiper">
+            <div class="header__slides__swiper ">
                 <div class="swiper-wrapper header__swiper-wrapper">
                     <div class="header__offer swiper-slide">
                         <h1 class="title title__offer">Заголовок №1 раскрывающий суть <span
@@ -2805,7 +2807,7 @@
                                     </ul>
                                 </div>
                                 <div class="content-card__more">
-                                    <p>Подробнее о консультации</p>
+                                    <a href="#">Подробнее о консультации</a>
                                     <img src="./img/arrow_title.png" alt="arrow">
                                 </div>
                             </div>
@@ -2828,7 +2830,7 @@
                                     </ul>
                                 </div>
                                 <div class="content-card__more">
-                                    <p>Подробнее о консультации</p>
+                                    <a href="">Подробнее о консультации</a>
                                     <img src="./img/arrow_title.png" alt="arrow">
                                 </div>
                             </div>
@@ -2854,7 +2856,7 @@
                                     </ul>
                                 </div>
                                 <div class="content-card__more">
-                                    <p>Подробнее о консультации</p>
+                                    <a href="">Подробнее о консультации</a>
                                     <img src="./img/arrow_title.png" alt="arrow">
                                 </div>
                             </div>
@@ -2880,7 +2882,7 @@
                                     </ul>
                                 </div>
                                 <div class="content-card__more">
-                                    <p>Подробнее о консультации</p>
+                                    <a href="">Подробнее о консультации</a>
                                     <img src="./img/arrow_title.png" alt="arrow">
                                 </div>
                             </div>
@@ -2930,7 +2932,7 @@
                                     <img src="./img/teeth_our_service_page.png" alt="">
                                     <p>Стоматология</p>
                                 </div>
-                                <img src="./img/plus_specialist_page.png" alt="">
+                                <img class="services__bot-phone__img-plus" src="./img/plus_specialist_page.png" alt="">
                             </div>
                             <div class="services__bot-phone__content__descr about-doctor__answer">
                                 <div class="content-card__description">
@@ -2954,10 +2956,10 @@
                         <div class="services__bot-phone__contentbox">
                             <div class="services__bot-phone__content__title about-doctor__question">
                                 <div class="">
-                                    <img src="./img/cosmetics_our_service_page.png" alt="">
+                                    <img  src="./img/cosmetics_our_service_page.png" alt="">
                                     <p>Косметология</p>
                                 </div>
-                                <img src="./img/plus_specialist_page.png" alt="">
+                                <img class="services__bot-phone__img-plus" src="./img/plus_specialist_page.png" alt="">
                             </div>
                             <div class="services__bot-phone__content__descr about-doctor__answer">
                                 <div class="content-card__description">
@@ -2984,10 +2986,10 @@
                         <div class="services__bot-phone__contentbox">
                             <div class="services__bot-phone__content__title about-doctor__question">
                                 <div class="">
-                                    <img src="./img/blood_our_service_page.png" alt="">
+                                    <img  src="./img/blood_our_service_page.png" alt="">
                                     <p>Врачебные манипуляции</p>
                                 </div>
-                                <img src="./img/plus_specialist_page.png" alt="">
+                                <img class="services__bot-phone__img-plus" src="./img/plus_specialist_page.png" alt="">
                             </div>
                             <div class="services__bot-phone__content__descr about-doctor__answer">
                                 <div class="content-card__description content-card__description-bot">
@@ -3012,7 +3014,7 @@
                                     <img src="./img/ekg_our_service_page.png" alt="">
                                     <p>Ультразвуковые исследования</p>
                                 </div>
-                                <img src="./img/plus_specialist_page.png" alt="">
+                                <img class="services__bot-phone__img-plus" src="./img/plus_specialist_page.png" alt="">
                             </div>
                             <div class="services__bot-phone__content__descr about-doctor__answer">
                                 <div class="content-card__description content-card__description-bot">
@@ -3170,12 +3172,12 @@
                                 <ul class="about__table__tr-tablet">
                                     <li class="about__table__td-tablet"><span class="about__table__span-tablet">20</span></li>
                                     <li class="about__table__td-secondary-tablet">тысяч</li>
-                                    <li class="about__table__td-tablet">довольных пациентов</li>
+                                    <li class="about__table__td-tablet">пациентов осталось довольными</li>
                                 </ul>
                                 <ul class="about__table__tr-tablet">
                                     <li class="about__table__td-tablet"><span class="about__table__span-tablet">5</span></li>
                                     <li class="about__table__td-secondary-tablet">отделений</li>
-                                    <li class="about__table__td-tablet">для вашего здоровья</li>
+                                    <li class="about__table__td-tablet">для Вашего здоровья, в которых всегда помогут </li>
                                 </ul>
                             </div>
                         </div>

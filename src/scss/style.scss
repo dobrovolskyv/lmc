@@ -15,6 +15,7 @@
 @import './404.scss';
 @import './menu.scss';
 
+
 html{
     scroll-behavior: smooth;
 }
@@ -284,11 +285,12 @@ color: $gold;
 //input search tablet
 //
 //
-
+.div_search-header{
+   
+}
 .header__bot-search-tablet{
-display: flex;
-background-color: $white;
-    width: 140px;
+        display: flex;
+        background-color: $white;
         background: transparent;
         font-weight: 600;
         color: $primary;
@@ -296,29 +298,32 @@ background-color: $white;
         border: none;
         border: 1px solid #093A67;
         border-radius: 50px;
-margin-top: 20px;
-margin-right: 50px;
+        margin-top: 20px;
+        margin-right: 0px;
+        display: none;
     & input{
         background: transparent;
         color: $bg;
         font-size: $fs12;
         border: none;
-        padding: 1px 10px;
-        width: 140px;
+        padding: 0;
+        width: 0;
         outline: none;
         transition: all 0.2s;
         color: $primary;
+        display: none;
     }
     &:hover input, input:focus, input:not(:placeholder-shown){
         width: 140px;
         padding: 1px 10px;
         padding-left: 10px;
+        display: none;
     }
     &__img{
         position: absolute;
-        top: 47%;
-        right: 1%;
-    
+        top: 43%;
+        right: 0%;
+        margin-left: 40px;
     }
     
 }
