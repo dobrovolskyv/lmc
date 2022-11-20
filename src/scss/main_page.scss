@@ -94,6 +94,14 @@
             line-height: 17px;
             color: #093A67;   
         }
+        &::-ms-clear{
+            display: none;
+            width : 0;
+            height: 0;
+        }
+        &::-ms-reveal {
+            display: none;
+         }
         &:focus {
             background: $bg;
         }
@@ -111,14 +119,14 @@
 
     &__bot {
         position: absolute;
-        top: 361%;
+        top: 25%;
         left: 0px;
         // width: 1200px;
         width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 72px;
+        height: 154px;
         background: rgba($color: #FFF9EF, $alpha: 0.6);
         box-shadow: 4px 0px 16px rgba(0, 0, 0, 0.1), 4px 0px 4px rgba(0, 0, 0, 0.05);
         
@@ -158,6 +166,7 @@
     }
 
     &__call {
+        margin-top: 50px;
         display: flex;
         align-items: center;
         
@@ -234,8 +243,8 @@
     &__list{
         display: flex;
         align-items: center;
-        margin-bottom: 100px;
-        margin-top: 25px;
+        margin-bottom: 40px;
+        margin-top: 33px;
     }
     &__item{
         &:not(:first-child){
@@ -338,13 +347,13 @@
     border-radius: 4px;
     background: $primary;
     // margin-top: 82px;
-    margin-top: 8vh;
+    margin-top: 18vh;
     
    
 }
 
 .title__offer {
-    max-width: 928px;
+    max-width: 1128px;
     text-transform: uppercase;
 }
 
@@ -357,7 +366,7 @@
 //
 
 .services {
-    padding-top: 100px;
+    padding-top: 140px;
 
     &__top {
         
@@ -802,7 +811,6 @@ padding: 26px 36px;
             flex-direction: column-reverse;
             overflow: hidden;
             margin-right: 25px;
-            
             background-image: url('../../img/doctor.jpg');
             background-repeat: no-repeat;
             background-position: center 0;
@@ -844,7 +852,6 @@ padding: 26px 36px;
     }
     &__sliders__swiper{
         max-width: 1200px;
-        height: 507px;
         cursor: grabbing;
         // overflow: hidden;
         // position: relative;
@@ -969,7 +976,7 @@ padding: 26px 36px;
 //
 
 .offer {
-    margin-top: $marginTop;
+    margin-top: 165px;
    
     &__bot {
         display: grid;
@@ -1542,7 +1549,7 @@ padding: 26px 36px;
     }
 
     &__btn {
-        margin: 47px 0 0 0;
+        margin: 37px 0 0 0;
         height: 40px;
         padding: 0px 30px;
         width: 180px;
@@ -1740,7 +1747,7 @@ padding: 26px 36px;
         &-bot {
             margin-top: 70px;
             z-index: 1;
-            padding-bottom: 50px;
+            padding-bottom: 22px;
 
             &__list {
                 display: flex;
@@ -1842,6 +1849,7 @@ padding: 26px 36px;
     &__menu {
       width: 698px;
       margin-right: 110px;
+      margin-top: 50px;
         &__list {
             display: flex;
             align-items: center;
@@ -2039,6 +2047,7 @@ padding: 26px 36px;
 
 .header__menu__list>li:hover .header__submenu__list {
     display: block;
+    
 }
 
 .header__submenu__list>li:hover .header__sub-submenu__list {

@@ -2,8 +2,10 @@
     margin-top: $marginTitle;
     &__title{
         font-size: 64px;
+        text-transform: uppercase;
+        line-height: 140%;
     }
-    &__subtitle{
+    .subtitle{
         max-width: 758px;
         font-size: $fs20;
         margin-top: 10px;
@@ -17,11 +19,18 @@
     }
     &__right{
         width: 309px;
-        height: 280px;
+        height: 270px;
         border: 1px solid $gold;
         border-radius: 4px;
         text-align: center;
-        padding: 46px 33px;
+        padding: 20px 33px;
+        &-stock{
+            font-size: 14px;
+            line-height: 140%;
+            font-weight: 400;
+            color: red;
+            text-align: left;
+        }
         &-sale{
             font-size: $fs24;
             text-align: right;
@@ -69,7 +78,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 118px 0px 0px 0px;
+        margin: 121px 0px 0px 0px;
         
     }
     &__link{
@@ -80,6 +89,11 @@
         font-size: $fs14;
         margin-right: 16px;
         font-weight: 400;
+        transition: all 0.4s linear;
+        &:hover{
+            color: $bg;
+            background-color: $secondaryRed;
+        }
     }
     &__bot{
         margin-top: 29px;
@@ -96,7 +110,10 @@
         color: $bg;
         border-radius: 4px;
         padding: 28px 20px;
-        margin-right: 28px;
+        
+        &:not(:last-child){
+            margin-right: 28px;
+        }
         img{
             width: 60px;
             height: 60px;
@@ -141,6 +158,9 @@ text-align: right;
 color: $secondaryRed;
         }
     }
+    .btn__header-page2{
+        height: 44px;
+    }
 }
 
 
@@ -150,7 +170,7 @@ color: $secondaryRed;
 //
 //
 .similar {
-    margin-top: 165px;
+    margin-top: $marginTop;
 
     &__procedures {
         &__contentbox {
@@ -182,7 +202,7 @@ color: #AE8452;
 //
 
 .skills__page4{
-    margin-top: 165px;
+    margin-top: $marginTop;
     .skills__page4__content-top__title{
         font-family: 'Oranienbaum';
         font-style: normal;
@@ -227,15 +247,16 @@ color: #AE8452;
         margin-top: 165px;
     }
     &__right{
-        padding: 50px 40px;
+        padding: 49px 40px;
         &-title{
             font-size: 50px;
             line-height: 80%;
         }
         text-align: center;
         max-width: 421px;
-        height: 361px;
+        height: 387px;
         border:1px solid $gold;
+        border-radius: 4px;
         &-list{
             margin-top: 50px;
 
@@ -260,8 +281,9 @@ color: #AE8452;
 .header__skills__stock{
     margin: 0 28px 0 0;
     border: 1px solid $gold;
-    padding: 32px 17px;
-    height: 361px;
+    border-radius: 4px;
+    padding: 34px 0px 34px 32px;
+    height: 387px;
     .header__skills__item{
         margin-right: 10px;
         max-width: 360px;
@@ -269,7 +291,7 @@ color: #AE8452;
    
 }
 .brochure__stock-page{
-    margin-top: 165px;
+    margin-top: $marginTop;
 }
 .questions__brochure__stock-page{
     justify-content: space-around;

@@ -143,7 +143,7 @@ const specialistSwiper = new Swiper('.specialist__sliders__swiper', {
     el: '.swiper-scrollbar',
   },
   autoplay: {
-    delay: 2500,
+    delay: 4500,
   },
 });
 
@@ -169,7 +169,7 @@ const clinicSwiper = new Swiper('.clinic__right-swiper', {
   // And if we need scrollbar
   
   autoplay: {
-    delay: 2200,
+    delay: 4200,
   },
 });
 
@@ -189,7 +189,7 @@ const reviewsSwiper = new Swiper('.reviews__sliders__swiper', {
   breakpoints: {
     // when window width is >= 320px
     250: {
-      slidesPerView: 1.2,
+      slidesPerView: 1,
       spaceBetween: 20
     },
     600: {
@@ -214,7 +214,7 @@ const reviewsSwiper = new Swiper('.reviews__sliders__swiper', {
   // And if we need scrollbar
   
   autoplay: {
-    delay: 2500,
+    delay: 4500,
   },
 
 
@@ -294,7 +294,7 @@ const headerTop = document.querySelector('.header__top');
 
 window.addEventListener('scroll', function(){
   if (headerTop){
-    if (window.pageYOffset> 130){
+    if (window.pageYOffset> 0){
       headerTop.style.backgroundColor = 'rgba(255, 249, 239, 1)';
     } else{
       headerTop.style.backgroundColor = 'rgba(255, 249, 239, 0.6)';
@@ -363,6 +363,7 @@ accordionFunction.accordionAboutDoctor();
 //
 //
 //
+
 ScrollReveal({
   distance: '60px',
   duration: 1500,
@@ -370,7 +371,6 @@ ScrollReveal({
 });
 ScrollReveal().reveal('.main-page__header',{ delay: 200, origin:'bottom'});
 ScrollReveal().reveal('.title title__offer',{ delay: 300, origin:'bottom'});
-ScrollReveal().reveal('.title__span',{ delay: 400, origin:'bottom'});
 ScrollReveal().reveal('.services',{ delay: 400, origin:'bottom' });
 ScrollReveal().reveal('.about',{ delay: 300, origin:'bottom' });
 ScrollReveal().reveal('.specialist',{ delay: 200, origin:'bottom' });
