@@ -1,8 +1,15 @@
 .services-chapter {
     &__physics{
-        margin-top: $marginTitle;
+        background-image: url('../../img/bg_header.jpg');
+    width: 100%;
+    min-height: 100vh;
+    background-position: center bottom;
+    padding-top: $marginTitle;
+    background-size: cover;
+    position: relative;
     }
     &__physics-wrapper{
+        
         margin-top: 40px;
         display: flex;
         justify-content: space-between;
@@ -16,7 +23,7 @@
         border: 1px solid $gold;
         border-radius: 4px;
         padding: 26px 21px;
-        
+        background-color: $bg;
     }
     &__contentbox {
         display: grid;

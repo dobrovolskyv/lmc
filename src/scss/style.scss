@@ -48,6 +48,15 @@ font-weight: 300;
 font-size: $fs20;
 line-height: 140%;
 background-color: $bg;
+// &::before{
+//     content: '';
+//     width: 1px;
+//     height: 6000px;
+//     background-color: red;
+//     position: absolute;
+//     top: 0;
+//     left: 50%;
+// }
 }
 header{
     padding-top: 20px;
@@ -57,6 +66,7 @@ header{
 .container{
     max-width: 1200px;
     margin: 0 auto;
+    // border: 1px solid red;
 }
 
 h1{
@@ -91,6 +101,7 @@ line-height: 140%;
 letter-spacing: 0.1em;
 text-transform: uppercase;
 color: $gold;
+margin-bottom: 16px;
 }
 
 .subtitle{
@@ -274,21 +285,37 @@ input::-webkit-search-results-decoration { display: none; }
 
 
 
-
-@media (max-width: 640px) {
+@media (max-width: 1210px) {
     .container{
-        max-width: 592px;
+        max-width: 1000px;
         margin: 0 auto;
-        // overflow: hidden;
+    }
+   
+    
+}
+@media (max-width: 1140px) {
+    .container{
+        max-width: 588px;
+        margin: 0 auto;
+        overflow: hidden;
         padding-left: 10px;
     }
         
+}
+
+@media (max-width: 420px) {
+    .container{
+        max-width: 380px;
+        margin: 0 auto;
+        // overflow: visible;
+        padding-left: 0px;
+    }
 }
 @media (max-width: 320px) {
     .container{
         max-width: 288px;
         margin: 0 auto;
-        // overflow: hidden;
+        // overflow: visible;
         padding-left: 0px;
     }
 }

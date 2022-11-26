@@ -1,5 +1,11 @@
 .contacts-page{
-    margin-top: $marginTitle;
+    background-image: url('../../img/bg_header.jpg');
+    width: 100%;
+    height: 100vh;
+    background-position: center bottom;
+    padding-top: $marginTitle;
+    background-size: cover;
+    position: relative;
 }
 
 @media (max-width: 640px) {

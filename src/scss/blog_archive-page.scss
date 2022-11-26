@@ -1,4 +1,5 @@
 .blog-archive{
+    
     .title{
         font-family: 'Oranienbaum';
 font-style: normal;
@@ -10,7 +11,13 @@ text-transform: uppercase;
     }
     
     &__articles{
- margin-top: $marginTitle;
+        background-image: url('../../img/bg_header.jpg');
+        width: 100%;
+        min-height: 100vh;
+        background-position: center bottom;
+        padding-top: $marginTitle;
+        background-size: cover;
+        position: relative;
     }
   
     &__articles__bot{

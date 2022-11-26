@@ -1,5 +1,11 @@
 .header__about-page{
-    margin-top: $marginTitle;
+    background-image: url('../../img/bg_header.jpg');
+    width: 100%;
+    height: 100vh;
+    background-position: center bottom;
+    padding-top: $marginTitle;
+    background-size: cover;
+    position: relative;
     &__wrapper{
         display: flex;
         justify-content: space-between;
@@ -185,7 +191,26 @@ line-height: 100%;
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1210px) {
+    .direction{
+        &__content{
+            padding: 12px;
+        }
+    }
+   
+    .contacts{
+        &__license{
+            flex-wrap: wrap;
+            &__container{
+                max-width: 550px;
+                margin-right: 0;
+                margin-top: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1140px) {
     
     //
     //

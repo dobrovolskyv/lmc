@@ -116,19 +116,26 @@ const specialistSwiper = new Swiper('.specialist__sliders__swiper', {
     // when window width is >= 320px
     200: {
       slidesPerView: 1.5,
-      spaceBetween: 10
+      spaceBetween: 16
     },
   
     340: {
       slidesPerView: 2.2,
-      spaceBetween: 20
+      spaceBetween: 24
     },
-  
+    640:{
+      slidesPerView: 2.8,
+      spaceBetween: 24
+    },
    
     // when window width is >= 640px
-    1220: {
-      slidesPerView: 4.2,
-      spaceBetween: 20,
+    1000: {
+      slidesPerView: 3.2,
+      spaceBetween: 24,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 24,
     }
   },
 
@@ -153,7 +160,7 @@ const clinicSwiper = new Swiper('.clinic__right-swiper', {
   direction: 'horizontal',
   loop: true,
   slidesPerView: 1,
-  spaceBetween: 20,
+  spaceBetween: 24,
 
   // If we need pagination
   pagination: {
@@ -179,7 +186,7 @@ const reviewsSwiper = new Swiper('.reviews__sliders__swiper', {
   direction: 'horizontal',
   loop: true,
   slidesPerView: 2.2,
-  spaceBetween: 20,
+  spaceBetween: 24,
 
   // If we need pagination
   pagination: {
@@ -190,18 +197,18 @@ const reviewsSwiper = new Swiper('.reviews__sliders__swiper', {
     // when window width is >= 320px
     250: {
       slidesPerView: 1,
-      spaceBetween: 20
+      spaceBetween: 24
     },
     600: {
       slidesPerView: 1.2,
-      spaceBetween: 20
+      spaceBetween: 24,
     },
   
    
     // when window width is >= 640px
     700: {
-      slidesPerView: 2.1,
-      spaceBetween: 40,
+      slidesPerView: 2,
+      spaceBetween: 24,
     }
   },
 
@@ -252,10 +259,12 @@ if (offerBtn && offerCard){offerBtn.addEventListener('click', (e)=>{
       if(cont.style.maxHeight){
         offerCard.style.maxHeight = null;
         offerBtn.innerHTML="Показать еще"
+        offerCard.style.overflow = 'hidden';
       } else {
         offerCard.style.maxHeight = null;
         cont.style.maxHeight = cont.scrollHeight + "px";
         offerBtn.innerHTML="Смотреть все акции"
+        offerCard.style.overflow = 'visible';
       }
     
     

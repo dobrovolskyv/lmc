@@ -2,7 +2,13 @@
     background-color: $bg;
 }
 .services-page__header{
-    margin-top: 20vh;
+    background-image: url('../../img/bg_header.jpg');
+    width: 100%;
+    height: 100vh;
+    background-position: center bottom;
+    padding-top: $marginTitle;
+    background-size: cover;
+    position: relative;
     // .title{
     //     margin-top: 150px;
 
@@ -131,12 +137,11 @@
         }
         &__item{
             font-family: 'Fira Sans';
-font-style: normal;
-font-weight: 300;
-font-size: 16px;
-line-height: 140%;
-margin-top: 10px;
-            
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 140%;
+            margin-top: 10px;
         }
        
     }

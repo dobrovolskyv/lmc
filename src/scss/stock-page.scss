@@ -1,5 +1,11 @@
 .header__stock-page{
-    margin-top: $marginTitle;
+    background-image: url('../../img/bg_header.jpg');
+    width: 100%;
+    min-height: 50vh;
+    background-position: center bottom;
+    padding-top: $marginTitle;
+    background-size: cover;
+    position: relative;
     &__title{
         font-size: 64px;
         text-transform: uppercase;
@@ -19,16 +25,19 @@
     }
     &__right{
         width: 309px;
-        height: 270px;
+        height: 300px;
         border: 1px solid $gold;
         border-radius: 4px;
         text-align: center;
         padding: 20px 33px;
+        background-color: $bg;
         &-stock{
-            font-size: 14px;
+            font-family: 'Oranienbaum';
+            font-weight: 400;
+            font-size: 40px;
             line-height: 140%;
             font-weight: 400;
-            color: red;
+            color: $primary;
             text-align: left;
         }
         &-sale{
@@ -106,7 +115,7 @@
         align-items: center;
         background-color: $primary;
         width: 309px;
-        height: 116px;
+        height: 100px;
         color: $bg;
         border-radius: 4px;
         padding: 28px 20px;
@@ -115,11 +124,13 @@
             margin-right: 28px;
         }
         img{
-            width: 60px;
-            height: 60px;
+            width: 40px;
+            height: 40px;
             margin-right: 16px;
         }
         p{
+            font-family: 'Fira Sans';
+            font-style: normal;
             font-size: $fs16;
             line-height: 140%;
             font-weight: 700;
@@ -129,6 +140,7 @@
         margin-top: 29px;
         .header__procedures__contentbox{
             height: 105px;
+            padding: 36px 38px;
         }
         .header__procedures__text{
             font-family: 'Oranienbaum';
@@ -136,26 +148,27 @@
             font-weight: 400;
             font-size: 24px;
             line-height: 140%;
+            letter-spacing: 0.5px;
         }
         .header__procedures__sale{
             font-family: 'Oranienbaum';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 140%;
-text-align: right;
-text-decoration-line: line-through;
-color: $gold;
-margin-right: 16px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            text-align: right;
+            text-decoration-line: line-through;
+            color: $gold;
+            margin-right: 16px;
         }
         .header__procedures__price{
             font-family: 'Oranienbaum';
-font-style: normal;
-font-weight: 400;
-font-size: 28px;
-line-height: 140%;
-text-align: right;
-color: $secondaryRed;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 140%;
+            text-align: right;
+            color: $secondaryRed;
         }
     }
     .btn__header-page2{
@@ -173,9 +186,15 @@ color: $secondaryRed;
     margin-top: $marginTop;
 
     &__procedures {
+        
         &__contentbox {
+            // padding: 0;
             &-middle {
                 margin-left: 36px;
+            }
+            img{
+                height: 257px;
+                margin-left: -30px;
             }
         }
         &__text{
@@ -219,9 +238,14 @@ color: #AE8452;
     }
     padding: 0 10px;
     &__content-top{
-        margin-top: 165px;
+        
         padding-top: 10px;
         &__title{
+                        font-family: 'Oranienbaum';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 42px;
+            line-height: 100%;
             font-size: $fs42;
         }
         &__list{
@@ -233,24 +257,38 @@ color: #AE8452;
         }
         &__item{
             display: flex;
+            align-items: center;
             max-width: 600px;
             &::before{
-                content: '-';
+                content: url('../img/tere.svg');
                 color: $secondaryRed;
                 margin-right: 10px;
+                margin-bottom: 10px;
             }
+           p{
+            font-family: 'Fira Sans';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 140%;
+           }
         }
     }
     &__wrapper{
         display: flex;
         justify-content: space-between;
-        margin-top: 165px;
+        margin-top: $marginTop;
     }
     &__right{
         padding: 49px 40px;
-        &-title{
-            font-size: 50px;
-            line-height: 80%;
+        .skills__page4__title{
+            font-family: 'Oranienbaum';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 42px;
+            line-height: 100%;
+            max-width: 305px;
+            padding-left: 31px;
         }
         text-align: center;
         max-width: 421px;
@@ -265,8 +303,10 @@ color: #AE8452;
             margin-top: 12px;
         }
         &-text{
-
-            font-size: $fs16;
+            font-family: 'Fira Sans';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
             line-height: 120%;
         }
     }
@@ -274,15 +314,23 @@ color: #AE8452;
         padding-bottom: 10px;
     }
     .header__skills__item{
-        font-size: 20px;
+        font-size: 19px;
         margin-top: 16px;
+        display: flex;
+        align-items: center;
+        &::before{
+            content: url('../img/tere.svg');
+            color: $secondaryRed;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
     }
 }
 .header__skills__stock{
     margin: 0 28px 0 0;
     border: 1px solid $gold;
     border-radius: 4px;
-    padding: 34px 0px 34px 32px;
+    padding: 34px 20px 34px 32px;
     height: 387px;
     .header__skills__item{
         margin-right: 10px;
@@ -483,9 +531,7 @@ color: #AE8452;
             font-size: $fs16;
             line-height: 140%;
             margin-top: 5px;
-            p{
-                
-            }
+            
         }
         margin-top: 100px;
         flex-direction: column;

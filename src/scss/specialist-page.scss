@@ -2,7 +2,13 @@
     background-color: $bg;
 }
 .specialist-page__header{
-    margin-top: $marginTitle;
+    background-image: url('../../img/bg_header.jpg');
+    width: 100%;
+    min-height: 100vh;
+    background-position: center bottom;
+    padding-top: $marginTitle;
+    background-size: cover;
+    position: relative;
     .about__right_specialist-page{
     position: relative;
     }

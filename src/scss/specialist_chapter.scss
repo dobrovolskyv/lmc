@@ -1,9 +1,16 @@
 .specialist-chapter{
-    margin-top: $marginTitle;
+    background-image: url('../../img/bg_header.jpg');
+    width: 100%;
+    min-height: 50vh;
+    background-position: center bottom;
+    padding-top: $marginTitle;
+    background-size: cover;
+    position: relative;
     .specialist__subtitle{
         width: 900px;
     }
     &__wrapper{
+        
         margin-top: 40px;
         display: flex;
         
