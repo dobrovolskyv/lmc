@@ -340,9 +340,23 @@ color: #AE8452;
 }
 .brochure__stock-page{
     margin-top: $marginTop;
+    padding-top: 60px;
+}
+.specialist-page__questions__brochure-steps{
+.questions__brochure-step{
+    width: 367px;
+}
+.questions__brochure-text{
+    max-width: 290px;
+}
+.questions__brochure-subtext{
+    max-width: 315px;
+    margin-right: 0px;
+}
 }
 .questions__brochure__stock-page{
     justify-content: space-around;
+    
 }
 
 @media (max-width: 640px) {

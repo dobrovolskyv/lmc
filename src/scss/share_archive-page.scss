@@ -18,14 +18,21 @@
     &__offer__card{
         width: 278px;
         height: 356px;
-        background-image: url('../../img/offer/offer3.jpg');
-        background-size: cover;
+        background-image: url('../../img/offer/offer3.png');
+        background-size: 100%;
         background-position: center center;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding: 16px;
         margin-top: 14px;
+        border: 1px solid $gold;
+        border-radius: 4px;
+        transition: all 0.4s linear;
+        &:hover{
+            background-size: 120%;
+        transition: all 0.4s linear;
+        }
 
         &__stock {
             font-family: 'Fira Sans';

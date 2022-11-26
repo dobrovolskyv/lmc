@@ -1027,7 +1027,7 @@ line-height: 32px;
 //
 
 .offer {
-    margin-top: 165px;
+    margin-top: 140px;
    
     &__bot {
         display: grid;
@@ -1049,7 +1049,7 @@ line-height: 32px;
     &__card {
         width: 282px;
         height: 361px;
-        background-image: url('../../img/offer/offer3.jpg');
+        background-image: url('../../img/offer/offer3.png');
         background-size: 100%;
         background-position: center center;
         display: flex;
@@ -1064,6 +1064,8 @@ line-height: 32px;
                 background-size: 120%;
             // transform: scale(1.05);
             transition: all 0.4s linear;
+            border: 1px solid $gold;
+        border-radius: 4px;
             }
         &__stock {
             font-family: 'Fira Sans';
@@ -1571,7 +1573,7 @@ font-style: normal;
             // border-color: #AE8452;
             // border-radius: 4px 0px 0px 4px;
             padding: 53px 42px;
-
+            background-color: $bg;
             &-adress {
                 font-family: 'Oranienbaum';
                 font-weight: 400;

@@ -844,7 +844,7 @@
 }
 
 .offer {
-  margin-top: 165px;
+  margin-top: 140px;
 }
 .offer__bot {
   display: grid;
@@ -862,7 +862,7 @@
 .offer__card {
   width: 282px;
   height: 361px;
-  background-image: url("../../img/offer/offer3.jpg");
+  background-image: url("../../img/offer/offer3.png");
   background-size: 100%;
   background-position: center center;
   display: flex;
@@ -877,6 +877,8 @@
 .offer__card:hover {
   background-size: 120%;
   transition: all 0.4s linear;
+  border: 1px solid #AE8452;
+  border-radius: 4px;
 }
 .offer__card__stock {
   font-family: "Fira Sans";
@@ -1302,6 +1304,7 @@
   width: 600px;
   height: 540px;
   padding: 53px 42px;
+  background-color: #FFF9EF;
 }
 .contacts__bot__info-adress {
   font-family: "Oranienbaum";
@@ -4760,7 +4763,7 @@ body.touch .header__sub-sub-submenu__list.open {
 .services-page__header {
   background-image: url("../../img/bg_header.jpg");
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-position: center bottom;
   padding-top: 15vh;
   background-size: cover;
@@ -4891,7 +4894,7 @@ body.touch .header__sub-sub-submenu__list.open {
   margin-top: 60px;
   background-color: #093A67;
   color: #FFF9EF;
-  padding: 60px;
+  padding: 40px 30px 20px 30px;
   border-radius: 4px;
 }
 .questions__brochure-title {
@@ -4915,9 +4918,12 @@ body.touch .header__sub-sub-submenu__list.open {
 .questions__brochure-step {
   border-radius: 4px;
   position: relative;
-  max-width: 260px;
+  width: 260px;
   border: 1px solid #FFF9EF;
   padding: 10px 25px 30px 25px;
+}
+.questions__brochure-step:not(:first-child) {
+  margin-left: 16px;
 }
 .questions__brochure-step__number {
   text-align: left;
@@ -4931,6 +4937,7 @@ body.touch .header__sub-sub-submenu__list.open {
   font-size: 20px;
   line-height: 140%;
   text-align: center;
+  margin-top: 22px;
 }
 .questions__brochure-subtext {
   font-family: "Fira Sans";
@@ -4940,9 +4947,10 @@ body.touch .header__sub-sub-submenu__list.open {
   line-height: 140%;
   text-align: center;
   color: #A9BACA;
+  margin-top: 9px;
 }
 .questions__brochure-btn {
-  margin-top: 29px;
+  margin-top: 20px;
   padding: 0px 30px;
   width: 212px;
   height: 44px;
@@ -5534,7 +5542,7 @@ body.touch .header__sub-sub-submenu__list.open {
 }
 
 .similar__specialist-page3 {
-  margin-top: 165px;
+  margin-top: 140px;
 }
 .similar__specialist-page3__subtitle {
   font-size: 20px;
@@ -5548,7 +5556,7 @@ body.touch .header__sub-sub-submenu__list.open {
 }
 
 .about-doctor {
-  margin-top: 165px;
+  margin-top: 140px;
   padding: 0 10px;
 }
 .about-doctor__contentbox {
@@ -6179,6 +6187,18 @@ body.touch .header__sub-sub-submenu__list.open {
 
 .brochure__stock-page {
   margin-top: 140px;
+  padding-top: 60px;
+}
+
+.specialist-page__questions__brochure-steps .questions__brochure-step {
+  width: 367px;
+}
+.specialist-page__questions__brochure-steps .questions__brochure-text {
+  max-width: 290px;
+}
+.specialist-page__questions__brochure-steps .questions__brochure-subtext {
+  max-width: 315px;
+  margin-right: 0px;
 }
 
 .questions__brochure__stock-page {
@@ -6566,7 +6586,7 @@ body.touch .header__sub-sub-submenu__list.open {
 .header__about-page {
   background-image: url("../../img/bg_header.jpg");
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-position: center bottom;
   padding-top: 15vh;
   background-size: cover;
@@ -6645,12 +6665,12 @@ body.touch .header__sub-sub-submenu__list.open {
 }
 
 .clinic-history {
-  margin-top: 165px;
+  margin-top: 140px;
 }
 .clinic-history__wrapper {
   margin-top: 65px;
   display: flex;
-  justify-content: center;
+  margin-left: 100px;
 }
 .clinic-history__cyrcles {
   width: 40px;
@@ -7018,7 +7038,7 @@ body.touch .header__sub-sub-submenu__list.open {
 .contacts-page {
   background-image: url("../../img/bg_header.jpg");
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-position: center bottom;
   padding-top: 15vh;
   background-size: cover;
@@ -8030,14 +8050,21 @@ body.touch .header__sub-sub-submenu__list.open {
 .share-archive__offer__card {
   width: 278px;
   height: 356px;
-  background-image: url("../../img/offer/offer3.jpg");
-  background-size: cover;
+  background-image: url("../../img/offer/offer3.png");
+  background-size: 100%;
   background-position: center center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 16px;
   margin-top: 14px;
+  border: 1px solid #AE8452;
+  border-radius: 4px;
+  transition: all 0.4s linear;
+}
+.share-archive__offer__card:hover {
+  background-size: 120%;
+  transition: all 0.4s linear;
 }
 .share-archive__offer__card__stock {
   font-family: "Fira Sans";
